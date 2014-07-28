@@ -1,0 +1,47 @@
+body {
+	background-color: lightseagreen;
+	width: 90%;
+	margin: 0 auto;
+}
+
+* {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: white;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+
+h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 100;
+	color: white;
+	line-height: 15px;
+}
+
+a {
+	text-decoration: none;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}     
+a:visited {
+	color: white;
+	text-decoration: none;
+}  
+a:hover {
+	color: lightslategrey;
+	text-decoration: none;
+}  
+a:active {
+	color: lightslategrey;
+	text-decoration: none;
+}
