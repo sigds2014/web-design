@@ -24,6 +24,20 @@ h2 {
 	font-weight: 100;
 	color: white;
 	line-height: 15px;
+	transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);	
+    transition: transform .5s;
+    -webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s;
+    -o-transition: -o-transform .5s;
+}
+h2:hover {
+	transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
 }
 
 p {
@@ -37,19 +51,26 @@ p {
 a {
 	text-decoration: none;
 }
+
 a:link {
 	color: white;
 	text-decoration: none;
 }     
+
 a:visited {
 	color: white;
 	text-decoration: none;
 }  
+
 a:hover {
-	color: lightslategrey;
+	/*color: lightslategrey;*/
+	color: white;
 	text-decoration: none;
+
 }  
+
 a:active {
-	color: lightslategrey;
+	/*color: lightslategrey;*/
+	color: white;
 	text-decoration: none;
 }
