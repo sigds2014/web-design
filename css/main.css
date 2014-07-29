@@ -28,11 +28,11 @@ ul {
 }
 
 li {
-	font-size: 40px;
+	font-size: 38px;
 	text-transform: uppercase;
 	font-weight: 100;
 	color: white;
-	line-height: 47px;
+	line-height: 44px;
 	transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
