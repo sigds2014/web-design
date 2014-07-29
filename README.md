@@ -11,4 +11,4 @@ Send me your username so I can add you to the team for our site.
 
 Once added, clone the gh-pages repository to your desktop version. There is a button in the far right column.
 
-Test out commiting and syncing on the index.html file in the folder with your name on it.
+Test out commiting (command+return) and syncing (command+s) on the index.html file in the folder with your name on it.
