@@ -1,7 +1,9 @@
 body {
 	background-color: lightseagreen;
-	width: 90%;
+	width: 392px;
 	margin: 0 auto;
+/*	border-left: 4px solid white;
+	border-right: 4px solid white;*/
 }
 
 * {
@@ -16,14 +18,21 @@ h1 {
 	color: white;
 	letter-spacing: 2px;
 	margin-top: 25px;
+
 }
 
-h2 {
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
 	font-size: 40px;
 	text-transform: uppercase;
 	font-weight: 100;
 	color: white;
-	line-height: 15px;
+	line-height: 47px;
 	transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -33,7 +42,8 @@ h2 {
     -moz-transition: -moz-transform .5s;
     -o-transition: -o-transform .5s;
 }
-h2:hover {
+
+li:hover {
 	transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -43,14 +53,21 @@ h2:hover {
 p {
 	font-size: 10px;
 	font-weight: 300;
+	line-height: 14px;
 	color: white;
 	letter-spacing: .75px;
 	text-transform: uppercase;
 }
 
+.hl {
+	color: lightslategrey !important;
+	border-bottom: thin solid lightslategrey !important;
+}
+
 a {
 	text-decoration: none;
 }
+
 
 a:link {
 	color: white;
