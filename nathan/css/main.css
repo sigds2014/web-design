@@ -7,7 +7,7 @@ body{
 h1{
 	font-weight: 700;
 	font-size: 100pt;
-	margin-bottom: 0;
+	margin: 0;
 	text-transform: uppercase;
 }
 
@@ -33,12 +33,10 @@ h6{
 }
 
 a{
-	font-size: 30pt;
+	font-size: 20pt;
 	font-weight: 300;
 	color: #FFF;
-	line-height: 40pt;
 	text-decoration: none;
-	float: none;
 }
 
 a:hover{
@@ -51,10 +49,30 @@ header{
 	text-align: center;
 }
 
-#home-button{
-	margin: 0;
+nav{
+	width: 400px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+}
+
+nav li{
+	width: 133px;
 	float: left;
 }
+
+nav a{
+	font-size: 12pt;
+	font-weight: 300;
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
 
 .center{ 
 	position: relative;
@@ -81,16 +99,58 @@ header{
 	float: left;
 }
 
-/*UL*/
+#rule3{
+	border-bottom: 3px solid #DEE6EC;
+	width: 100px;
+	height: 1px;
+	margin: 32px 10px 0 0px;
+	display: inline;
+	float: left;
+}
+
+#rule4{
+	border-bottom: 3px solid #DEE6EC;
+	width: 100px;
+	height: 1px;
+	margin: 32px 0px 0 10px;
+	display: inline;
+	float: left;
+}
+
+#rule5{
+	border-bottom: 3px solid #DEE6EC;
+	width: 80px;
+	height: 1px;
+	margin: 32px 10px 0 0px;
+	display: inline;
+	float: left;
+}
+
+#rule6{
+	border-bottom: 3px solid #DEE6EC;
+	width: 80px;
+	height: 1px;
+	margin: 32px 0px 0 10px;
+	display: inline;
+	float: left;
+}
+
+/*UL for Links Pages*/
+
+.links{
+	width: 350px;
+	margin: 100px auto 0 auto;
+}
 
 .links ul{
 	list-style: none;
+	padding: 0;
 }
 
-.links{
-	width: 960px;
-	margin: 0 auto;
+.links li{
+	margin-bottom: 15px;
 }
+
 
 /*Projects*/
 .projects{
@@ -136,7 +196,7 @@ header{
 }
 
 .grid figcaption h3 {
-	margin: 100px 0 5px 0;
+	margin: 110px 0 5px 0;
 	padding: 0;
 	font-size: 12pt;
 }
