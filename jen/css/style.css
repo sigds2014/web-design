@@ -1,0 +1,102 @@
+body {
+	background: #fff;
+}
+
+.container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+header {
+	margin-bottom: 3em;
+}
+
+h1, h2, h4, h5, h6 {
+	font-family: "aleobold";
+	font-weight: normal;
+	font-style: normal;
+	margin-bottom: .25em;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	color: #999;
+	margin: 0 0 0 1em;
+}
+
+#logotype {
+	display: block;
+	float: left;
+	width: 40%;
+}
+
+#logotype h2{
+	margin: 1em 0 0 0;
+	font-size: 2em;
+}
+
+#logotype h6{
+	margin: 0;
+	font-size: 1em;
+}
+
+#mainnav ul {
+	padding: 0;
+	text-align: right;
+}
+
+#mainnav ul li {
+	list-style: none;
+	margin: 0;
+	display: inline-block;
+	padding: 4.2em 0 0 3em;
+}
+
+a, 
+a:visited,
+a:hover,
+a:focus {
+	color: #000;
+	text-decoration: none;
+	font-family: 'aleobold';
+	font-size: 1em;
+}
+
+a:hover {
+	color: #ccc; 
+	text-decoration: none;
+}
+
+#mainnav ul li #selected {
+	color: #aaa;
+}
+
+#section01 {
+
+}
+.assignments {
+}
+
+/* CLEARFIX
+=====================================*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* @FONT-FACE
+===================================== */
+@font-face {
+    font-family: 'aleobold';
+    src: url('../fonts/aleobold/aleo-bold-webfont.eot');
+    src: url('../fonts/aleobold/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleobold/aleo-bold-webfont.woff') format('woff'),
+         url('../fonts/aleobold/aleo-bold-webfont.ttf') format('truetype'),
+         url('../fonts/aleobold/aleo-bold-webfont.svg#aleobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
