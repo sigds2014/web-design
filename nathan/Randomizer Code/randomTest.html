@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    var max = 3
+    var min = 0
+    var rand = Math.floor(Math.random()*(max-min+1)+min);      
+    if(rand == 0){
+        $('#random0').css("display", "block");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+    } else if(rand == 1){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "block");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+    } else if(rand == 2){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "block");
+        $('#random3').css("display", "none");
+    } else if(rand == 3){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "block");
+    } else {
+        $('#random0').css("display", "block");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+    }
+    });
+</script>
+</head>
+
+<body>
+</body>
+
+</html>
