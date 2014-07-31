@@ -47,18 +47,25 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-            var colors = ["#3E8ADD","#FFE053","#FF2A45", "#83BA4F", "#FF8C19", "#DEE6EC", "#191F2B", "#8B66D1"];
+            var colors = ["#FFE053","#FF2A45", "#83BA4F", "#FF8C19", "#DEE6EC", "#191F2B", "#8B66D1"];
             var rand = Math.floor(Math.random()*colors.length);      
              $('body').css("background-color", colors[rand]);
-             if (rand == 0){
-                $('h1').html("<span id='kern'>Y</span>es.");
-            } else if (rand == 1 || rand == 5){
+             // If yellow or white, set h1 color to black
+             if (rand == 0 || rand == 4){
                 $('h1').html("No.");
                 $("h1,h2").css("color", "#191F2B")
             } else {
                 $('h1').html("No.");
             } 
+            // Display hex color info
              $('h2').html("This is " + colors[rand]);
+
+             //Delay, then turn blue
+                 setTimeout(function(){
+                    $('body').css("background-color", "#3E8ADD");
+                    $('h1').html("<span id='kern'>Y</span>es.").css("color", "#FFF");
+                    $('h2').html("This is #3E8ADD").css("color", "#FFF");
+                }, 16500);
             });
         </script>
     </body>
