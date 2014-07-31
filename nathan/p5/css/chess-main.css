@@ -1,5 +1,5 @@
 body{
-	background-color: grey;
+	background-color: white;
 }
 
 div{
@@ -11,7 +11,7 @@ div{
 
 .container{
 	width: 800px;
-	height: 800px;
+	height: 801px;
 	background-color: white;
 	margin: 0 auto;
 }
