@@ -34,20 +34,19 @@
         }
 
         .header h3 {
-   			line-height:0px;
+   			line-height:20px;
    			font-size: 25px;
    			color: white;
    			font-family: 'Noto Sans', sans-serif;
-       		margin-left:800px;
+       		margin-left:820px;
         }
 
         h3 {
-        	padding:20px 20px;
+        	padding:20px 10px;
        		font-family: 'Playfair Display', serif;
-       		font-size:25px;
+       		font-size:23px;
        		float:left;
-       		margin-left:400px;
-
+            margin-top:-30px; 
         }
 
         p {
@@ -63,27 +62,49 @@
 
         .header {
         	width:1200px;
-        	height:350px;
-        	background-color:black;
+        	height:300px;
+        	background-color:#00a0b0;
         }
 
         .rectangle {
             width:1200px;
             height:10px;
-            margin-top:20px;
+            margin-top:10px;
             margin-bottom:30px;
-            background-color:red;
+            background-color:#eb6841;
             float:left;
 		}
+
+        .logo {
+            position:fixed;
+            z-index:3;
+            margin-left:-150px; 
+        }
+
+        .arrow-up {
+            width: 0; 
+            height: 0; 
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            border-bottom: 60px solid #eae374;
+            position:absolute;
+            z-index:4;
+            left:900px;
+            top:0;
+
+        }
+
 
 		.top {
 			postition:absolute;
 			z-index:2;
+            margin-top:15px;
 		}
 
 		.bottom {
 			postition:absolute;
 			z-index:1;
+            margin-top:15px;
 		}
 		
 		#cf {
@@ -96,11 +117,11 @@
 			position:absolute;
 		    left:0;
 		    opacity: 1;
-		    -webkit-transition: opacity 1s ease-in-out;
-		    -moz-transition: opacity 1s ease-in-out;
-		    -o-transition: opacity 1s ease-in-out;
-		    -ms-transition: opacity 1s ease-in-out;    
-		    transition: opacity 1s ease-in-out;
+		    -webkit-transition: opacity 2s ease-in-out;
+		    -moz-transition: opacity 2s ease-in-out;
+		    -o-transition: opacity 2s ease-in-out;
+		    -ms-transition: opacity 2s ease-in-out;    
+		    transition: opacity 2s ease-in-out;
 		}
 
 		#cf img.top:hover {
@@ -115,18 +136,41 @@
 
 		#cf2 img {
 			position:absolute;
-		    left:400px;
+		    left:350px;
+            top:-100px;
 		    opacity: 1;
-		    -webkit-transition: opacity 1s ease-in-out;
-		    -moz-transition: opacity 1s ease-in-out;
-		    -o-transition: opacity 1s ease-in-out;
-		    -ms-transition: opacity 1s ease-in-out;    
-		    transition: opacity 1s ease-in-out;
+		    -webkit-transition: opacity 2s ease-in-out;
+		    -moz-transition: opacity 2s ease-in-out;
+		    -o-transition: opacity 2s ease-in-out;
+		    -ms-transition: opacity 2s ease-in-out;    
+		    transition: opacity 2s ease-in-out;
 		}
 
 		#cf2 img.top:hover {
 		    opacity:0;
 		}
+
+        #cf3 {
+            position:relative;
+            height:100px;
+            width:300px;
+        }
+
+        #cf3 img {
+            position:absolute;
+            left:530px;
+            top:-200px;
+            opacity: 1;
+            -webkit-transition: opacity 2s ease-in-out;
+            -moz-transition: opacity 2s ease-in-out;
+            -o-transition: opacity 2s ease-in-out;
+            -ms-transition: opacity 2s ease-in-out;    
+            transition: opacity 2s ease-in-out;
+        }
+
+        #cf3 img.top:hover {
+            opacity:0;
+        }
 
     	</style>
 
@@ -137,12 +181,17 @@
 
     <body>
 
+<img class="logo" src="img/RISD.png"/>
+
 <div class="header">
 
-<h1>Graphic Design: Now in Production</h1> 
+<h1>Graphic Design:</br>Now in Production</h1> 
 <h2>Prints, Drawings, and Photographs</h2>
 <h3>March 28–August 3, 2014</h3>
+
 </div>  
+
+<div class="arrow-up"></div>
 
 <div id="cf">
 <img class="top" src="img/22.jpeg" height="250"/>
@@ -152,6 +201,11 @@
 <div id="cf2">
 <img class="top" src="img/oilandwater.jpeg" height="250"/>
 <img class="bottom" src="img/gentlewoman.jpeg" height="250"/>
+</div>
+
+<div id="cf3">
+<img class="top" src="img/bestmade.jpeg" height="270" width="670"/>
+<img class="bottom" src="img/axe.jpeg" height="250" width="670"/>
 </div>
 
 <h3>“A big, sweeping, categorical, world-historical-moment-defining graphic design show.” — Print magazine</h3> 
