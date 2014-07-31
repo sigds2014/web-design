@@ -1,0 +1,24 @@
+#container
+{
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.image
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    width: 100%;
+}
+
+.image:hover{
+	cursor: pointer;
+}
+
+.image.default
+{
+    display: block;
+}
