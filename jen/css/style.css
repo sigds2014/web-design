@@ -12,10 +12,13 @@ header {
 }
 
 h1, h2, h4, h5, h6 {
-	font-family: "aleobold";
-	font-weight: normal;
-	font-style: normal;
+	font-family: "Bitter" serif;
+	font-weight: 700;
 	margin-bottom: .25em;
+}
+
+h2 {
+
 }
 
 h3 {
@@ -59,7 +62,7 @@ a:hover,
 a:focus {
 	color: #000;
 	text-decoration: none;
-	font-family: 'aleobold';
+	font-family: 'Bitter';
 	font-size: 1em;
 }
 
@@ -84,19 +87,4 @@ a:hover {
   content: "";
   display: table;
   clear: both;
-}
-
-
-/* @FONT-FACE
-===================================== */
-@font-face {
-    font-family: 'aleobold';
-    src: url('../fonts/aleobold/aleo-bold-webfont.eot');
-    src: url('../fonts/aleobold/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/aleobold/aleo-bold-webfont.woff') format('woff'),
-         url('../fonts/aleobold/aleo-bold-webfont.ttf') format('truetype'),
-         url('../fonts/aleobold/aleo-bold-webfont.svg#aleobold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
 }
