@@ -5,7 +5,6 @@
         <title>Is This Site Blue?</title>
         <meta name="author" content="Nate Moore">
         <meta name="viewport" content="width=device-width">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" href="http://static.tumblr.com/dgwh4n8/Kv3n9i24t/favicon.png"/>
     
@@ -13,20 +12,6 @@
         <meta property="og:title" content="Is This Site Blue?" /> 
         <meta property="og:description" content="What a mystery! Click to find out if this site is blue!" />
         <meta property="og:image" content="http://static.tumblr.com/dgwh4n8/ACyn9i4hk/facebook_share.png" />  
-
-        <script>
-            $(document).ready(function(){
-            var colors = ["#3E8ADD","#FFE053","#FF2A45", "#83BA4F", "#FF8C19"];                
-            var rand = Math.floor(Math.random()*colors.length);      
-             $('body').css("background-color", colors[rand]);
-             if (rand == 0){
-                $('h1').html("Yes.");
-            } else {
-                $('h1').html("No.");
-            } 
-             $('h2').html("This is " + colors[rand]);
-            });
-        </script>
         
         <style>
             h1, h2{
@@ -46,14 +31,35 @@
                 width:100%;
                 text-align: center;
             }
+            
+            #kern{
+                letter-spacing: -0.1em;
+            }
         </style>
 
     </head>
     <body>
           <div id="wrapper">
-            <h1></h1>
-            <h2></h2>
+            <h1>Oops...</h1>
+            <h2>Something broke.</h2>
         </div>
-    </body>
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+       <script>
+            $(document).ready(function(){
+            var colors = ["#3E8ADD","#FFE053","#FF2A45", "#83BA4F", "#FF8C19", "#DEE6EC", "#191F2B", "#8B66D1"];
+            var rand = Math.floor(Math.random()*colors.length);      
+             $('body').css("background-color", colors[rand]);
+             if (rand == 0){
+                $('h1').html("<span id='kern'>Y</span>es.");
+            } else if (rand == 1 || rand == 5){
+                $('h1').html("No.");
+                $("h1,h2").css("color", "#191F2B")
+            } else {
+                $('h1').html("No.");
+            } 
+             $('h2').html("This is " + colors[rand]);
+            });
+        </script>
+    </body>
 </html>
