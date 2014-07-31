@@ -135,10 +135,10 @@ header{
 
 .no-touch .ul-projects figure:hover img,
 .ul-projects figure.cs-hover img {
-	-webkit-transform: translateY(250px);
-	-moz-transform: translateY(250px);
-	-ms-transform: translateY(250px);
-	transform: translateY(250px);
+	-webkit-transform: translateY(-250px);
+	-moz-transform: translateY(-250px);
+	-ms-transform: translateY(-250px);
+	transform: translateY(-250px);
 }
 
 .ul-projects figcaption {
@@ -147,10 +147,10 @@ header{
 	top: auto;
 	bottom: 0;
 	opacity: 0;
-	-webkit-transform: translateY(-100%);
-	-moz-transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.3s 0.3s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.3s 0.3s;
 	transition: transform 0.4s, opacity 0.3s 0.3s;
