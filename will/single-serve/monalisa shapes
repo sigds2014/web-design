@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+    
+    <style type="text/css">
+
+    	#container {
+    		width: 1200px;
+    		height: 1200px;
+    		padding: 40px;
+    	}
+
+    	.eyes {
+    		width: 560px;
+    		height: 560px;
+    		margin: 10px;
+    		float: left;
+    		background-color: red;
+    		-webkit-transition: background-color 2s ease-in;
+            -moz-transition: background-color 2s ease-in;
+            -ms-transition: background-color 2s ease-in;
+            -o-transition: background-color 2s ease-in;
+            transition: background-color 2s ease-in;
+    	}
+
+    	.eyes:hover {
+    		background-color: #00ffff;
+    	}
+
+    	#mouth {
+    		margin: 10px;
+    		width: 1140px;
+    		height: 560px;
+    		float: left;
+    		background-color: red;
+    		-webkit-transition: background-color 2s ease-in;
+            -moz-transition: background-color 2s ease-in;
+            -ms-transition: background-color 2s ease-in;
+            -o-transition: background-color 2s ease-in;
+            transition: background-color 2s ease-in;
+    	}
+
+    	#mouth:hover {
+    		background-color: #00ffff;
+    	}
+
+
+
+    </style>
+
+    </head>
+    
+    <body>
+    	<div id="container">
+    		<div class="eyes"></div>
+    		<div class="eyes"></div>
+    		<div id="mouth"></div>
+    	</div>
+
+    </body>
+    
+</html>
