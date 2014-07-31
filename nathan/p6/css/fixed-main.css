@@ -1,0 +1,57 @@
+body{
+	background-color: red;
+	font-family: monospace;
+	color: white;
+}
+
+#dair-text{
+	width: 40%;
+	margin-left: 30%;
+}
+
+#content-box{
+	width: 200px;
+	height: 400px;
+	position: fixed;
+	background-color: white;
+	top: 50px;
+	left: 100px;
+	color: black;
+	padding: 10px;
+}
+
+#shape01{
+	position: fixed;
+	width: 500px;
+	height: 500px;
+	background-color: transparent;
+	top: 75px;
+	right: 75px;
+	border-radius: 500px;
+	border: 2px solid white;
+}
+
+#shape02{
+	position: fixed;
+	width: 400px;
+	height: 400px;
+	background-color: transparent;
+	top: 75px;
+	right: 75px;
+	border-radius: 400px;
+	border: 2px dashed white;
+}
+
+#shape03{
+	position: fixed;
+	width: 200px;
+	height: 100px;
+	background-color: white;
+	top: 500px;
+	right: 0px;
+}
+
+
+
+
+

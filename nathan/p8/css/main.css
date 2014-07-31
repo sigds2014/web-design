@@ -1,0 +1,17 @@
+h1, h2{
+	font-family: "Open Sans", Helvetica, Arial,  sans-serif;
+	font-size: 100pt;
+	color: white;
+	margin-bottom: 0;
+}
+
+h2{
+	font-size: 30pt;
+	line-height: 0px;
+	font-weight: 300;
+}
+
+#wrapper{
+	width:100%;
+	text-align: center;
+}

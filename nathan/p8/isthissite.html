@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Is This Site Blue?</title>
+        <meta name="author" content="Nate Moore">
+        <meta name="viewport" content="width=device-width">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/png" href="http://static.tumblr.com/dgwh4n8/Kv3n9i24t/favicon.png"/>
+    
+        <!--FACEBOOK SHARING INFO-->    
+        <meta property="og:title" content="Is This Site Blue?" /> 
+        <meta property="og:description" content="What a mystery! Click to find out if this site is blue!" />
+        <meta property="og:image" content="http://static.tumblr.com/dgwh4n8/ACyn9i4hk/facebook_share.png" />  
+
+        <script>
+            $(document).ready(function(){
+            var colors = ["#3E8ADD","#FFE053","#FF2A45", "#83BA4F", "#FF8C19"];                
+            var rand = Math.floor(Math.random()*colors.length);      
+             $('body').css("background-color", colors[rand]);
+             if (rand == 0){
+                $('h1').html("Yes.");
+            } else {
+                $('h1').html("No.");
+            } 
+             $('h2').html("This is " + colors[rand]);
+            });
+        </script>
+        
+        <style>
+            h1, h2{
+                font-family: "Open Sans", Helvetica, Arial,  sans-serif;
+                font-size: 100pt;
+                color: white;
+                margin-bottom: 0;
+            }
+
+            h2{
+                font-size: 30pt;
+                line-height: 0px;
+                font-weight: 300;
+            }
+
+            #wrapper{
+                width:100%;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+          <div id="wrapper">
+            <h1></h1>
+            <h2></h2>
+        </div>
+    </body>
+
+</html>
