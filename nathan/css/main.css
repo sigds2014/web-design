@@ -38,10 +38,11 @@ a{
 	color: #FFF;
 	line-height: 40pt;
 	text-decoration: none;
+	float: none;
 }
 
 a:hover{
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
 header{
@@ -80,6 +81,13 @@ header{
 	float: left;
 }
 
+/*UL*/
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin-bottom: 10px;
+}
 
 /*Projects*/
 .projects{
