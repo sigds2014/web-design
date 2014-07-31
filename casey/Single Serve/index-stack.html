@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <style>
+    	.body{
+    		background: #efefef;
+    	}
+    	.square{
+    		margin: 0 auto;
+    		width: 200px;
+    		height: 500px;
+    	}
+
+    	.rotationl {
+    		    -webkit-transition: transform 4s ease-out, color 5s ease-out;
+				-moz-transition: transform 4s ease-out, color 5s ease-out;
+				-ms-transition: transform 4s ease-out, color 5s ease-out;
+				-o-transition: transform 4s ease-out, color 5s ease-out;
+		        transition: transform 4s ease-out, color 5s ease-out;
+    	}
+
+    	.rotationl:hover {
+    	-moz-transform: rotate(-60deg);
+		-webkit-transform: rotate(-60deg);
+		-o-transform: rotate(-60deg);
+		-ms-transform: rotate(-60deg);
+		transform:  rotate(-60deg);
+
+		color: gray;
+		 }
+
+
+    	.rotation:hover {
+    	-moz-transform: rotate(60deg);
+		-webkit-transform: rotate(60deg);
+		-o-transform: rotate(60deg);
+		-ms-transform: rotate(60deg);
+		transform:  rotate(60deg);
+
+		color: gray;
+		 }
+
+		.rotation {
+    		    -webkit-transition: transform 5s ease-out, color 5s ease-out;
+				-moz-transition: transform 5s ease-out, color 5s ease-out;
+				-ms-transition: transform 5s ease-out, color 5s ease-out;
+				-o-transition: transform 5s ease-out, color 5s ease-out;
+		        transition: transform 5s ease-out, color 5s ease-out;
+    	}
+
+
+		 .first:hover{
+		 	color:yellow;
+		 }
+
+          .sixth:hover{
+            color:yellow;
+         }
+
+		 p{
+		 	font-size: 150px;
+		 	text-transform: uppercase;
+		 	line-height: 0;
+		 	padding: 0;
+		 	margin:0;
+		 }
+
+		.first{
+    		position: absolute;
+    		bottom: 50px;
+    		color: red;
+
+    	}
+
+    	.second{
+    		position:absolute;
+    		bottom: 130px;
+    		color: #B8EDF8;
+    	}
+    	.third{
+    		position: absolute;
+    		bottom: 220px;
+    		color: orange;
+    	}
+    	.fourth{
+    		position: absolute;
+    		bottom: 310px;
+    		color: pink;
+    	}
+    	.fifth{
+    		position: absolute;
+    		bottom: 400px;
+    		color: brown;
+    	}
+        .sixth{
+            position: absolute;
+            bottom: 500px;
+            color: red;
+        }
+        .seventh{
+            position: absolute;
+            bottom: 600px;
+            color: #B8EDF8;
+        }
+        .eighth{
+            position: absolute;
+            bottom: 700px;
+            color: orange;
+        }
+        .ninth{
+            position: absolute;
+            bottom: 800px;
+            color: pink;
+        }
+        .tenth{
+            position: absolute;
+            bottom: 900px;
+            color: brown;
+        }
+    
+
+    </style>
+    <body>
+        <input id="user-text" type="text" placeholder="Your Name"></input>
+        <button>submit</button>
+
+    	<div class="square">
+    		<p class="first rotation">E</p>
+    		<p class="second rotationl">r</p>
+    		<p class="third rotation">n</p>
+    		<p class="fourth rotationl">s</p>
+    		<p class="fifth rotation">t</p>
+            <p class="sixth rotation"></p>
+            <p class="seventh rotationl"></p>
+            <p class="eighth rotation"></p>
+            <p class="ninth rotationl"></p>
+            <p class="tenth rotation"></p>
+    	</div>
+    	
+    <script src= "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+    <script type="text/javascript">
+
+    $( document ).ready(function() {
+
+                console.log( "Document is ready!" );
+    
+  
+      });
+
+    $('button').click(function() {
+
+
+
+$( "p.first" ).html($("#user-text").val().substring(0,1));
+$( "p.second" ).html($("#user-text").val().substring(1,2));
+$( "p.third" ).html($("#user-text").val().substring(2,3));
+$( "p.fourth" ).html($("#user-text").val().substring(3,4));
+$( "p.fifth" ).html($("#user-text").val().substring(4,5));
+
+$( "p.sixth" ).html($("#user-text").val().substring(5,6));
+$( "p.seventh" ).html($("#user-text").val().substring(6, 7));
+$( "p.eighth" ).html($("#user-text").val().substring(7,8));
+$( "p.ninth" ).html($("#user-text").val().substring(8,9));
+$( "p.tenth" ).html($("#user-text").val().substring(9,10));
+
+});
+        </script>
+    </body>
+
+    </html>
