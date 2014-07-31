@@ -8,45 +8,42 @@
     
     <style type="text/css">
 
-    	#container {
-    		width: 1200px;
-    		height: 1200px;
-    		padding: 40px;
+    	body {
+            background-color: black;
+        }
+
+        #container {
+    		width: 560px;
+    		height: 600px;
+    		margin: 0 auto;
+            padding-top: 96px;
     	}
 
     	.eyes {
-    		width: 560px;
-    		height: 560px;
-    		margin: 10px;
+    		width: 280px;
+    		height: 372px;
     		float: left;
-    		background-color: red;
-    		-webkit-transition: background-color 2s ease-in;
-            -moz-transition: background-color 2s ease-in;
-            -ms-transition: background-color 2s ease-in;
-            -o-transition: background-color 2s ease-in;
-            transition: background-color 2s ease-in;
-    	}
-
-    	.eyes:hover {
-    		background-color: #00ffff;
-    	}
-
+        }
     	#mouth {
-    		margin: 10px;
-    		width: 1140px;
-    		height: 560px;
+    		width: 560px;
+    		height: 280px;
     		float: left;
-    		background-color: red;
-    		-webkit-transition: background-color 2s ease-in;
-            -moz-transition: background-color 2s ease-in;
-            -ms-transition: background-color 2s ease-in;
-            -o-transition: background-color 2s ease-in;
-            transition: background-color 2s ease-in;
     	}
 
-    	#mouth:hover {
-    		background-color: #00ffff;
-    	}
+
+        img {
+            max-width: 100%;
+        }
+
+        .box {
+            border: 2px solid white;
+            z-index: -1;
+            position: absolute;
+            width: 560px;
+            height: 565px;
+            left: 300px;
+            margin-top: 40px;
+        }
 
 
 
@@ -56,9 +53,19 @@
     
     <body>
     	<div id="container">
-    		<div class="eyes"></div>
-    		<div class="eyes"></div>
-    		<div id="mouth"></div>
+    		<div class="eyes">
+                <img src="img-tiles/left.jpg">
+            </div>
+            
+            <div class="eyes">
+                <img src="img-tiles/right.jpg">
+            </div>
+            <div id="mouth">
+                <img src="img-tiles/bottom-half.jpg">
+            </div>
+            <div class="box"></div>
+
+        </div>
     	</div>
 
     </body>
