@@ -32,6 +32,17 @@ h6{
 	color: #232323;
 }
 
+a{
+	font-size: 30pt;
+	font-weight: 300;
+	color: #FFF;
+	line-height: 40pt;
+}
+
+a:hover{
+	opacity: 0.8;
+}
+
 header{
 	width:800px;
 	margin: 150px auto 0 auto;
