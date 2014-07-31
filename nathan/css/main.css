@@ -81,20 +81,19 @@ header{
 	float: left;
 }
 
-/*UL*/
-
-ul{
-	list-style: none;
-	padding: 0;
-	margin-bottom: 10px;
-}
-
-/*Projects*/
 .projects{
 	width: 960px;
 	margin: 100px auto 0 auto;
 }
 
+/*UL*/
+
+ul{
+	list-style: none;
+}
+
+
+/*Fancy Grid Stuff*/
 .grid {
 	padding: 0px 10px 90px 10px;
 	max-width: 1300px;
