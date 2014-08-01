@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Single Serve 2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Lobster|Hind:500|Vidaloka' rel='stylesheet' type='text/css'>
+
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/main.css">
+            <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+            <style type="text/css">
+
+            body {
+                font-size: 2.5em;
+                font-family: 'Lobster', sans-serif;
+                color: white;
+                background-color: #5fcbb5;
+            }
+            
+            .container {
+                height: 900px; 
+                width: 1600px;
+                margin-left: 50px;
+            }
+
+            div {
+                height: 200px; 
+                width: 400px;
+                padding: 20px 20px; 
+                float:left; 
+            }
+
+            .container div {display:none;
+            }
+
+            #random0 {}
+            #random1 {}
+            #random2 {}
+            #random3 {}
+
+            </style>
+
+    </head>
+
+
+    <body>
+
+        <div class="container">
+
+            <div id="random0">Nelson Mandela</div> 
+            <div id="random1">Justin Bieber</div>
+            <div id="random2">Oprah Winfrey</div>
+            <div id="random3">Richard Sherman</div>
+            <div id="random4">Miley Cyrus</div>
+            <div id="random5">Mahatma Ghandi</div>
+            <div id="random6">Winston Churchill</div>
+            <div id="random7">Chuck Norris</div>
+            <div id="random8">Hilary Clinton</div>
+            <div id="random9">Matt Groening</div>
+            <div id="random10">Michel Foucault</div>
+            <div id="random11">Shakespeare</div>
+            <div id="random12">Adolf Hitler</div>
+            <div id="random13">Lord Voldemort</div>
+            <div id="random14">Anna Nicole Smith</div>
+            <div id="random15">Anne Frank</div>
+            <div id="random16">Stephen Hawking</div>
+            <div id="random17">Prince</div>
+            <div id="random18">Walt Whitman</div>
+            <div id="random19">Janet Jackson</div>
+            <div id="random20">Cher</div>
+            <div id="random21">Attila the Hun</div>
+            <div id="random22">Napoleon Bonaparte</div>
+            <div id="random23">Rosa Parks</div>
+            <div id="random24">Boo Radley</div>
+            <div id="random25">Bill Nye</div>
+            
+        </div>
+
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+
+        $( document ).ready(function(){
+            console.log( "Document is ready!" );
+
+            var max = 25
+            var min = 0
+            var rand = Math.floor(Math.random()*(max-min+1)+min);   
+               
+            if(rand == 0){
+                $('#random0').css("display", "block");
+                $('#random12').css("display", "block");
+                $('#random22').css("display", "block");
+    
+            } else if(rand == 1){
+                $('#random1').css("display", "block");
+                $('#random4').css("display", "block");
+                $('#random8').css("display", "block");
+            } else if(rand == 2){
+                $('#random11').css("display", "block");
+                $('#random18').css("display", "block");
+                $('#random5').css("display", "block");
+            } else if(rand == 3){
+                $('#random9').css("display", "block");
+                $('#random2').css("display", "block");
+                $('#random1').css("display", "block");
+            } else if(rand == 4){
+                $('#random15').css("display", "block");
+                $('#random16').css("display", "block");
+                $('#random17').css("display", "block");
+            } else if(rand == 5){
+                $('#random2').css("display", "block");
+                $('#random13').css("display", "block");
+                $('#random19').css("display", "block");
+            } else if(rand == 6){
+                $('#random5').css("display", "block");
+                $('#random17').css("display", "block");
+                $('#random21').css("display", "block");
+            } else if(rand == 7){
+                $('#random22').css("display", "block");
+                $('#random1').css("display", "block");
+                $('#random25').css("display", "block");
+            } else {
+                $('#random3').css("display", "block");
+                $('#random10').css("display", "block");
+                $('#random24').css("display", "block");
+            }       
+            
+
+        });
+
+    </script>
+
+
+    </body>
+
+</html>
