@@ -1,0 +1,78 @@
+    body {
+        background-color: rgb(43,87,126);
+    }
+
+    #container {
+        width: 500px;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        margin-left: -250px;
+    }
+
+    #title {
+        color: #FFF;
+        height: 150px;
+        width: 500px;
+        float: left;
+    }
+
+    h1 {
+        font-family: "Ek Mukta", helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 90px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    h2 {
+        font-family: "Ek Mukta", helvetica, sans-serif;
+        font-weight: 200;
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: -50px;
+    }
+
+    #lists {
+        width: 500px;
+        margin-top: 60px;
+        margin-left: 7px;
+        float: left;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        font-family: "Lato", helvetica, sans-serif;
+        text-transform: lowercase;
+    }
+
+    li {
+        color: #FFF;
+    }
+
+    .list1 {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    .list1 li {
+        margin-bottom: 30px;
+    }
+
+    .list2 {
+        font-size: 20px;
+        display: none; /*hides sublists from view and takes out of flow*/
+    }
+
+    a {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    a:hover {
+        opacity: 0.5;
+    }
