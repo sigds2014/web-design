@@ -1,0 +1,192 @@
+<html>
+    
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>crunch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body {
+
+/*                background: url("editedpics/sidewalk-small.jpg") #ce5610;
+                background-position: center;
+                background-repeat: no-repeat;*/
+                /*background-quantity: infinite;*/
+                /*background-attachment: fixed;*/
+/*                background-position: 100% 0%;
+                background-size: 100%;*/
+                /*background-origin: content;*/
+            }
+
+        .images 
+                { 
+                height: 600px; 
+                width:800px;
+                position: fixed; 
+                bottom: 50px; 
+                left: 100px; 
+                z-index: 0;
+                }
+
+        body, a:link 
+                {
+               /* cursor: url(editedpics/shoe-tiny.png), crosshair;*/
+                width: 150%;
+                height: 150%;
+                margin:0; padding:0;
+                cursor: url(editedpics/shoe-tiny.png), auto;
+                }
+
+ 
+
+            img     
+            {
+            position: absolute;
+                }               
+
+
+                }
+
+                /*cursor: url(hyper.cur), auto */
+        </style>
+
+    </head>
+
+    <body style="background-color:#000;">
+
+
+         <span id="dummy"></span>
+                <p><a href="#" onclick="playSound('editedpics/leafsound.mp3');"></a></p>
+
+        <div id="mycursor"></div>
+
+       
+
+        <div id="random0">
+           <a href="index.html"><img src="editedpics/brownleaf1.png" class="images"></a>
+        </div>
+        <div id="random1">
+            <a href="index.html"><img src="editedpics/brownleaf2.png" class="images"></a>
+        </div>
+        <div id="random2">
+            <a href="index.html"><img src="editedpics/brownleaf3.png" class="images"></a>
+        </div>
+        <div id="random3">
+            <a href="index.html"><img src="editedpics/brownleaf4.png" class="images"></a>
+        </div>
+        <div id="random4">
+            <a href="index.html"><img src="editedpics/brownleaf5.png" class="images"></a>
+        </div>
+        <div id="random5">
+            <a href="index.html"><img src="editedpics/brownleaf6.png" class="images"></a>
+        </div>
+        <div id="random6">
+            <a href="index.html"><img src="editedpics/brownleaf7.png" class="images"></a>
+        </div>
+        <div id="random7">
+            <a href="index.html"><img src="editedpics/brownleaf8.png" class="images"></a>
+        </div>
+
+                <audio autoplay>
+          <source src="editedpics/leafsound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    var max = 7
+    var min = 0
+    var rand = Math.floor(Math.random()*(max-min+1)+min);      
+    if(rand == 0)
+    {
+        $('#random0').css("display", "block");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+        $('#random7').css("display", "none");
+    } else if(rand == 1){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "block");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+        $('#random7').css("display", "none");
+    } else if(rand == 2){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "block");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+        $('#random7').css("display", "none");
+    } else if(rand == 3){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "block");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+        $('#random7').css("display", "none");
+    } else if(rand == 4){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "block");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+        $('#random7').css("display", "none");
+    } else if(rand == 5){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "block");
+        $('#random6').css("display", "none");
+        $('#random7').css("display", "none");
+    } else if(rand == 6){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "block");
+        $('#random7').css("display", "none");
+    } else if(rand == 7){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+        $('#random7').css("display", "block");
+    } else {
+        $('#random0').css("display", "block");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+        $('#random7').css("display", "none");
+
+    }
+
+    });
+</script>
+    </body>
+</html>
