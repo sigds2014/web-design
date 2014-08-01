@@ -19,7 +19,12 @@
                 left: 475px;
                 top: 10px;
                 text-shadow: black 5px 5px 10px;
+            }
 
+            #loader{
+                width: 441px;
+                height: 291px;
+                margin: 200px auto 0 auto;
             }
 
             #image{
@@ -220,13 +225,34 @@
     </head>
     
     <body>
-        <h1>WAT?</h1>
-        <div id="image">
-            <img id="slc1" src="img/slice1.png" draggable="false">
-            <img id="slc2" src="img/slice2.png" draggable="false">
-            <img id="slc3" src="img/slice3.png" draggable="false">
-            <img id="slc4" src="img/slice4.png" draggable="false">
-            <img id="slc5" src="img/slice5.png" draggable="false">
+        <div id="loader">
+            <img id="load-gif" src="img/loading.gif">
         </div>
+
+        <div id="content">
+            <h1>WAT?</h1>
+
+            <div id="image">
+                <img id="slc1" src="img/slice1.png" draggable="false">
+                <img id="slc2" src="img/slice2.png" draggable="false">
+                <img id="slc3" src="img/slice3.png" draggable="false">
+                <img id="slc4" src="img/slice4.png" draggable="false">
+                <img id="slc5" src="img/slice5.png" draggable="false">
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#content').css("display", "none")
+                $('#loader').css("display", "block")
+            });
+
+            $(window).load(function() {
+                $('#content').css("display", "block")
+                $('#loader').css("display", "none")
+            });
+        </script>
+
     </body>
 </html>
