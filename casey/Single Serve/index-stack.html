@@ -123,11 +123,23 @@
             bottom: 900px;
             color: brown;
         }
+
+        input[type=text]{
+            background-color: #efefef;
+            border: 5px dotted white;
+            padding: 8px;
+            font-size: 18px;
+        }
+        input[type=text]:focus{
+            border: 5px solid white;
+            outline: 0;
+            -webkit-appearance: none;
+        }
     
 
     </style>
     <body>
-        <input id="user-text" type="text" placeholder="Your Name"></input>
+        <input id="user-text" type="text" placeholder="Your Name" autofocus></input>
         <!-- <button>submit</button> -->
         <!-- <button>submit</button> -->
        
