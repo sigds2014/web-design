@@ -1,22 +1,88 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        
+	<head>
+		<title>Graphic Design: Now in Production</title>
+		<style>
+			body {
+				background-color: white;
+				margin:12px;
+				padding:0;
+				font-family: helvetica;
+			}
+			
+			#container { 
+				height: 1200px; 
+				width: 1200px; 
+				margin: 0 auto;
+				border: 1px solid rgba(0,0,0,0); 
+			}
 
-        <style type="text/css">
+			.text1 {
+				font-family: helvetica;
+				position:fixed;
+				top:130px;
+				left:50px;
+			}
 
-        body {background-color:red;}
+			.text2 {
+				font-family: helvetica;
+				position:fixed;
+				bottom:90px;
+				right:60px;
+				text-align:right;
+			}
 
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="viewport" content="width=device-width">
-        <!-- <link rel="stylesheet" href="css/main.css"> -->
-        </style>
-    </head>
-    
-    <body>
-    <p><a href="../index.html">home</a></p>
-    <h1>This is Glara's page</h1>
-    </body>
-    
+			.arrow-down {
+				width: 0; 
+				height: 0; 
+				border-left: 70px solid transparent;
+				border-right: 40px solid transparent;
+				border-top: 70px solid #fce600;
+				position:fixed;
+				top:50px;
+				left:50px;
+			}
+				
+			.arrow-up {
+				width: 0; 
+				height: 0; 
+				border-left: 70px solid transparent;
+				border-right: 40px solid transparent;
+				border-bottom: 70px solid #54c2ba;
+				position:fixed;
+				bottom:10px;
+				right:60px;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+
+			<div class="arrow-up">
+		
+			<div class="text1">
+				<h2>charles dair</h2>
+				<h2>grid</h2>
+				<h2>floats</h2>
+				<h2>positioning</h2>
+				<h2>interaction</h2>
+			</div>
+
+			<div class="text2">
+				<h2><a href="singlepage/barebones.html">single page</a></h2>
+				<h2><a href="forms/basic-form-pages-linked/my_form_from_scratch.html">form</a></h2>
+				<h2>jquery plugin</h2>
+				<h2><a href="nav/craigslist_after.html">nav</a></h2>
+				<h2><a href="poster.html">poster</a></h2>
+			</div>
+
+			<div class="arrow-down">
+			</div>
+
+
+
+		</div><!-- end container div -->
+	</body>
 </html>
