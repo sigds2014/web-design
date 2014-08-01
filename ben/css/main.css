@@ -60,12 +60,13 @@
     }
 
     .list1 li {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
-    .list2 {
+    .list2 li{
         font-size: 20px;
-        display: none; /*hides sublists from view and takes out of flow*/
+        margin-bottom: 10px;
+        /*display: none;*/ /*hides sublists from view and takes out of flow*/
     }
 
     a {
