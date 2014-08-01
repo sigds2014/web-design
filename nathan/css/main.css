@@ -81,7 +81,7 @@ nav a{
 	height: 50px;
 }
 
-#rule1{
+#rule1, #rule2{
 	border-bottom: 3px solid #DEE6EC;
 	width: 77px;
 	height: 1px;
@@ -90,16 +90,7 @@ nav a{
 	float: left;
 }
 
-#rule2{
-	border-bottom: 3px solid #DEE6EC;
-	width: 77px;
-	height: 1px;
-	margin: 32px 0px 0 10px;
-	display: inline;
-	float: left;
-}
-
-#rule3{
+#rule3, #rule4{
 	border-bottom: 3px solid #DEE6EC;
 	width: 100px;
 	height: 1px;
@@ -108,16 +99,7 @@ nav a{
 	float: left;
 }
 
-#rule4{
-	border-bottom: 3px solid #DEE6EC;
-	width: 100px;
-	height: 1px;
-	margin: 32px 0px 0 10px;
-	display: inline;
-	float: left;
-}
-
-#rule5{
+#rule5, #rule6{
 	border-bottom: 3px solid #DEE6EC;
 	width: 80px;
 	height: 1px;
@@ -126,13 +108,17 @@ nav a{
 	float: left;
 }
 
-#rule6{
+#rule7, #rule8{
 	border-bottom: 3px solid #DEE6EC;
-	width: 80px;
+	width: 40px;
 	height: 1px;
-	margin: 32px 0px 0 10px;
+	margin: 32px 10px 0 0px;
 	display: inline;
 	float: left;
+}
+
+#rule2, #rule4, #rule6, #rule8{
+	margin: 32px 0px 0 10px;
 }
 
 /*UL for Links Pages*/
