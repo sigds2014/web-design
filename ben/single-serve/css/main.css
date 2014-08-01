@@ -1,0 +1,125 @@
+    body {
+        background-color: black;
+        height: 100%;
+    }
+
+    #container {
+        height: 200px;
+        width: 610px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -305px;
+    }
+
+    #title-box {
+        height: 18px;
+        width: 610px;
+        margin-bottom: 18px;
+
+        float: left;
+    }
+
+    .opening-message {
+        text-align: center;
+        font-family: "Raleway", Arial, sans-serif;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+
+        margin-top: -1px;
+    }
+
+    #bottom {
+        height: 164px;
+        width: 610px;
+
+        float: left;
+    }
+
+    #number-box {
+        height: 164px;
+        width: 368px;
+        padding-right: 20px;
+
+        float: left;
+    }
+
+    .number {
+        font-family: "Raleway", Arial, sans-serif;
+        /*font-family: Courier New;*/
+        font-weight: 100;
+        color: white;
+        font-size: 189px;
+        text-align: right;
+
+        margin-top: -43px;
+
+        visibility: hidden;
+        overflow: visible;
+    }
+
+    #bottom-right {
+        height: 164px;
+        width: 204px;
+        margin-left: 18px;
+
+        float: left;
+    }
+
+    #BPM-box {
+        height: 101px;
+        width: 204px;
+        margin-bottom: 18px;
+
+        float: left;
+    }
+
+    .bpm {
+        font-family: "Raleway", Arial, sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 100px;
+
+        margin-top: -8px;
+        margin-left: -11px;
+
+        visibility: hidden;
+    }
+
+    #button {
+        height: 45px;
+        width: 204px;
+        background-color: rgb(192,27,27);
+        float: left;
+
+        text-align: center;
+        font-family: "Raleway", Arial, sans-serif;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+
+        margin-left: -4px;
+
+        cursor: pointer;
+    }
+
+    #button:hover {
+        background-color: rgb(162,23,23);
+    }
+
+    #button p {
+        margin-top: 12px;
+    }
+
+    .unselectable {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
