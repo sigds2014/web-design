@@ -47,11 +47,11 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-            var colors = ["#FFE053","#FF2A45", "#83BA4F", "#FF8C19", "#DEE6EC", "#191F2B", "#8B66D1"];
+            var colors = ["#FFE053", "#FDFF4F", "#FFD34A", "#FFD10F", "#DEE6EC", "#DAEAE5", "#DDD7D3", "#191919", "#2D2D2D", "#110F0F", "#FF2A45", "#83BA4F", "#FF8C19", "#8B66D1", "#168039", "#45BF55", "#DA1B1D", "#EE203D", "#DA1D2C", "#FF7A3C", "#FF6633", "#F26101", "#401469", "#5811A8", "#6F00FF"];
             var rand = Math.floor(Math.random()*colors.length);      
              $('body').css("background-color", colors[rand]);
-             // If yellow or white, set h1 color to black
-             if (rand == 0 || rand == 4){
+             // If yellow or white, set h1 and h2 color to black
+             if (rand == 0 || rand == 1 || rand == 2 || rand == 3 || rand == 4 || rand == 5 || rand == 6){
                 $('h1').html("No.");
                 $("h1,h2").css("color", "#191F2B")
             } else {
@@ -60,12 +60,26 @@
             // Display hex color info
              $('h2').html("This is " + colors[rand]);
 
+
+            //Randomize the Blue
+            var blue = ["#004B8D","#0068C4", "#2998FF", "#35478C", "#4E7AC7", "#7FB2F0", "#3E8ADD"];
+            var randBlue = Math.floor(Math.random()*blue.length);     
+
+            // Randomize Delay Time
+            var maxTime = 11000
+            var minTime = 6000
+            var randTime = Math.floor(Math.random()*(maxTime-minTime+1)+minTime); 
              //Delay, then turn blue
                  setTimeout(function(){
-                    $('body').css("background-color", "#3E8ADD");
+                    $('body').css("background-color", blue[randBlue]);
                     $('h1').html("<span id='kern'>Y</span>es.").css("color", "#FFF");
-                    $('h2').html("This is #3E8ADD").css("color", "#FFF");
-                }, 16500);
+                    $('h2').html("This is " + blue[randBlue]).css("color", "#FFF");
+                }, randTime);
+
+            console.log("Delay Time: " + randTime);
+            console.log("rand value: " + rand)
+            console.log("Initial Color: " + colors[rand]);
+            console.log("Shade of Blue: " + blue[randBlue]);
             });
         </script>
     </body>
