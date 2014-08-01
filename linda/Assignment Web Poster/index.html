@@ -5,6 +5,26 @@
         <title></title>
         <meta name="viewport" content="width=device-width">
         <!-- <link rel="stylesheet" href="css/main.css"> -->
+         <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
+          <script src='src/okvideo.js'></script>
+          <script type="text/javascript">
+            $(function(){
+                $.okvideo({ source: '10257762', 
+                            volume: 0, 
+                            loop: true,
+                            hd:true, 
+                            adproof: true,
+                            annotations: false,
+                            onFinished: function() { console.log('finished') },
+                            unstarted: function() { console.log('unstarted') },
+                            onReady: function() { console.log('onready') },
+                            onPlay: function() { console.log('onplay') },
+                            onPause: function() { console.log('pause') },
+                            buffering: function() { console.log('buffering') },
+                            cued: function() { console.log('cued') },
+                         });
+            });
+          </script>
    
 	   <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Playfair+Display:400,900,700italic' rel='stylesheet' type='text/css'>
 
@@ -26,6 +46,10 @@
         h1 {
         	font-size:70px;
    
+        }
+
+        h1:hover {
+            color:orange;
         }
 
         h2 {
@@ -100,6 +124,7 @@
 			z-index:2;
             margin-top:15px;
 		}
+
 
 		.bottom {
 			postition:absolute;
@@ -181,45 +206,46 @@
 
     <body>
 
-<img class="logo" src="img/RISD.png"/>
 
-<div class="header">
+    <img class="logo" src="img/RISD.png"/>
 
-<h1>Graphic Design:</br>Now in Production</h1> 
-<h2>Prints, Drawings, and Photographs</h2>
-<h3>March 28–August 3, 2014</h3>
+    <div class="header">
 
-</div>  
+        <h1>Graphic Design:</br>Now in Production</h1> 
+        <h2>Prints, Drawings, and Photographs</h2>
+        <h3>March 28–August 3, 2014</h3>
 
-<div class="arrow-up"></div>
+    </div>  
 
-<div id="cf">
-<img class="top" src="img/22.jpeg" height="250"/>
-<img class="bottom" src="img/rel.jpeg" height="250"/>
-</div>
+    <div class="arrow-up"></div>
 
-<div id="cf2">
-<img class="top" src="img/oilandwater.jpeg" height="250"/>
-<img class="bottom" src="img/gentlewoman.jpeg" height="250"/>
-</div>
+    <div id="cf">
+        <img class="top" src="img/22.jpeg" height="250"/>
+        <img class="bottom" src="img/rel.jpeg" height="250"/>
+    </div>
 
-<div id="cf3">
-<img class="top" src="img/bestmade.jpeg" height="270" width="670"/>
-<img class="bottom" src="img/axe.jpeg" height="250" width="670"/>
-</div>
+    <div id="cf2">
+        <img class="top" src="img/oilandwater.jpeg" height="250"/>
+        <img class="bottom" src="img/gentlewoman.jpeg" height="250"/>
+    </div>
 
-<h3>“A big, sweeping, categorical, world-historical-moment-defining graphic design show.” — Print magazine</h3> 
+    <div id="cf3">
+        <img class="top" src="img/bestmade.jpeg" height="270" width="670"/>
+        <img class="bottom" src="img/axe.jpeg" height="250" width="670"/>
+    </div>
 
-<div class="rectangle"></div>
+    <h3>“A big, sweeping, categorical, world-historical-moment-defining graphic design show.” — Print magazine</h3> 
 
-<p>Designers use color, typography, images, symbols and systems to make the surfaces around us come alive with meaning. The revolutions in desktop computing and networked communication have raised public awareness of graphic design. Today, the field continues to shift as new technologies and social movements change the way we make and consume media.</p> 
+    <div class="rectangle"></div>
 
-<p>Graphic Design: Now in Production explores some of the most vibrant graphic design work produced since 2000, including magazines, newspapers, books and posters; the expansion of branding programs for corporations, institutions and subcultures; the entrepreneurial spirit of designer—produced goods; the renaissance in digital typeface design; the storytelling potential of film and television titling sequences; and the transformation of raw data into compelling information narratives.</p>
+    <p>Designers use color, typography, images, symbols and systems to make the surfaces around us come alive with meaning. The revolutions in desktop computing and networked communication have raised public awareness of graphic design. Today, the field continues to shift as new technologies and social movements change the way we make and consume media.</p> 
 
-<p>Graphic Design: Now in Production is co-organized by the Walker Art Center, Minneapolis, and the Smithsonian’s Cooper-Hewitt, National Design Museum, New York. The exhibition is co-curated by Andrew Blauvelt, Chief of Communications and Audience Engagement and Curator of Design, Walker Art Center, and Ellen Lupton, Senior Curator of Contemporary Design, Cooper-Hewitt, National Design Museum.</p>
+    <p>Graphic Design: Now in Production explores some of the most vibrant graphic design work produced since 2000, including magazines, newspapers, books and posters; the expansion of branding programs for corporations, institutions and subcultures; the entrepreneurial spirit of designer—produced goods; the renaissance in digital typeface design; the storytelling potential of film and television titling sequences; and the transformation of raw data into compelling information narratives.</p>
+
+    <p>Graphic Design: Now in Production is co-organized by the Walker Art Center, Minneapolis, and the Smithsonian’s Cooper-Hewitt, National Design Museum, New York. The exhibition is co-curated by Andrew Blauvelt, Chief of Communications and Audience Engagement and Curator of Design, Walker Art Center, and Ellen Lupton, Senior Curator of Contemporary Design, Cooper-Hewitt, National Design Museum.</p>
 
 
-<div class="rectangle"></div>
+    <div class="rectangle"></div>
 
 
 
