@@ -77,21 +77,22 @@ a:hover {
 }
 
 #mainnav ul li #selected {
-	color: #aaa;
+	color: #faaf17;
 }
 
 #section01 a,
 #section01 a:visited,
 #section01 a:focus {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	color: #ccc;
+	font-weight: 400;
+	color: #0e9ba7;
 }
 
 #section01 a:hover {
-	color: #999; 
+	color: #faaf17; 
 	text-decoration: none;
 }
+
 
 /* CLEARFIX
 =====================================*/
