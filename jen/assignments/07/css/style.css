@@ -1,0 +1,34 @@
+/* RESET
+===================================== */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* LOADING
+==================================== */
+body {
+	background-color: #CBE32D;
+}
+
+.container {
+	width: 100%;
+	margin: 20% auto;
+	text-align: center;
+}
+
+#random0 {
+	position: absolute;
+	top: 40%;
+	left: 48%;
+	display: block;
+}
+
+#random1,
+#random2,
+#random3 {
+	position: absolute;
+	top: 40%;
+	left: 48%;
+	display: none;
+}

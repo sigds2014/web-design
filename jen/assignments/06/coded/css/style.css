@@ -1,0 +1,313 @@
+/* CSS TABLE OF CONTENTS
+=====================================
+	#BASE CSS
+	#SITE-SPECIFIC CSS
+===================================== */ 
+
+/* BASE (Initital Setup)
+=====================================
+	#RESET
+	#HTML5
+	#BASE TYPOGRAPHY
+		#BODY
+		#HEADINGS
+		#PARAGRAPHS
+		#LINKS
+		#LISTS
+	#IMAGES
+	#CLEARFIX
+===================================== */
+
+/* #RESET
+================================================== */  
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* #HTML5
+================================================== */
+header, section, footer, aside, nav, article, figure {
+  display: block;
+}
+
+/* #BASE TYPOGRAPHY
+================================================== */
+
+/* BODY */
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 100%; /* 1em = 16px */
+	line-height: 1.5em; /* 16px x 1.5em = 24px */
+	color: #333;
+}
+
+/* #HEADINGS 
+
+	Based on a Traditional Typographic Scale
+	48, 36, 24, 21, 18, 16
+
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: .5em;
+}
+
+h1 {
+	font-size: 3em; /* 48px / 16px = 3em */
+	line-height: 1em; 
+}
+
+h2 {
+	font-size: 2.25em; /* 36px / 16px = 2.25em */
+	line-height: 1.1em;
+}
+
+h3 {
+	font-size: 1.5em; /* 24px / 16px = 1.5em */
+	line-height: 1.2em;
+}
+
+h4 {
+	font-size: 1.3125em; /* 21px / 16px = 1.3125em */
+	line-height: 1.3em;
+}
+
+h5 {
+	font-size: 1.125em; /* 18px / 16px = 1.125em */
+	line-height: 1.4em;
+}
+
+h6 {
+	font-size: 1em; /* 16px / 16px = 1em */
+	line-height: 1.5em;
+}
+
+/* #PARAGRAPHS 
+================================================== */
+p { 
+	margin-bottom: .5em; 
+}
+
+p+p {
+	text-indent: 0;
+	margin-top: -.5em;
+}
+
+/* #LINKS
+================================================== */
+	a { color: #39c; text-decoration: none; }
+	a:visited, a:hover, a:focus { color: #069; }
+
+
+/* #LISTS
+================================================== */
+
+ul, ol {
+	margin-bottom: .5em;
+}
+
+
+ul li ul, ul li ol, ol li ul, ol li ol {
+	margin: 0; 
+}
+
+
+li {
+	margin-left: 1.875em;
+}
+
+
+/* #IMAGES
+================================================== */
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto; 
+}
+
+a img {
+	border: none;
+}
+
+
+/* #CLEARFIX
+================================================== */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* SITE SPECIFIC (Custom CSS for The Client Site)
+=====================================
+	#SITE-SPECIFIC GENERAL STYLING
+	#SITE-SPECIFIC TYPOGRAPHY
+	#LAYOUT/GRID
+	#SECTIONS
+	#SUB PAGES
+	#MEDIA QUERIES
+	#@FONT-FACE
+===================================== */
+
+/* #SITE-SPECIFIC GENERAL STYLING
+===================================== */
+body {
+	background: #fff;
+}
+
+header {
+	background:  #0b0c00 url(../images/bg2.jpg) no-repeat center bottom;
+	background-size: 1400px auto;
+	height: 600px;
+}
+
+
+#mainnav {
+    position: fixed;
+	z-index: 10;
+	top: 0;
+	margin: 0 auto;
+	padding: 0;
+	background: #a6dd00;
+	width: 100%;
+	text-align: left;
+}
+
+#mainnav .container {
+	position: relative;
+}
+
+#mainnav ul {
+	margin:0;
+	padding: 0 0 0 170px;
+	line-height: 0;
+}
+
+#mainnav ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0;
+}
+
+#mainnav div#logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#mainnav div#logo a {
+	margin: 0;
+	padding: 0.4em 0;
+	background: url(../images/fflogo.png) no-repeat left center;
+	background-size: 150px auto;
+	display: block;
+	width: 150px;
+	height: 0;
+	overflow: hidden;
+	padding: 100px 0 0 0;
+}
+
+#mainnav ul li a {
+	color: #404038;
+	padding: 0.4em 1em; 
+	display: block;
+	float: left;
+	font-family: 'Bitter', serif;
+	font-weight: 700;
+	font-size: 0.8em;
+	line-height: 2em;
+	text-transform: uppercase;
+}
+
+#mainnav ul li .selected, 
+#mainnav ul li .selected a:hover {
+	background: #404038;
+	color: #ffffea;
+}
+
+#mainnav ul li a:hover {
+	background: #404038;
+	color: #ffffea;
+}
+
+#mainnav .utility {
+	text-align: right; 
+}
+
+#mainnav .utility ul li {
+	display: inline-block;
+}
+
+#mainnav .utility ul li a {
+	
+}
+
+.scale-with-grid {
+	margin-bottom: 0;
+}
+
+/* #SITE SPECIFIC TYPOGRAPHY
+===================================== */
+
+/* #LAYOUT/GRID
+===================================== */
+.container {
+  	width: 62.5em;
+	margin: 0 auto;
+	padding: 0 .625em;
+}
+
+
+/* #SECTIONS
+===================================== */
+
+
+
+/* #MEDIA QUERIES
+===================================== */
+
+/* Tablet (Between 768px - 992px)*/
+@media all and (min-width: 48em) and (max-width: 65em) {
+	
+	
+	body {
+		font-size: 93.75%;
+	}
+
+}
+
+/* MOBILE (Smaller than 768px)*/
+@media only screen and (max-width: 47.9999em) {
+	
+	body {
+		font-size: 87.5%; 
+	}
+	
+	.container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	
+}
+
+/* #@FONT-FACE
+===================================== */
+@font-face {
+    font-family: 'aleo-bold';
+    src: url('../fonts/aleobold/aleo-bold-webfont.eot');
+    src: url('../fonts/aleobold/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleobold/aleo-bold-webfont.woff') format('woff'),
+         url('../fonts/aleobold/aleo-bold-webfont.ttf') format('truetype'),
+         url('../fonts/aleobold/aleo-bold-webfont.svg#aleobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

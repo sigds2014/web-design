@@ -11,17 +11,25 @@ header {
 	margin-bottom: 3em;
 }
 
-h1, h2, h4, h5, h6 {
-	font-family: "aleobold";
-	font-weight: normal;
-	font-style: normal;
+h1, h2, h5, h6 {
+	font-family: "Bitter" serif;
+	font-weight: 700;
 	margin-bottom: .25em;
+}
+
+h4 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	text-transform: uppercase;	
+	margin: 0 0 1em 0;
 }
 
 h3 {
 	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
 	font-size: 1em;
-	color: #999;
+	color: #ccc;
 	margin: 0 0 0 1em;
 }
 
@@ -59,23 +67,30 @@ a:hover,
 a:focus {
 	color: #000;
 	text-decoration: none;
-	font-family: 'aleobold';
+	font-family: 'Bitter';
 	font-size: 1em;
 }
 
 a:hover {
-	color: #ccc; 
+	color: #0e9ba7; 
 	text-decoration: none;
 }
 
 #mainnav ul li #selected {
-	color: #aaa;
+	color: #faaf17;
 }
 
-#section01 {
-
+#section01 a,
+#section01 a:visited,
+#section01 a:focus {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #0e9ba7;
 }
-.assignments {
+
+#section01 a:hover {
+	color: #faaf17; 
+	text-decoration: none;
 }
 
 /* CLEARFIX
@@ -84,19 +99,4 @@ a:hover {
   content: "";
   display: table;
   clear: both;
-}
-
-
-/* @FONT-FACE
-===================================== */
-@font-face {
-    font-family: 'aleobold';
-    src: url('../fonts/aleobold/aleo-bold-webfont.eot');
-    src: url('../fonts/aleobold/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/aleobold/aleo-bold-webfont.woff') format('woff'),
-         url('../fonts/aleobold/aleo-bold-webfont.ttf') format('truetype'),
-         url('../fonts/aleobold/aleo-bold-webfont.svg#aleobold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
 }

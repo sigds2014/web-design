@@ -1,0 +1,61 @@
+body {
+	
+	background-color:teal;
+}
+
+#one {
+	font-family: "Andale Mono", AndaleMono, monospace;
+	font-size:12px;
+	width:200px;
+	height:200px;
+	position: absolute;
+	top:50px;
+	left:50px;
+	background-color:white;
+	padding:10px;
+}
+
+#two {
+	width:200px;
+	height:200px;
+	position: absolute;
+	top:100px;
+	right:100px;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid white;
+	z-index:100;
+}
+
+#three {
+	width:200px;
+	height:200px;
+	position: absolute;
+	top:120px;
+	right:120px;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid gray;
+	z-index:200;
+}
+
+#four {
+	width:200px;
+	height:200px;
+	position: absolute;
+	top:200px;
+	right:400px;
+	border: 2px solid gray;
+	background-color:rgba(255,255,255,0.5);
+	border-radius:200px;
+	z-index:1;
+}
+
+#five {
+	width:600px;
+	height:100px;
+	position: absolute;
+	top:500px;
+	left:450px;
+	border: 2px dashed gray;
+	background-color:rgb(255,255,255);
+
+}

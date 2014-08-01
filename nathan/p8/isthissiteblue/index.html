@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Is This Site Blue?</title>
+        <meta name="author" content="Nate Moore">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/png" href="http://static.tumblr.com/dgwh4n8/Kv3n9i24t/favicon.png"/>
+    
+        <!--FACEBOOK SHARING INFO-->    
+        <meta property="og:title" content="Is This Site Blue?" /> 
+        <meta property="og:description" content="What a mystery! Click to find out if this site is blue!" />
+        <meta property="og:image" content="http://static.tumblr.com/dgwh4n8/ACyn9i4hk/facebook_share.png" />  
+        
+        <style>
+            h1, h2{
+                font-family: "Open Sans", Helvetica, Arial,  sans-serif;
+                font-size: 100pt;
+                color: white;
+                margin-bottom: 0;
+            }
+
+            h2{
+                font-size: 30pt;
+                line-height: 0px;
+                font-weight: 300;
+            }
+
+            #wrapper{
+                width:100%;
+                text-align: center;
+            }
+            
+            #kern{
+                letter-spacing: -0.1em;
+            }
+        </style>
+
+    </head>
+    <body>
+          <div id="wrapper">
+            <h1>Oops...</h1>
+            <h2>Something broke.</h2>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            var colors = ["#FFE053", "#FDFF4F", "#FFD34A", "#FFD10F", "#DEE6EC", "#DAEAE5", "#DDD7D3", "#191919", "#2D2D2D", "#110F0F", "#FF2A45", "#83BA4F", "#FF8C19", "#8B66D1", "#168039", "#45BF55", "#DA1B1D", "#EE203D", "#DA1D2C", "#FF7A3C", "#FF6633", "#F26101", "#401469", "#5811A8", "#6F00FF"];
+            var rand = Math.floor(Math.random()*colors.length);      
+             $('body').css("background-color", colors[rand]);
+             // If yellow or white, set h1 and h2 color to black
+             if (rand == 0 || rand == 1 || rand == 2 || rand == 3 || rand == 4 || rand == 5 || rand == 6){
+                $('h1').html("No.");
+                $("h1,h2").css("color", "#191F2B")
+            } else {
+                $('h1').html("No.");
+            } 
+            // Display hex color info
+             $('h2').html("This is " + colors[rand]);
+
+
+            //Randomize the Blue
+            var blue = ["#0068C4", "#2998FF", "#4E7AC7", "#7FB2F0", "#3E8ADD", "#1B75BB", "#27A9E1", "#00ADEF", "#24BEED"];
+            var randBlue = Math.floor(Math.random()*blue.length);     
+
+            // Randomize Delay Time
+            var maxTime = 11000
+            var minTime = 6000
+            var randTime = Math.floor(Math.random()*(maxTime-minTime+1)+minTime); 
+             //Delay, then turn blue
+                 setTimeout(function(){
+                    $('body').css("background-color", blue[randBlue]);
+                    $('h1').html("<span id='kern'>Y</span>es.").css("color", "#FFF");
+                    $('h2').html("This is " + blue[randBlue]).css("color", "#FFF");
+                }, randTime);
+
+            console.log("Delay Time: " + randTime);
+            console.log("rand value: " + rand)
+            console.log("Initial Color: " + colors[rand]);
+            console.log("Shade of Blue: " + blue[randBlue]);
+            });
+        </script>
+    </body>
+</html>

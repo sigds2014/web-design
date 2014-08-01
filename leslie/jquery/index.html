@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Single Serve</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div id="wrapper" class="column full">
+                <div id="innards">
+                    <h1>When and how will I die?</h1>
+                    
+                    <h2>You will die in</h2>
+                    <div class="counters">
+                        <div id="0" data-countdown="2035/03/14"></div>
+                        <div id="1" data-countdown="2017/12/01"></div>
+                        <div id="2" data-countdown="2018/08/07"></div>
+                        <div id="3" data-countdown="2064/01/15"></div>
+                        <div id="4" data-countdown="2079/07/01"></div>
+                        <div id="5" data-countdown="2046/01/06"></div>
+                        <div id="6" data-countdown="2014/08/08"></div>
+                        <div id="7" data-countdown="2093/01/05"></div>
+                    </div>
+                    
+                    <div class="death">
+                	
+                	</div>
+                    
+                    
+                </div>
+                
+                
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/jquery.countdown.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('[data-countdown]').each(function() {
+                        var $this = $(this), finalDate = $(this).data('countdown');
+                        $this.countdown(finalDate, function(event) {
+                        $this.html(event.strftime(
+                        //'%Y years %w weeks %H hours %M minutes %S seconds'));
+                        ''
+							+ '<span>%w</span> weeks '
+							+ '<span>%d</span> days '
+							+ '<span>%H</span> hr '
+							+ '<span>%M</span> min '
+							+ '<span>%S</span> sec'));
+                    });
+                });
+				
+				
+                var max = 7; 
+                var min = 0;
+                var random = Math.floor(Math.random()*(max-min+1)+min);
+                console.log(random);
+                
+               
+
+                if(random == 0){
+                    $("#0").css("display", "block");
+                    $("#1").css("display", "none");
+                    $("#2").css("display", "none");
+                    $("#3").css("display", "none");
+                    $("#4").css("display", "none");
+                    $("#5").css("display", "none");
+                    $("#6").css("display", "none");
+                    $("#7").css("display", "none");
+                }
+
+                else if (random == 1){
+
+                    $("#1").css("display", "block");
+                    $("#0").css("display", "none");
+                    $("#2").css("display", "none");
+                    $("#3").css("display", "none");
+                    $("#4").css("display", "none");
+                    $("#5").css("display", "none");
+                    $("#6").css("display", "none");
+                    $("#7").css("display", "none");
+                }
+
+                else if (random == 2){
+
+                    $("#2").css("display", "block");
+                    $("#0").css("display", "none");
+                    $("#1").css("display", "none");
+                    $("#3").css("display", "none");
+                    $("#4").css("display", "none");
+                    $("#5").css("display", "none");
+                    $("#6").css("display", "none");
+                    $("#7").css("display", "none");
+                }
+
+                else if (random == 3){
+
+                    $("#3").css("display", "block");
+                    $("#0").css("display", "none");
+                    $("#2").css("display", "none");
+                    $("#1").css("display", "none");
+                    $("#4").css("display", "none");
+                    $("#5").css("display", "none");
+                    $("#6").css("display", "none");
+                    $("#7").css("display", "none");
+                }
+
+                else if (random == 4){
+
+                    $("#4").css("display", "block");
+                    $("#0").css("display", "none");
+                    $("#2").css("display", "none");
+                    $("#3").css("display", "none");
+                    $("#1").css("display", "none");
+                    $("#5").css("display", "none");
+                    $("#6").css("display", "none");
+                    $("#7").css("display", "none");
+                }
+
+                else if (random == 5){
+
+                    $("#5").css("display", "block");
+                    $("#0").css("display", "none");
+                    $("#2").css("display", "none");
+                    $("#3").css("display", "none");
+                    $("#1").css("display", "none");
+                    $("#4").css("display", "none");
+                    $("#6").css("display", "none");
+                    $("#7").css("display", "none");
+                }
+
+                else if (random == 6){
+
+                    $("#6").css("display", "block");
+                    $("#0").css("display", "none");
+                    $("#2").css("display", "none");
+                    $("#3").css("display", "none");
+                    $("#1").css("display", "none");
+                    $("#5").css("display", "none");
+                    $("#4").css("display", "none");
+                    $("#7").css("display", "none");
+                }
+
+                else if (random == 7){
+
+                    $("#7").css("display", "block");
+                    $("#0").css("display", "none");
+                    $("#2").css("display", "none");
+                    $("#3").css("display", "none");
+                    $("#1").css("display", "none");
+                    $("#5").css("display", "none");
+                    $("#6").css("display", "none");
+                    $("#4").css("display", "none");
+                }
+
+
+	var deaths = new Array(
+	 "basil poisoning", 
+	 "a guy with a chainsaw hand",
+	 "nuclear warfare", 
+	 "running with scissors", 
+	 "shark attack wounds", 
+	 "a gunfight with the pope", 
+	 "landmine hopscotch", 
+	 "choking on the world's biggest ham sandwich",
+	 "zombie Bruce Lee's kick to the head", 
+	 "bungee jumping", 
+	 "lightning strike", 
+	 "hoarding",
+	 "flesh eating bacteria", 
+	 "falling into a volcano", 
+	 "being eaten by cannibals")
+    random = deaths[Math.floor( Math.random() * deaths.length )];
+    $('.death').html("<h2> by " + random + ".</h2>");
+ 
+ 
+            });    
+        </script>
+    </body>
+</html>

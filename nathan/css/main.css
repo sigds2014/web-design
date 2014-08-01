@@ -7,7 +7,7 @@ body{
 h1{
 	font-weight: 700;
 	font-size: 100pt;
-	margin-bottom: 0;
+	margin: 0;
 	text-transform: uppercase;
 }
 
@@ -32,16 +32,47 @@ h6{
 	color: #232323;
 }
 
+a{
+	font-size: 20pt;
+	font-weight: 300;
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover{
+	opacity: 0.6;
+}
+
 header{
 	width:800px;
 	margin: 150px auto 0 auto;
 	text-align: center;
 }
 
-#home-button{
-	margin: 0;
+nav{
+	width: 400px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+}
+
+nav li{
+	width: 133px;
 	float: left;
 }
+
+nav a{
+	font-size: 12pt;
+	font-weight: 300;
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
 
 .center{ 
 	position: relative;
@@ -50,7 +81,7 @@ header{
 	height: 50px;
 }
 
-#rule1{
+#rule1, #rule2{
 	border-bottom: 3px solid #DEE6EC;
 	width: 77px;
 	height: 1px;
@@ -59,13 +90,51 @@ header{
 	float: left;
 }
 
-#rule2{
+#rule3, #rule4{
 	border-bottom: 3px solid #DEE6EC;
-	width: 77px;
+	width: 100px;
 	height: 1px;
-	margin: 32px 0px 0 10px;
+	margin: 32px 10px 0 0px;
 	display: inline;
 	float: left;
+}
+
+#rule5, #rule6{
+	border-bottom: 3px solid #DEE6EC;
+	width: 80px;
+	height: 1px;
+	margin: 32px 10px 0 0px;
+	display: inline;
+	float: left;
+}
+
+#rule7, #rule8{
+	border-bottom: 3px solid #DEE6EC;
+	width: 40px;
+	height: 1px;
+	margin: 32px 10px 0 0px;
+	display: inline;
+	float: left;
+}
+
+#rule2, #rule4, #rule6, #rule8{
+	margin: 32px 0px 0 10px;
+}
+
+/*UL for Links Pages*/
+
+.links{
+	width: 350px;
+	margin: 100px auto 0 auto;
+}
+
+.links ul{
+	list-style: none;
+	padding: 0;
+}
+
+.links li{
+	margin-bottom: 15px;
 }
 
 
@@ -113,7 +182,7 @@ header{
 }
 
 .grid figcaption h3 {
-	margin: 100px 0 5px 0;
+	margin: 110px 0 5px 0;
 	padding: 0;
 	font-size: 12pt;
 }
@@ -123,25 +192,25 @@ header{
 }
 
 /* Caption Style */
-.recent-work figure {
+.ul-projects figure {
 	overflow: hidden;
 }
 
-.recent-work figure img {
+.ul-projects figure img {
 	-webkit-transition: -webkit-transform 0.6s;
 	-moz-transition: -moz-transform 0.6s;
 	transition: transform 0.6s;
 }
 
-.no-touch .recent-work figure:hover img,
-.recent-work figure.cs-hover img {
+.no-touch .ul-projects figure:hover img,
+.ul-projects figure.cs-hover img {
 	-webkit-transform: translateY(-250px);
 	-moz-transform: translateY(-250px);
 	-ms-transform: translateY(-250px);
 	transform: translateY(-250px);
 }
 
-.recent-work figcaption {
+.ul-projects figcaption {
 	height: 100%;
 	width: 100%;
 	top: auto;
@@ -151,23 +220,19 @@ header{
 	-moz-transform: translateY(100%);
 	-ms-transform: translateY(100%);
 	transform: translateY(100%);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
-	transition: transform 0.4s, opacity 0.1s 0.3s;
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.3s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.3s 0.3s;
+	transition: transform 0.4s, opacity 0.3s 0.3s;
 }
 
-.no-touch .recent-work figure:hover figcaption,
-.recent-work figure.cs-hover figcaption {
+.no-touch .ul-projects figure:hover figcaption,
+.ul-projects figure.cs-hover figcaption {
 	opacity: 1;
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
 	-ms-transform: translateY(0px);
 	transform: translateY(0px);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
-	transition: transform 0.4s, opacity 0.1s;
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.3s;
+	transition: transform 0.4s, opacity 0.3s;
 }
-
-
-
-

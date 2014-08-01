@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+    var max = 6
+    var min = 0
+    var rand = Math.floor(Math.random()*(max-min+1)+min);      
+    if(rand == 0){
+        $('#random0').css("display", "block");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+    } else if(rand == 1){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "block");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+    } else if(rand == 2){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "block");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+    } else if(rand == 3){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "block");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+    } else if(rand == 4){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "block");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "none");
+    }else if(rand == 5){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "block");
+        $('#random6').css("display", "none");
+    }else if(rand == 6){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+        $('#random4').css("display", "none");
+        $('#random5').css("display", "none");
+        $('#random6').css("display", "block");
+
+    }
+    });
+</script>
+<style type="text/css"> 
+img {
+    height:100%;
+    width:100%;
+    margin-left:-8px;
+    margin-right:-8px;
+    margin-bottom:-8px;
+    margin-top:-8px;
+    
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<div id="random0"><img src="img/img1.jpg"></div>
+<div id="random1"><img src="img/img2.jpg"></div>
+<div id="random2"><img src="img/img3.jpg"></div>
+<div id="random3"><img src="img/img4.jpg"></div>
+<div id="random4"><img src="img/img5.jpg"></div>
+<div id="random5"><img src="img/img6.jpg"></div>
+<div id="random6"><img src="img/img7.jpg"></div>
+
+
+</body>
+
+    </html>
