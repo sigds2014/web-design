@@ -11,7 +11,7 @@
         <!-- jQuery library (served from Google) -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <!-- bxSlider Javascript file -->
-        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.bxslider.js"></script>
         <!-- bxSlider CSS file -->
         <link href="css/jquery.bxslider.css" rel="stylesheet" /> 
 
@@ -21,6 +21,14 @@
                   infiniteLoop: false,
                   hideControlOnEnd: true,
                   pager: false,
+
+                   onSlideNext: function(){
+                    $("#bg-color").css('background-color', "#EE3449")
+                  },
+
+                     onSlidePrev: function(){
+                    $("#bg-color").css('background-color', "#3E8ADD")
+                  },
                 });
             });
         </script>
@@ -28,6 +36,7 @@
     </head>
     
     <body>
+    <div id="bg-color">
         <header>
             <nav> 
                 <ul>
@@ -45,7 +54,7 @@
         </header>
 
         <ul class="bxslider">
-          <li> <!-- START Page 1 -->
+          <li> <!-- Page 1 -->
             <div class="projects">
             <ul class="grid ul-projects">
             <li>
@@ -163,7 +172,7 @@
                 <li>
                     <a href="p14/index.html"> 
                         <figure>
-                            <img src="img/dair.png" width="250px" height="250px">
+                            <img src="img/flags.png" width="250px" height="250px">
                             <figcaption>
                                 <h3>Project 14</h3>
                                 <h6>Scandanavian Flags</h6>
@@ -174,9 +183,8 @@
             </ul>
         </li>  <!-- END Page 2 -->
         </ul>
-
-
-
+    </div>
     </body>
+
     
 </html>

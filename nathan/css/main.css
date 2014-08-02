@@ -1,7 +1,14 @@
 body{
-	background-color: #3E8ADD;
 	color: #DEE6EC;
 	font-family: "Lato", Helvetica, Arial,  sans-serif;
+}
+#bg-color{
+	background-color: #3E8ADD;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 
 h1{
