@@ -8,6 +8,23 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
         <script src="js/modernizr.custom.js"></script>
 
+        <!-- jQuery library (served from Google) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!-- bxSlider Javascript file -->
+        <script src="js/jquery.bxslider.min.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" /> 
+
+        <script type="text/Javascript">
+            $(document).ready(function(){
+              $('.bxslider').bxSlider({
+                  infiniteLoop: false,
+                  hideControlOnEnd: true,
+                  pager: false,
+                });
+            });
+        </script>
+
     </head>
     
     <body>
@@ -27,7 +44,9 @@
                     </div>
         </header>
 
-        <div class="projects">
+        <ul class="bxslider">
+          <li> <!-- Page 1 -->
+            <div class="projects">
             <ul class="grid ul-projects">
             <li>
                 <a href="p1/index.html"> 
@@ -135,10 +154,28 @@
                     </figure>
                 </a>
                 </li>
-
             </ul>
         </div>          
-        </div>
+          </li> <!-- END Page 1 -->
+          <li>  <!-- Page 2 -->
+            <div class="projects">
+            <ul class="grid ul-projects">
+                <li>
+                    <a href="p1/index.html"> 
+                        <figure>
+                            <img src="img/dair.png" width="250px" height="250px">
+                            <figcaption>
+                                <h3>Project 1</h3>
+                                <h6>Charles Dair Text</h6>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </li>  <!-- END Page 2 -->
+        </ul>
+
+
 
     </body>
     
