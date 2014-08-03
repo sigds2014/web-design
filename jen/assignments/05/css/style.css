@@ -110,7 +110,9 @@ a:hover {
 	display: none;
 }
 
-
+.image:hover{
+	cursor: pointer;
+}
 
 /* CLEARFIX
 =====================================*/
