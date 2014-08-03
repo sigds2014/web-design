@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jen Zheng | Site Mapping</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:300,500' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
+
+        <!-- JQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    </head>
+    
+    <body> 
+    <div class="container group">   
+        <header>
+            <nav id="mainnav" class="group">
+                <div id="logotype">
+                    <h2>sigds web design</h2><h6>a highly condensed intro to web course</h6>
+                </div>
+                <ul>
+                    <li><a href="../../index.html" id="selected">home</a></li>
+                    <li><a href="http://sigds2014.jereljohnson.com/">course</a></li>
+                    <li><a href="http://sigds2014.github.io/web-design/">roster</a></li>
+                    <li><a href="https://github.com/">github</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <div id="section01">
+
+            <h4>12 Sitemapping</h4>&nbsp;
+            <h5><a href="http://us.frankbody.com">us.frankbody.com</a></h5>
+            <img class="image default" src="site.jpg" alt="Frank Homepage">
+            <img class="image toggle" src="sitemap.jpg" alt="Frank Sitemap">
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            console.log( "ready!")
+
+        $('.image').click(function () {
+            $(this).hide();
+            var next = $(this).next();
+            console.log(next.length);
+            if (next.length == 0)
+                next = $(this).parent().find('.image').first();
+                    next.show();
+                });
+            });
+    </script>
+
+
+    </body>
+    
+</html>

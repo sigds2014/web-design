@@ -11,7 +11,7 @@ header {
 	margin-bottom: 3em;
 }
 
-h1, h2, h5, h6 {
+h1, h2, h6 {
 	font-family: "Bitter" serif;
 	font-weight: 700;
 	margin-bottom: .25em;
@@ -22,15 +22,24 @@ h4 {
 	font-weight: 300;
 	font-size: 1.5em;
 	text-transform: uppercase;	
-	margin: 0 0 1em 0;
+	margin: 0 0 0 0;
+	display: inline-block;;
 }
 
 h3 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	font-size: 1em;
-	color: #ccc;
+	color: #999;
 	margin: 0 0 0 1em;
+}
+
+h5 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: .9em;
+	color: #999;
+	display: inline-block;
 }
 
 #logotype {
@@ -72,7 +81,7 @@ a:focus {
 }
 
 a:hover {
-	color: #0e9ba7; 
+	color: #ccc; 
 	text-decoration: none;
 }
 
@@ -94,11 +103,22 @@ a:hover {
 }
 
 
-/*012SITE MAPPING PAGE
-=========================================*/
-.sitemap img {
+#section01 {
+	margin: 0 auto 3em 0;
+}
+
+.image {
 	width: 100%;
 }
+
+.default {
+	display: block;
+}
+
+.toggle {
+	display: none;
+}
+
 
 
 /* CLEARFIX
