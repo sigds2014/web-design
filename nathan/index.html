@@ -16,19 +16,23 @@
         <link href="css/jquery.bxslider.css" rel="stylesheet" /> 
 
         <script type="text/Javascript">
-            $(document).ready(function(){
-              $('.bxslider').bxSlider({
+            $(document).ready(function(){   
+              var current = 0;
+              var colors = ["#3E8ADD", "#8067AD"]
+              var slider = $('.bxslider').bxSlider({
                   infiniteLoop: false,
                   hideControlOnEnd: true,
                   pager: false,
 
-                   onSlideNext: function(){
-                    $("#bg-color").css('background-color', "#EE3449")
-                  },
+                onSlideNext: function(currentSlideNumber){
+                    current = slider.getCurrentSlide();
+                    $("#bg-color").css('background-color', colors[current])
+                },
 
-                     onSlidePrev: function(){
-                    $("#bg-color").css('background-color', "#3E8ADD")
-                  },
+                onSlidePrev: function(currentSlideNumber){
+                    current = slider.getCurrentSlide();
+                    $("#bg-color").css('background-color', colors[current])
+                },
                 });
             });
         </script>
@@ -166,6 +170,7 @@
             </ul>
         </div>          
           </li> <!-- END Page 1 -->
+          
           <li>  <!-- START Page 2 -->
             <div class="projects">
             <ul class="grid ul-projects">
@@ -182,6 +187,7 @@
                 </li>
             </ul>
         </li>  <!-- END Page 2 -->
+
         </ul>
     </div>
     </body>
