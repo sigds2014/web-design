@@ -125,7 +125,16 @@ nav a{
 	float: left;
 }
 
-#rule2, #rule4, #rule6, #rule8{
+#rule9, #rule10{
+	border-bottom: 3px solid #DEE6EC;
+	width: 15px;
+	height: 1px;
+	margin: 32px 10px 0 0px;
+	display: inline;
+	float: left;
+}
+
+#rule2, #rule4, #rule6, #rule8, #rule10{
 	margin: 32px 0px 0 10px;
 }
 /*UL for Links Pages*/
