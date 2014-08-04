@@ -1,0 +1,40 @@
+div{height: 100px;width: 100px}
+
+div.white{
+	background-color: white;
+}
+
+div.red{
+	background-color: red;
+}
+
+p.white{
+	height:100px;
+	width:100px;
+	background-color: white;
+}
+
+p.red{
+	height:100px;
+	width:100px;
+	background-color: red;
+}
+
+div.container{
+	width:800px;
+	height:800px;
+	/* border:1px dotted #333; */
+}
+
+
+
+
+.float-left,div{
+	float:left;
+	margin:0px 0px;
+}
+
+.float-right{
+	float:right;
+	margin:0px 0px;
+}

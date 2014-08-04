@@ -1,0 +1,164 @@
+Skip to content
+ 
+This repository 
+Explore
+Gist
+Blog
+Help
+ruofaniris ruofaniris
+ 
+ 
+37  Watch 
+  Star 572
+ Fork 52maman/JVFloat.js
+ branch: master   JVFloat.js / jvfloat.css
+Jackobyte Jackobyte on 15 May Update jvfloat.css
+3 contributors  Achmad Mahardi  Gabriel Cebrian  Jackobyte
+74 lines (67 sloc)  1.631 kb RawBlameHistory   
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+/*
+ * Default jvFloat theme.
+ * modify it as you wish!
+ */
+
+.jvFloat {
+	position: relative;
+	display: inline;
+	margin-top: 1em;
+}
+
+.jvFloat .placeHolder.required {
+	color: red;
+}
+
+/* Start CSS3 Animations on supported browser */
+.jvFloat .placeHolder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	color: #0c61fc;
+	font-size: .8em;
+	font-weight: bold;
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	-webkit-transition: -webkit-transform 150ms, opacity 100ms, visibility 100ms;
+	transition: transform 150ms, opacity 100ms, visibility 100ms;
+	opacity: 0;
+	visibility: hidden;
+}
+
+/*Allows textarea floating placeholder to be positioned distinctly from the normal .placeHolder class
+ * This is required when working with Multiline text areas
+ */
+.jvFloat .placeHolder.textarea {
+	/*top: 0px;*/
+}
+
+.jvFloat .placeHolder.active {
+	display: block;
+	visibility: visible;
+	-webkit-transform: translate(0, -1em);
+	-moz-transform: translate(0, -1em);
+	-o-transform: translate(0, -1em);
+	-ms-transform: translate(0, -1em);
+	transform: translate(0, -1em);
+	-webkit-transition: -webkit-transform 100ms, opacity 120ms, visibility 120ms;
+	transition: transform 100ms, opacity 120ms, visibility 120ms;
+	opacity: 1;
+}
+/* End CSS3 */
+
+/* Legacy browser */
+/*.jvFloat .placeHolder {
+	position: absolute;
+	top: -1em;
+	left: 0;
+	color: #0c61fc;
+	font-size: .85em;
+	font-weight: bold;
+	opacity: 0;
+	visibility: hidden;
+}
+.jvFloat .placeHolder.active {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}*/
+/* End Legacy */
+Status API Training Shop Blog About © 2014 GitHub, Inc. Terms Privacy Security Contact 

@@ -1,0 +1,121 @@
+div.container{
+	height: 400px;
+	width:1500px;
+}
+
+.block{
+	width:50px;
+	height:250px;
+	margin: 10px;
+	background-color: red;
+	/* border:1px dotted #333; */
+}
+
+.float-left{
+	float: left;
+}
+
+.space0{
+	position: relative;
+	top:100px;
+}
+
+.space1{
+	position: relative;
+	top:20px;
+}
+
+.space2{
+	position: relative;
+	top:-10px;
+}
+
+.space3{
+	position: relative;
+	top:50px;
+}
+
+.space4{
+	position: relative;
+	top:80px;
+}
+
+.space5{
+	position: relative;
+	top:60px;
+}
+
+.space6{
+	position: relative;
+	top:5px;
+}
+
+.space7{
+	position: relative;
+	top:40px;
+}
+
+.space8{
+	position: relative;
+	top:100px;
+}
+
+.space9{
+	position: relative;
+	top:140px;
+}
+
+.space10{
+	position: relative;
+	top:150px;
+}
+
+.space11{
+	position: relative;
+	top:120px;
+}
+
+.space12{
+	position: relative;
+	top:-110px;
+}
+
+.space13{
+	position: relative;
+	top:70px;
+}
+
+.space14{
+	position: relative;
+	top:20px;
+}
+
+.space15{
+	position: relative;
+	top:60px;
+}
+
+.space16{
+	position: relative;
+	top:175px;
+}
+
+.space17{
+	position: relative;
+	top:40px;
+}
+
+.space18{
+	position: relative;
+	top:100px;
+}
+
+.space19{
+	position: relative;
+	top:60px;
+}
+
+.space20{
+	position: relative;
+	top:150px;
+}

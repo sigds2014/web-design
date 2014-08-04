@@ -1,0 +1,51 @@
+header {
+	height:80px; 
+	width:650px;
+	background-color:red;
+	margin:5px;}
+
+div.seperateblock{
+	height:40px; 
+	width:650px;
+	background-color:white;
+	margin:5px;
+}
+
+div.maincolumn{
+	height: 300px;
+	width: 550px;
+	background-color: red;
+	margin: 5px;
+}
+
+div.bottomcolumn{
+	height: 30px;
+	width: 550px;
+	background-color: red;
+	margin: 5px;
+}
+
+div.rightcolumn{
+	height: 150px;
+	width: 80px;
+	background-color: red;
+	margin: 5px;
+}
+
+div.container{
+	width:680px;
+	height:820px;
+	/*	margin: 0 auto;*/
+	/* border:1px dotted #333; */
+}
+
+
+.float-left{
+	float:left;
+	margin:0px 0px;
+}
+
+.float-right{
+	float:right;
+	margin:0px 0px;
+}

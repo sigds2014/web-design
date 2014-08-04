@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+
+	<title>Lightbox - iris</title>
+
+	<meta name="description" lang="en" content="Lightbox 2 is a script used to overlay images on the current page. It's a snap to setup and works on all modern browsers."/>
+	<meta name="author" content="Lokesh Dhakar">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- <script src="js/modernizr.custom.js"></script> -->
+
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/lightbox-2.6.min.js"></script>
+
+	<link rel="stylesheet" href="../font-awesome-4.1.0/css/font-awesome.min.css">
+
+	<link rel="icon" href="img/irislogo.png" type="image/x-icon" >
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/irislogo.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/irislogo.png">
+        <link rel="apple-touch-icon-precomposed" href="img/irislogo.png">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Karla:400,700">
+	<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/screen.css" media="screen"/>
+	<link rel="stylesheet" href="css/lightbox.css" media="screen"/>
+
+	<style>
+		h1{
+			font-size: 50px;
+			font-family: "Pacifico";
+			text-align: center;
+			color: #bb7175;/*ff9999 #*/
+			text-shadow: 1px 1px 5px #dea9a3;
+
+		}
+
+		.aligncenter{
+
+			margin: 0 auto;
+		}
+
+		h2{
+			font-size: 30px;
+			font-family: "Pinyon Script";
+		}
+
+		.home{
+                height: 30px;
+                width: 30px;
+                padding: 5px;
+                color: white;
+                -webkit-border-radius: 5px 5px 5px 5px;
+                border-radius: 5px 5px 5px 5px;
+                color: white;
+            }
+
+        #home{
+                color: white;
+            }
+
+		.containersplit{
+			width: 1106px;
+			height:1600px;
+			/*background-color: blue;*/
+			margin: 0 auto;
+		}
+
+		.zuoshang{
+			height: 188px;
+			width: 688px;
+			overflow: hidden;
+			float: left;
+			margin: 30px;
+			
+		}
+
+		.zuoxia{
+			height: 408px;
+			width: 328px;
+			position: relative;
+			top: 248px;
+			left: -718px;
+			margin: 30px;
+			overflow: hidden;
+
+		}
+
+		.zhong{
+			height: 188px;
+			width: 328px;
+			position: relative;
+			top: -190px;
+			left: 358px;
+			margin: 30px;
+			overflow: hidden;
+		}
+
+		.youshang{
+			height: 408px;
+			width: 328px;
+			position: relative;
+			top: -626px;
+			left: 716px;
+			margin: 30px;
+			overflow: hidden;
+
+		}
+
+		.youxia{
+			height: 188px;
+			width: 688px;
+			position: relative;
+			top: -628px;
+			left: 358px;
+			margin: 30px;
+			overflow: hidden;
+		}
+
+		.heng{
+			width: 680px;
+			height: 180px;
+		}
+
+		.shu{
+			width: 320px;
+			height: 398px;
+		}
+
+		.center{
+			width: 320px;
+			height: 180px;
+		}
+
+		a{
+			color: white;
+		}
+
+		.color0{
+			background-color: #bb7175;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="home" class="home color0">
+            <a href="../index.html"><i class="fa fa-home fa-2x"></i></a>
+    </div>
+
+	<h1 class="aligncenter">Cherry Blossom</h1>
+
+	
+
+
+
+	<!-- <a class="example-image-link" href="img/sky1.jpg" data-lightbox="example-set" title="Click on the right side of the image to move forward."><img class="example-image" src="img/demopage/thumb-3.jpg" alt="Plants: image 1 0f 4 thumb" width="150" height="150"></a> -->
+
+	<div class="containersplit">
+
+	<div class="zuoshang"><a class="example-image-link" href="img/zuoshang.png" data-lightbox="roadtrip" title="1"><img class="example-image heng" src="img/zuoshang.png" ></a></div>
+
+	<div class="zuoxia"><a class="example-image-link" href="img/zuoxia.png" data-lightbox="roadtrip" title="2"><img class="example-image shu" src="img/zuoxia.png" ></a></div>
+
+	<div class="zhong"><a class="example-image-link" href="img/center.png" data-lightbox="roadtrip" title="3"><img class="example-image center" src="img/center.png"></a></div>
+
+	<div class="youshang"><a class="example-image-link" href="img/youshang.png" data-lightbox="roadtrip" title="4"><img class="example-image shu" src="img/youshang.png" ></a></div>
+
+	<div class="youxia"><a class="example-image-link" href="img/youxia.png" data-lightbox="roadtrip" title="5"><img class="example-image heng" src="img/youxia.png" ></a></div>
+	
+	</div>
+
+</body>
+</html>

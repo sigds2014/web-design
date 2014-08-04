@@ -1,0 +1,52 @@
+div{height: 100px;width: 100px}
+
+div.center{
+	height:150px;
+	width:150px;
+	background-color: red;
+	margin: 1px;
+}
+
+div.upanddown{
+	height:50px;
+	width:302px;
+	background-color: red;
+	margin: 1px;
+}
+
+div.leftandright{
+	height:202px;
+	width:30px;
+	background-color: red;
+	margin: 1px;
+}
+
+div.container{
+	width:368px;
+	height:400px;
+	/* border:1px dotted #333; */
+}
+
+div.container1{
+	width:336px;
+	height:400px;
+	/* border:1px dotted #333; */
+	margin:0;
+}
+
+div.container2{
+	width:32px;
+	height:400px;
+	/* border:1px dotted #333; */
+	margin:0;
+}
+
+.float-left,div{
+	float:left;
+	margin:0px 0px;
+}
+
+.float-right{
+	float:right;
+	margin:0px 0px;
+}

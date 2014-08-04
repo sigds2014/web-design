@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>-Web Poster-</title>
+		<meta name="viewport" content="width=device-width">
+
+		<!-- fonts from http://www.google.com/fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+
+		<style>
+			
+			.container{
+				width: 1600px;
+				height: 1200px;
+			}
+
+			.containerleft{
+				width: 360px;
+				height: 1300px;
+			}
+			
+
+			/*.image01:hover{
+
+				-moz-transform: scale(2) rotate(30000deg) ;
+				-webkit-transform: scale(2) rotate(30000deg) ;
+		        -o-transform: scale(2) rotate(30000deg) ;
+		        -ms-transform: scale(2) rotate(30000deg) ;
+		        transform: scale(2) rotate(30000deg) ;
+
+				-webkit-transition: all 50s ease-in;
+				-moz-transition: all 50s ease-in;
+				-ms-transition: all 50s ease-in;
+				-o-transition: all 50s ease-in;
+				transition: all 50s ease-in;
+
+			}*/
+
+			.outline:hover{
+
+				-moz-transform: scale(2) rotate(100000deg) ;
+				-webkit-transform: scale(2) rotate(100000deg) ;
+		        -o-transform: scale(2) rotate(100000deg) ;
+		        -ms-transform: scale(2) rotate(100000deg) ;
+		        transform: scale(2) rotate(100000deg) ;
+
+				-webkit-transition: all 500s ease-in;
+				-moz-transition: all 500s ease-in;
+				-ms-transition: all 500s ease-in;
+				-o-transition: all 500s ease-in;
+				transition: all 500s ease-in;
+
+			}
+
+			.image01:hover,
+			.image02:hover,
+			.image03:hover,
+			.image04:hover,
+			.image05:hover,
+			.image06:hover,
+			.image07:hover,
+			.image08:hover,
+			.image09:hover,
+			.image10:hover,
+			.image11:hover,
+			.image12:hover,
+			.image13:hover,
+			.image14:hover,
+			.image15:hover{
+				opacity: 1
+			}
+			
+			.image01{
+				opacity: .5;
+				position: absolute;
+				top: 14px;
+				left:23.5px;
+				height: 354.3px;
+				width: 354.3px;
+			}
+
+			.image02{
+				opacity: .5;
+				position: absolute;
+				top: 14px;
+				left:402.2px;
+				height: 186.7px;
+				width: 273.2px;
+			}
+
+			.image03{
+				opacity: .5;
+				position: absolute;
+				top: 14px;
+				left:706.65px;
+				height: 186.7px;
+				width: 279.7px;
+			}
+
+			.image04{
+				opacity: .5;
+				position: absolute;
+				top: 14px;
+				left:1009.4px;
+				height: 186.7px;
+				width: 259.5px;
+			}
+
+			.image05{
+				opacity: .5;
+				position: absolute;
+				top: 14px;
+				left:1290px;
+				height: 354.3px;
+				width: 354.3px;
+			}
+			
+			.image06{
+				opacity: .5;
+				position: absolute;
+				top: 393px;
+				left:24px;
+				height: 477px;
+				width: 337px;
+			}
+
+			.image07{
+				opacity: .5;
+				position: absolute;
+				top: 218px;
+				left:401px;
+				height: 653px;
+				width: 436px;
+			}
+
+			.image08{
+				opacity: .5;
+				position: absolute;
+				top: 222px;
+				left:850px;
+				height: 109px;
+				width: 408px;
+			}
+
+			.image09{
+				opacity: .5;
+				position: absolute;
+				top: 363px;
+				left:850px;
+				height: 507px;
+				width: 408px;
+			}
+
+			.image10{
+				opacity: .5;
+				position: absolute;
+				top: 447px;
+				left:1298px;
+				height: 423px;
+				width: 282px;
+			}
+
+			.image11{
+				opacity: .5;
+				position: absolute;
+				top: 895px;
+				left:0px;
+				height: 163px;
+				width: 402px;
+			}
+
+			.image12{
+				opacity: .5;
+				position: absolute;
+				top: 920px;
+				left:-46px;
+				height: 351px;
+				width: 527px;
+			}
+
+			.image13{
+				opacity: .5;
+				position: absolute;
+				top: 895px;
+				left:402px;
+				height: 273px;
+				width: 410px;
+			}
+
+			.image14{
+				opacity: .5;
+				position: absolute;
+				top: 895px;
+				left:820px;
+				height: 278px;
+				width: 372px;
+			}
+
+			.image15{
+				opacity: .5;
+				position: absolute;
+				top: 895px;
+				left:1202px;
+				height: 282px;
+				width: 378px;
+			}
+
+			.screen{
+				width: 1600px;
+				height: 1200px;
+				background-color: rgba(0,0,0);
+				opacity: 50%;
+				z-index: 1;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			.outline{
+				position: absolute;
+				top: -24px;
+				left: -472px;
+				z-index: 1;
+			}
+
+			.maintext1{
+				font-family: "Open Sans";
+				font-weight: bold;
+				position: fixed;
+				bottom: -5px;
+				right: 175px;
+				z-index: 3;
+				text-align: right;
+				margin-right:20px; 
+			}
+
+			.maintext2{
+				font-family: "Open Sans";
+				font-weight: bold;
+				/*background-color: white;*/
+				width: 600px;
+				overflow: hidden;
+				position: fixed;
+				bottom: 5px;
+				right: 550px;
+				z-index: 3;
+				text-align: right;
+				margin-right: 40px;
+			}
+
+			/*.caption{
+				height: 100px;
+
+				position: fixed;
+				bottom: 0px;
+				right: 0px;
+				
+				width: 100%;
+				opacity: .5;
+				
+				z-index: 0;
+				
+				background-color: black;
+			}*/
+
+			.comment{
+				font-family: Times;
+				font-style: italic;
+
+				height: 30px;
+				padding-top: 7px;
+				padding-right: 10px;
+				position: fixed;
+				top: 0px;
+				right: 0px;
+				font-size: 15px;
+				width: 100%;
+				color: white;
+				opacity: .5;
+				
+				z-index: 3;
+				text-align: right;
+				background-color: black;
+			}
+
+			.logo{
+				height: 110px;
+				width: 145px;
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				z-index: 3;
+			}
+
+
+			.discription{
+				font-family: "Open Sans";
+				font-size: 14px;
+				height: 600px;
+				width: 600px;
+				/*overflow:scroll; */
+				position:absolute;
+				top:230px;
+				left: 50px;
+				z-index: 2;
+			}
+
+			.disup{
+				height: 350px;
+				width: 480px;
+				overflow: scroll;
+				padding:0px;
+				margin-top: 20px;
+			}
+
+			.disdown{
+				height: 300px;
+				width: 480px;
+				padding: 10px;
+				/*overflow: hidden;*/
+			}
+
+			.float-left{
+				float: left;
+				margin-right: 0px;
+			}
+
+			.float-right{
+				float: right;
+
+			}
+
+
+
+			h1{
+				font-size: 40px;
+				line-height: 40px;
+			}
+
+			h2{
+				font-size: 25px;
+				line-height: 20px;
+			}
+
+
+		</style>
+
+	</head>
+
+	<body>
+		<div class="caption">
+			<img src="img/01.jpg" class="image01"></img>
+			<img src="img/02.jpg" class="image02"></img>
+			<img src="img/03.jpg" class="image03"></img>
+			<img src="img/04.jpg" class="image04"></img>
+			<img src="img/05.jpg" class="image05"></img>
+			<img src="img/06.jpg" class="image06"></img>
+			<img src="img/07.jpg" class="image07"></img>
+			<img src="img/08.jpg" class="image08"></img>
+			<img src="img/09.jpg" class="image09"></img>
+			<img src="img/10.jpg" class="image10"></img>
+			<img src="img/11.jpg" class="image11"></img>
+			<img src="img/12.jpg" class="image12"></img>
+			<img src="img/13.jpg" class="image13"></img>
+			<img src="img/14.jpg" class="image14"></img>
+			<img src="img/15.jpg" class="image15"></img>
+
+			<img src="img/outline2.png" class="outline">
+
+			<img src="img/logo_fallback.png" class="logo"></img>
+
+			<div class="maintext1">
+					<h1>Graphic Design: </h1>
+					<h1>Now in Production</h1>
+			</div>
+
+			<div class="maintext2">		
+					<h3>Prints, Drawings, and Photographs <br/> March 28&#8211;August 3, 2014</h3>
+			</div>
+		</div>
+
+			<div class="comment">
+				<em>&#8220;A big, sweeping, categorical, world-historical-moment-defining graphic design show.&#8221;</em> &#8212; Print magazine
+			</div>
+
+
+			<div class="discription">
+				<div class="disdown float-left">
+					
+
+
+					<p><b>Graphic Design: Now in Production is co-organized by the Walker Art Center, Minneapolis, and the Smithsonian&#8217;s Cooper-Hewitt, National Design Museum, New York. The exhibition is co-curated by Andrew Blauvelt, Chief of Communications and Audience Engagement and Curator of Design, Walker Art Center, and Ellen Lupton, Senior Curator of Contemporary Design, Cooper-Hewitt, National Design Museum.</b></p>
+
+					<p><b>Special thanks: <br/>Rhode Island School of Design Department of Graphic Design</b></p>
+					<p><a href="http://risdmuseum.org/art_design/exhibitions/graphic_design_now_in_production" class="website">risdmuseum.org: Graphic Design: Now in Production</a></p>
+
+				<div class="disup float-left">
+				<p>
+				Designers use color, typography, images, symbols and systems to make the surfaces around us come alive with meaning. The revolutions in desktop computing and networked communication have raised public awareness of graphic design. Today, the field continues to shift as new technologies and social movements change the way we make and consume media.
+				</p>
+				<p>
+				Graphic Design: Now in Production explores some of the most vibrant graphic design work produced since 2000, including magazines, newspapers, books and posters; the expansion of branding programs for corporations, institutions and subcultures; the entrepreneurial spirit of designer&#8212; produced goods; the renaissance in digital typeface design; the storytelling potential of film and television titling sequences; and the transformation of raw data into compelling information narratives
+				</p>
+			
+				<p>Critical Encounters with Type, Image and Print</p>
+				<p>Curators of <em>Graphic Design: Now in Production</em>, Andrew Blauvelt and Ellen Lupton, along with graphic designers, Jessica Helfand of Winterhouse Studios and Prem Krishnamurthy of Project Projects, engage in discussion with RISD faculty. In response to questions posed by Graphic Design students, these designers and innovators debate the past, critique the present, and imagine the future of graphic design by using the design-driven magazines, books, posters, branding programs, typography, titling sequences for film and television, and information graphics in the exhibit.</p>
+				</div>
+
+			</div>
+
+
+	</body>
+
+</html>
