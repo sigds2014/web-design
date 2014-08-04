@@ -1,0 +1,123 @@
+/* float==============*/
+
+.flag {
+	width: 640px;
+}
+
+.top {
+	width: 640px;
+}
+
+.bottom {
+	width: 640px;
+}
+
+.bluesquare {
+	background-color: #006699;
+	width: 200px;
+	height: 160px;
+	display: block;
+	float: left;
+}
+
+.yellowvbar {
+	background-color: #ffcc04;
+	width: 80px;
+	height: 160px;
+	display: block;
+	float: left;
+}
+
+.bluerectangle {
+	background-color: #006699;
+	width: 360px;
+	height: 160px;
+	display: block;
+	float: left;
+}
+
+.hbar {
+	background-color: #ffcc04;
+	width: 640px;
+	height: 80px;
+	display: block;
+	float: left;
+}
+
+/* position==============*/
+
+.body {
+	margin: 0;
+}
+
+.bluesquare2t {
+	background-color: #006699;
+	width: 200px;
+	height: 160px;
+	position: absolute;
+	top: 0
+	left: 0;
+}
+
+.yellowvbar2t {
+	background-color: #ffcc04;
+	width: 80px;
+	height: 160px;
+	position: absolute;
+	top: 8;
+	left: 208px;
+}
+
+.bluerectangle2t {
+	background-color: #006699;
+	width: 360px;
+	height: 160px;
+	position: absolute;
+	top: 8;
+	left: 288px;
+}
+
+.hbar2 {
+	background-color: #ffcc04;
+	width: 640px;
+	height: 80px;
+	position: absolute;
+	top: 168px;
+	left: 8px;
+}
+
+.bluesquare2b {
+	background-color: #006699;
+	width: 200px;
+	height: 160px;
+	position: absolute;
+	top: 248px;
+	left: 8px;
+}
+
+.yellowvbar2b {
+	background-color: #ffcc04;
+	width: 80px;
+	height: 160px;
+	position: absolute;
+	top: 248;
+	left: 208px;
+}
+
+.bluerectangle2b {
+	background-color: #006699;
+	width: 360px;
+	height: 160px;
+	position: absolute;
+	top: 248px;
+	left: 288px;
+}
+
+.yellowvbar2b {
+	background-color: #ffcc04;
+	width: 80px;
+	height: 160px;
+	position: absolute;
+	top: 248px;
+	left: 208px;
+}
