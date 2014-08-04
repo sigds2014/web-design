@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+        <style type="text/css">
+            #base {
+                height: 216px;
+                width: 297px;
+                background-color: rgb(0,51,102);
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .white-square {
+                height: 95px;
+                width: 95px;
+                background-color: rgb(255,255,255);
+            }
+
+            .white-rectangle {
+                height: 95px;
+                width: 176px;
+                background-color: rgb(255,255,255);
+            }
+
+            .red-square {
+                height: 81px;
+                width: 81px;
+                background-color: rgb(255,0,0);
+            }
+
+            .red-rectangle {
+                height: 81px;
+                width: 162px;
+                background-color: rgb(255,0,0);
+            }
+
+            .top-left { /*top left*/
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .bottom-left { /*bottom left*/
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            .top-right { /*top right*/
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .bottom-right { /*bottom right*/
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+        </style>
+
+    </head>
+    
+    <body>
+        <div id="base">
+            <div class="white-square top-left"></div>
+            <div class="white-square bottom-left"></div>
+            <div class="white-rectangle top-right"></div>
+            <div class="white-rectangle bottom-right"></div>
+
+            <div class="red-square top-left"></div>
+            <div class="red-square bottom-left"></div>
+            <div class="red-rectangle top-right"></div>
+            <div class="red-rectangle bottom-right"></div>
+        </div>
+
+    </body>
+    
+</html>
