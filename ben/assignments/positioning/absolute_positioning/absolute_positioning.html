@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>absolute</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+        <style type="text/css">
+            #container {
+                width: 700px;
+                height: 600px;
+                background-color: red;
+                margin: 0;
+            }
+
+            #wb1 { /*white box in upper left*/
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                z-index: 3;
+            }
+
+            #wb2 { /*white box under upper left boxes*/
+                position: absolute;
+                top: 160px;
+                left: 150px;
+                width: 250px;
+                height: 200px;
+                background-color: white;
+                z-index: 1;
+            }
+
+            #rb1 { /*red box under upper left boxe*/
+                position: absolute;
+                top: 100px;
+                left: 50px;
+                width: 250px;
+                height: 200px;
+                background-color: red;
+                z-index: 2;
+            }
+
+            #wb3 { /*solid white box in lower left*/
+                position: absolute;
+                top: 390px;
+                left: 120px;
+                width: 280px;
+                height: 120px;
+                background-color: white;
+                z-index: 1;
+            }
+
+            #rb2 { /*red box covering wb3*/
+                position: absolute;
+                top: 460px;
+                left: 350px;
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                z-index: 2;
+            }
+
+            #rb3 { /*red outlien covering wb3*/
+                position: absolute;
+                top: 420px;
+                left: 150px;
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                border: 1px solid red;
+                z-index: 2;
+            }
+
+
+        </style>
+
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="wb1"></div>
+            <div id="rb1"></div>
+            <div id="wb2"></div>
+
+            <div id="wb3"></div>
+            <div id="rb2"></div>
+            <div id="rb3"></div>
+        </div>
+    </body>
+    
+</html>
