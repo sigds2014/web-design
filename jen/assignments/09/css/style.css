@@ -1,0 +1,123 @@
+body {
+	background: #fff;
+}
+
+.container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+header {
+	margin-bottom: 3em;
+}
+
+h1, h2, h5, h6 {
+	font-family: "Bitter" serif;
+	font-weight: 700;
+	margin-bottom: .25em;
+}
+
+h4 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	text-transform: uppercase;	
+	margin: 0 0 0 0;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color: #999;
+	margin: 0 0 0 1em;
+}
+
+#logotype {
+	display: block;
+	float: left;
+	width: 40%;
+}
+
+#logotype h2{
+	margin: 1em 0 0 0;
+	font-size: 2em;
+}
+
+#logotype h6{
+	margin: 0;
+	font-size: 1em;
+}
+
+#mainnav ul {
+	padding: 0;
+	text-align: right;
+}
+
+#mainnav ul li {
+	list-style: none;
+	margin: 0;
+	display: inline-block;
+	padding: 4.2em 0 0 3em;
+}
+
+a, 
+a:visited,
+a:hover,
+a:focus {
+	color: #000;
+	text-decoration: none;
+	font-family: 'Bitter';
+	font-size: 1em;
+}
+
+a:hover {
+	color: #ccc; 
+	text-decoration: none;
+}
+
+#mainnav ul li #selected {
+	color: #faaf17;
+}
+
+#section01 a,
+#section01 a:visited,
+#section01 a:focus {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #0e9ba7;
+}
+
+#section01 a:hover {
+	color: #faaf17; 
+	text-decoration: none;
+}
+
+
+#section01 {
+	margin: 0 auto 3em 0;
+}
+
+.image {
+	width: 100%;
+}
+
+.default {
+	display: block;
+}
+
+.toggle {
+	display: none;
+}
+
+.image:hover{
+	cursor: pointer;
+}
+
+/* CLEARFIX
+=====================================*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
