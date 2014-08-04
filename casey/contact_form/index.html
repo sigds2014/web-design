@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Form</title>
+        <meta name="viewport" content="width=device-width">
+          <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
+  <script src='../src/okvideo.js'></script>
+  <script type="text/javascript">
+
+    $(function(){
+        $.okvideo({ source: 'WTP0pE-eTKM', 
+                    volume: 0, 
+                    loop: true,
+                    hd:true, 
+                    adproof: true,
+                    annotations: false,
+                    onFinished: function() { console.log('finished') },
+                    unstarted: function() { console.log('unstarted') },
+                    onReady: function() { console.log('onready') },
+                    onPlay: function() { console.log('onplay') },
+                    onPause: function() { console.log('pause') },
+                    buffering: function() { console.log('buffering') },
+                    cued: function() { console.log('cued') },
+                 });
+    });
+  
+        </script>
+    </head>
+    <style>
+    body{
+    	color: white;
+    	font-family: helvetica;
+    	font-size: 14px;
+
+    }
+    .form{
+    	height: 500px;
+    	width: 200px;
+    	margin: 0 auto;
+    	background-color: black;
+    }
+
+
+    .label{
+    	margin: 0 auto;
+    	color: white;
+    	padding: 5px;
+    	margin: 5px;
+
+    }
+  
+
+   input[type=text]{
+    color: white;
+   	background-color: black;
+   	border: 1px solid white;
+   	padding: 5px;
+   	float: left;
+    margin-left: 5px;
+
+   }
+   input[type=text]:focus{
+   	border: 2px solid white;
+   	outline: 0;
+    -webkit-appearance: none;
+   }
+    input[type=email]:focus{
+    border: 2px solid white;
+    outline: 0;
+    -webkit-appearance: none;
+   }
+    input[type=email]{
+      color: white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px;
+    float: left;
+    margin-left: 5px;
+
+   }
+   button{
+   	float: right;
+   	padding: 5px;
+    margin: 50px 10px;
+   	background-color: black;
+   	border: 2px solid white;
+   	color: white;
+   }
+    button:hover{
+    float: right;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+   }
+   textarea{
+    color: white;
+   	background-color: black;
+   	border: 1px solid white;
+   	padding: 5px;
+   	float: left;
+    outline: 0;
+    margin-left: 5px;
+    -webkit-appearance: none;
+   }
+    textarea:focus{
+    
+    border: 2px solid white;
+    padding: 5px;
+    outline: 0;
+    -webkit-appearance: none;
+   }
+
+   .bottom{
+    float: left;
+   }
+    </style>
+    <body>
+    	<div class="form">
+    		
+    	<p></p>
+    <!-- 	<label for="name">Name</label> -->
+    	<input type="text" placeholder="Your name">
+    	<p></p>
+    <!-- 	<label for="email">Email</label> -->
+    	<input type="email" placeholder="Your email">
+    	<p></p>
+    	<!-- <label for="phone">Phone</label> -->
+    	<input type="text" placeholder="(XXX)-XXX-XXX">
+    	<p></p>
+    <!-- 	<label for="subject">Subject</label> -->
+    	<input type="text" placeholder="Subject">
+    	<p></p>
+    <!-- 	<label for="textarea">Message</label> -->
+    	<textarea rows="6" cols="23" placeholder="Your message here."></textarea>
+
+<div class="bottom">
+    	
+    	<button>Submit Form</button>
+
+    		</div>
+    	</div>
+
+    </body>
+    </html>
