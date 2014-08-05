@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+
+        <style type="text/css">
+
+        body {margin:0 auto;}
+
+        #canvas {
+            width: 900px;
+            height: 1200px;
+            background-color: rgb(255, 202, 26);
+        }
+
+        p {
+            margin: 0;
+            padding:0;
+        }
+
+        .title-text {
+            font-size: 125px;
+            line-height: 120px;
+            font-family: Helvetica;
+            font-weight: bolder;
+            color: white;
+
+            z-index: 2;
+        }
+
+        #graphic {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            padding-bottom: 20px;
+        }
+
+        #graphic:hover {
+            color: white;
+            background: url(img/270753.jpg) no-repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #design {
+            position: absolute;
+            top: 190px;
+            left: 40px;
+            padding-bottom: 20px;
+        }
+
+        #design:hover {
+           color: white;  /* Fallback: assume this color ON TOP of image */
+           background: url(img/270765.jpg) no-repeat;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+        }
+
+        #now {
+            position: absolute;
+            top: 350px;
+            left: 40px;
+        }
+
+        #now:hover {
+           color: white;  /* Fallback: assume this color ON TOP of image */
+           background: url(img/270747.jpg) no-repeat;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+        }
+
+        #in {
+            position: absolute;
+            top: 510px;
+            left: 40px;
+        }
+
+        #in:hover {
+           color: white;  /* Fallback: assume this color ON TOP of image */
+           background: url(img/270754.jpg) no-repeat;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+        }
+
+        #production {
+            position: absolute;
+            top: 670px;
+            left: 40px;
+        }
+
+        #production:hover {
+           color: white;  /* Fallback: assume this color ON TOP of image */
+           background: url(img/270734.jpg) no-repeat;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+        }
+
+        #sub {
+            position: absolute;
+            top: 720px;
+            left: 458px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            font-family: helvetica;
+            font-weight: lighter;
+            color: white;
+            text-align: right;
+        }
+
+        #date {
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        #quote {
+            width: 75px;
+
+            text-align: justify;
+            font-family: helvetica;
+            font-style: italic;
+            font-size: 5px;
+            color: white;
+
+            position: absolute;
+            top: 500px;
+            left: 550px;
+        }
+
+        #source {
+            font-style: normal;
+            text-align: right;
+            padding-bottom: 1px;
+        }
+
+
+        #quote:hover {
+            -webkit-transform: scale(6);
+            -moz-transform: scale(6);
+            -o-transform: scale(6);
+            -ms-transform: scale(6);
+            transform: scale(6);
+
+            -webkit-transition: all .1s ease-in-out;
+            -moz-transition: all .1s ease-in-out;
+            -ms-transition: all .1s ease-in-out;
+            -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+        }
+
+        #blocktext {
+            width: 800px;
+
+            text-align: justify;
+            font-family: helvetica;
+            font-size: 12px;
+            color: white;
+
+            position: absolute;
+            top: 850px;
+            left: 50px;
+        }
+
+        #blocktext p:hover {
+            font-size: 20px;
+            color: black;
+            z-index: 3;
+        }
+
+        a {
+            color: black;
+        }
+
+        </style>
+
+    </head>
+    
+    <body>
+        <div id="canvas">
+            <p id="graphic" class="title-text">Graphic</p>
+            <p id="design" class="title-text">Design:</p>
+            <p id="now" class="title-text">Now</p>
+            <p id="in" class="title-text">in</p>
+            <p id="production" class="title-text">Production</p>
+
+            <div id="sub">
+                <p class="subtitle">Prints,<br>Drawings,<br>and Photographs<br>
+                                    <span id="date">March 28–August 3, 2014</span></p>
+            </div>
+
+            <div id="quote">
+                <p>“A big, sweeping, categorical, world-historical-moment-defining graphic design show.”</p>
+                <p id="source">— Print magazine<p>
+            </div>
+
+            <div id="blocktext">
+                <p>Designers use color, typography, images, symbols and systems to make the surfaces around us come alive with meaning. The revolutions in desktop computing and networked communication have raised public awareness of graphic design. Today, the field continues to shift as new technologies and social movements change the way we make and consume media.</p>
+                <br>
+                <p>Graphic Design: Now in Production explores some of the most vibrant graphic design work produced since 2000, including magazines, newspapers, books and posters; the expansion of branding programs for corporations, institutions and subcultures; the entrepreneurial spirit of designer— produced goods; the renaissance in digital typeface design; the storytelling potential of film and television titling sequences; and the transformation of raw data into compelling information narratives</p>
+                <br>
+                <p>Critical Encounters with Type, Image and Print<br>
+                Curators of Graphic Design: Now in Production, Andrew Blauvelt and Ellen Lupton, along with graphic designers, Jessica Helfand of Winterhouse Studios and Prem Krishnamurthy of Project Projects, engage in discussion with RISD faculty. In response to questions posed by Graphic Design students, these designers and innovators debate the past, critique the present, and imagine the future of graphic design by using the design-driven magazines, books, posters, branding programs, typography, titling sequences for film and television, and information graphics in the exhibit.</p>
+                <br>
+                <p><a href="http://risdmuseum.org/art_design/exhibitions/graphic_design_now_in_production">risdmuseum.org: Graphic Design: Now in Production</a></p>
+                <br>
+                <p>Graphic Design: Now in Production is co-organized by the Walker Art Center, Minneapolis, and the Smithsonian’s Cooper-Hewitt, National Design Museum, New York. The exhibition is co-curated by Andrew Blauvelt, Chief of Communications and Audience Engagement and Curator of Design, Walker Art Center, and Ellen Lupton, Senior Curator of Contemporary Design, Cooper-Hewitt, National Design Museum.</p>
+                <br>
+                <p>Special thanks: Rhode Island School of Design Department of Graphic Design</p>
+            </div>
+        </div>
+    </body>
+    
+</html>
