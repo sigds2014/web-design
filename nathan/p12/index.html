@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Poster Farm | Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+         <!-- Load Google Fonts "Lato"  -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/jquery.imageLens.js" type="text/javascript"></script>
+        <script type="text/javascript" language="javascript">
+        $(function () {
+            $("#latestPhoto").imageLens();
+        }); 
+        </script>
+
+        <!--FACEBOOK SHARING INFO-->    
+        <meta property="og:title" content="Is This Site Blue?" /> 
+        <meta property="og:description" content="What a mystery! Click to find out if this site is blue!" />
+        <meta property="og:image" content="http://static.tumblr.com/dgwh4n8/ACyn9i4hk/facebook_share.png" />  
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <header>
+            <nav>
+                <div id="logo">Poster Farm</div>
+                <div id="nav-menu"><div id="lines"></div></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Posters</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="latestPhotoPost">
+                <img src="img/clip.png" draggable="false" id="clip1">
+                <img src="img/clip.png" draggable="false" id="clip2">
+                <img src="img/JasonMunn_BenjaminGibbard_Poster.png" id="latestPhoto">
+            </div>
+            <div class="latestPhotoCaption">
+                <h6> Featured Poster </h6>
+                <h2>Ben Gibbard Tour Poster</h2>
+                <h4>by Jason Munn (2012)</h4>
+            </div>
+            <div class="latestTextPosts">
+                <h6> Recent Blog Posts </h6>
+                <div class="textPost">
+                    <h5><a href="#">Long Post Title and Stuff</a></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in quam nec justo volutpat consectetur. Suspendisse.</p>
+                    <div class="readMore"><a href="#">Read More</a></div>
+                </div>
+                <div class="textPost">
+                    <h5><a href="#">Definitely a Two Line Post Title</a></h5>
+                    <p>Vivamus eget est justo. In ac ipsum ac ligula cursus fringilla vitae in metus. Nam tincidunt commodo nunc, gravida rutrum lectus.</p>
+                    <div class="readMore"><a href="#">Read More</a></div>
+                </div>
+                <div class="textPost">
+                    <h5><a href="#">Short Post</a></h5>
+                    <p>Suspendisse gravida risus sed tortor ultrices, iaculis semper lacus sodales. Praesent sit amet tempus justo, sed tempus dui. </p>
+                    <div class="readMore"><a href="#">Read More</a></div>
+                </div>
+            </div>
+                <div class="featuredArtist">
+                    <h6> Featured Artists </h6>
+                    <img src="img/featured_artist.png" id="artistPicture">
+                    <h2> Aesthetic Apparatus </h2>
+                    <h4>Minneapolis, MN</h4>
+                    <p id="artistDescription">Suspendisse gravida risus sed tortor ultrices, iaculis semper lacus sodales. Praesent sit amet tempus justo, sed tempus dui. Vivamus eget est justo. In ac ipsum ac ligula cursus fringilla vitae in metus. Nam tincidunt commodo nunc, gravida rutrum lectus.</p>
+                </div>
+        </div>
+        <footer>
+            <div class="bg"></div>
+        </footer>
+    </body>
+</html>
