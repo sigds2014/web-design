@@ -22,21 +22,3 @@
         	left: 120px;
         	z-index: 2;
         }
-
-        .blueline1 {
-        	background-color: blue;
-        	height: 40px;
-        	width: 440px;
-        	position: absolute;
-        	top: 140px;
-        	z-index: 3;
-        }
-
-        .blueline2 {
-        	background-color: blue;
-        	height: 320px;
-        	width: 40px;
-        	position: absolute;
-        	left: 140px;
-        	z-index: 4;
-        }

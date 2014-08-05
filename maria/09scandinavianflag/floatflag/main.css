@@ -24,22 +24,3 @@
             margin-left: -320px;
         	z-index: 3;
         }
-
-        .blueline1 {
-        	background-color: blue;
-        	height: 40px;
-        	width: 440px;
-            margin-top: -60px;
-            float: left;
-        	z-index: 4;
-        }
-
-        .blueline2 {
-        	background-color: blue;
-        	height: 320px;
-        	width: 40px;
-            margin-top: -200px;
-            margin-left: 140px;
-            float: left;
-        	z-index: 5;
-        }
