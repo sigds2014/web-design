@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Graphic Design Web Poster</title>
         <meta name="viewport" content="width=device-width">
         <!-- <link rel="stylesheet" href="css/main.css"> -->
          <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
@@ -29,11 +29,9 @@
 	   <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Playfair+Display:400,900,700italic' rel='stylesheet' type='text/css'>
 
     	<style type="text/css">
-        
-        body {
-  
-         	margin-left: 150px;
-         	margin-right: 150px;
+
+        .container {
+            width:1100px;
         }
 
         h1, h2 {
@@ -44,7 +42,7 @@
         }
 
         h1 {
-        	font-size:70px;
+        	font-size:60px;
    
         }
 
@@ -54,56 +52,88 @@
 
         h2 {
     		font-size:35px;
-   			line-height:0px;
+   			line-height:50px;
         }
 
         .header h3 {
    			line-height:20px;
-   			font-size: 25px;
+   			font-size: 27px;
    			color: white;
    			font-family: 'Noto Sans', sans-serif;
-       		margin-left:820px;
+       		margin-left:230px;
+        }
+
+        .header h3:hover {
+            color:orange;
         }
 
         h3 {
-        	padding:20px 10px;
+        	padding:20px 20px;
        		font-family: 'Playfair Display', serif;
        		font-size:23px;
-       		float:left;
-            margin-top:-30px; 
+            color: black;
+        }
+
+        .quote {
+            background-color: #eb6841;
+            opacity: .7;
+            width: 450px;
+            height: 150px;
         }
 
         p {
         	font-family: avenir, "Helevetica Neue";
-        	color:dimgray;
-        	padding:5px;
-        	float:left;
-        	margin-left:60px;
-        	margin-right:60px;
+        	color:#003366;
+        }
 
+        .paragraphs {
+            width: 700px;
+            background-color: white;
+            opacity: .8;
+            padding: 20px 20px 20px 20px;
+            margin-top: 30px;
         }
 
 
         .header {
-        	width:1200px;
-        	height:300px;
+        	width:600px;
+        	height:400px;
         	background-color:#00a0b0;
+            opacity: .7;
         }
 
         .rectangle {
-            width:1200px;
+            width:1100px;
             height:10px;
             margin-top:10px;
             margin-bottom:30px;
             background-color:#eb6841;
-            float:left;
+            opacity: .9;
+            position: absolute;
+            top: -35px;
 		}
 
         .logo {
-            position:fixed;
-            z-index:3;
-            margin-left:-150px; 
+            position: absolute;
+            left: 650px;
+            top: 90px;
+            opacity: .9;
         }
+
+        .container:hover .logo{
+                -moz-transform: scale(3) rotate(-300deg);
+                -webkit-transform: scale(3) rotate(-300deg);
+                -o-transform: scale(3) rotate(-300deg);
+                -ms-transform: scale(3) rotate(-300deg);
+                transform: scale(3) rotate(-300deg);
+            
+                -webkit-transition: all 50s ease-out;
+                -moz-transition: all 50s ease-out;
+                -ms-transition: all 50s ease-out;
+                -o-transition: all 50s ease-out;
+                transition: all 50s ease-out;
+        }
+
 
         .arrow-up {
             width: 0; 
@@ -120,14 +150,14 @@
 
 
 		.top {
-			postition:absolute;
+			position:absolute;
 			z-index:2;
             margin-top:15px;
 		}
 
 
 		.bottom {
-			postition:absolute;
+			position:absolute;
 			z-index:1;
             margin-top:15px;
 		}
@@ -140,7 +170,8 @@
 
 		#cf img {
 			position:absolute;
-		    left:0;
+		    left:160px;
+            top:-45px;
 		    opacity: 1;
 		    -webkit-transition: opacity 2s ease-in-out;
 		    -moz-transition: opacity 2s ease-in-out;
@@ -161,8 +192,8 @@
 
 		#cf2 img {
 			position:absolute;
-		    left:350px;
-            top:-100px;
+            left:0px;
+            top:30px;
 		    opacity: 1;
 		    -webkit-transition: opacity 2s ease-in-out;
 		    -moz-transition: opacity 2s ease-in-out;
@@ -183,8 +214,8 @@
 
         #cf3 img {
             position:absolute;
-            left:530px;
-            top:-200px;
+            left:385px;
+            top:-145px;
             opacity: 1;
             -webkit-transition: opacity 2s ease-in-out;
             -moz-transition: opacity 2s ease-in-out;
@@ -206,48 +237,48 @@
 
     <body>
 
+    <div class="container">
 
-    <img class="logo" src="img/RISD.png"/>
+    <div class="rectangle"></div>
+    
+    <img class="logo" src="img/logo.png" height="150"/>
 
     <div class="header">
 
         <h1>Graphic Design:</br>Now in Production</h1> 
-        <h2>Prints, Drawings, and Photographs</h2>
-        <h3>March 28–August 3, 2014</h3>
+        <h2>Prints, Drawings, </br>and Photographs</h2>
+        <h3>March 28&#8211;August 3, 2014</h3>
 
     </div>  
 
-    <div class="arrow-up"></div>
+    <div class="quote"><h3>“A big, sweeping, categorical, world-historical-moment-defining graphic design show.” — Print magazine</h3></div> 
 
-    <div id="cf">
-        <img class="top" src="img/22.jpeg" height="250"/>
-        <img class="bottom" src="img/rel.jpeg" height="250"/>
-    </div>
-
-    <div id="cf2">
-        <img class="top" src="img/oilandwater.jpeg" height="250"/>
-        <img class="bottom" src="img/gentlewoman.jpeg" height="250"/>
-    </div>
-
-    <div id="cf3">
-        <img class="top" src="img/bestmade.jpeg" height="270" width="670"/>
-        <img class="bottom" src="img/axe.jpeg" height="250" width="670"/>
-    </div>
-
-    <h3>“A big, sweeping, categorical, world-historical-moment-defining graphic design show.” — Print magazine</h3> 
-
-    <div class="rectangle"></div>
-
+    <div class="paragraphs">
     <p>Designers use color, typography, images, symbols and systems to make the surfaces around us come alive with meaning. The revolutions in desktop computing and networked communication have raised public awareness of graphic design. Today, the field continues to shift as new technologies and social movements change the way we make and consume media.</p> 
 
     <p>Graphic Design: Now in Production explores some of the most vibrant graphic design work produced since 2000, including magazines, newspapers, books and posters; the expansion of branding programs for corporations, institutions and subcultures; the entrepreneurial spirit of designer—produced goods; the renaissance in digital typeface design; the storytelling potential of film and television titling sequences; and the transformation of raw data into compelling information narratives.</p>
 
-    <p>Graphic Design: Now in Production is co-organized by the Walker Art Center, Minneapolis, and the Smithsonian’s Cooper-Hewitt, National Design Museum, New York. The exhibition is co-curated by Andrew Blauvelt, Chief of Communications and Audience Engagement and Curator of Design, Walker Art Center, and Ellen Lupton, Senior Curator of Contemporary Design, Cooper-Hewitt, National Design Museum.</p>
+    <p>Graphic Design: Now in Production is co-organized by the Walker Art Center, Minneapolis, and the Smithsonian’s Cooper-Hewitt, National Design Museum, New York. The exhibition is co-curated by Andrew Blauvelt, Chief of Communications and Audience Engagement and Curator of Design, Walker Art Center, and Ellen Lupton, Senior Curator of Contemporary Design, Cooper-Hewitt, National Design Museum.</p></div>
 
+
+    <div id="cf2">
+        <img class="top" src="img/oilandwater.jpeg" height="200"/>
+        <img class="bottom" src="img/gentlewoman.jpeg" height="200"/>
+    </div>
+
+    <div id="cf">
+        <img class="top" src="img/22.jpeg" height="150"/>
+        <img class="bottom" src="img/rel.jpeg" height="150"/>
+    </div>
+
+    <div id="cf3">
+        <img class="top" src="img/bestmade.jpeg" height="150" width="373"/>
+        <img class="bottom" src="img/axe.jpeg" height="150" width="373"/>
+    </div>
 
     <div class="rectangle"></div>
 
-
+</div>
 
     </body>
     
