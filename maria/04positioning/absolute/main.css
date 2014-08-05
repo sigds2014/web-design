@@ -1,0 +1,128 @@
+        #space {
+        	width:600px;
+        	height:600px;
+        	background-color: rgb(225,218,193);
+        	margin: 0;
+        }
+
+        .box1 {
+        	position:absolute;
+        	height:140px;
+        	width:140px;
+        	top:50px;
+        	left:75px;
+        	background-color: rgb(148,188,79);
+        	z-index:3;
+
+        }
+
+        .spacebox1 {
+        	position: absolute;
+        	height:120px;
+        	width:120px;
+        	top:100px;
+        	left:110px;
+        	background-color: rgb(225,218,193);
+        	z-index:2;
+
+        }
+
+        .box2 {
+        	position:absolute;
+        	height:150px;
+        	width:180px;
+        	top:135px;
+        	left:145px;
+        	background-color: rgb(148,188,79);
+        	z-index:1;
+        }
+
+        .linebox1 {
+        	position:absolute;
+        	height:150px;
+        	width:150px;
+        	top:75px;
+        	left:400px;
+        	border: 1px solid rgb(94,71,40);
+        }
+
+        .linebox2 {
+            position:absolute;
+            height:150px;
+            width:150px;
+            top:85px;
+            left:385px;
+            border: 1px solid rgb(94,71,40);
+        }
+
+        .linebox3 {
+            position:absolute;
+            height:180px;
+            width:180px;
+            top:350px;
+            left:-100px;
+            border: 1px solid rgb(148,188,79);
+        }
+
+        .box3 {
+            position:absolute;
+            height:175px;
+            width:200px;
+            top:300px;
+            left:125px;
+            background-color: rgb(94,71,40);
+        }
+
+        .spacebox2 {
+            position:absolute;
+            height:75px;
+            width:75px;
+            top:400px;
+            left:250px;
+            background-color: rgb(225,218,193);
+        }
+
+        .linebox4 {
+            position:absolute;
+            height:50px;
+            width:50px;
+            top:325px;
+            left:150px;
+            border: 1px solid rgb(225,195,156);
+        }
+
+        .rectangle1 {
+            position:absolute;
+            height:35px;
+            width:150px;
+            top:300px;
+            left:385px;
+            background-color: rgb(255,255,212);
+        }
+
+        .rectangle2 {
+            position:absolute;
+            height:35px;
+            width:100px;
+            top:350px;
+            left:385px;
+            background-color: rgb(255,255,212);
+        }
+
+        .rectangle3 {
+            position:absolute;
+            height:35px;
+            width:150px;
+            top:400px;
+            left:385px;
+            background-color: rgb(255,255,212);
+        }
+
+        h1 {
+            color: rgb(94,71,40);
+            font-family: 'Arimo' sans-serif;
+            font-size: 50px;
+            position: absolute;
+            top: 500px;
+            left: 400px;
+        }
