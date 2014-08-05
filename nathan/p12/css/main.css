@@ -234,7 +234,7 @@ nav li a:hover{
 .container{
     width: 98%;
     padding-top: 75px;
-    margin: 0 auto;
+    margin: 0 2.5%;
 }
 
 /*Latest Photo*/
@@ -290,8 +290,8 @@ nav li a:hover{
 
 #artistPicture{
     float: left;
-    height: 98%;
-    margin: 10px 2.5%;
+    height: 100%;
+    margin: 10px 0;
     border-radius: 4px;
 }
 
