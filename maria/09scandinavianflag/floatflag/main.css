@@ -1,0 +1,45 @@
+            
+        #redspace {
+        	background-color: red;
+        	height: 320px;
+        	width: 440px;
+            float: left;
+            z-index: 1;
+        }
+
+        .whiteline1 {
+        	background-color: white;
+        	height: 80px;
+        	width: 440px;
+            margin-top: 120px;
+            float: left;
+        	z-index: 2;
+        }
+
+        .whiteline2 {
+        	background-color: white;
+        	height: 320px;
+        	width: 80px;
+            float: left;
+            margin-left: -320px;
+        	z-index: 3;
+        }
+
+        .blueline1 {
+        	background-color: blue;
+        	height: 40px;
+        	width: 440px;
+        	margin-top: -180px;
+            float: left;
+        	z-index: 4;
+        }
+
+        .blueline2 {
+        	background-color: blue;
+        	height: 320px;
+        	width: 40px;
+            margin-top: -320px;
+            margin-left: 140px;
+            float: left;
+        	z-index: 5;
+        }
