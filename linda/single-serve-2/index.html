@@ -21,14 +21,14 @@
  
 
             body {
-                font-size: 2.8em;
+                font-size: 2.6em;
                 font-family: 'Lobster', sans-serif;
                 color: white;
                 background-color: #5fcbb5;
             }
             
             .container {
-                width: 1300px;
+                width: 1050px;
                 height: 500px; 
                 margin: 0 auto;
             }
@@ -40,8 +40,8 @@
             }
 
             .list {
-                width: 1400px;
-                height: 220px;
+                width: 1050px;
+                height: 150px;
                 float: left;
                 margin: 0 auto;
             }
@@ -50,23 +50,31 @@
                 display:none;
                 float: left;
                 padding: 10px 10px; 
+                margin:0;
+                width: 330px;
+                height: 150px; 
 
             }
 
             .icons {
-                width: 760px;
+                width: 710px;
                 height: 250px;
                 margin: 0 auto;
                 margin-top: 50px;
                 margin-bottom: 10px;
                 
             }
-            .icons img {
+
+
+            #button-div {
+                margin: 0 auto;
+                clear:both;
+
             }
 
             #button-link {
                 margin: 0 auto;
-                margin-top: -10px;
+                display: block;
             }
 
             </style>
@@ -80,7 +88,6 @@
 
         <div class="icons">
             <img src="img/f-marry-kill.png" width="531" height "212"/>
-
         </div>
 
         <div class="list">
@@ -117,9 +124,11 @@
             <div id="random30">Sarah Palin</div>
         </div>
         
+        <div id="button-div">
         <a href="javascript:document.location.reload();" onmouseover="window.status='Refresh'; return true" onmouseout="window.status='gimme another'" id="button-link">
             <img src="img/button-05.png" width="250" height="88" border="0">
         </a>
+        <div>
 
         </div>
 
