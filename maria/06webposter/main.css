@@ -1,0 +1,159 @@
+        #container1 {
+            height: 720px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container2 {
+            height: 720px;
+            width: 300px;
+            float: left;
+        }
+
+        .topmargin {
+            margin-top: 50px;
+        }
+
+        .topmargin2 {
+            margin-top: 30px;
+        }
+
+        .topmargin3 {
+            margin-top: 125px;
+        }
+
+        .vertical1 {
+            background-image: url('images/verticalimg/image11.jpg');
+            height: 358px;
+            width: 280px;
+            float: left;
+        }
+
+        .vertical1:hover {
+            background-image: url('images/verticalimg/image13.jpg');
+            height: 358px;
+            width: 280px;
+            float: left;
+        }
+
+        .vertical2 {
+            background-image: url('images/verticalimg/image15.jpg');
+            height: 358px;
+            width: 280px;
+            float: left;
+            border: none;
+        }
+
+        .vertical2:hover {
+            background-image: url('images/verticalimg/image7.jpg');
+            height: 358px;
+            width: 280px;
+            float: left;
+        }
+
+        .vertical3 {
+            background-image: url('images/verticalimg/image12.jpg');
+            height: 358px;
+            width: 280px;
+            float: left;
+        }
+
+        .vertical3:hover {
+            background-image: url('images/verticalimg/image16.jpg');
+            height: 358px;
+            width: 280px;
+            float: left;
+        }
+
+        .vertical4 {
+            background-image: url('images/verticalimg/image14.jpg');
+            height: 358px;
+            width: 280px;
+            float: left;
+        }
+
+        .vertical4:hover {
+            background-image: url('images/verticalimg/image17.jpg');
+            height: 358px;
+            width: 280px;
+            float: left;
+        }
+
+        h1 {
+            font-size: 73px;
+            font-family: 'PT Serif', serif;
+            color: red;
+            text-align: center;
+
+        } 
+
+        .blink {
+            -webkit-animation-duration: 900ms;
+            -webkit-animation-name: flash;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        @-webkit-keyframes flash {
+            0% {
+                opacity: 0;
+            }
+            49.99% {
+                opacity: 0;
+             }
+             50% {
+                opacity: 1;
+             }
+             99.99% {
+                opacity: 1;
+             }
+             100% {
+                opacity: 0;
+             }
+            }
+
+        .headline {
+            float:left;
+            margin-top: 238px;
+            z-index: 1;
+            position: absolute;
+        }
+
+
+        p {
+            font-size: 11px;
+            font-family: 'PT Serif', serif;
+            color: black;
+            margin: 5px;
+            text-align: justify;
+        }
+
+        .text {
+            height: 250px;
+            width: 270px;
+        }
+
+        .quote {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .bigtext {
+            font-size: 14px;
+        }
+
+        .thankstext {
+            font-family: 'Cardo', serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .textsmall {
+            height: 150px;
+            width: 270px;
+        }
+
+        .thankssize {
+            height: 20px;
+            width: 270px;
+            text-align: left;
+        }
