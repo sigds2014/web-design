@@ -1,0 +1,297 @@
+/* TABLE OF CONTENTS
+=====================================
+#RESET
+#HTML5
+#BASE TYPOGRAPHY
+	#BODY
+	#HEADINGS
+	#PARAGRAPHS
+	#LISTS
+	#LINKS
+#IMAGES
+#CLEARFIX
+#LAYOUT/GRID
+#SITE-SPECIFIC
+  	#SECTIONS
+#MEDIA QUERIES
+#@FONT-FACE
+===================================== */
+ 
+/* RESET
+===================================== */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* HTML5
+=====================================*/
+header, footer, nav, section, article, aside, figure {
+display: block;
+}
+
+/* BASE TYPOGRAPHY
+=====================================*/
+
+/* BODY */
+body {
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;;;
+	font-size: 100%; /* 1em = 16px */
+	line-height: 1.5em; /* 16 x 1.5 = 24px */
+}
+
+/* HEADINGS 
+
+Traditional Typographic Scale
+48, 36, 24, 21, 18, 16
+
+*/
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5em;
+}
+
+h1{
+	font-size: 3em; /* 48px / 16px = 3em */
+	line-height: 1em;	/* relative to font size => 3em x 1.5em where 1em = 16px */
+}
+
+h2{
+	font-size: 2.25em; /* 36px / 16px = 2.25em */
+	line-height: 1.1em;	/*  */
+}
+
+h3{
+	font-size: 1.5em; /* 24px / 16px = 1.5em */
+	line-height: 1.2em;	/*  */
+}
+
+h4{
+	font-size: 1.31em; /* 21px / 16px = 1.31em */
+	line-height: 1.3em;	/*  */
+}
+
+h5{
+	font-size: 1.125em; /* 18px / 16px = 1.125em */
+	line-height: 1.4em;	/*  */
+}
+
+h6{
+	font-size: 1em; /* 16px / 16px = 1em */
+	line-height: 0.5em;	/*  */
+}
+
+/* PARAGRAPHS */
+p{
+	margin-bottom: 0.5em;
+}
+
+/* LISTS */
+ul, ol {
+	margin-bottom: 0.5em;
+}
+
+ul li ul, ul li ol, ol li ol, ol li ul {
+	margin: 0;
+}
+
+li{
+	margin-left: 1.875em;
+}
+
+
+/* LINKS */
+a {color: #41AEB7;text-decoration: none;}
+a:hover {color: #A4F9E0; text-decoration: underline;}
+
+/* IMAGES
+=====================================*/
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto; 
+}
+
+a img {
+	border: none;
+}
+
+/* CLEARFIX
+=====================================*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* #LAYOUT/GRID
+=====================================*/
+.container {
+	width: 50em; /* 960px */
+	margin: 2em auto;
+}
+
+/* SITE-SPECIFIC
+=====================================*/
+body {
+	background: #fff;
+	}
+
+.container {
+	width: 60%;
+	margin: 10em auto;
+
+}
+
+small {
+	font-family: 'aleo-bold';
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: .75em;
+}
+
+blockquote {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3em;
+	line-height: 1.2em;
+	display: block;
+	margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5em;
+}
+
+h1{
+	font-family: 'aleo-bold';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2.7em; /* 48px / 16px = 3em */
+	line-height: .5em;	/* relative to font size => 3em x 1.5em where 1em = 16px */
+	margin-bottom: 1em;
+	display: inline-block;
+
+}
+
+h2{
+	font-family: 'aleo-bold';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2.25em; /* 36px / 16px = 2.25em */
+	line-height: 1.1em;	/*  */
+	display: inline-block;
+}
+
+h3{
+	font-family: 'aleo-bold';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.5em; /* 24px / 16px = 1.5em */
+	line-height: 1.2em;	/*  */
+	display: inline-block;
+	margin-bottom: .75em;
+}
+
+h4{
+	font-size: 1.31em; /* 21px / 16px = 1.31em */
+	line-height: 1.3em;	/*  */
+}
+
+h5{
+	font-family: 'aleo-bold';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.125em; /* 18px / 16px = 1.125em */
+	line-height: 1.4em;	/*  */
+	display: inline-block;
+	margin-bottom: 0.01em;
+}
+
+h6{
+	font-size: 1em; /* 16px / 16px = 1em */
+	line-height: 0.5em;	/*  */
+}
+
+p{
+	margin-bottom: 1em;
+	font-size: 1.05em;
+	text-align: justify;
+}
+
+section {
+	margin-bottom: 3em;
+}
+
+#of {
+	font-family: 'Dancing Script', cursive;
+}
+
+#and {
+	font-family: 'Dancing Script', cursive;
+}
+
+
+
+
+/* MEDIA QUERIES
+===================================== */
+/* TABLET */
+@media all and (min-width: 48em) and (max-width: 70em) {
+/*	body{
+		font-size: 87.5%; 
+	}
+	
+	#header {
+		width: 84%;
+		margin: 0 auto;
+	}
+
+	.container {
+		width: 84%;
+		margin: 0 auto;
+	}
+
+	#section04 .container {
+		width:;
+	}
+
+	#section04 #otherhead,
+	#section04 #other1,
+	#section04 #other2 {
+		float: none
+	}
+
+	}
+}*/
+
+/* MOBILE */
+@media all and (max-width: 47.9999em) {
+/*	body{
+		font-size: 75%; 
+	}
+	
+	.container {
+		width: 92%;
+		margin: 2%;
+		padding: 2%;
+	}
+
+	p{
+	text-align: left;
+}
+
+}*/
+
+
+/* @FONT-FACE
+===================================== */
+@font-face {
+    font-family: 'aleo-bold';
+    src: url('../fonts/aleobold/aleo-bold-webfont.eot');
+    src: url('../fonts/aleobold/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleobold/aleo-bold-webfont.woff') format('woff'),
+         url('../fonts/aleobold/aleo-bold-webfont.ttf') format('truetype'),
+         url('../fonts/aleobold/aleo-bold-webfont.svg#aleobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,139 @@
+div{
+	position: fixed;
+}
+
+#blue-left{
+	width: 140px;
+	height: 140px;
+	background-color: blue;
+	top: 0;
+	left: 0;
+}
+
+#white-vert{
+	width: 20px;
+	height: 140px;
+	background-color: white;
+	left: 140px;
+	top: 0;
+}
+
+#red-vert{
+	width: 40px;
+	height: 140px;
+	background-color: red;
+	left: 160px;
+	top: 0;
+}
+
+#white-vert2{
+	width: 20px;
+	height: 140px;
+	background-color: white;
+	left: 200px;
+	top: 0;
+}
+
+#blue-right{
+	width: 280px;
+	height: 140px;
+	background-color: blue;
+	left: 220px;
+	top: 0;
+}
+
+#white-left{
+	width: 160px;
+	height: 20px;
+	background-color: white;
+	top: 140px;
+	left: 0;
+}
+
+#red-horiz{
+	width: 40px;
+	height: 20px;
+	background-color: red;
+	left: 160px;
+	top: 140px;
+}
+
+#white-right{
+	width: 300px;
+	height: 20px;
+	background-color: white;
+	left: 200px;
+	top: 140px;
+}
+
+#middle-stripe{
+	width:500px;
+	height: 40px;
+	background-color: red;
+	top: 160px;
+	left: 0;
+}
+
+#white-left2{
+	width: 160px;
+	height: 20px;
+	background-color: white;
+	top: 200px;
+	left: 0;
+}
+
+#red-horiz2{
+	width: 40px;
+	height: 20px;
+	background-color: red;
+	left: 160px;
+	top: 200px;
+}
+
+#white-right2{
+	width: 300px;
+	height: 20px;
+	background-color: white;
+	left: 200px;
+	top: 200px;
+}
+
+#blue-left2{
+	width: 140px;
+	height: 140px;
+	background-color: blue;
+	top: 220px;
+	left: 0;
+}
+
+#white-vert3{
+	width: 20px;
+	height: 140px;
+	background-color: white;
+	left: 140px;
+	top: 220px;
+}
+
+#red-vert2{
+	width: 40px;
+	height: 140px;
+	background-color: red;
+	left: 160px;
+	top: 220px;
+}
+
+#white-vert4{
+	width: 20px;
+	height: 140px;
+	background-color: white;
+	left: 200px;
+	top: 220px;
+}
+
+#blue-right2{
+	width: 280px;
+	height: 140px;
+	background-color: blue;
+	left: 220px;
+	top: 220px;
+}

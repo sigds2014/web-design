@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Absolute Positioning</title>
+        <meta name="viewport" content="width=device-width">
+
+    </head>
+
+    <style>
+
+    	body{
+    		background-color: red;
+    		height: 1000px;
+    	}
+
+    	.outline{
+    		border-style: solid;
+    		border-color: white;
+    		height: 100px;
+    		width: 100px;
+    		position: absolute;
+    		top: 50px;
+    		right:50px;
+    	}
+    	.outline2{
+    		position: fixed;
+    		margin: 10px 10px;
+    	}
+    	.square{
+    		position: absolute;
+    		bottom: 100px;
+    		left: 300px;
+    		background-color: white;
+    		width: 200px;
+    		height: 200px;
+    		z-index: 1;
+    	}
+
+    	.box-z{
+    		background-color: red;
+    		border-style: dotted;
+    		border-color: white;
+    		width: 500px;
+    		height: 20px;
+    		position: absolute;
+    		bottom: 150px;
+    		left: 0;
+    		z-index: 2;
+    	}
+
+    	.circle{
+    		position: fixed;
+    		top: 10px;
+    		left: 10px;
+    		background-color: black;
+    		border-style: double;
+    		border-color: white;
+    		width: 100px;
+    		height: 100px;
+    		border-radius: 75%;
+    	}
+
+
+
+    </style>
+
+    <body>
+    	
+    		<div class="outline"></div>
+    		<div class="outline outline2"></div>
+    		<div class="square"></div>
+    		<div class="box-z"></div>
+    		<div class="circle"></div>
+    		
+    	
+
+    </body>
+
+    </html>

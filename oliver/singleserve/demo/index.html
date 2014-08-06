@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <title>aboutyouropinion</title>
+  <meta charset='utf-8'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
+  <script src='../src/okvideo.js'></script>
+  <script type="text/javascript">
+    $(function(){
+        $.okvideo({ source: 'BLUkgRAy_Vo', 
+                    volume: 0, 
+                    loop: true,
+                    hd:true, 
+                    adproof: true,
+                    annotations: false,
+                    onFinished: function() { console.log('finished') },
+                    unstarted: function() { console.log('unstarted') },
+                    onReady: function() { console.log('onready') },
+                    onPlay: function() { console.log('onplay') },
+                    onPause: function() { console.log('pause') },
+                    buffering: function() { console.log('buffering') },
+                    cued: function() { console.log('cued') },
+                 });
+    });
+  </script>
+  <style type="text/css">
+    body {
+      margin: 20px;
+    }
+    #container {
+		background: rgba(255, 255, 255, 0.3);
+		padding: 10px;
+		width:610px;
+		color: white;
+		font-size: 14px;
+	}
+    a{color:white;}
+	a:visited{color:white;}
+    h1 {
+      font-size: 70px;
+      font-family: arial black;
+      font-weight: bold;
+      color: gold;
+      text-align:center;
+      text-shadow: 5px 5px 5px maroon;
+    }
+
+    pre {
+      border: 1px solid #ddd;
+      background: rgb(238,238,238);
+      background: rgba(238,238,238,0.5);
+      font-size: 12px;
+      padding: 5px 0 5px 10px;
+      display: inline-block;
+      width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>GUESS WHAT?</h1>
+</body>
+</html>

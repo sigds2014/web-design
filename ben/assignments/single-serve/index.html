@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BPM</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:100,700' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="title-box"><p class="opening-message unselectable">Tap to the beat of your music to find the beats per minute</p></div>
+            <div id="bottom">
+                <div id="number-box"><p class="number unselectable">258</p></div>
+                <div id="bottom-right">
+                    <div id="BPM-box"><p class="bpm unselectable">BPM</p></div>
+                    <div id="button"><p class="unselectable">Click to Begin</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code for calculating BPM -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script type="text/javascript">
+
+        $( document ).ready(function() {
+
+            console.log( "Document is ready!" );
+
+            var count = 0;
+            var last_time;
+            var cur_time;
+            var last_bpm;
+            var bpm;
+
+            $( "#button" ).click(function() {
+                console.log( "Button clicked" );
+                console.log( count );
+
+                if(count == 0) {
+                    $( "#button p" ).fadeOut( 500 ); // fades "Click to Begin"
+                    last_time = $.now(); // time in milliseconds
+                    last_bpm = 0;
+                    count++
+                    return;
+                }
+
+                cur_time = $.now();
+                bpm = 60 / ((cur_time - last_time) / 1000); // conversion from milliseconds to BPM
+
+                if(count > 0) {
+                    bpm = ((last_bpm * (count-1)) + bpm) / count;
+                    console.log( "Average BPM: ", bpm );
+
+                    $( ".number" ).html(Math.round(bpm)); // displays BPM value rounded to integer
+
+                    if(count == 1) {
+                        $( ".bpm" ).css( "visibility", "visible" ); // show hidden "BPM" and current BPM value
+                        $( ".number" ).css( "visibility", "visible" );
+                    }
+                }
+
+                last_time = cur_time;
+                last_bpm = bpm;
+                count++;
+
+            });
+        });
+        </script>
+    </body>
+</html>

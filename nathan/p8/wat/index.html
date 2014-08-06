@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>W̭̪͍̫͚ͭ̕Ḁ̵̲ͭ͊T͙͔̙̒̅̅͛͊͗̋̕</title>
+        <meta name="author" content="Nate Moore">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href=""/>
+        <style>
+            body{
+                font-family: "Comic Sans MS", cursive, sans-serif;
+            }
+            h1{
+                font-size: 100pt;
+                z-index: 1;
+                color: rgb(255,255,255);
+                line-height: 0;
+                position: absolute;
+                left: 475px;
+                top: 10px;
+                text-shadow: black 5px 5px 10px;
+            }
+
+            #loader{
+                width: 441px;
+                height: 291px;
+                margin: 200px auto 0 auto;
+            }
+
+            #image{
+                width: 100%;
+                height: 1024px;
+                background-image: url('./img/bg.png');
+                background-repeat: repeat-x;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            @-ms-keyframes spin {
+                from { -ms-transform: rotate(0deg); }
+                to { -ms-transform: rotate(360deg); }
+            }
+            @-moz-keyframes spin {
+                from { -moz-transform: rotate(0deg); }
+                to { -moz-transform: rotate(360deg); }
+            }
+            @-webkit-keyframes spin {
+                from { -webkit-transform: rotate(0deg); }
+                to { -webkit-transform: rotate(360deg); }
+            }
+            @keyframes spin {
+                from {
+                    transform:rotate(0deg);
+                }
+                to {
+                    transform:rotate(360deg);
+                }
+            }
+
+            }
+
+            @-ms-keyframes spinright {
+                from { -ms-transform: rotate(0deg); }
+                to { -ms-transform: rotate(-360deg); }
+            }
+            @-moz-keyframes spinright {
+                from { -moz-transform: rotate(0deg); }
+                to { -moz-transform: rotate(-360deg); }
+            }
+            @-webkit-keyframes spinright {
+                from { -webkit-transform: rotate(0deg); }
+                to { -webkit-transform: rotate(-360deg); }
+            }
+            @keyframes spinright {
+                from {
+                    transform:rotate(0deg);
+                }
+                to {
+                    transform:rotate(-360deg);
+                }
+            }
+
+            #slc1{
+                position: absolute;
+                top: 28px;
+                left: 305px;
+                -webkit-animation-name: spin;
+                -webkit-animation-duration: 850000ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: spin;
+                -moz-animation-duration: 850000ms;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                -ms-animation-name: spin;
+                -ms-animation-duration: 850000ms;
+                -ms-animation-iteration-count: infinite;
+                -ms-animation-timing-function: linear;
+
+                -webkit-animation-delay: 14000ms;
+                -moz-animation-delay: 14000ms;
+                -ms-animation-delay: 14000ms;
+                animation-delay: 14000ms;
+                
+                animation-name: spin;
+                animation-duration: 850000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            #slc2{
+                position: absolute;
+                top: 139px;
+                left: 416px;
+                -webkit-animation-name: spinright;
+                -webkit-animation-duration: 750000ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: spinright;
+                -moz-animation-duration: 750000ms;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                -ms-animation-name: spinright;
+                -ms-animation-duration: 750000ms;
+                -ms-animation-iteration-count: infinite;
+                -ms-animation-timing-function: linear;
+
+                -webkit-animation-delay: 13000ms;
+                -moz-animation-delay: 13000ms;
+                -ms-animation-delay: 13000ms;
+                animation-delay: 13000ms;
+                
+                animation-name: spinright;
+                animation-duration: 750000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            #slc3{
+                position: absolute;
+                top: 232px;
+                left: 509px;
+                -webkit-animation-name: spin;
+                -webkit-animation-duration: 600000ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: spin;
+                -moz-animation-duration: 600000ms;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                -ms-animation-name: spin;
+                -ms-animation-duration: 600000ms;
+                -ms-animation-iteration-count: infinite;
+                -ms-animation-timing-function: linear;
+                
+                -webkit-animation-delay: 7000ms;
+                -moz-animation-delay: 7000ms;
+                -ms-animation-delay: 7000ms;
+                animation-delay: 7000ms;
+
+                animation-name: spin;
+                animation-duration: 600000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            #slc4{
+                position: absolute;
+                top: 313px;
+                left: 591px;
+                -webkit-animation-name: spinright;
+                -webkit-animation-duration: 450000ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: spinright;
+                -moz-animation-duration: 450000ms;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                -ms-animation-name: spinright;
+                -ms-animation-duration: 450000ms;
+                -ms-animation-iteration-count: infinite;
+                -ms-animation-timing-function: linear;
+
+                -webkit-animation-delay: 3000ms;
+                -moz-animation-delay: 3000ms;
+                -ms-animation-delay: 3000ms;
+                animation-delay: 3000ms;
+                
+                animation-name: spinright;
+                animation-duration: 450000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            #slc5{
+                position: absolute;
+                top: 365px;
+                left: 642px;
+                -webkit-animation-name: spin;
+                -webkit-animation-duration: 600000ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: spin;
+                -moz-animation-duration: 600000ms;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                -ms-animation-name: spin;
+                -ms-animation-duration: 600000ms;
+                -ms-animation-iteration-count: infinite;
+                -ms-animation-timing-function: linear;
+                
+                animation-name: spin;
+                animation-duration: 600000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="loader">
+            <img id="load-gif" src="img/loading.gif">
+        </div>
+
+        <div id="content">
+            <h1>WAT?</h1>
+
+            <div id="image">
+                <img id="slc1" src="img/slice1.png" draggable="false">
+                <img id="slc2" src="img/slice2.png" draggable="false">
+                <img id="slc3" src="img/slice3.png" draggable="false">
+                <img id="slc4" src="img/slice4.png" draggable="false">
+                <img id="slc5" src="img/slice5.png" draggable="false">
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#content').css("display", "none")
+                $('#loader').css("display", "block")
+            });
+
+            $(window).load(function() {
+                $('#content').css("display", "block")
+                $('#loader').css("display", "none")
+            });
+        </script>
+
+    </body>
+</html>

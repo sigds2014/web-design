@@ -1,22 +1,98 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        
+	<head>
+		<title>Glara Ahn</title>
+		<style>
+			body {
+				background-color: white;
+				margin:12px;
+				padding:0;
+				font-family: helvetica;
+			}
+			
+			#container { 
+				height: 1200px; 
+				width: 1200px; 
+				margin: 0 auto;
+				border: 1px solid rgba(0,0,0,0); 
 
-        <style type="text/css">
+			}
 
-        body {background-color:red;}
+			.text1 {
+				font-family: helvetica;
+				position:fixed;
+				top:130px;
+				left:50px;
+				font-size:11px;
+				line-height:200%;
+				letter-spacing:.6px;
+			}
 
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="viewport" content="width=device-width">
-        <!-- <link rel="stylesheet" href="css/main.css"> -->
-        </style>
-    </head>
-    
-    <body>
-    <p><a href="../index.html">home</a></p>
-    <h1>This is Glara's page</h1>
-    </body>
-    
+			.text2 {
+				font-family: helvetica;
+				position:fixed;
+				bottom:90px;
+				right:60px;
+				text-align:right;
+				font-size:11px;
+				font-size:11px;
+				line-height:200%;
+				letter-spacing:.6px;
+			}
+
+			.arrow-down {
+				width: 0; 
+				height: 0; 
+				border-left: 70px solid transparent;
+				border-right: 40px solid transparent;
+				border-top: 70px solid #fce600;
+				position:fixed;
+				top:50px;
+				left:50px;
+			}
+				
+			.arrow-up {
+				width: 0; 
+				height: 0; 
+				border-left: 70px solid transparent;
+				border-right: 40px solid transparent;
+				border-bottom: 70px solid #54c2ba;
+				position:fixed;
+				bottom:10px;
+				right:60px;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+
+			<div class="arrow-up">
+		
+			<div class="text1">
+				<h2><a href="dair/index.html">charles dair</a></h2>
+				<h2><a href="grid/index.html">grid</a></h2>
+				<h2><a href="floats/index.html">floats</a></h2>
+				<h2><a href="positioning/index.html">positioning</a></h2>
+				<h2><a href="interaction/index.html">interaction</a></h2>
+				<h2><a href="poster/poster.html">poster</a></h2>
+				<h2><a href="nav/craigslist_after.html">nav</a></h2>
+				<h2><a href="jquery/classroom_example.html">jquery plugin</a></h2>
+			</div>
+
+			<div class="text2">
+				<h2><a href="diagram/index.html">website diagram</a></h2>
+				<h2><a href="swedish/swedish.html">swedish</a></h2>
+				<h2><a href="singlepage/barebones.html">single page</a></h2>
+				<h2><a href="forms/basic-form-pages-linked/my_form_from_scratch.html">form</a></h2>
+			</div>
+
+			<div class="arrow-down">
+			</div>
+
+
+
+		</div><!-- end container div -->
+	</body>
 </html>

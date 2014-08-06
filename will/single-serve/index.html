@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mona</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+    
+    <style type="text/css">
+
+    	body {
+            background-color: black; 
+        }
+
+        #container {
+    		width: 794px;
+    		height: 700px;
+            position: fixed;
+            right: 0;
+    	}
+
+    	/*.eyes {
+    		width: 380px;
+    		height: 472px;
+    		float: left;
+            position: relative;
+        }*/
+    	/*#mouth {
+    		width: 757px;
+    		float: left;
+            top: 33px;
+            left: 3px;
+            position: relative;
+            margin: 0 auto;
+    	}*/
+
+        .backlayereyes {
+            width: 280px;
+            height: 372px;
+            float: left;
+        }
+
+        #backlayermouth {
+            width: 560px;
+            float: left;
+        }
+
+
+        img {
+            max-width: 100%;
+        }
+
+        .left {     
+                    width: 414px;
+                    height: 550px;
+                    background: 
+                    url("img-tiles/left.jpg") no-repeat,  
+                    url("img-tiles/left-copy.jpg") no-repeat;
+                    background-size: cover;
+                    float: left;
+                    opacity: 1;
+                    -webkit-transition: .5s ease-in;
+                    -moz-transition: .5s ease-in;
+                    -ms-transition: .5s ease-in;
+                    -o-transition: .5s ease-in;
+                    transition: .5s ease-in;
+
+
+
+        }
+        .left:hover {
+
+                    background: 
+                    url("img-tiles/left-copy.jpg") no-repeat,  
+                    url("img-tiles/left.jpg") no-repeat;
+                    background-size: cover;
+                    /*background-size: contain;*/
+
+
+        }
+
+        .right {
+                    width: 380px;
+                    height: 550px;
+                    background: 
+                    url("img-tiles/right.jpg") no-repeat,  
+                    url("img-tiles/right-copy.jpg") no-repeat;
+                    background-size: cover;
+                    float: left;
+                    opacity: 1;
+                    -webkit-transition: .5s ease-in;
+                    -moz-transition: .5s ease-in;
+                    -ms-transition: .5s ease-in;
+                    -o-transition: .5s ease-in;
+                    transition: .5s ease-in;
+
+        }
+
+        .right:hover {
+
+                    background: 
+                    url(img-tiles/right-copy.jpg) no-repeat;
+                    background-size: cover;
+                    /*background-size: contain;*/
+                }
+
+        .mouth {
+            width: 794px;
+            height: 278px;
+            background: 
+            url("img-tiles/bottom-half.jpg") no-repeat,  
+            url("img-tiles/bottom-half-copy.jpg") no-repeat;
+            float: left;
+            background-size: cover;
+            opacity: 1;
+            -webkit-transition: .5s ease-in;
+            -moz-transition: .5s ease-in;
+            -ms-transition: .5s ease-in;
+            -o-transition: .5s ease-in;
+            transition: .5s ease-in;
+        }
+
+        .mouth:hover {
+            background: 
+            url(img-tiles/bottom-half-copy.jpg) no-repeat;
+            background-size: cover;
+            /*background-size: contain;*/
+        }
+
+    </style>
+    </head>
+    
+    <body>
+    	<div id="container">
+    		<div class="eyes">
+                <div class="left"></div>
+            </div>
+            <div class="eyes">
+                <div class="right"></div>
+            </div>
+            <div id="mouth">
+                <div class="mouth"></div>
+            </div>
+        </div>
+    </body>
+    
+</html>

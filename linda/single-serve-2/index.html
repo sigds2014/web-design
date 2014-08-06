@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>F**k, Marry, Kill</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Lobster|Hind:500|Vidaloka' rel='stylesheet' type='text/css'>
+
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/main.css">
+            <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+            <style type="text/css">
+ 
+
+            body {
+                font-size: 2.6em;
+                font-family: 'Lobster', sans-serif;
+                color: white;
+                background-color: #5fcbb5;
+            }
+            
+            .container {
+                width: 1050px;
+                height: 500px; 
+                margin: 0 auto;
+            }
+
+
+            div {
+                width: 400px;
+                height: 200px; 
+            }
+
+            .list {
+                width: 1050px;
+                height: 150px;
+                float: left;
+                margin: 0 auto;
+            }
+
+            .list div {
+                display:none;
+                float: left;
+                padding: 10px 10px; 
+                margin:0;
+                width: 330px;
+                height: 150px; 
+
+            }
+
+            .icons {
+                width: 710px;
+                height: 250px;
+                margin: 0 auto;
+                margin-top: 50px;
+                margin-bottom: 10px;
+                
+            }
+
+
+            #button-div {
+                margin: 0 auto;
+                clear:both;
+
+            }
+
+            #button-link {
+                margin: 0 auto;
+                display: block;
+            }
+
+            </style>
+
+    </head>
+
+
+    <body>
+
+        <div class="container">
+
+        <div class="icons">
+            <img src="img/f-marry-kill.png" width="531" height "212"/>
+        </div>
+
+        <div class="list">
+            <div id="random0">Nelson Mandela</div> 
+            <div id="random1">Justin Bieber</div>
+            <div id="random2">Oprah Winfrey</div>
+            <div id="random3">Joan Rivers</div>
+            <div id="random4">Miley Cyrus</div>
+            <div id="random5">Mahatma Ghandi</div>
+            <div id="random6">Winston Churchill</div>
+            <div id="random7">Chuck Norris</div>
+            <div id="random8">Hilary Clinton</div>
+            <div id="random9">Jack Black</div>
+            <div id="random10">Michel Foucault</div>
+            <div id="random11">Shakespeare</div>
+            <div id="random12">Adolf Hitler</div>
+            <div id="random13">Lord Voldemort</div>
+            <div id="random14">Anna Nicole Smith</div>
+            <div id="random15">Anne Frank</div>
+            <div id="random16">Stephen Hawking</div>
+            <div id="random17">Prince</div>
+            <div id="random18">Walt Whitman</div>
+            <div id="random19">Janet Jackson</div>
+            <div id="random20">Cher</div>
+            <div id="random21">Attila the Hun</div>
+            <div id="random22">Napoleon Bonaparte</div>
+            <div id="random23">Rosa Parks</div>
+            <div id="random24">Boo Radley</div>
+            <div id="random25">Bill Nye</div>
+            <div id="random26">Jackie Chan</div>
+            <div id="random27">Cruella de Vil</div>
+            <div id="random28">Paris Hilton</div>
+            <div id="random29">Marie Antoinette</div>
+            <div id="random30">Sarah Palin</div>
+        </div>
+        
+        <div id="button-div">
+        <a href="javascript:document.location.reload();" onmouseover="window.status='Refresh'; return true" onmouseout="window.status='gimme another'" id="button-link">
+            <img src="img/button-05.png" width="250" height="88" border="0">
+        </a>
+        <div>
+
+        </div>
+
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+
+        $( document ).ready(function(){
+            console.log( "Document is ready!" );
+
+            var max = 30
+            var min = 0
+            var rand = Math.floor(Math.random()*(max-min+1)+min);   
+               
+            if(rand == 0){
+                $('#random0').css("display", "block");
+                $('#random12').css("display", "block");
+                $('#random22').css("display", "block");
+    
+            } else if(rand == 1){
+                $('#random1').css("display", "block");
+                $('#random4').css("display", "block");
+                $('#random8').css("display", "block");
+            } else if(rand == 2){
+                $('#random11').css("display", "block");
+                $('#random18').css("display", "block");
+                $('#random5').css("display", "block");
+            } else if(rand == 3){
+                $('#random9').css("display", "block");
+                $('#random2').css("display", "block");
+                $('#random1').css("display", "block");
+            } else if(rand == 4){
+                $('#random15').css("display", "block");
+                $('#random16').css("display", "block");
+                $('#random17').css("display", "block");
+            } else if(rand == 5){
+                $('#random2').css("display", "block");
+                $('#random13').css("display", "block");
+                $('#random19').css("display", "block");
+            } else if(rand == 6){
+                $('#random5').css("display", "block");
+                $('#random17').css("display", "block");
+                $('#random21').css("display", "block");
+            } else if(rand == 7){
+                $('#random22').css("display", "block");
+                $('#random1').css("display", "block");
+                $('#random25').css("display", "block");
+            } else if(rand == 8){
+                $('#random20').css("display", "block");
+                $('#random7').css("display", "block");
+                $('#random2').css("display", "block");
+            } else if(rand == 9){
+                $('#random3').css("display", "block");
+                $('#random4').css("display", "block");
+                $('#random5').css("display", "block");
+           } else if(rand == 10){
+                $('#random6').css("display", "block");
+                $('#random7').css("display", "block");
+                $('#random8').css("display", "block");
+           } else if(rand == 11){
+                $('#random9').css("display", "block");
+                $('#random10').css("display", "block");
+                $('#random11').css("display", "block");
+           } else if(rand == 12){
+                $('#random12').css("display", "block");
+                $('#random13').css("display", "block");
+                $('#random14').css("display", "block");
+           } else if(rand == 13){
+                $('#random15').css("display", "block");
+                $('#random16').css("display", "block");
+                $('#random17').css("display", "block");
+           } else if(rand == 14){
+                $('#random18').css("display", "block");
+                $('#random19').css("display", "block");
+                $('#random20').css("display", "block");
+           } else if(rand == 15){
+                $('#random21').css("display", "block");
+                $('#random22').css("display", "block");
+                $('#random23').css("display", "block");
+           } else if(rand == 16){
+                $('#random24').css("display", "block");
+                $('#random25').css("display", "block");
+                $('#random1').css("display", "block");
+           } else if(rand == 17){
+                $('#random5').css("display", "block");
+                $('#random14').css("display", "block");
+                $('#random19').css("display", "block");
+           } else if(rand == 18){
+                $('#random10').css("display", "block");
+                $('#random21').css("display", "block");
+                $('#random25').css("display", "block");
+           } else if(rand == 19){
+                $('#random19').css("display", "block");
+                $('#random12').css("display", "block");
+                $('#random6').css("display", "block");
+           } else if(rand == 20){
+                $('#random24').css("display", "block");
+                $('#random25').css("display", "block");
+                $('#random1').css("display", "block");
+           } else if(rand == 21){
+                $('#random24').css("display", "block");
+                $('#random3').css("display", "block");
+                $('#random9').css("display", "block");
+           } else if(rand == 22){
+                $('#random7').css("display", "block");
+                $('#random15').css("display", "block");
+                $('#random20').css("display", "block");
+           } else if(rand == 23){
+                $('#random21').css("display", "block");
+                $('#random18').css("display", "block");
+                $('#random1').css("display", "block");
+           } else if(rand == 24){
+                $('#random13').css("display", "block");
+                $('#random16').css("display", "block");
+                $('#random7').css("display", "block");
+           } else if(rand == 25){
+                $('#random9').css("display", "block");
+                $('#random12').css("display", "block");
+                $('#random5').css("display", "block");
+           } else if(rand == 26){
+                $('#random26').css("display", "block");
+                $('#random27').css("display", "block");
+                $('#random28').css("display", "block");
+           } else if(rand == 27){
+                $('#random21').css("display", "block");
+                $('#random12').css("display", "block");
+                $('#random13').css("display", "block");
+           } else if(rand == 28){
+                $('#random29').css("display", "block");
+                $('#random30').css("display", "block");
+                $('#random3').css("display", "block");
+           } else if(rand == 29){
+                $('#random5').css("display", "block");
+                $('#random0').css("display", "block");
+                $('#random23').css("display", "block");
+           } else if(rand == 30){
+                $('#random26').css("display", "block");
+                $('#random17').css("display", "block");
+                $('#random28').css("display", "block");
+            } else {
+                $('#random3').css("display", "block");
+                $('#random10').css("display", "block");
+                $('#random24').css("display", "block");
+            }         
+
+        });
+
+    </script>
+
+    
+
+    </body>
+
+</html>

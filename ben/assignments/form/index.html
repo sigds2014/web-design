@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+        <style type="text/css">
+
+        	body {
+        		background-color: #FFF;
+        	}
+
+        	#form-box {
+        		height: 450px;
+        		width: 400px;
+        		background-color: #F5F5F5;
+
+        		position: absolute;
+        		top: 50%;
+        		left: 50%;
+        		margin-top: -225px;
+        		margin-left: -200px;
+
+        		-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+
+				border-width: 1px;
+				border-color: #DCDCDC;
+				border-style: solid;
+        	}
+
+        	h1 {
+        		font-family: "Open Sans", sans-serif;
+        		color: #0099FF;
+        		font-weight: 300;
+        		font-size: 40px;
+        		text-align: center;
+        	}
+
+        	form {
+        		position:absolute;
+        		top: 110px;
+        		left: 50%;
+        		margin-left: -150px;
+        		height: 305px;
+        		width: 300px;
+        	}
+
+        	label {
+        		display: inline-block;
+        		width: 330;
+        		text-align: right;
+        		float: right;
+        		margin-bottom: 30px;
+        	}
+
+        	.label-format {
+        		font-family: "Open Sans", sans-serif;
+        		font-weight: 400;
+        		margin-right: 10px;
+        	}
+        	
+        	input.q {
+        		width: 193px;
+        		height: 30px;
+        		font-family: "Open Sans", sans-serif;
+				font-weight: 300;
+				background-color: white;
+				border-color: #DCDCDC;
+				border-style: solid;
+				border-width: 1px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				color: #000;
+				cursor: auto;
+				direction: ltr;
+				display: inline-block;
+				letter-spacing: normal;
+				line-height: normal;
+				margin: 0;
+				padding-left: 7px;
+				text-align: start;
+				text-indent: 0px;
+				text-shadow: none;
+				text-transform: none;
+				vertical-align: center;
+        	}
+
+			button, input, select, textarea {
+			  font-family : inherit;
+			  font-size   : 100%;
+			}
+
+			input[type=submit], #submit, button  {
+				font-family: sans-serif;
+				font-weight: normal;
+
+				position: absolute;
+				left: 50%;
+				bottom: 10px;
+				margin-left: -30px;
+        	}
+
+
+
+
+        </style>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>
+		  $(document).ready(function() {
+		    if (!("autofocus" in document.createElement("input"))) {
+		      $("#q").focus();
+		    }
+		  });
+		</script>
+    </head>
+    
+    <body>
+
+    	<div id="form-box">
+
+    		<h1>Sign Up</h1>
+
+	    	<form method="link" action="thankyou/index.html" name="f" novalidate>
+
+				<label>
+					<span class="label-format">First Name</span>
+					<input class="q" autofocus>
+				</label>
+
+				<label>
+					<span class="label-format">Last Name</span>
+					<input class="q" autofocus>
+				</label>
+
+				<label>
+					<span class="label-format">Username</span>
+					<input class="q" autofocus>
+				</label>
+
+				<label>
+					<span class="label-format">Email</span>
+					<input class="q" autofocus>
+				</label>
+
+			  	<input type="submit" value="Submit" id="submit">
+
+			</form>
+
+		</div>
+
+    </body>
+    
+</html>

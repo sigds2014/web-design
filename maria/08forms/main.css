@@ -1,0 +1,42 @@
+        
+        body {
+            background-color: rgb(234,240,243);
+            font-family: 'Tangerine', cursive;
+            margin: 0 auto;
+            text-align: center;
+            width: 500px;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: rgb(5,97,72);
+        }
+
+        form {
+            position: absolute;
+            right: 500px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            float: left;
+            font-size: 27px;
+            text-align: right;
+            margin-right: -50px;
+            width: 300px;
+            color: rgb(222,192,46);
+        }
+
+        #input {
+            font-size: 30px;
+            font-family: 'Tangerine', cursive;
+            background-color: rgb(185,91,18);
+            color: white;
+            margin-top: 10px;
+            margin-left: 325px;
+        }
+
+        * {
+            border: none;
+        }

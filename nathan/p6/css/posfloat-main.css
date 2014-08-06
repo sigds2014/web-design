@@ -1,0 +1,30 @@
+#container{
+	background-color: white;
+	height: 800px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.bar{ 
+	background-color: red;
+	margin: 5px;
+	height: 400px;
+	width: 50px;
+	float: left;
+	position: relative;
+}
+
+.bar:hover{
+	 -webkit-animation: hueshift 2s; /* Chrome, Safari, Opera */
+	 -webkit-animation-iteration-count: infinite;
+    animation: hueshift 2s;
+
+}
+	
+@-webkit-keyframes hueshift {
+    0%   {background: red; top:0px;}
+    25%  {background: yellow; top:15px;}
+    50%  {background: blue; top:0px;}
+    75%  {background: green; top:15px;}
+    100% {background: red; top:0px;}
+}

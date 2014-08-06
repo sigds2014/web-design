@@ -1,0 +1,36 @@
+h1{
+	font-family: 'Open Sans',"Helvetica Neue",arial,sans-serif;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:xx-large;
+	background-color: #3F86C4;
+	margin-bottom: 0px;
+	line-height: 100px;
+	padding-left: 20px;
+}
+h2{
+	font-family: helvetica,"Helvetica Neue",arial,sans-serif;
+	color:#3F86C4;
+	font-size: x-large;
+	padding-left: 20px; 
+}
+.introduction{
+	/*background-color: #D2CFCF;*/
+	font-style: italic;
+	font-size: small;
+	line-height: 20px;
+	padding-top: 20px;
+	margin-bottom: 30px;
+	padding-left: 20px;
+}
+#listblock{
+	width:230px;
+	height:230px;
+	color:#FFFFFF;
+	background-color: #B7D7F2;
+	padding: 10px;
+	line-height: 25px;
+}
+p{
+	font-family: 'Open Sans';
+}

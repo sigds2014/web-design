@@ -1,0 +1,73 @@
+          body {
+          	font-family: 'Droid Serif', serif;
+          	background-color: rgb(243,243,240);
+            margin: 0 auto;
+          	width: 450px;
+          }
+
+          h1 {
+          	color: rgb(64,64,64);
+          	font-size: 30px;
+          	font-weight: bold;
+          	text-align: left;
+          	margin-top: 50px;
+          }
+
+          h2 {
+          	color: rgb(87,183,167);
+          	font-size: 20px;
+          	font-weight: bold;
+          	text-align: center;
+          }
+
+          h3 {
+          	color: rgb(90,88,74);
+          	font-size: 18px;
+          	font-weight: bold;
+          	text-align: center;
+          }
+
+          p {
+          	color: rgb(50,50,48);
+          	font-size: 14px;
+          	text-align: justify;
+          	margin-bottom: 2px;
+          }
+
+          li {
+          	color: rgb(199,184,84);
+          }
+
+          .quote {
+          	text-align: center;
+          	font-size: 14px;
+          	color: rgb(201, 84, 35);
+          	font-family: times;
+          }
+
+          .smaller {
+            font-size: 12px;
+          }
+
+          #list {
+          	text-align: left;
+          	font-size: 14px;
+          }
+
+          .seven {
+          	position: fixed;
+            left: 170px;
+            top: -225px;
+          }
+
+          .bigseven {  
+            font-family: 'Droid Serif', serif;
+            font-size: 450px;
+            line-height: 0;
+            color: rgb(201, 84, 35);
+            opacity: 0.85;
+          }
+
+          h1:hover {
+          	color: rgb(201, 84, 35);
+          }

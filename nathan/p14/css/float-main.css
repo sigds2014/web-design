@@ -1,0 +1,57 @@
+div{
+	float: left;
+}
+
+.container{
+	width: 500px;
+	height: 340px;
+	float: none;
+}
+
+.blue-left{
+	width: 140px;
+	height: 140px;
+	background-color: blue;
+}
+
+.blue-right{
+	width: 280px;
+	height: 140px;
+	background-color: blue;
+}
+
+.white-vert{
+	width: 20px;
+	height: 140px;
+	background-color: white;
+}
+
+.white-left{
+	width: 160px;
+	height: 20px;
+	background-color: white;
+}
+
+.white-right{
+	width: 300px;
+	height: 20px;
+	background-color: white;
+}
+
+.red-vert{
+	width: 40px;
+	height: 140px;
+	background-color: red;
+}
+
+.red-horiz{
+	width: 40px;
+	height: 20px;
+	background-color: red;
+}
+
+#middle-stripe{
+	width:500px;
+	height: 40px;
+	background-color: red;
+}

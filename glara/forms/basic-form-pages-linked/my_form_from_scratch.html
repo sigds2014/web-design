@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Universal Form</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <style type="text/css">
+        	body {
+        		background-color:white;
+        		padding:30px;
+        	}
+        	.astropic {
+        		height:100%;
+        		width:100%;
+        	}
+
+        	p {
+        		font-family: 'Sorts Mill Goudy', serif;
+                text-transform: uppercase;
+                font-size: 10px;
+                letter-spacing: .2em;
+                color: #aaa;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                margin-left:3px;
+        	}
+
+            .submit {
+                position:fixed;
+                top:75px;
+                right:38px;
+            }
+
+
+        </style>
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>
+		  $(document).ready(function() {
+		    if (!("autofocus" in document.createElement("input"))) {
+		      $("#q").focus();
+		    }
+		  });
+		</script>
+
+	</head>
+    
+    <body>
+
+		<p>
+			Tada! Here&#8217;s NASA&#8217;s Astronomy Picture of the Day!<br><br>
+
+            What&#8217;s the first word that comes to mind? <br><br>
+		</p>
+
+		<div class="submit">
+    		<form method="link" action="index_my_example.html" name="f" novalidate>
+    	  		<input id="q" autofocus>
+    	  		<input type="submit" value=">" id="submit">
+    		</form><br><br>
+        </div>
+
+        <img class="astropic" src="nasa.jpg" /><br>
+            
+
+    </body>
+
+</html>

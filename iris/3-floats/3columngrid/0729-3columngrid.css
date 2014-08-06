@@ -1,0 +1,45 @@
+header {
+	height:50px; 
+	width:640px;
+	background-color:red;
+	margin:10px;}
+
+footer{
+	height:50px; 
+	width:640px;
+	background-color:red;
+	margin:10px;
+}
+
+nav{
+	height: 20px;
+	width: 640px;
+	margin: 10px;
+	background-color: red;
+}
+
+div.column{
+	height: 400px;
+	width: 200px;
+	background-color: red;
+	margin: 10px;
+}
+
+div.container{
+	width:700px;
+	height:820px;
+	vertical-align: center;
+	margin: 0 auto;
+	/* border:1px dotted #333; */
+}
+
+
+.float-left{
+	float:left;
+	margin:0px 0px;
+}
+
+.float-right{
+	float:right;
+	margin:0px 0px;
+}

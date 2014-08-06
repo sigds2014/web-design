@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>-Life is ?-</title>
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="icon" href="img/colorrail6-02.png" type="image/x-icon" >
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/colorrail6-02.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/colorrail6-02.png">
+		<link rel="apple-touch-icon-precomposed" href="img/colorrail6-02.png">
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+
+		<style>
+
+
+			p.life{
+				font-family: "Open Sans",arial,san serif;
+				color: white;
+				font-size: 50px;
+				font-weight: bolder;
+				/*position: absolute;
+				top:50%;
+				left: 50%;
+				z-index: 1;*/
+				
+			}
+
+			.lifeblock{
+				height:400px; 
+				width:400px;
+				margin: 0 auto;
+				text-align: center;
+
+			}
+
+			.imageup{
+
+				-moz-transform: scale(1) rotate(9000000000000000000deg) ;
+				-webkit-transform: scale(1) rotate(9000000000000000000deg) ;
+		        -o-transform: scale(1) rotate(9000000000000000000deg) ;
+		        -ms-transform: scale(1) rotate(9000000000000000000deg) ;
+		        transform: scale(1) rotate(9000000000000000000deg) ;
+
+				-webkit-transition: all 500s ease-in;
+				-moz-transition: all 500s ease-in;
+				-ms-transition: all 500s ease-in;
+				-o-transition: all 500s ease-in;
+				transition: all 500s ease-in;
+			}
+
+			.imagedown{
+
+				-moz-transform: scale(1) rotate(90000deg) ;
+				-webkit-transform: scale(1) rotate(90000deg) ;
+		        -o-transform: scale(1) rotate(90000deg) ;
+		        -ms-transform: scale(1) rotate(90000deg) ;
+		        transform: scale(1) rotate(90000deg) ;
+
+				-webkit-transition: all 500s ease-in;
+				-moz-transition: all 500s ease-in;
+				-ms-transition: all 500s ease-in;
+				-o-transition: all 500s ease-in;
+				transition: all 500s ease-in;
+			}
+
+
+			img{
+				width: 120%;
+				
+				position: fixed;
+				top: 0%;
+				right: -10%;
+				z-index: -1;
+			}
+
+			#imgup{
+				display: none;
+			}
+
+			#imgdown{
+				display: none;
+			}
+
+			#lifeup{
+				display: none;
+			}
+
+			#lifedown{
+				display: none;
+			}
+
+			.upbotton{
+					height: 30px;
+					width: 300px;
+					background-color: black;
+					color: white;
+					opacity: 0.8;
+					border: 2px solid black;
+					font-family: "Open Sans";
+					font-size: 20px;
+					margin-top: 15px;
+					text-align: center; 
+					-webkit-border-radius: 5px 5px 5px 5px;
+					border-radius: 5px 5px 5px 5px;
+
+					-webkit-box-shadow: 0px 0px 1px 1px #D1D1D1;
+			}
+
+			.downbotton{
+					height: 30px;
+					width: 300px;
+					background-color: black;
+					color: white;
+					opacity: 0.8;
+					border: 2px solid black;
+					/*border: 2px solid white;*/
+					font-family: "Open Sans";
+					font-size: 20px;
+					margin-top: 15px;
+					text-align: center; 
+					-webkit-border-radius: 5px 5px 5px 5px;
+					border-radius: 5px 5px 5px 5px;
+
+					-webkit-box-shadow: 0px 0px 1px 1px #D1D1D1;
+					
+			}
+
+			
+			.onbotton{
+				background-color: white;
+				color: black;
+				-webkit-box-shadow: 3px 3px 2px 1px #4F4F4F;
+				box-shadow: 3px 3px 2px 1px #D1D1D1;
+
+			}
+
+			.hide{
+					display: none;
+					/*visibility: hidden*/;
+			}
+
+			.maintext{				
+				height: 70px;
+				width: 100%;
+				font-family: "Open Sans";
+				font-size: 20px;
+				font-weight: bolder;
+				color: white;
+				background-color: black;
+				opacity:0.5; 
+				padding-left:20px;
+				padding-right: 20px; 
+				position: fixed;
+				bottom: 0px;
+				left: 0px;
+				z-index: 2;
+
+			}
+
+			.container{
+				width: 950px;
+				height: 70px;
+				margin: 0 auto;
+			}
+
+			.float-left{
+				float: left;
+			}
+
+			.float-right{
+				float:right;
+			}
+
+			p{
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+			<div class="lifeblock">
+				<p id="life0" class="life">LIFE<br/>is<br/>?</p>
+				<p id="lifeup" class="life">LIFE<br/>is<br/>GRAY<br/>(T-T)</p>
+				<p id="lifedown" class="life">LIFE<br/>is<br/>COLORFUL<br/>(^O^)</p>
+			</div>
+
+				<img id="img0" src="img/colorrail6-02.png">
+				<img id="imgup" src="img/colorrail6-02.png">
+				<img id="imgdown" src="img/colorrail6-02.png">
+			
+
+			<div class="maintext">
+				<div class="container">
+				<p id="text0" class="float-left">Choose your status :</p> 
+				<p id="botton1" class="upbotton float-left">RUSH! RUSH!! RUSH!!!</p> 
+				<p id="botton2" class="downbotton float-left">RELAX~ RELAX~~ RELAX~~~</p>
+				</div>
+			</div>	
+
+		
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+	        <script>
+	        	
+	        	$( "p.upbotton" )
+				  .mouseover(function() {
+					$( "p#botton1" ).addClass("onbotton");
+
+					$( "p#life0" ).fadeOut(10);
+				  	$( "p#lifeup" ).fadeIn(10);
+				  	$( "img#img0" ).fadeOut(10);
+				    $("img#imgup").fadeIn(10).addClass("imageup");
+
+				  });
+
+				$( "p.upbotton" )
+				  .mouseout(function() {
+					$( "p#botton1" ).removeClass("onbotton");
+
+					$( "p#lifeup" ).fadeOut(10);
+				  	$( "p#life0" ).fadeIn(10);
+				  	$( "img#imgup" ).fadeOut(10).removeClass("imageup");
+				    $("img#img0").fadeIn(10);					
+				  });
+
+				$( "p.downbotton" )
+				  .mouseover(function() {
+					$( "p#botton2" ).addClass("onbotton");
+
+					$( "p#life0" ).fadeOut(10);
+				  	$( "p#lifedown" ).fadeIn(10);
+				    $( "img#img0" ).fadeOut(10);
+				    $("img#imgdown").fadeIn(10).addClass("imagedown");
+
+				});
+
+				$( "p.downbotton" )
+				  .mouseout(function() {
+					$( "p#botton2" ).removeClass("onbotton");
+
+					$( "p#lifedown" ).fadeOut(10);
+				  	$( "p#life0" ).fadeIn(10);
+				  	$( "img#imgdown" ).fadeOut(10).removeClass("imagedown");
+				    $("img#img0").fadeIn(10);
+				  });
+
+	    	</script>
+
+	        		
+	
+	</body>
+
+</html>

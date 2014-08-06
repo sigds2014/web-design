@@ -1,0 +1,826 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+body{
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #212A3F;
+    background-color: #F2F2F2;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-size: 1.83em;
+    font-weight: 700;
+    margin: 0.4em 0 0 0;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin: 0.8em 0;
+    color: #8AB839;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0 0 -1em 0;
+}
+
+h6 {
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-top: 0.1em;
+    color: #8AB839;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+p{
+    font-size: 0.9em;
+}
+
+a{
+    font-weight: 700;
+    color: #8AB839;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.6;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s; /* Firefox 4 */
+    -webkit-transition: all 0.5s; /* Safari and Chrome */
+    -o-transition: all 0.5s; /* Opera */
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #8AB839;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#logo{
+    width: 175px;
+    height: 50px;
+    display: inline-block;
+    background:  url(../img/posterfarm_logo.svg);
+    background-size: 175px 114px;
+    background-position: 0 50px;
+    float: right;
+    text-indent: -9999px;
+    margin-right: 15px;
+}
+
+.nav-menu{
+    display: inline-block;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    padding-top: 0;
+    margin: 10px 0 5px 15px;
+    border-radius: 3px;
+}
+
+
+#lines { 
+    border-bottom: 9px double #8AB839; 
+    border-top: 3px solid #8AB839; 
+    content:"";
+    position: relative;
+    top: 3px;
+    height: 3px; 
+    width:20px;
+}
+
+nav ul{
+    display: none;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    margin: 15px;
+    text-transform: uppercase;    
+}
+
+nav li a{
+    font-size: 0.8em;
+    color: #F2F2F2;
+}
+
+nav li a:hover{
+    opacity: 0.6;
+}
+
+.container{
+    width: 98%;
+    padding-top: 75px;
+    margin: 0 2.5%;
+}
+
+/*Latest Photo*/
+.latestPhotoPost{
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+#latestPhoto{
+    width: 100%;
+}
+
+ #clip1, #clip2{
+    display: none;
+}
+
+.latestPhotoCaption{
+    width: 95%;
+    margin: 20px 2.5%;
+}
+
+/*Latest Text Posts*/
+.latestTextPosts{
+    width: 95%;
+    height: 225px;
+    margin: 20px 2.5%;
+    float: left;
+}
+
+.textPost{
+    float: left;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+}
+
+.textPost a{
+    color: #212A3F;
+}
+
+.textPreview{
+    display: none;
+}
+
+.readMore{
+    display: none;
+}
+
+/*Featured Artist*/
+.featuredArtist{
+    float: left;
+    width: 95%;
+    margin: -80px 2.5% 5px 2.5%;
+    height: 350px;
+}
+
+#artistPicture{
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+#artistDescription{
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+/*Footer*/
+    .bg{
+    display: none;
+    }
+
+    .bg-gradient{
+        display: none;
+    }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35.5em) {
+    /*Latest Photo*/
+    .latestPhotoPost{
+        width: 50%;
+        min-width: 355px;
+        float: left;
+    }
+
+    #latestPhoto{
+        width: 100%;
+        max-width: 370px;
+    }
+
+    .container{
+        padding-top: 75px;
+    }
+
+    .latestPhotoCaption{
+        float: left;
+        width: 30%;
+        margin: 0 0 0 2%;
+    }
+
+    .latestTextPosts{
+        width: 30%;
+        margin: 100px 0 0 2%;
+    }
+
+    .textPost{
+        height: 50px;
+    }
+
+    /*Featured Artist*/
+    .featuredArtist{
+        margin: 0px 2.5%;
+        height: 300px;
+    }
+
+    #artistDescription{
+        width: 50%;
+        height: 130px;
+    }
+
+    #artistPicture{
+        width: auto;
+        min-height: 50px;
+        height: 80%;
+        max-height: 250px;
+        margin: 10px 15px 10px 0;
+    }
+}  /* END @media only screen and (min-width: 35em)*/
+
+@media only screen and (min-width: 55em) {
+    nav{
+        height: 75px;
+    }
+
+    .nav-menu{
+    display: none;
+    }
+
+    #logo{
+    height: 64px;
+    margin: 5px 0 0 -30px;
+    background-position: 20px 0;
+    float: left;
+    }
+
+    nav ul{
+        display: block;
+        float: right;
+        margin-top: 0;
+    }
+
+    nav li{
+        float: left;
+        margin: 0 2em;
+        line-height: 75px;
+    }
+
+    .cbp-spmenu{
+        display: none;
+    }
+
+    .bg-gradient{
+        display: block;
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 600px;
+        left: 0;
+        z-index:-4;
+        pointer-events:none;
+        background-image: -o-linear-gradient(bottom, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 0) 100%);
+        background-image: -moz-linear-gradient(bottom, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 0) 100%);
+        background-image: -webkit-linear-gradient(bottom, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 0) 100%);
+        background-image: -ms-linear-gradient(bottom, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 0) 100%);
+        background-image:  linear-gradient(to bottom, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 0) 100%);
+    }
+
+    .bg{
+        display: block;
+        width:100%;
+        height: 175px;
+        position: absolute;
+        top: 600px;
+        left: 0;
+        z-index: -5;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .bgTile{
+        display: inline-block;
+        height: 100%;
+        width: 120px;
+        opacity: 0.5;
+        margin: 0 1px;
+    }
+
+    .bgTile img{
+        width: 100%;
+        position: relative;
+        bottom: -5px;
+    }
+
+    .bgTile:hover{
+        cursor: pointer;
+        -ms-transform: translateY(-15px); /* IE 9 */
+        -webkit-transform: translateY(-15px); /* Chrome, Safari, Opera */
+        transform: translateY(-15px);
+        opacity: 0.9;
+        transition: all 0.5s;
+        -moz-transition: all 0.5s; /* Firefox 4 */
+        -webkit-transition: all 0.5s; /* Safari and Chrome */
+        -o-transition: all 0.5s; /* Opera */
+
+    }
+
+
+    .container{
+        padding-top: 100px;
+    }
+
+    /*Latest Photo Post*/
+
+
+    .latestPhotoPost{
+        width: 32.85%;
+        margin-left: 2%;
+        float: left;
+    }
+
+    #latestPhoto{
+        width: 100%;
+        min-width: 350px;
+        max-width: none;
+        -webkit-box-shadow: -17px 21px 29px 5px rgba(0,0,0,0.1);
+        -moz-box-shadow: -17px 21px 29px 5px rgba(0,0,0,0.1);
+        box-shadow: -17px 21px 29px 5px rgba(0,0,0,0.1);
+    }
+
+    .latestPhotoCaption{
+        width: 53%;
+        margin: 0 0 0 1.5%;
+    }
+
+    /*Latest Text Posts*/
+    .latestTextPosts{
+        width: 53%;
+        height: 230px;
+        margin: 20px 0 0 1.5%;
+    }
+
+    .textPreview{
+        display: block;
+    }
+
+    .textPost{
+        width: 31%;
+        height: 200px;
+        margin: 10px 1% 0 1%;
+    }
+
+    /*Featured Artist*/
+    .featuredArtist{
+        width: 51%;
+        height: 120px;
+        margin: 5px 20px;
+    }
+
+    #artistDescription{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 65em){
+    .container{
+        padding-top: 125px;
+    }
+
+    .latestPhotoPost{
+        margin-left: 10%;
+        max-width: 450px;
+    }
+
+    #clip1{
+    display: block;
+    width: ;
+    z-index: 5;
+    position: absolute;
+    width: 4.2%;
+    min-width: 46px;
+    max-width: 49px;
+    top: -30px;
+    left: 15%;
+    }
+
+    #clip2{
+    display: block;
+    z-index: 5;
+    position: absolute;
+    width: 4.2%;
+    min-width: 46px;
+    max-width: 49px;
+    top: -30px;
+    left: 38%;
+    }
+
+
+    .readMore{
+        display: block;
+        padding: 5px 5px 5px 10px;
+        width: 90%;
+        background-color: #434F5B;
+        font-size: 0.8em;
+        border-radius: 4px;
+    }
+
+    .readMore a{
+        color: #F2F2F2;
+    }
+
+    .readMore a:hover{
+        opacity: 1;
+    }
+
+    .readMore:hover{
+        background-color: #212A3F;
+        transition: all 0.5s;
+        -moz-transition: all 0.5s; /* Firefox 4 */
+        -webkit-transition: all 0.5s; /* Safari and Chrome */
+        -o-transition: all 0.5s; /* Opera */
+    }
+
+    /*Featured Artist*/
+    .featuredArtist{
+        height: 125px;
+        transition: all 0.5s;
+        -moz-transition: all 0.5s; /* Firefox 4 */
+        -webkit-transition: all 0.5s; /* Safari and Chrome */
+        -o-transition: all 0.5s; /* Opera */
+    }
+    
+    #artistPicture{
+        max-height: 210px;
+    }
+
+    /*Footer*/
+    .bg-gradient{
+        height: 185px;
+        top: 665px;
+    }
+
+    .bg{
+        height: 185px;
+        top: 665px;
+    }
+
+    .bgTile img{
+        bottom: -10px;
+    }
+
+
+}
+
+@media only screen and (min-width: 78em){
+    .featuredArtist{
+        height: 250px;
+    }
+
+    .bg-gradient{
+        top: 760px;
+    }
+
+    .bg{
+       top: 760px;
+    }
+
+    #artistDescription{
+        display: block;
+        width: 60%;
+        height: 100px;
+        margin-right: -15px;
+
+    }
+}
+
+@media only screen and (min-width: 93em){
+    #clip1{
+    display: none;
+    }
+
+    #clip2{
+    display: none;
+    }
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

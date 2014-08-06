@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	</head>
+
+<style>
+body{
+	font-family: 'Quicksand', sans-serif;
+	background-color: white;
+}
+p{	
+	font-size: .2em;
+}
+.description{
+	font-size: 1em;
+	text-align: left;
+}
+.description a{
+	color: black;
+	text-decoration: none;
+	font-weight: 700;
+}
+.description a:hover{
+	color: brown;
+}
+.help{
+	font-family: 'Lobster', cursive;
+	position: fixed;
+	top: 0;
+	left: 20%;
+	font-size: 3em;
+	line-height: .5em;
+	margin-top:0;
+	padding-top: 3%;
+}
+#byline{
+	font-size: .1em;
+	font-family: 'Quicksand', sans-serif;
+	color: black;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	padding: 1%;
+}
+img{
+	position: fixed;
+	left: 6%;
+	top: 1%;
+	width: 15%;
+	-webkit-animation: rotating 15s linear infinite;
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.home{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 20%;
+/*	background: -webkit-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); 
+  	background: -o-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk; 
+  	background: -moz-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); 
+  	background: linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); */
+}
+.hover{
+	color: gray;
+	margin-top: 0%;
+	padding-top: 30%;
+	margin: left: 0%;
+	margin-right: 0;
+	text-align: right;
+	opacity: 1;
+	display: inline-block;
+	text-align: center;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+/*.plate{
+	position: fixed;
+	left: 5%;
+	top:5%;
+	z-index: 1;
+	height: 80px;
+	width: 80px;
+	border-radius: 100%;
+	border-width: 10px;
+	border-style: solid;
+	border-left-color: black;
+	border-top-color: black;
+	border-bottom-color: white;
+	border-right-color: white;
+	margin: 0% 0% 0% 0%;
+}
+#tit{
+	position: fixed;
+	left: 10%;
+	top: 0;
+}*/
+.tabbed-menu {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    width: 600px;
+}
+.tabs {
+    text-align: center;
+    list-style: none;
+    position: relative;
+    margin: 10% 0 0 0;
+    padding: 0;
+    line-height: 26px;
+    color: black;
+}
+.tabs .tab {
+	font-family: 'Quicksand', sans-serif;
+    margin-bottom: -1px;
+    padding: 3px 10px 0 10px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+.tabs .tab.selected {
+    text-decoration: line-through;
+}
+.tabs .tab:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+.page {
+    text-align: center;
+    display: none;
+    width: 100%;
+    height: 100%;
+    }
+
+.page.selected {
+    display: block;
+    width: 100%;
+    height: 200px;
+     }
+
+.circle{
+	height: 80px;
+	width: 80px;
+	float: left;
+	border-radius: 100%;
+	border: 1px solid black;
+	margin: 0% 0% 0% 50%;
+	-webkit-transition: transform 10s ease-out;
+	-moz-transition: transform 10s ease-out;
+	-ms-transition: transform 10s ease-out;
+	-o-transition: transform 10s ease-out;
+		transition: transform 10s ease-out;
+}
+.circle:hover{
+	-moz-transform: rotate(720deg);
+		-webkit-transform: rotate(720deg);
+		-o-transform: rotate(720deg);
+		-ms-transform: rotate(720deg);
+		transform:  rotate(720deg);
+}
+#ellipse_cornsilk:hover{
+	border-width: 10px;
+	border-top-color: orangered;
+	border-bottom-color: slategray;
+	border-right-color: gold;
+	border-left-color: slategray;
+}
+#ellipse_olive:hover{
+	border-width: 10px;
+	border-top-color: palegoldenrod;
+	border-bottom-color: crimson;
+	border-right-color: palegoldenrod;
+	border-left-color: linen;
+}
+#ellipse_salmon:hover{
+	border-width: 10px;
+	border-top-color: red;
+	border-bottom-color: lightcyan;
+	border-right-color: mediumvioletred;
+	border-left-color: lightcyan;
+}
+#ellipse_almond:hover{
+	border-width: 10px;
+	border-top-color: chartreuse;
+	border-bottom-color: darkblue;
+	border-left-color: chartreuse;
+	border-right-color: darkblue;
+}
+#ellipse_mint:hover{
+	border-width: 10px;
+	border-top-color: dodgerblue;
+	border-bottom-color: mediumspringgreen;
+	border-left-color: dodgerblue;
+	border-right-color: mediumspringgreen;
+}
+#ellipse_bisque:hover{
+	border-width: 10px;
+	border-top-color: gainsboro;
+	border-bottom-color: cadetblue;
+	border-right-color: peru;
+	border-left-color: cadetblue;
+}
+#ellipse_chocolate:hover{
+	border-width: 10px;
+	border-top-color: lightgray;
+	border-bottom-color: red;
+	border-right-color: white;
+	border-left-color: red;
+}
+#ellipse_plum:hover{
+	border-width: 10px;
+	border-top-color: thistle;
+	border-bottom-color: khaki;
+	border-right-color: thistle;
+	border-left-color: khaki;
+}
+#ellipse_papaya:hover{
+	border-width: 10px;
+	border-top-color: maroon;
+	border-bottom-color: burlywood;
+	border-right-color: burlywood;
+	border-left-color: maroon
+}
+#ellipse_peach:hover{
+	border-width: 10px;
+	border-top-color: palegreen;
+	border-bottom-color: darkslateblue;
+	border-right-color: palegreen;
+	border-left-color: darkslateblue;
+}
+#ellipse_tomato:hover{
+	border-width:10px;
+	border-top-color: yellow;
+	border-bottom-color: red;
+	border-right-color: yellow;
+	border-left-color: antiquewhite;
+}
+#ellipse_honeydew:hover{
+	border-width: 10px;
+	border-top-color: lightpink;
+	border-bottom-color: green;
+	border-right-color: lightpink;
+	border-left-color: green;
+}
+#ellipse_lemon:hover{
+	border-width: 10px;
+	border-top-color: firebrick;
+	border-bottom-color: darkorange;
+	border-right-color: firebrick;
+	border-left-color: darkkhaki;
+}
+#ellipse_lime:hover{
+	border-width: 10px;
+	border-top-color: whitesmoke;
+	border-bottom-color: white;
+	border-right-color: whitesmoke;
+	border-left-color: white;
+}
+.tiles{
+	width: 100%;
+	height: 50%;
+}
+.palette{
+	width: 100px;
+	height: 100%;
+	float:left; 
+	margin: 0% 40%;}
+
+#p-cornsilk, #p-olive, #p-almond, #p-salmon, #p-bisque, #p-mint, #p-chocolate, #p-plum, #p-papaya, #p-peach, #p-tomato, #p-honeydew, #p-lemon, #p-lime{opacity: 0;}
+
+.interaction{
+	width: 20%;
+	padding-top: 10%;
+	height: 200px;
+	float: left;
+}
+.interaction_f{
+	width: 14%;
+	padding-top: 10%;
+	height: 200px;
+	float: left;
+}
+.interaction_j{
+	width: 20%;
+	padding-top: 10%;
+	height: 200px;
+	float: left;
+}
+.colors {
+	list-style-type: none;
+	text-align: left;
+	float: left;
+	}
+}
+
+</style>
+<body>
+	<!-- <img src="cssmilk-01.png"> -->
+	<img src="ramenbw-01.png">
+	
+	<!-- <div class= "plate" style="background-color: lightgray"></div> -->
+	<!-- <img src="ramen-spoon-01.png"> -->
+
+	<p class="help" style="color: black">CSS Colors </br>
+	<span style="color:lightgray; font-size: .5em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for the starving artist</span></p>
+	<p id="byline"> site by C.Bradford </p>
+	<div class= "tabbed menu">
+		<ul class= "tabs">
+			<li class="tab selected">home</li>
+			<li class="tab">veggies</li>
+			<li class = "tab">fruits</li>
+			<li class="tab">meats and nuts</li>
+			<li class="tab">dairy</li>
+			<li class="tab">junkfood</li>
+		
+		</ul>
+	</div>
+		<div class="content">
+
+			<section class="page selected">
+				<div class="home">
+					<p class="description">
+						&nbsp;&nbsp;&nbsp;&nbsp;CSS Colors for the starving artist is a reference of the color names that can be used in CSS without a #hex code or rgb(value). It is a guide for designers who are just starting out in HTML or CSS, like me (what have we been doing all this time?!). Inspired by the age old stereotype of the starving artist, the collection deals directy with the CSS colors named after foods, but I'd like to think that those artists could afford a nice juicy steak dinner if they picked up some HTML/CSS skills to boast. 
+					</br>
+					</br>
+						&nbsp;&nbsp;&nbsp;&nbsp;Our collection of color options is divided into the five major food groups. Hovering over the colored circles reveals color palettes made using only CSS Colors.
+					</br>
+				</br>
+						&nbsp;&nbsp;&nbsp;&nbsp;See a list of all of the CSS Colors at the w3schools site <a href=url"http://www.w3schools.com/cssref/css_colornames.asp">here</a>.
+					</p>
+					
+				</div>
+			</section>
+			<!-- VEG -->
+			<section class="page">
+			<div class ="tiles">
+			<div class="interaction">
+					<div id = "ellipse_cornsilk" class="circle" style="background-color: cornsilk">
+						<p id="vhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+					</div>
+					<div id ="p-cornsilk" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">cornsilk</span></li><li>w/</br>orangeRed</li><li> slateGray </li><li> gold </li></ul></div>
+				</div>
+				<div class="interaction">
+				<div id ="ellipse_olive" class="circle" style="background-color: olive"></div>
+				<div id ="p-olive" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">olive</span></li><li>w/</br>paleGoldenRod</li><li>crimson</li><li>linen</li></ul></div>
+			</div>
+				</div>
+			</section>
+					
+
+			<!-- FRUIT -->
+			<section class="page">
+				<div class ="tiles">
+
+				<div class="interaction_f">
+					<div id = "ellipse_plum" class="circle" style="background-color: plum">
+					<p id="fhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+				</div>
+					<div id ="p-plum" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">plum</span></li><li>w/</br>thistle</li><li> khaki </li></ul></div>
+				</div>
+
+				<div class="interaction_f">
+				<div id ="ellipse_papaya" class="circle" style="background-color: papayawhip"></div>
+				<div id ="p-papaya" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">papayaWhip</span></li><li>w/</br>maroon</li><li>burlywood</li><li> color </li></ul></div>
+			</div>
+
+				<div class="interaction_f">
+				<div id ="ellipse_peach" class="circle" style="background-color: peachpuff"></div>
+				<div id ="p-peach" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">peachPuff</span></li><li>w/</br>paleGreen</li><li>darkSlateBlue</li></ul></div>
+			</div>
+
+				<div class="interaction_f">
+				<div id ="ellipse_tomato" class="circle" style="background-color: tomato"></div>
+				<div id ="p-tomato" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">tomato</span></li><li>w/</br>yellow</li><li>antiqueWhite</li></ul></div>
+			</div>
+
+				<div class="interaction_f">
+				<div id ="ellipse_honeydew" class="circle" style="background-color: honeydew"></div>
+				<div id ="p-honeydew" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">honeydew</span></li><li>w/</br>lightPink</li><li>green</li></ul></div>
+			</div>
+
+				<div class="interaction_f">
+				<div id ="ellipse_lemon" class="circle" style="background-color: lemonchiffon"></div>
+				<div id ="p-lemon" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">lemonChiffon</span></li><li>w/</br>firebrick</li><li>darkKhaki</li><li>darkOrange</li></ul></div>
+			</div>
+
+				<div class="interaction_f">
+				<div id ="ellipse_lime" class="circle" style="background-color: lime"></div>
+				<div id ="p-lime" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">lime</span></li><li>w/</br>whitesmoke</li><li>white</li></ul></div>
+			</div>
+				</div>		
+			</section>
+
+			<!-- MEAT -->
+			<section class="page">
+			<div class ="tiles">
+			<div class="interaction">
+					<div id = "ellipse_salmon" class="circle" style="background-color: salmon">
+					<p id="mhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+				</div>
+					<div id ="p-salmon" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">salmon</span></li><li>w/</br>red</li><li> mediumVioletRed </li><li> lightCyan </li></ul></div>
+				</div>
+
+				<div class="interaction">
+				<div id ="ellipse_almond" class="circle" style="background-color: blanchedalmond"></div>
+				<div id ="p-almond" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">blanchedAlmond</span></li><li>w/</br>chartreuse</li><li>darkblue</li></ul></div>
+			</div>
+		</div>
+			</section>
+
+			<!-- DAIRY -->
+			<section class="page">
+			<div class ="tiles">
+			<div class="interaction">
+					<div id = "ellipse_mint" class="circle" style="background-color: mintcream">
+					<p id="dhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+				</div>
+					<div id ="p-mint" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">mintCream</span></li><li>w/</br>dodgerBlue</li><li> mediumSpringGreen </li></ul></div>
+				</div>
+
+				<div class="interaction">
+				<div id ="ellipse_bisque" class="circle" style="background-color: bisque"></div>
+				<div id ="p-bisque" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">bisque</span></li><li>w/</br>gainsboro</li><li>peru</li><li>cadetBlue</li></ul></div>
+			</div>
+		</div>
+			</section>
+
+			<!-- JUNK -->
+			<section class="page">
+				<div class ="tiles">
+				<div class="interaction_j">
+				<div id = "ellipse_chocolate" class="circle" style="background-color: chocolate">
+					<p id="jhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+				</div>
+				<div id ="p-chocolate" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">chocolate</span></li><li>w/</br>red</li><li>lightGray</li><li>white</li></ul></div>
+			</div>
+		</div>
+
+		</div>
+	</div>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+  <script type="text/javascript">
+
+	$(document).ready( function() {
+		console.log("document is ready");
+    var $allTabs = $(".tab");
+    var $allPages = $(".page");
+    var $content = $(".content");
+
+    $allTabs.click(function() {
+
+        var $this = $(this);
+        var $associatedPage = $($allPages.get($this.index()));
+        $allTabs.removeClass("selected");
+        $this.addClass("selected");
+        $content.fadeOut('slow', function() {
+            $allPages.removeClass("selected");
+            $associatedPage.addClass("selected");
+        });
+        $content.fadeIn('slow');
+    });     
+
+
+//mouse enter and exit
+	$( "#ellipse_cornsilk" ).mouseenter(function() {
+  	$( "#p-cornsilk" ).css("opacity", "1");
+  	$("body").css("background-color", "cornsilk");
+  	$("#ellipse_olive").css("opacity", "0");
+  	$( "#vhover" ).css("display", "none");
+	});
+	$( "#ellipse_cornsilk" ).mouseout(function() {
+  	$( "#p-cornsilk" ).css("opacity", "0");
+	$("body").css("background-color", "white");
+	$("#ellipse_olive").css("opacity", "1");
+	});
+	$( "#ellipse_olive" ).mouseenter(function() {
+  	$( "#p-olive" ).css("opacity", "1");
+  	$( "#vhover" ).css("display", "none");
+  	$("body").css("background-color", "olive");
+  	$("#ellipse_cornsilk").css("opacity", "0");
+	});
+	$( "#ellipse_olive" ).mouseout(function() {
+  	$( "#p-olive" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_cornsilk").css("opacity", "1");
+	});
+
+	$( "#ellipse_salmon" ).mouseenter(function() {
+  	$( "#p-salmon" ).css("opacity", "1");
+  	$( "#mhover" ).css("display", "none");
+  	$("body").css("background-color", "salmon");
+  	$("#ellipse_almond").css("opacity", "0");
+	});
+	$( "#ellipse_salmon" ).mouseout(function() {
+  	$( "#p-salmon" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_almond").css("opacity", "1");
+	});
+
+	$( "#ellipse_almond" ).mouseenter(function() {
+  	$( "#p-almond" ).css("opacity", "1");
+  	$( "#mhover" ).css("display", "none");
+  	$("body").css("background-color", "blanchedalmond");
+  	$("#ellipse_salmon").css("opacity", "0");
+	});
+	$( "#ellipse_almond" ).mouseout(function() {
+  	$( "#p-almond" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_salmon").css("opacity", "1");
+	});
+
+	$( "#ellipse_mint" ).mouseenter(function() {
+  	$( "#p-mint" ).css("opacity", "1");
+  	$( "#dhover" ).css("display", "none");
+  	$("body").css("background-color", "mintcream");
+  	$("#ellipse_bisque").css("opacity", "0");
+	});
+	$( "#ellipse_mint" ).mouseout(function() {
+  	$( "#p-mint" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_bisque").css("opacity", "1");
+	});
+
+	$( "#ellipse_bisque" ).mouseenter(function() {
+  	$( "#p-bisque" ).css("opacity", "1");
+  	$( "#dhover" ).css("display", "none");
+  	$("body").css("background-color", "bisque");
+  	$("#ellipse_mint").css("opacity", "0");
+	});
+	$( "#ellipse_bisque" ).mouseout(function() {
+  	$( "#p-bisque" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_mint").css("opacity", "1");
+	});
+
+	$( "#ellipse_chocolate" ).mouseenter(function() {
+  	$( "#p-chocolate" ).css("opacity", "1");
+  	$("body").css("background-color", "chocolate");
+  	$( "#jhover" ).css("display", "none");
+	});
+	$( "#ellipse_chocolate" ).mouseout(function() {
+  	$( "#p-chocolate" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+	});
+
+	$( "#ellipse_plum" ).mouseenter(function() {
+  	$( "#p-plum" ).css("opacity", "1");
+  	$("body").css("background-color", "plum");
+  	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
+	});
+	$( "#ellipse_plum" ).mouseout(function() {
+  	$( "#p-plum" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "1");
+	});
+
+	$( "#ellipse_papaya" ).mouseenter(function() {
+  	$( "#p-papaya" ).css("opacity", "1");
+  	$("body").css("background-color", "papayawhip");
+  	$("#ellipse_plum, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
+	});
+	$( "#ellipse_papaya" ).mouseout(function() {
+  	$( "#p-papaya" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_plum, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "1");
+	});
+
+	$( "#ellipse_peach" ).mouseenter(function() {
+  	$( "#p-peach" ).css("opacity", "1");
+  	$("body").css("background-color", "peachpuff");
+  	$("#ellipse_papaya, #ellipse_tomato, #ellipse_plum, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
+	});
+	$( "#ellipse_peach" ).mouseout(function() {
+  	$( "#p-peach" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_papaya, #ellipse_tomato, #ellipse_plum, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "1");
+	});
+
+	$( "#ellipse_tomato" ).mouseenter(function() {
+  	$( "#p-tomato" ).css("opacity", "1");
+  	$("body").css("background-color", "tomato");
+  	$("#ellipse_papaya, #ellipse_plum, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
+	});
+	$( "#ellipse_tomato" ).mouseout(function() {
+  	$( "#p-tomato" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_papaya, #ellipse_plum, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "1");
+	});
+
+	$( "#ellipse_honeydew" ).mouseenter(function() {
+  	$( "#p-honeydew" ).css("opacity", "1");
+  	$("body").css("background-color", "honeydew");
+  	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_plum").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
+	});
+	$( "#ellipse_honeydew" ).mouseout(function() {
+  	$( "#p-honeydew" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_plum").css("opacity", "1");
+	});
+
+	$( "#ellipse_lemon" ).mouseenter(function() {
+  	$( "#p-lemon" ).css("opacity", "1");
+  	$( "#fhover" ).css("opacity", "0");
+  	$("body").css("background-color", "lemonchiffon");
+  	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_plum, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
+	});
+	$( "#ellipse_lemon" ).mouseout(function() {
+  	$( "#p-lemon" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_plum, #ellipse_lime, #ellipse_honeydew").css("opacity", "1");
+	});
+
+	$( "#ellipse_lime" ).mouseenter(function() {
+  	$( "#p-lime" ).css("opacity", "1");
+  	$( "#fhover" ).css("opacity", "0");
+  	$("body").css("background-color", "lime");
+  	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_plum, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
+	});
+	$( "#ellipse_lime" ).mouseout(function() {
+  	$( "#p-lime" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+  	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_plum, #ellipse_honeydew").css("opacity", "1");
+	});
+
+});
+
+</script>
+</body>
+</html>

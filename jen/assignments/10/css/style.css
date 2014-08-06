@@ -1,0 +1,110 @@
+body {
+	margin: 0px;
+	padding: 0px;
+ 	background: #fdfbe1;
+}
+
+.container {
+	width: 60%;
+	margin: 8% auto 0 auto;
+}
+
+h1 {
+	font-family: 'Lobster';
+	font-size: 2em;
+	text-align: center;	
+	margin-bottom: 0;
+	color: #9d6c4d;
+}
+
+/* FORM =============== */
+.form{
+	width: 400px;
+	height: 240px;
+	background: #fdfbe1;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+input[type="text"]{
+	display: block;
+	width: 309px;
+	height: 35px;
+	margin: 15px auto;
+	background: #fff;
+	border: 0px;
+	padding: 5px;
+	font-size: 16px;
+	border: 2px solid #fff;
+}
+
+input[type="text"]:focus{
+	border: 2px solid #1abc9d;
+}
+
+input[type="submit"]{
+	display: block;
+	background: #f38bb0;
+	width: 322px;
+	padding: 12px;
+	cursor: pointer;
+	color: #fdfbe1;
+	border: 0px;
+	margin: auto;
+	font-size: 17px;
+}
+
+input[type="submit"]:hover{
+ 	background: #ffa6ca;
+}
+
+a{
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #9d6c4d;
+	display: block;
+	margin: 15px auto;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+a:hover{
+	color: #f38bb0;
+}
+
+
+/* RESULTS =============*/
+.results{
+	background: #fff;
+}
+
+img {
+	width: 25%;
+	display: block;
+	margin: 5% auto 0 auto;
+}
+
+h2 {
+	font-family: 'Montserrat';
+	font-size: 1em;
+	text-align: center;
+	margin-top: -30px; 
+}
+
+
+/* Placeholder Text============================ */
+::-webkit-input-placeholder {
+   color: #9d6c4d;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: gray#9d6c4d
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #9d6c4d;  
+}
+
+:-ms-input-placeholder {  
+   color: #9d6c4d;  
+}
+

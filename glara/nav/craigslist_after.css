@@ -1,0 +1,38 @@
+.container {
+			width:940px;
+			margin:20px;
+			background-color:white;
+		}
+
+header {
+	height:160px;
+	font-family: inherit, helvetica, sans-serif;
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+
+nav {
+	color:blue;
+	background-color:white;
+	height:30px;
+	font-family: helvetica, sans-serif;
+	font-size:16px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+nav ul {
+	margin:1px;
+	padding: 5px;
+}
+
+nav li {
+	display:inline;
+	margin-right: 50px;
+}
+
+h1 {
+	text-align: left;
+}

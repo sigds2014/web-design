@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>www.whatshouldimake.com</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+    </head>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    var max = 3
+    var min = 0
+    var rand = Math.floor(Math.random()*(max-min+1)+min);      
+    if(rand == 0){
+        $('#random0').css("display", "block");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+    } else if(rand == 1){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "block");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+    } else if(rand == 2){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "block");
+        $('#random3').css("display", "none");
+    } else if(rand == 3){
+        $('#random0').css("display", "none");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "block");
+    } else {
+        $('#random0').css("display", "block");
+        $('#random1').css("display", "none");
+        $('#random2').css("display", "none");
+        $('#random3').css("display", "none");
+    }
+    });
+</script>
+
+    
+    <body>
+
+        <img src="images/art2.png" align="center" id="random0">
+        <img src="images/change.png" align="center" id="random1">
+        <img src="images/food.png" align="center" id="random2">
+        <img src="images/yourbed.png" align="center" id="random3">
+		
+    	
+
+
+    </body>
+    
+</html>

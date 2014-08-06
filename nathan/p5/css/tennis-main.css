@@ -1,0 +1,32 @@
+div{ 
+	background-color: red;
+	margin: 5px;
+	float: left;
+}
+
+.container{
+	width: 700px;
+	margin: 0 auto;
+	float: none;
+}
+
+.left-container{
+	background-color: white;
+	width: 510px;
+	margin: 0;
+}
+
+.tall{
+	width: 95px;
+	height: 395px;
+}
+
+.wide{
+	width: 395px;
+	height: 195px;
+}
+
+.square{
+	width: 192px;
+	height: 192px;
+}

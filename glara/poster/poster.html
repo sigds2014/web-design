@@ -1,0 +1,230 @@
+<html>
+	<head>
+		<title>Graphic Design: Now in Production</title>
+		<style>
+			body {
+				background-color: white;
+				margin:12px;
+				padding:0;
+				font-family: helvetica;
+
+			}
+			
+			#container { 
+				height: 1000px; 
+				width: 1000px; 
+				margin: 0 auto;
+				border: 1px solid rgba(0,0,0,0); 
+			}
+
+			
+			h1 { 
+				font-size: 40px;
+				position:relative;
+				bottom:-50px;
+				left:25px;
+			}
+			
+			h2 {
+				font-size: 28px;
+				margin-bottom: 35px;
+				position:relative;
+				bottom:-60px;
+				left:25px;
+
+			}
+			
+			h3 { 
+				font-size: 15px;
+				margin-top: 15px;
+				margin-bottom: 15px; 
+				position:fixed;
+				top:25px;
+				right:25px;
+				margin-right:200px;
+			}
+
+			.arrow-up {
+				width: 0; 
+				height: 0; 
+				border-left: 70px solid transparent;
+				border-right: 70px solid transparent;
+				border-bottom: 70px solid yellow;
+				position:fixed;
+				top:80px;
+				right:100px;
+				margin-right:200px;
+			}
+
+			@-webkit-keyframes spaceboots {
+				0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+				10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+				20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+				30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+				40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+				50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+				60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+				70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+				80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+				90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+				100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+			}
+
+			.arrow-up:hover,
+			.arrow-up:focus {
+				-webkit-animation-name: spaceboots;
+				-webkit-animation-duration: 0.8s;
+				-webkit-transform-origin:50% 50%;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: linear;
+			}
+
+			#heart {
+			    position: relative;
+			    top:30px;
+			    left:30px;
+			    width: 100px;
+			    height: 90px;
+			}
+
+			#heart:before,
+			#heart:after {
+			    position: absolute;
+			    content: "";
+			    left: 50px;
+			    top: 0;
+			    width: 50px;
+			    height: 80px;
+			    background: red;
+			    -moz-border-radius: 50px 50px 0 0;
+			    border-radius: 50px 50px 0 0;
+			    -webkit-transform: rotate(-45deg);
+			       -moz-transform: rotate(-45deg);
+			        -ms-transform: rotate(-45deg);
+			         -o-transform: rotate(-45deg);
+			            transform: rotate(-45deg);
+			    -webkit-transform-origin: 0 100%;
+			       -moz-transform-origin: 0 100%;
+			        -ms-transform-origin: 0 100%;
+			         -o-transform-origin: 0 100%;
+			            transform-origin: 0 100%;
+			}
+			#heart:after {
+			    left: 0;
+			    -webkit-transform: rotate(45deg);
+			       -moz-transform: rotate(45deg);
+			        -ms-transform: rotate(45deg);
+			         -o-transform: rotate(45deg);
+			            transform: rotate(45deg);
+			    -webkit-transform-origin: 100% 100%;
+			       -moz-transform-origin: 100% 100%;
+			        -ms-transform-origin: 100% 100%;
+			         -o-transform-origin: 100% 100%;
+			            transform-origin :100% 100%;
+			}
+
+
+			@-webkit-keyframes thumb {
+				0% { -webkit-transform: scale(1); }
+				50% { -webkit-transform: scale(0.9); }
+				100% { -webkit-transform: scale(1); }
+			}
+
+			#heart:hover {
+				-webkit-animation-name: thumb;
+				-webkit-animation-duration: 200ms;
+				-webkit-transform-origin:50% 50%;
+				-webkit-animation-iteration-count: 2;
+				-webkit-animation-timing-function: linear;
+			}
+
+
+			/*.arrow-down {
+				width: 0; 
+				height: 0; 
+				border-left: 70px solid transparent;
+				border-right: 70px solid transparent;
+				border-top: 70px solid yellow;
+			}*/
+
+			.top:hover {
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				opacity: 1;
+			}
+
+			.top {
+			    position:relative;
+			    top:-70px;
+			    left:40px;
+			    height:150px;
+			    width:500px;
+			    -webkit-opacity: 0.2;
+				-moz-opacity: 0.2;
+				opacity: 0.2;
+				-webkit-transition: all 2s ease;
+				-moz-transition: all 2s ease;
+				-ms-transition: all 2s ease;
+				-o-transition: all 2s ease;
+				transition: all 2s ease;
+			}
+
+			.bottom:hover {
+				-webkit-opacity: 1;
+				-moz-opacity: 1;
+				opacity: 1;
+			}
+
+			.bottom {
+			    position:relative;
+			    top:160px;
+			    right:75px;
+			    height:250px;
+			    width:400px;
+			    -webkit-opacity: 0.4;
+				-moz-opacity: 0.4;
+				opacity: 0.4;
+				-webkit-transition: all 3s ease;
+				-moz-transition: all 3s ease;
+				-ms-transition: all 3s ease;
+				-o-transition: all 3s ease;
+				transition: all 3s ease;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+		
+			<div class="half-circle1">
+			</div>
+
+			<div class="half-circle2">
+			</div>
+
+			<div class="arrow-up">
+			</div>
+
+		</br>
+
+			<div class="arrow-down">
+			</div>
+			
+			<img class="top" src="axe.jpg" />
+
+			<img class="bottom" src="pencil.jpg" />
+
+			<div id="heart">
+			</div>
+
+			<div class="maintext">
+				<h1>Graphic Design: Now in Production</h1>
+				<h2>Prints, Drawings, and Photographs</h2>
+				<h3>March 28&#8211;August 3, 2014</h3>
+			</div>
+
+
+		</div><!-- end container div -->
+	</body>
+</html>

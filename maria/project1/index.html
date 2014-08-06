@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>When life gives you lemons</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+
+        body {
+            background-color: rgb(255,248,174);
+        }
+
+        #container {
+            width: 600px;
+            height:600px;
+
+        }
+
+        .absolute-center {
+          margin: auto;
+          position: absolute;
+          top: 0; left: 0; bottom: 0; right: 0;
+        }
+
+
+        h1 {
+            color: rgb(77,71,22);
+            font-family: 'Playfair Display', serif;
+            font-size: 68px;
+            font-style: italic;
+            margin-top: 20%;
+            text-align: center;
+        }
+
+        #myQuote {
+        }
+
+        a {
+            margin-left: 450px;
+            margin-top: -200px;
+        }
+
+        </style>
+    </head>
+    
+    <body>
+
+        <div id="container" class="absolute-center">
+        <h1 id="myQuote"></h1>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript">
+
+        $( document ).ready(function() {
+            var myQuotes = new Array();
+            myQuotes[0] = "make lemonade.";
+            myQuotes[1] = "ask, why not limes?";
+            myQuotes[2] = "squirt someone in the eye.";
+            myQuotes[3] = "eat them, they are good for you &#8212; life knows best.";
+            myQuotes[4] = "accept them graciously.";
+            myQuotes[5] = "make grape juice and sit back and watch the world ask how you did it.";
+            myQuotes[6] = "keep them. Because hey, free lemons!";
+            myQuotes[7] = "ask what life is suggesting.";
+            myQuotes[8] = "don't settle for lemonade &#8212; make a glorious scene at a lemonade stand!";
+            myQuotes[9] = "be happy, it could have been brussels sprouts."
+            myQuotes[10] = "learn to juggle."
+            myQuotes[11] = "plant a lemon tree, build your empire."
+            myQuotes[12] = "make limoncello."
+            myQuotes[13] = "make lemon bars, lemon meringue pie, lemon pudding, lemon macaroons..."
+
+            var myRandom = Math.floor(Math.random()*myQuotes.length);
+
+            $('h1#myQuote').html(myQuotes[myRandom]);
+        });
+        </script>
+        <a href="javascript:document.location.reload();"
+            ONMOUSEOVER="window.status='Refresh'; return true"
+            ONMOUSEOUT="window.status='refresh yo self!'">
+            <img src="lemon1.jpg" width="115" height="100" border="0" />
+        </a>
+
+    </div>
+    </body>
+    
+</html>

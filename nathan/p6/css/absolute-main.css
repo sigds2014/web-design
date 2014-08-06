@@ -1,0 +1,63 @@
+div{
+	background-color: white;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+body{
+	background-color: red;
+}
+
+#shape01{
+ 	top: 10px;
+ 	left: 100px;
+}
+
+#shape02{
+	width: 500px;
+	height: 500px;
+	background-color: transparent;
+	top: 100px;
+	right: 100px;
+	border-radius: 500px;
+	border: 2px solid white;	                     
+}
+
+#shape03{
+	width: 500px;
+	height: 500px;
+	background-color: transparent;
+	top: 75px;
+	right: 75px;
+	border-radius: 500px;
+	border: 2px solid white;
+}
+
+#shape04{
+	width: 300px;
+	height: 300px;
+	z-index: -1;
+	top: 50px;
+	left: 100px;
+	background-color: red;
+}
+
+#shape05{
+	width: 400px;
+	height: 400px;
+	z-index: -2;
+	top: 70px;
+	left: 200px;
+	background-color: white;
+}
+
+#shape06{
+	background-color: transparent;
+	border: 2px dashed red;
+	top: 200px;
+	left: 500px;
+}
+
+
+

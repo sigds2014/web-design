@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jen Zheng | The Grid</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
+
+        <!-- JQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    </head>
+    
+    <body> 
+    <div class="container group">   
+        <header>
+            <nav id="mainnav" class="group">
+                <div id="logotype">
+                    <h2>sigds web design</h2><h6>a highly condensed intro to web course</h6>
+                </div>
+                <ul>
+                    <li><a href="../../index.html" id="selected">home</a></li>
+                    <li><a href="http://sigds2014.jereljohnson.com/">course</a></li>
+                    <li><a href="http://sigds2014.github.io/web-design/">roster</a></li>
+                    <li><a href="https://github.com/">github</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <div id="section01">
+
+            <h4>03 Style Tiles</h4>
+            <img class="image default" src="images/01.jpg" alt="Log In">
+            <img class="image toggle" src="images/02.jpg" alt="Home">
+            <img class="image toggle" src="images/03.jpg" alt="Box">
+            <img class="image toggle" src="images/04.jpg" alt="Box Detail">
+
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            console.log( "ready!")
+
+        $('.image').click(function () {
+            $(this).hide();
+            var next = $(this).next();
+            console.log(next.length);
+            if (next.length == 0)
+                next = $(this).parent().find('.image').first();
+                    next.show();
+                });
+            });
+    </script>
+
+
+    </body>
+    
+</html>

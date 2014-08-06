@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign Up Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+
+            body {
+                background-color: #faf0be;
+            }
+
+            #form-box {
+                height: 450px;
+                width: 400px;
+                background-color: #ace1af;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -260px;
+                margin-left: -200px;
+
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+
+            }
+
+            h1 {
+                font-family: "Pacifico", cursive;
+                color: #191970;
+                font-weight: 300;
+                font-size: 55px;
+                text-align: center;
+                margin-top: 8px;
+            }
+
+            form {
+                position:absolute;
+                top: 130px;
+                left: 50%;
+                margin-left: -160px;
+                height: 305px;
+                width: 300px;
+            }
+
+            label {
+                display: inline-block;
+                width: 330;
+                text-align: right;
+                float: right;
+                margin-bottom: 30px;
+            }
+
+            .label-format {
+                font-family: "Open Sans Condensed", sans-serif;
+                font-weight: 400;
+                margin-right: 10px;
+            }
+            
+            input.q {
+                width: 193px;
+                height: 30px;
+                font-family: "Open Sans Condensed", sans-serif;
+                font-weight: 300;
+                background-color: white;
+                border-color: #DCDCDC;
+                border-style: solid;
+                border-width: 1px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                color: #000;
+                cursor: auto;
+                direction: ltr;
+                display: inline-block;
+                letter-spacing: normal;
+                line-height: normal;
+                margin: 0;
+                padding-left: 7px;
+                text-align: start;
+                text-indent: 0px;
+                text-shadow: none;
+                text-transform: none;
+                vertical-align: center;
+            }
+
+            button, input, select, textarea {
+              font-family : "Open Sans Condensed";
+              font-size   : 100%;
+            }
+
+            input[type=submit], #submit, button  {
+                font-family: sans-serif;
+                position: absolute;
+                left: 50%;
+                bottom: 10px;
+                margin-left: 50px;
+            }
+
+    </style>
+
+    </head>
+
+
+    <body>
+
+        <div id="form-box">
+
+            <h1>Sign Up</h1>
+
+            <form method="link" action="thankyou/index.html" name="f" novalidate="">
+
+                <label>
+                    <span class="label-format">First Name</span>
+                    <input class="q" autofocus="">
+                </label>
+
+                <label>
+                    <span class="label-format">Last Name</span>
+                    <input class="q" autofocus="">
+                </label>
+
+                <label>
+                    <span class="label-format">Email</span>
+                    <input class="q" autofocus="">
+                </label>
+
+                <label>
+                    <span class="label-format">Username</span>
+                    <input class="q" autofocus="">
+                </label>
+
+                <input type="submit" value="Submit" id="submit">
+
+            </form>
+
+        </div>
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    
+    </body>
+
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>What a Load of..</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    
+<!-- VIEWPORT FOR MOBILE -->
+<meta name="viewport" content="width=device-width; initial-scale=1">
+ 
+ <!-- FONT AWESOME -->   
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+
+</head>
+
+
+<body>
+	<div class="container">
+    		<div id="random0"><i class="fa fa-spinner fa-spin fa-5x"></i></div>
+    		<div id="random1"><i class="fa fa-circle-o-notch fa-spin fa-5x"></i></div>
+    		<div id="random2"><i class="fa fa-refresh fa-spin fa-5x"></i></div>
+    		<div id="random3"><i class="fa fa-cog fa-spin fa-5x"></i></div>
+	</div>
+
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+
+        $( document ).ready(function(){
+            console.log( "Document is ready!" );
+
+            var max = 3
+            var min = 0
+            var rand = Math.floor(Math.random()*(max-min+1)+min);   
+               
+            if(rand == 0){
+                $('#random0').css("display", "block");
+                $('#random1').css("display", "none");
+                $('#random2').css("display", "none");
+                $('#random3').css("display", "none");
+            } else if(rand == 1){
+                $('#random0').css("display", "none");
+                $('#random1').css("display", "block");
+                $('#random2').css("display", "none");
+                $('#random3').css("display", "none");
+            } else if(rand == 2){
+                $('#random0').css("display", "none");
+                $('#random1').css("display", "none");
+                $('#random2').css("display", "block");
+                $('#random3').css("display", "none");
+            } else if(rand == 3){
+                $('#random0').css("display", "none");
+                $('#random1').css("display", "none");
+                $('#random2').css("display", "none");
+                $('#random3').css("display", "block");
+            } else {
+                $('#random0').css("display", "block");
+                $('#random1').css("display", "none");
+                $('#random2').css("display", "none");
+                $('#random3').css("display", "none");
+            }       
+            
+
+        });
+
+    </script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,40 @@
+          body {
+            width: 500px;
+            margin: 0 auto;
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+          }
+
+          h1 {
+            font-size: 32px;
+          }
+
+          h2 {
+            color: rgb(63,62,62);
+            font-size: 25px;
+          }
+
+          h3 {
+            color: rgb(70,69,69);
+            font-size: 18px;
+          }
+
+          p {
+            color: rgb(80,80,80);
+            font-size: 15px;
+            text-align: justify;
+          }
+
+          li {
+            color: rgb(80,80,80);
+            font-size: 15px;
+            text-align: left;
+          }
+
+          .thinner {
+            color: rgb(53,52,52);
+            font-size: 12px;
+            padding-left: 65px;
+            padding-right: 65px;
+            text-align: center;
+          }

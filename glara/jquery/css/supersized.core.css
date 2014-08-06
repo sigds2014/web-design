@@ -1,0 +1,109 @@
+/*
+
+	Supersized - Fullscreen Slideshow jQuery Plugin
+	Version : Core 3.2.1
+	
+	Site	: www.buildinternet.com/project/supersized
+	Author	: Sam Dunn
+	Company : One Mighty Roar (www.onemightyroar.com)
+	License : MIT License / GPL License
+	
+*/
+
+#topbox {
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: none;
+	width:800px;
+	opacity: 0.95;
+	background-image: url("semicircle.jpg");
+}
+
+h1 {
+	font-size:30px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 42px;
+}
+
+h2 {
+	font-size:15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h3 {
+	font-size:10px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h4 {
+	font-size:15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 20px;
+}
+
+p {
+	font-size:12px;
+	font-family: 'Monda', sans-serif;
+	color:white;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 15px;
+	background-color:black;
+	padding-top:10px;
+	padding-bottom: 10px;
+	padding-left:10px;
+	padding-right:10px;
+	}
+
+#list {
+	font-size:12px;
+	font-family: helvetica, "Helvetica Neue", arial, sans-serif;
+	color:white;
+	padding-left: 15px;
+	}
+
+#blackfont1 {
+	color:white;
+	font-size:50px;
+	font-family: courier, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#blackfont2 {
+	color: white;
+	font-size:15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#category {
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: black;
+;
+}
+
+* { margin:0; padding:0; }
+body { background:#111; height:100%; }
+	img{ border:none; }
+	
+	#supersized-loader { position:absolute; top:50%; left:50%; z-index:0; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background:url(../img/progress.gif) no-repeat center center;}
+	
+	#supersized { position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
+		#supersized img{ width:auto; height:auto; position:relative; outline:none; border:none; }
+		
+		#supersized a { z-index:-30; position:fixed; overflow:hidden; top:0; left:0; width:100%; height:100%; background:#111; display:block; }
+			#supersized a.image-loading { background:#111 url(../img/progress.gif) no-repeat center center; width:100%; height:100%; }

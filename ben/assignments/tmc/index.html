@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tufts Mountain Club</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+        <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+
+        <style type="text/css">
+
+            body { margin:0; padding: 0; height: 100%; width: 100%; }
+
+            #page {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            #header {
+                margin-top: -30px;
+            }
+
+            #tmclogo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h1 {
+                text-align: center;
+                margin-top: -60px;
+                font-family: "Rock Salt";
+                font-size: 28px;
+            }
+
+            .columns {
+                width: 790px;
+                height: 100%;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+
+            .sidebar {
+                float: left;
+                width: 150px;
+                height: 100%;
+                margin-right: 20px;
+            }
+
+            ul {
+                position: fixed;
+                list-style-type: none;
+                font-family: Helvetica, sans-serif;
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 30px;
+                margin-top: -7px;
+                margin-left: -40px;
+            }
+
+            li a {
+                text-decoration: none;
+                color: black;
+            }
+
+            li a:hover {
+                text-decoration: none;
+                color: rgb(0, 154, 0);
+            }
+
+            #login {
+                color: rgb(0, 154, 0);
+            }
+
+            li a:hover#login {
+                color: rgb(109, 205, 0);
+            }
+
+            .column1 {
+                width: 300px;
+                height: 100%;
+                float: left;
+                margin-right: 20px;
+            }
+
+            .column2 {
+                width: 300px;
+                height: 100%;
+                float: left;
+            }
+
+            .sample1 {
+                width: 300px;
+                height: 500px;
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-family: helvetica;
+                margin-bottom: 20px;
+                padding-top: 20px;
+            }
+
+            .sample2 {
+                width: 300px;
+                height: 300px;
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-family: helvetica;
+                margin-bottom: 20px;
+                padding-top: 20px;
+            }
+
+        </style>
+
+    </head>
+    
+    <body>
+        <div id="page">
+
+            <div id="header">
+                <img src="img/TMCLogo.png" id="tmclogo"></a>
+                <h1>Go Outside</h1>
+            </div>
+
+            <div class="columns">
+                <div class="sidebar">
+                
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">The Loj</a></li>
+                        <li><a href="">Membership</a></li>
+                        <li><a href="">Deals</a></li>
+                        <li><a href="">Resources</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Alumni</a></li>
+                        <li><a href="" id="login">Log In</a></li>
+                    </ul>
+                </div>
+                
+                <div class="column1">
+                    
+                    <div class="sample1">Sample Content</div>
+                    <div class="sample2">Sample Content</div>
+                    
+                </div>
+
+                <div class="column2">
+                    
+                    <div class="sample2">Sample Content</div>
+                    <div class="sample1">Sample Content</div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+    
+</html>

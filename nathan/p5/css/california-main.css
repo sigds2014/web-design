@@ -1,0 +1,78 @@
+body{
+	background-color: white;
+}
+
+div{
+	background-color: red;
+	float: left;
+}
+
+.container{
+	width: 940px;
+	height: 594px;
+	background-color: red;
+	margin: 0 auto;
+	float: none;
+
+}
+
+.left-container{
+	width: 300px;
+	height: 574px;
+	margin: 10px 0 10px 10px;
+}
+
+.mid-container{
+	width: 300px;
+	height: 574px;
+	margin: 10px 0 10px 10px;
+}
+
+.right-container{ 
+	width: 300px;
+	height: 574px;
+	margin: 10px 0 10px 10px;
+}
+
+.one-one{
+	width: 37.5px;
+	height: 82px;
+	border: 1px solid white;
+	margin: -1px;
+}
+
+.one-two{
+	width: 37.5px;
+	height: 164px;
+	border: 1px solid white;
+	margin: -1px;
+}
+
+.two-one{
+	width: 75px;
+	height: 82px;
+	border: 1px solid white;
+	margin: -1px;
+}
+
+.two-two{
+	width: 75px;
+	height: 164px;
+	border: 1px solid white;
+	margin: -1px;
+}
+
+.row1-2{
+	border: 1px solid white;
+	margin: -1px;
+}
+
+#mid-col-5-6{
+	width: 75px;
+	height: 164px;
+}
+
+.row4-5{
+	width: 37.5px;
+	height: 164px;
+}
