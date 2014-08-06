@@ -1,0 +1,68 @@
+#one {
+	width:360px;
+	height:220px;
+	border: 1px solid black;
+}
+
+.floaton {
+	float:left;
+}
+
+
+
+.blue {
+	background-color:blue;
+}
+
+.topleft {
+	width:100px;
+	height:80px;
+}
+
+.topmiddle {
+
+	width:60px;
+	height:80px;
+}
+
+.topright {
+	width:200px;
+	height:80px;
+}
+
+.middle {
+	width:360px;
+	height:60px;
+}
+
+#two {
+	width:360px;
+	height:220px;
+	border: 1px solid black;
+	position: absolute;
+	top:8px;
+	left:400px;	
+}
+
+.second {
+	position: absolute;
+	left:100px;
+	top:0px;
+}
+
+.third {
+	position: absolute;
+	left:160px;
+}
+
+.fifth {
+	position: absolute;
+	left:0px;
+	top:140px;
+}
+
+.sixth {
+	position: absolute;
+	top:140px;
+	left:100px;
+}
