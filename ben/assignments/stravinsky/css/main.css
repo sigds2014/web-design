@@ -136,6 +136,7 @@ textarea {
 
     nav {
         font-family: "Oswald";
+        font-size: 1.5em;
         font-weight: 100;
         width: 30%;
         height: calc(100% - 5em);
@@ -146,7 +147,7 @@ textarea {
     nav ul {
         list-style: none;
         text-align: center;
-        margin: 0;
+        margin: 1em 0 0 0;
         padding: 0;
     }
 
@@ -154,6 +155,13 @@ textarea {
         color: #FFFFFF;
         text-decoration: none;
     }
+
+    #about-nav:hover    { color: #781405; transition: all 0.2s ease; }
+    #tour-nav:hover     { color: #B73E2B; transition: all 0.2s ease; }
+    #video-nav:hover    { color: #FA5503; transition: all 0.2s ease; }
+    #photo-nav:hover    { color: #EE5E15; transition: all 0.2s ease; }
+    #press-nav:hover    { color: #FF7602; transition: all 0.2s ease; }
+    #contact-nav:hover  { color: #F1B000; transition: all 0.2s ease; }
 
 
 
