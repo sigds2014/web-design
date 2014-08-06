@@ -1,0 +1,47 @@
+#wrapper {
+	margin:auto;
+	width:908px;
+	height:845px;
+	background-color: white;
+	float:none;
+}
+
+div {
+
+	background-color: red;
+	margin: 5px;
+	float: left;
+}
+
+#header {
+
+	width: 908px;
+	height: 100px;
+}
+
+#minihead {
+
+	width: 908px;
+	height: 25px;
+}
+
+#cols {
+	background-color: white;
+	width: 921px;
+	height: 600px;
+	margin: 0px 0px 10px 0px;
+}
+
+.column {
+
+	width: 296px;
+	height: 600px;
+
+
+}
+
+#footer {
+
+	width: 908px;
+	height: 100px;
+}
