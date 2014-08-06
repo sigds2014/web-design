@@ -31,8 +31,10 @@ p{
 	position: fixed;
 	top: 0;
 	left: 20%;
-	font-size: 2em;
-	line-height: .8em;
+	font-size: 3em;
+	line-height: .5em;
+	margin-top:0;
+	padding-top: 3%;
 }
 #byline{
 	font-size: .1em;
@@ -45,8 +47,8 @@ p{
 }
 img{
 	position: fixed;
-	left: 5%;
-	top: 5%;
+	left: 6%;
+	top: 1%;
 	width: 15%;
 	-webkit-animation: rotating 15s linear infinite;
 }
@@ -62,20 +64,27 @@ img{
 	width: 60%;
 	height: 100%;
 	margin: 0 auto;
-	margin-top: 10%;
-	/*background: -webkit-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); 
+	margin-top: 5%;
+	margin-bottom: 20%;
+/*	background: -webkit-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); 
   	background: -o-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk; 
   	background: -moz-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); 
   	background: linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); */
 }
 .hover{
 	color: gray;
-	margin-top: 50%;
-	margin: left: 40%;
-	text-align: left;
+	margin-top: 0%;
+	padding-top: 30%;
+	margin: left: 0%;
+	margin-right: 0;
+	text-align: right;
 	opacity: 1;
-
+	display: inline-block;
+	text-align: center;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
+
 /*.plate{
 	position: fixed;
 	left: 5%;
@@ -144,7 +153,7 @@ img{
 	float: left;
 	border-radius: 100%;
 	border: 1px solid black;
-	margin: 0% 50% 0% 50%;
+	margin: 0% 0% 0% 50%;
 	-webkit-transition: transform 10s ease-out;
 	-moz-transition: transform 10s ease-out;
 	-ms-transition: transform 10s ease-out;
@@ -302,7 +311,7 @@ img{
 	<!-- <img src="ramen-spoon-01.png"> -->
 
 	<p class="help" style="color: black">CSS Colors </br>
-	<span style="color:lightgray; font-size: .75em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for the starving artist</span></p>
+	<span style="color:lightgray; font-size: .5em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for the starving artist</span></p>
 	<p id="byline"> site by C.Bradford </p>
 	<div class= "tabbed menu">
 		<ul class= "tabs">
@@ -320,7 +329,7 @@ img{
 			<section class="page selected">
 				<div class="home">
 					<p class="description">
-						&nbsp;&nbsp;&nbsp;&nbsp;CSS Colors for the starving artist is a reference of the color names that can be used in CSS without a #hex code or rgb(value). It is a guide for designers who are just starting out in HTML or CSS, like me (what have we been doing all this time?!). The collection deals directy with the CSS colors named after foods based on age old stereotype of the starving artist, but I'd like to think that those artists could afford a nice juicy steak dinner if they picked up some HTML/CSS skills to boast. 
+						&nbsp;&nbsp;&nbsp;&nbsp;CSS Colors for the starving artist is a reference of the color names that can be used in CSS without a #hex code or rgb(value). It is a guide for designers who are just starting out in HTML or CSS, like me (what have we been doing all this time?!). Inspired by the age old stereotype of the starving artist, the collection deals directy with the CSS colors named after foods, but I'd like to think that those artists could afford a nice juicy steak dinner if they picked up some HTML/CSS skills to boast. 
 					</br>
 					</br>
 						&nbsp;&nbsp;&nbsp;&nbsp;Our collection of color options is divided into the five major food groups. Hovering over the colored circles reveals color palettes made using only CSS Colors.
@@ -335,11 +344,11 @@ img{
 			<section class="page">
 			<div class ="tiles">
 			<div class="interaction">
-					<div id = "ellipse_cornsilk" class="circle" style="background-color: cornsilk"></div>
-					<p id="vhover" class="hover"> <span style="font-family: Lobster, cursive; font-size: 5em; color: lightgray">hover</span> over the circles to reveal color palettes </p>
+					<div id = "ellipse_cornsilk" class="circle" style="background-color: cornsilk">
+						<p id="vhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+					</div>
 					<div id ="p-cornsilk" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">cornsilk</span></li><li>w/</br>orangeRed</li><li> slateGray </li><li> gold </li></ul></div>
 				</div>
-
 				<div class="interaction">
 				<div id ="ellipse_olive" class="circle" style="background-color: olive"></div>
 				<div id ="p-olive" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">olive</span></li><li>w/</br>paleGoldenRod</li><li>crimson</li><li>linen</li></ul></div>
@@ -353,8 +362,9 @@ img{
 				<div class ="tiles">
 
 				<div class="interaction_f">
-					<div id = "ellipse_plum" class="circle" style="background-color: plum"></div>
-					<p id="fhover" class="hover"> <span style="font-family: Lobster, cursive; font-size: 5em; color: lightgray">hover</span> over the circles to reveal color palettes </p>
+					<div id = "ellipse_plum" class="circle" style="background-color: plum">
+					<p id="fhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+				</div>
 					<div id ="p-plum" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">plum</span></li><li>w/</br>thistle</li><li> khaki </li></ul></div>
 				</div>
 
@@ -394,8 +404,9 @@ img{
 			<section class="page">
 			<div class ="tiles">
 			<div class="interaction">
-					<div id = "ellipse_salmon" class="circle" style="background-color: salmon"></div>
-					<p id="mhover" class="hover"> <span style="font-family: Lobster, cursive; font-size: 5em; color: lightgray">hover</span> over the circles to reveal color palettes </p>
+					<div id = "ellipse_salmon" class="circle" style="background-color: salmon">
+					<p id="mhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+				</div>
 					<div id ="p-salmon" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">salmon</span></li><li>w/</br>red</li><li> mediumVioletRed </li><li> lightCyan </li></ul></div>
 				</div>
 
@@ -410,8 +421,9 @@ img{
 			<section class="page">
 			<div class ="tiles">
 			<div class="interaction">
-					<div id = "ellipse_mint" class="circle" style="background-color: mintcream"></div>
-					<p id="dhover" class="hover"> <span style="font-family: Lobster, cursive; font-size: 5em; color: lightgray">hover</span> over the circles to reveal color palettes </p>
+					<div id = "ellipse_mint" class="circle" style="background-color: mintcream">
+					<p id="dhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+				</div>
 					<div id ="p-mint" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">mintCream</span></li><li>w/</br>dodgerBlue</li><li> mediumSpringGreen </li></ul></div>
 				</div>
 
@@ -426,8 +438,9 @@ img{
 			<section class="page">
 				<div class ="tiles">
 				<div class="interaction_j">
-				<div id ="ellipse_chocolate" class="circle" style="background-color: chocolate"></div>
-				<p id="jhover" class="hover"> <span style="font-family: Lobster, cursive; font-size: 5em; color: lightgray">hover</span> over the circles to reveal color palettes </p>
+				<div id = "ellipse_chocolate" class="circle" style="background-color: chocolate">
+					<p id="jhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+				</div>
 				<div id ="p-chocolate" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">chocolate</span></li><li>w/</br>red</li><li>lightGray</li><li>white</li></ul></div>
 			</div>
 		</div>
@@ -462,9 +475,9 @@ img{
 //mouse enter and exit
 	$( "#ellipse_cornsilk" ).mouseenter(function() {
   	$( "#p-cornsilk" ).css("opacity", "1");
-  	$( "#vhover" ).css("opacity", "0");
   	$("body").css("background-color", "cornsilk");
   	$("#ellipse_olive").css("opacity", "0");
+  	$( "#vhover" ).css("display", "none");
 	});
 	$( "#ellipse_cornsilk" ).mouseout(function() {
   	$( "#p-cornsilk" ).css("opacity", "0");
@@ -473,7 +486,7 @@ img{
 	});
 	$( "#ellipse_olive" ).mouseenter(function() {
   	$( "#p-olive" ).css("opacity", "1");
-  	$( "#vhover" ).css("opacity", "0");
+  	$( "#vhover" ).css("display", "none");
   	$("body").css("background-color", "olive");
   	$("#ellipse_cornsilk").css("opacity", "0");
 	});
@@ -485,7 +498,7 @@ img{
 
 	$( "#ellipse_salmon" ).mouseenter(function() {
   	$( "#p-salmon" ).css("opacity", "1");
-  	$( "#mhover" ).css("opacity", "0");
+  	$( "#mhover" ).css("display", "none");
   	$("body").css("background-color", "salmon");
   	$("#ellipse_almond").css("opacity", "0");
 	});
@@ -497,7 +510,7 @@ img{
 
 	$( "#ellipse_almond" ).mouseenter(function() {
   	$( "#p-almond" ).css("opacity", "1");
-  	$( "#mhover" ).css("opacity", "0");
+  	$( "#mhover" ).css("display", "none");
   	$("body").css("background-color", "blanchedalmond");
   	$("#ellipse_salmon").css("opacity", "0");
 	});
@@ -509,7 +522,7 @@ img{
 
 	$( "#ellipse_mint" ).mouseenter(function() {
   	$( "#p-mint" ).css("opacity", "1");
-  	$( "#dhover" ).css("opacity", "0");
+  	$( "#dhover" ).css("display", "none");
   	$("body").css("background-color", "mintcream");
   	$("#ellipse_bisque").css("opacity", "0");
 	});
@@ -521,7 +534,7 @@ img{
 
 	$( "#ellipse_bisque" ).mouseenter(function() {
   	$( "#p-bisque" ).css("opacity", "1");
-  	$( "#dhover" ).css("opacity", "0");
+  	$( "#dhover" ).css("display", "none");
   	$("body").css("background-color", "bisque");
   	$("#ellipse_mint").css("opacity", "0");
 	});
@@ -533,8 +546,8 @@ img{
 
 	$( "#ellipse_chocolate" ).mouseenter(function() {
   	$( "#p-chocolate" ).css("opacity", "1");
-  	$( "#jhover" ).css("opacity", "0");
   	$("body").css("background-color", "chocolate");
+  	$( "#jhover" ).css("display", "none");
 	});
 	$( "#ellipse_chocolate" ).mouseout(function() {
   	$( "#p-chocolate" ).css("opacity", "0");
@@ -543,9 +556,9 @@ img{
 
 	$( "#ellipse_plum" ).mouseenter(function() {
   	$( "#p-plum" ).css("opacity", "1");
-  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "plum");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
 	});
 	$( "#ellipse_plum" ).mouseout(function() {
   	$( "#p-plum" ).css("opacity", "0");
@@ -555,9 +568,9 @@ img{
 
 	$( "#ellipse_papaya" ).mouseenter(function() {
   	$( "#p-papaya" ).css("opacity", "1");
-  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "papayawhip");
   	$("#ellipse_plum, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
 	});
 	$( "#ellipse_papaya" ).mouseout(function() {
   	$( "#p-papaya" ).css("opacity", "0");
@@ -567,9 +580,9 @@ img{
 
 	$( "#ellipse_peach" ).mouseenter(function() {
   	$( "#p-peach" ).css("opacity", "1");
-  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "peachpuff");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_plum, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
 	});
 	$( "#ellipse_peach" ).mouseout(function() {
   	$( "#p-peach" ).css("opacity", "0");
@@ -579,9 +592,9 @@ img{
 
 	$( "#ellipse_tomato" ).mouseenter(function() {
   	$( "#p-tomato" ).css("opacity", "1");
-  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "tomato");
   	$("#ellipse_papaya, #ellipse_plum, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
 	});
 	$( "#ellipse_tomato" ).mouseout(function() {
   	$( "#p-tomato" ).css("opacity", "0");
@@ -591,9 +604,9 @@ img{
 
 	$( "#ellipse_honeydew" ).mouseenter(function() {
   	$( "#p-honeydew" ).css("opacity", "1");
-  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "honeydew");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_plum").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
 	});
 	$( "#ellipse_honeydew" ).mouseout(function() {
   	$( "#p-honeydew" ).css("opacity", "0");
@@ -606,6 +619,7 @@ img{
   	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "lemonchiffon");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_plum, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
 	});
 	$( "#ellipse_lemon" ).mouseout(function() {
   	$( "#p-lemon" ).css("opacity", "0");
@@ -618,6 +632,7 @@ img{
   	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "lime");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_plum, #ellipse_honeydew").css("opacity", "0");
+  	$( "#fhover" ).css("display", "none");
 	});
 	$( "#ellipse_lime" ).mouseout(function() {
   	$( "#p-lime" ).css("opacity", "0");
