@@ -8,15 +8,21 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/jPushMenu.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
          <!-- Load Google Fonts "Lato"  -->
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/jquery.imageLens.js" type="text/javascript"></script>
+        <script type="text/javascript" language="javascript">
+        $(function () {
+            $("#latestPhoto").imageLens();
+        }); 
+        </script>
 
         <!--FACEBOOK SHARING INFO-->    
-        <meta property="og:title" content="Poster Farm" /> 
+        <meta property="og:title" content="Is This Site Blue?" /> 
         <meta property="og:description" content="What a mystery! Click to find out if this site is blue!" />
         <meta property="og:image" content="http://static.tumblr.com/dgwh4n8/ACyn9i4hk/facebook_share.png" />  
     </head>
@@ -29,25 +35,15 @@
         <header>
             <nav>
                 <div id="logo">Poster Farm</div>
-                <button class="nav-menu toggle-menu menu-left push-body"><div id="lines"></div></button>
-                <ul id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                <div id="nav-menu"><div id="lines"></div></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Posters</a></li>
                     <li><a href="#">Artists</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </nav>
-
-            <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
-                <h3>Menu</h3>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="#">Blog</a>
-                <a href="#">Posters</a>
-                <a href="#">Artists</a>
-                <a href="#">Contact</a>
             </nav>
         </header>
 
@@ -55,89 +51,48 @@
             <div class="latestPhotoPost">
                 <img src="img/clip.png" draggable="false" id="clip1">
                 <img src="img/clip.png" draggable="false" id="clip2">
-                <img src="img/SpikePress_TheNational_Poster.png" id="latestPhoto">
+                <img src="img/JasonMunn_BenjaminGibbard_Poster.png" id="latestPhoto">
             </div>
             <div class="latestPhotoCaption">
                 <h6> Featured Poster </h6>
-                <h2>The National Poster</h2>
-                <h4>by Spike Press (2014)</h4>
+                <h2>Ben Gibbard Tour Poster</h2>
+                <h4>by Jason Munn (2012)</h4>
             </div>
             <div class="latestTextPosts">
                 <h6> Recent Blog Posts </h6>
                 <div class="textPost">
                     <h5><a href="#">Long Post Title and Stuff</a></h5>
-                    <p class="textPreview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in quam nec justo volutpat consectetur. Suspendisse.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in quam nec justo volutpat consectetur. Suspendisse.</p>
                     <div class="readMore"><a href="#">Read More</a></div>
                 </div>
                 <div class="textPost">
                     <h5><a href="#">Definitely a Two Line Post Title</a></h5>
-                    <p class="textPreview">Vivamus eget est justo. In ac ipsum ac ligula cursus fringilla vitae in metus. Nam tincidunt commodo nunc, gravida rutrum lectus.</p>
+                    <p>Vivamus eget est justo. In ac ipsum ac ligula cursus fringilla vitae in metus. Nam tincidunt commodo nunc, gravida rutrum lectus.</p>
                     <div class="readMore"><a href="#">Read More</a></div>
                 </div>
                 <div class="textPost">
                     <h5><a href="#">Short Post</a></h5>
-                    <p class="textPreview">Suspendisse gravida risus sed tortor ultrices, iaculis semper lacus sodales. Praesent sit amet tempus justo, sed tempus dui. </p>
+                    <p>Suspendisse gravida risus sed tortor ultrices, iaculis semper lacus sodales. Praesent sit amet tempus justo, sed tempus dui. </p>
                     <div class="readMore"><a href="#">Read More</a></div>
                 </div>
             </div>
                 <div class="featuredArtist">
                     <h6> Featured Artists </h6>
                     <img src="img/featured_artist.png" id="artistPicture">
-                        <h2> Aesthetic Apparatus </h2>
-                        <h4>Minneapolis, MN</h4>
-                        <p id="artistDescription">Suspendisse gravida risus sed tortor ultrices, iaculis semper lacus sodales. Praesent sit amet tempus justo, sed tempus dui. Vivamus eget est justo. In ac ipsum ac ligula cursus fringilla vitae in metus. Nam tincidunt commodo nunc, gravida rutrum lectus.</p>
+                    <h2> Aesthetic Apparatus </h2>
+                    <h4>Minneapolis, MN</h4>
+                    <p id="artistDescription">Suspendisse gravida risus sed tortor ultrices, iaculis semper lacus sodales. Praesent sit amet tempus justo, sed tempus dui. Vivamus eget est justo. In ac ipsum ac ligula cursus fringilla vitae in metus. Nam tincidunt commodo nunc, gravida rutrum lectus.</p>
                 </div>
         </div>
-
         <footer>
-            <div class="bg-gradient"></div>
             <div class="bg">
-                    <div class="bgTile"><img src="img/posters/1.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/2.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/3.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/4.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/5.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/6.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/7.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/8.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/9.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/10.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/11.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/12.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/13.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/14.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/15.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/16.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/17.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/18.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/19.jpg" draggable="false"></div>
-                    <div class="bgTile"><img src="img/posters/20.jpg" draggable="false"></div>
+                <div class="bgTile"></div>
+                <div class="bgTile"></div>
+                <div class="bgTile"></div>
+                <div class="bgTile"></div>
+                <div class="bgTile"></div>
+                <div class="bgTile"></div>
             </div>
         </footer>
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!--load jPushMenu -->
-        <script src="js/jPushMenu.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function(){
-
-             $('.toggle-menu').jPushMenu();
-
-            $('.bg').scroll(function (event) {
-                var factor = this.scrollLeft / (this.scrollWidth - $(this).width());
-                if(factor < 0.2) {
-                    var move = $(this.lastChild);
-                    move.remove();
-                    $(this).prepend(move);
-                    this.scrollLeft += move.width();
-                } else if(factor > 0.8) {
-                    var move = $(this.firstChild);
-                    move.remove();
-                    $(this).append(move);
-                    this.scrollLeft -= move.width();
-                }
-            })
-        });
-        </script>
     </body>
 </html>
