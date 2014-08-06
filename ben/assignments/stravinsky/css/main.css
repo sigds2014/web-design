@@ -105,22 +105,37 @@ textarea {
     #page {
         height: 100vh;
         width: 100%;
-        max-width: 60em;
         margin: 0 auto;
         background-color: #000000;
-/*        background-image: url(../img/bw6.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;*/
         background: url(../img/bw6.jpg) no-repeat; 
+/*        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;*/
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
 
+/*    #home {
+        height: 40em;
+        width: 100%;
+        background: url(../img/bw6.jpg) no-repeat; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }*/
+
     header {
-        height: 5em;
+        height: 80px;
         background-color: rgba(0, 0, 0, 0.75);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        max-width: 60em;
+        z-index: 0;
     }
 
     #logo {
@@ -131,23 +146,27 @@ textarea {
     #logotext {
         height: 3.5em;
         margin-top: .75em;
-        float: left;
+        position: relative;
+        z-index: 1;
     }
 
     nav {
         font-family: "Oswald";
         font-size: 1.5em;
         font-weight: 100;
-        width: 30%;
-        height: calc(100% - 5em);
+        text-transform: uppercase;
+        width: 8em;
+        position: absolute;
+        top: 80px;
+        height: calc(100% - 80px);
         overflow: hidden;
-        background-color: rgba(0, 0, 0, 0.5)
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     nav ul {
         list-style: none;
-        text-align: center;
-        margin: 1em 0 0 0;
+        text-align: left;
+        margin: 1em 0 0 2em;
         padding: 0;
     }
 
@@ -286,21 +305,45 @@ textarea {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+
+    #page {
+        width: 60em;
+    }
+
+    header {
+        width: 60em;
+    }
+
     #logo {
         float: left;
-        margin-left: 10%;
+        margin-left: 0.75em;
     }
 
     nav {
-        max-width: 10em;
+        background-color: transparent;
+        height: auto;
+        width: 600px;
+        position: relative;
+        top: 22px;
+        left: 180px;
+        /*float: left;*/
+
+
+/*        overflow: hidden;
+*/    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 1em;
     }
 }
 
 @media only screen and (min-width: 60em) {
     /* Style adjustments for viewports that meet the condition */
-/*    #page {
-        width: 100%;
-    }*/
 }
 
 @media print,
