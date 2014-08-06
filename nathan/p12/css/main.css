@@ -294,12 +294,12 @@ nav li a:hover{
     float: left;
     width: 95%;
     margin: -80px 2.5% 5px 2.5%;
-    height: 440px;
+    height: 350px;
 }
 
 #artistPicture{
     float: left;
-    height: 100%;
+    width: 100%;
     margin: 10px 0;
     border-radius: 4px;
 }
@@ -475,6 +475,7 @@ nav li a:hover{
     }
 
     #artistPicture{
+        width: auto;
         min-height: 50px;
         height: 80%;
         max-height: 250px;
