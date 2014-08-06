@@ -427,12 +427,12 @@ nav li a:hover{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 36em) {
+@media only screen and (min-width: 35.5em) {
     /*Latest Photo*/
     .latestPhotoPost{
-    width: 50%;
-    min-width: 355px;
-    float: left;
+        width: 50%;
+        min-width: 355px;
+        float: left;
     }
 
     #latestPhoto{
@@ -446,26 +446,22 @@ nav li a:hover{
 
     .latestPhotoCaption{
         float: left;
-        width: 32%;
-        margin: 0 0 0 10px;
+        width: 30%;
+        margin: 0 0 0 2%;
     }
 
     .latestTextPosts{
-        width: 32%;
-        margin: 20px 0 0 10px;
+        width: 30%;
+        margin: 100px 0 0 2%;
     }
 
     .textPost{
-        height: 80px;
-    }
-
-    .textPreview{
-        display: block;
+        height: 50px;
     }
 
     /*Featured Artist*/
     .featuredArtist{
-        margin: 15px 2.5%;
+        margin: 0px 2.5%;
         height: 300px;
     }
 
@@ -604,6 +600,10 @@ nav li a:hover{
         width: 53%;
         height: 230px;
         margin: 20px 0 0 1.5%;
+    }
+
+    .textPreview{
+        display: block;
     }
 
     .textPost{
