@@ -495,7 +495,30 @@ nav li a:hover{
         top: 600px;
         left: 0;
         z-index: -5;
-        background: url(../img/scroll.png) repeat-x 0 0;
+        background-color: red;
+        opacity: 0.3;
+        overflow-x: scroll;
+        overflow-y: visible;
+    }
+
+    .bgTile{
+        height: 100%;
+        width: 120px;
+        margin: 0 0.2%;
+        float: left;
+        background-color: yellow;
+    }
+
+    .bgTile:hover{
+        -ms-transform: translateY(30px); /* IE 9 */
+        -webkit-transform: translateY(30px); /* Chrome, Safari, Opera */
+        transform: translateY(30px);
+        opacity: 1;
+        transition: all 0.5s;
+        -moz-transition: all 0.5s; /* Firefox 4 */
+        -webkit-transition: all 0.5s; /* Safari and Chrome */
+        -o-transition: all 0.5s; /* Opera */
+
     }
 
 
