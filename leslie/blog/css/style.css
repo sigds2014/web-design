@@ -1,0 +1,42 @@
+div {
+	background-color:red;
+	margin:50px 0px 50px 25px;
+	float: left;
+	
+}
+
+#wrapper {
+	background-color:white;
+	width:825px;
+}
+
+#header {
+	width:800px;
+	height:150px;
+}
+
+.content {
+	width:825px;
+	height:670px;
+	background-color:white;
+	margin: 0px;
+}
+
+.post {
+	width: 635px;
+	height: 500px;
+	margin-bottom:15px;
+
+}
+
+.author {
+	width: 150px;
+	height: 200px;
+	margin-left:15px;
+}
+
+.footer {
+	width: 635px;
+	height: 50px;
+	margin-top: 0px;
+}

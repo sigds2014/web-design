@@ -1,0 +1,18 @@
+body {
+	
+	background-image:url('http://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/1280px-Flag_of_California.svg.png');
+	background-repeat: no-repeat;
+	margin:0px;
+}
+
+
+#content {
+	font-size:200px;
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	width:960px;
+	height:800px;
+	padding-top:230px;
+	padding-left:320px;
+	background-color:rgba(255,255,255,0.8);
+
+}
