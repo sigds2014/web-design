@@ -14,6 +14,18 @@ body{
 p{	
 	font-size: .2em;
 }
+.description{
+	font-size: 1em;
+	text-align: left;
+}
+.description a{
+	color: black;
+	text-decoration: none;
+	font-weight: 700;
+}
+.description a:hover{
+	color: brown;
+}
 .help{
 	font-family: 'Lobster', cursive;
 	position: fixed;
@@ -47,13 +59,24 @@ img{
     }
 }
 .home{
-	border: 5px solid red;
-	width: 50%;
-	height: 50%;
+	width: 60%;
+	height: 100%;
 	margin: 0 auto;
 	margin-top: 10%;
+	/*background: -webkit-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); 
+  	background: -o-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk; 
+  	background: -moz-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); 
+  	background: linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); */
 }
-.plate{
+.hover{
+	color: gray;
+	margin-top: 50%;
+	margin: left: 40%;
+	text-align: left;
+	opacity: 1;
+
+}
+/*.plate{
 	position: fixed;
 	left: 5%;
 	top:5%;
@@ -73,7 +96,7 @@ img{
 	position: fixed;
 	left: 10%;
 	top: 0;
-}
+}*/
 .tabbed-menu {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
@@ -120,7 +143,7 @@ img{
 	width: 80px;
 	float: left;
 	border-radius: 100%;
-	border: 1px solid transparent;
+	border: 1px solid black;
 	margin: 0% 50% 0% 50%;
 	-webkit-transition: transform 10s ease-out;
 	-moz-transition: transform 10s ease-out;
@@ -228,9 +251,9 @@ img{
 }
 #ellipse_lime:hover{
 	border-width: 10px;
-	border-top-color: coral;
+	border-top-color: whitesmoke;
 	border-bottom-color: white;
-	border-right-color: coral;
+	border-right-color: whitesmoke;
 	border-left-color: white;
 }
 .tiles{
@@ -243,7 +266,7 @@ img{
 	float:left; 
 	margin: 0% 40%;}
 
-#cornsilk, #olive, #almond, #salmon, #bisque, #mint, #chocolate, #plum, #papaya, #peach, #tomato, #honeydew, #lemon, #lime{opacity: 0;}
+#p-cornsilk, #p-olive, #p-almond, #p-salmon, #p-bisque, #p-mint, #p-chocolate, #p-plum, #p-papaya, #p-peach, #p-tomato, #p-honeydew, #p-lemon, #p-lime{opacity: 0;}
 
 .interaction{
 	width: 20%;
@@ -291,11 +314,21 @@ img{
 			<li class="tab">junkfood</li>
 		
 		</ul>
-
+	</div>
 		<div class="content">
 
 			<section class="page selected">
 				<div class="home">
+					<p class="description">
+						&nbsp;&nbsp;&nbsp;&nbsp;CSS Colors for the starving artist is a reference of the color names that can be used in CSS without a #hex code or rgb(value). It is a guide for designers who are just starting out in HTML or CSS, like me (what have we been doing all this time?!). The collection deals directy with the CSS colors named after foods based on age old stereotype of the starving artist, but I'd like to think that those artists could afford a nice juicy steak dinner if they picked up some HTML/CSS skills to boast. 
+					</br>
+					</br>
+						&nbsp;&nbsp;&nbsp;&nbsp;Our collection of color options is divided into the five major food groups. Hovering over the colored circles reveals color palettes made using only CSS Colors.
+					</br>
+				</br>
+						&nbsp;&nbsp;&nbsp;&nbsp;See a list of all of the CSS Colors at the w3schools site <a href=url"http://www.w3schools.com/cssref/css_colornames.asp">here</a>.
+					</p>
+					
 				</div>
 			</section>
 			<!-- VEG -->
@@ -303,12 +336,13 @@ img{
 			<div class ="tiles">
 			<div class="interaction">
 					<div id = "ellipse_cornsilk" class="circle" style="background-color: cornsilk"></div>
-					<div id ="cornsilk" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">cornsilk</span></li><li>w/</br>orangeRed</li><li> slateGray </li><li> gold </li></ul></div>
+					<p id="vhover" class="hover"> <span style="font-family: Lobster, cursive; font-size: 5em; color: lightgray">hover</span> over the circles to reveal color palettes </p>
+					<div id ="p-cornsilk" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">cornsilk</span></li><li>w/</br>orangeRed</li><li> slateGray </li><li> gold </li></ul></div>
 				</div>
 
 				<div class="interaction">
 				<div id ="ellipse_olive" class="circle" style="background-color: olive"></div>
-				<div id ="olive" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">olive</span></li><li>w/</br>paleGoldenRod</li><li>crimson</li><li>linen</li></ul></div>
+				<div id ="p-olive" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">olive</span></li><li>w/</br>paleGoldenRod</li><li>crimson</li><li>linen</li></ul></div>
 			</div>
 				</div>
 			</section>
@@ -320,37 +354,38 @@ img{
 
 				<div class="interaction_f">
 					<div id = "ellipse_plum" class="circle" style="background-color: plum"></div>
-					<div id ="plum" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">plum</span></li><li>w/</br>thistle</li><li> khaki </li></ul></div>
+					<p id="fhover" class="hover"> <span style="font-family: Lobster, cursive; font-size: 5em; color: lightgray">hover</span> over the circles to reveal color palettes </p>
+					<div id ="p-plum" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">plum</span></li><li>w/</br>thistle</li><li> khaki </li></ul></div>
 				</div>
 
 				<div class="interaction_f">
 				<div id ="ellipse_papaya" class="circle" style="background-color: papayawhip"></div>
-				<div id ="papaya" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">papayaWhip</span></li><li>w/</br>maroon</li><li>burlywood</li><li> color </li></ul></div>
+				<div id ="p-papaya" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">papayaWhip</span></li><li>w/</br>maroon</li><li>burlywood</li><li> color </li></ul></div>
 			</div>
 
 				<div class="interaction_f">
 				<div id ="ellipse_peach" class="circle" style="background-color: peachpuff"></div>
-				<div id ="peach" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">peachPuff</span></li><li>w/</br>paleGreen</li><li>darkSlateBlue</li></ul></div>
+				<div id ="p-peach" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">peachPuff</span></li><li>w/</br>paleGreen</li><li>darkSlateBlue</li></ul></div>
 			</div>
 
 				<div class="interaction_f">
 				<div id ="ellipse_tomato" class="circle" style="background-color: tomato"></div>
-				<div id ="tomato" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">tomato</span></li><li>w/</br>yellow</li><li>antiqueWhite</li></ul></div>
+				<div id ="p-tomato" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">tomato</span></li><li>w/</br>yellow</li><li>antiqueWhite</li></ul></div>
 			</div>
 
 				<div class="interaction_f">
 				<div id ="ellipse_honeydew" class="circle" style="background-color: honeydew"></div>
-				<div id ="honeydew" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">honeydew</span></li><li>w/</br>lightPink</li><li>green</li></ul></div>
+				<div id ="p-honeydew" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">honeydew</span></li><li>w/</br>lightPink</li><li>green</li></ul></div>
 			</div>
 
 				<div class="interaction_f">
 				<div id ="ellipse_lemon" class="circle" style="background-color: lemonchiffon"></div>
-				<div id ="lemon" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">lemonChiffon</span></li><li>w/</br>firebrick</li><li>darkKhaki</li><li>darkOrange</li></ul></div>
+				<div id ="p-lemon" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">lemonChiffon</span></li><li>w/</br>firebrick</li><li>darkKhaki</li><li>darkOrange</li></ul></div>
 			</div>
 
 				<div class="interaction_f">
 				<div id ="ellipse_lime" class="circle" style="background-color: lime"></div>
-				<div id ="lime" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">lime</span></li><li>w/</br>coral</li><li>white</li></ul></div>
+				<div id ="p-lime" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">lime</span></li><li>w/</br>whitesmoke</li><li>white</li></ul></div>
 			</div>
 				</div>		
 			</section>
@@ -360,12 +395,13 @@ img{
 			<div class ="tiles">
 			<div class="interaction">
 					<div id = "ellipse_salmon" class="circle" style="background-color: salmon"></div>
-					<div id ="salmon" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">salmon</span></li><li>w/</br>red</li><li> mediumVioletRed </li><li> lightCyan </li></ul></div>
+					<p id="mhover" class="hover"> <span style="font-family: Lobster, cursive; font-size: 5em; color: lightgray">hover</span> over the circles to reveal color palettes </p>
+					<div id ="p-salmon" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">salmon</span></li><li>w/</br>red</li><li> mediumVioletRed </li><li> lightCyan </li></ul></div>
 				</div>
 
 				<div class="interaction">
 				<div id ="ellipse_almond" class="circle" style="background-color: blanchedalmond"></div>
-				<div id ="almond" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">blanchedAlmond</span></li><li>w/</br>chartreuse</li><li>darkblue</li></ul></div>
+				<div id ="p-almond" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">blanchedAlmond</span></li><li>w/</br>chartreuse</li><li>darkblue</li></ul></div>
 			</div>
 		</div>
 			</section>
@@ -375,12 +411,13 @@ img{
 			<div class ="tiles">
 			<div class="interaction">
 					<div id = "ellipse_mint" class="circle" style="background-color: mintcream"></div>
-					<div id ="mint" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">mintCream</span></li><li>w/</br>dodgerBlue</li><li> mediumSpringGreen </li></ul></div>
+					<p id="dhover" class="hover"> <span style="font-family: Lobster, cursive; font-size: 5em; color: lightgray">hover</span> over the circles to reveal color palettes </p>
+					<div id ="p-mint" class="palette"> <ul class ="colors"><li><span style="font-size: 1.75em">mintCream</span></li><li>w/</br>dodgerBlue</li><li> mediumSpringGreen </li></ul></div>
 				</div>
 
 				<div class="interaction">
 				<div id ="ellipse_bisque" class="circle" style="background-color: bisque"></div>
-				<div id ="bisque" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">bisque</span></li><li>w/</br>gainsboro</li><li>peru</li><li>cadetBlue</li></ul></div>
+				<div id ="p-bisque" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">bisque</span></li><li>w/</br>gainsboro</li><li>peru</li><li>cadetBlue</li></ul></div>
 			</div>
 		</div>
 			</section>
@@ -390,10 +427,11 @@ img{
 				<div class ="tiles">
 				<div class="interaction_j">
 				<div id ="ellipse_chocolate" class="circle" style="background-color: chocolate"></div>
-				<div id ="chocolate" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">chocolate</span></li><li>w/</br>red</li><li>lightGray</li><li>white</li></ul></div>
+				<p id="jhover" class="hover"> <span style="font-family: Lobster, cursive; font-size: 5em; color: lightgray">hover</span> over the circles to reveal color palettes </p>
+				<div id ="p-chocolate" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">chocolate</span></li><li>w/</br>red</li><li>lightGray</li><li>white</li></ul></div>
 			</div>
 		</div>
-			</section>
+
 		</div>
 	</div>
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -423,153 +461,166 @@ img{
 
 //mouse enter and exit
 	$( "#ellipse_cornsilk" ).mouseenter(function() {
-  	$( "#cornsilk" ).css("opacity", "1");
+  	$( "#p-cornsilk" ).css("opacity", "1");
+  	$( "#vhover" ).css("opacity", "0");
   	$("body").css("background-color", "cornsilk");
   	$("#ellipse_olive").css("opacity", "0");
 	});
 	$( "#ellipse_cornsilk" ).mouseout(function() {
-  	$( "#cornsilk" ).css("opacity", "0");
+  	$( "#p-cornsilk" ).css("opacity", "0");
 	$("body").css("background-color", "white");
 	$("#ellipse_olive").css("opacity", "1");
 	});
-
 	$( "#ellipse_olive" ).mouseenter(function() {
-  	$( "#olive" ).css("opacity", "1");
+  	$( "#p-olive" ).css("opacity", "1");
+  	$( "#vhover" ).css("opacity", "0");
   	$("body").css("background-color", "olive");
   	$("#ellipse_cornsilk").css("opacity", "0");
 	});
 	$( "#ellipse_olive" ).mouseout(function() {
-  	$( "#olive" ).css("opacity", "0");
+  	$( "#p-olive" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_cornsilk").css("opacity", "1");
 	});
 
 	$( "#ellipse_salmon" ).mouseenter(function() {
-  	$( "#salmon" ).css("opacity", "1");
+  	$( "#p-salmon" ).css("opacity", "1");
+  	$( "#mhover" ).css("opacity", "0");
   	$("body").css("background-color", "salmon");
   	$("#ellipse_almond").css("opacity", "0");
 	});
 	$( "#ellipse_salmon" ).mouseout(function() {
-  	$( "#salmon" ).css("opacity", "0");
+  	$( "#p-salmon" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_almond").css("opacity", "1");
 	});
 
 	$( "#ellipse_almond" ).mouseenter(function() {
-  	$( "#almond" ).css("opacity", "1");
+  	$( "#p-almond" ).css("opacity", "1");
+  	$( "#mhover" ).css("opacity", "0");
   	$("body").css("background-color", "blanchedalmond");
   	$("#ellipse_salmon").css("opacity", "0");
 	});
 	$( "#ellipse_almond" ).mouseout(function() {
-  	$( "#almond" ).css("opacity", "0");
+  	$( "#p-almond" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_salmon").css("opacity", "1");
 	});
 
 	$( "#ellipse_mint" ).mouseenter(function() {
-  	$( "#mint" ).css("opacity", "1");
+  	$( "#p-mint" ).css("opacity", "1");
+  	$( "#dhover" ).css("opacity", "0");
   	$("body").css("background-color", "mintcream");
   	$("#ellipse_bisque").css("opacity", "0");
 	});
 	$( "#ellipse_mint" ).mouseout(function() {
-  	$( "#mint" ).css("opacity", "0");
+  	$( "#p-mint" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_bisque").css("opacity", "1");
 	});
 
 	$( "#ellipse_bisque" ).mouseenter(function() {
-  	$( "#bisque" ).css("opacity", "1");
+  	$( "#p-bisque" ).css("opacity", "1");
+  	$( "#dhover" ).css("opacity", "0");
   	$("body").css("background-color", "bisque");
   	$("#ellipse_mint").css("opacity", "0");
 	});
 	$( "#ellipse_bisque" ).mouseout(function() {
-  	$( "#bisque" ).css("opacity", "0");
+  	$( "#p-bisque" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_mint").css("opacity", "1");
 	});
 
 	$( "#ellipse_chocolate" ).mouseenter(function() {
-  	$( "#chocolate" ).css("opacity", "1");
+  	$( "#p-chocolate" ).css("opacity", "1");
+  	$( "#jhover" ).css("opacity", "0");
   	$("body").css("background-color", "chocolate");
 	});
 	$( "#ellipse_chocolate" ).mouseout(function() {
-  	$( "#chocolate" ).css("opacity", "0");
+  	$( "#p-chocolate" ).css("opacity", "0");
   	$("body").css("background-color", "white");
 	});
 
 	$( "#ellipse_plum" ).mouseenter(function() {
-  	$( "#plum" ).css("opacity", "1");
+  	$( "#p-plum" ).css("opacity", "1");
+  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "plum");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
 	});
 	$( "#ellipse_plum" ).mouseout(function() {
-  	$( "#plum" ).css("opacity", "0");
+  	$( "#p-plum" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "1");
 	});
 
 	$( "#ellipse_papaya" ).mouseenter(function() {
-  	$( "#papaya" ).css("opacity", "1");
+  	$( "#p-papaya" ).css("opacity", "1");
+  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "papayawhip");
   	$("#ellipse_plum, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
 	});
 	$( "#ellipse_papaya" ).mouseout(function() {
-  	$( "#papaya" ).css("opacity", "0");
+  	$( "#p-papaya" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_plum, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "1");
 	});
 
 	$( "#ellipse_peach" ).mouseenter(function() {
-  	$( "#peach" ).css("opacity", "1");
+  	$( "#p-peach" ).css("opacity", "1");
+  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "peachpuff");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_plum, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
 	});
 	$( "#ellipse_peach" ).mouseout(function() {
-  	$( "#peach" ).css("opacity", "0");
+  	$( "#p-peach" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_plum, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "1");
 	});
 
 	$( "#ellipse_tomato" ).mouseenter(function() {
-  	$( "#tomato" ).css("opacity", "1");
+  	$( "#p-tomato" ).css("opacity", "1");
+  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "tomato");
   	$("#ellipse_papaya, #ellipse_plum, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
 	});
 	$( "#ellipse_tomato" ).mouseout(function() {
-  	$( "#tomato" ).css("opacity", "0");
+  	$( "#p-tomato" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_papaya, #ellipse_plum, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_honeydew").css("opacity", "1");
 	});
 
 	$( "#ellipse_honeydew" ).mouseenter(function() {
-  	$( "#honeydew" ).css("opacity", "1");
+  	$( "#p-honeydew" ).css("opacity", "1");
+  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "honeydew");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_plum").css("opacity", "0");
 	});
 	$( "#ellipse_honeydew" ).mouseout(function() {
-  	$( "#honeydew" ).css("opacity", "0");
+  	$( "#p-honeydew" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_lime, #ellipse_plum").css("opacity", "1");
 	});
 
 	$( "#ellipse_lemon" ).mouseenter(function() {
-  	$( "#lemon" ).css("opacity", "1");
+  	$( "#p-lemon" ).css("opacity", "1");
+  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "lemonchiffon");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_plum, #ellipse_lime, #ellipse_honeydew").css("opacity", "0");
 	});
 	$( "#ellipse_lemon" ).mouseout(function() {
-  	$( "#lemon" ).css("opacity", "0");
+  	$( "#p-lemon" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_plum, #ellipse_lime, #ellipse_honeydew").css("opacity", "1");
 	});
 
 	$( "#ellipse_lime" ).mouseenter(function() {
-  	$( "#lime" ).css("opacity", "1");
+  	$( "#p-lime" ).css("opacity", "1");
+  	$( "#fhover" ).css("opacity", "0");
   	$("body").css("background-color", "lime");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_plum, #ellipse_honeydew").css("opacity", "0");
 	});
 	$( "#ellipse_lime" ).mouseout(function() {
-  	$( "#lime" ).css("opacity", "0");
+  	$( "#p-lime" ).css("opacity", "0");
   	$("body").css("background-color", "white");
   	$("#ellipse_papaya, #ellipse_tomato, #ellipse_peach, #ellipse_lemon, #ellipse_plum, #ellipse_honeydew").css("opacity", "1");
 	});
