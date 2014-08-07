@@ -5,11 +5,11 @@
         <title>Contact Form</title>
         <meta name="viewport" content="width=device-width">
           <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
-  <script src='../src/okvideo.js'></script>
+  <script src='src/okvideo.js'></script>
   <script type="text/javascript">
 
-    $(function(){
-        $.okvideo({ source: '9bZkp7q19f0', 
+  $(function(){
+        $.okvideo({ source: 'HO2vJo_umMs' ,
                     volume: 0, 
                     loop: true,
                     hd:true, 
@@ -35,7 +35,7 @@
 
     }
     .form{
-    	height: 500px;
+    	height: 600px;
     	width: 200px;
     	margin: 0 auto;
     	background-color: black;
@@ -111,6 +111,11 @@
     outline: 0;
     -webkit-appearance: none;
    }
+   label{
+    padding: 3px;
+margin: 0 60% 0 0;
+        float: left;
+   }
 
    .bottom{
     float: left;
@@ -120,19 +125,19 @@
     	<div class="form">
     		
     	<p></p>
-    <!-- 	<label for="name">Name</label> -->
+    	<!-- <label for="name">Name</label> -->
     	<input type="text" placeholder="Your name">
     	<p></p>
-    <!-- 	<label for="email">Email</label> -->
+    	<!-- <label for="email">Email</label> -->
     	<input type="email" placeholder="Your email">
     	<p></p>
     	<!-- <label for="phone">Phone</label> -->
     	<input type="text" placeholder="(XXX)-XXX-XXX">
     	<p></p>
-    <!-- 	<label for="subject">Subject</label> -->
+    	<!-- <label for="subject">Subject</label> -->
     	<input type="text" placeholder="Subject">
     	<p></p>
-    <!-- 	<label for="textarea">Message</label> -->
+    	<label for="textarea">Message</label>
     	<textarea rows="6" cols="23" placeholder="Your message here."></textarea>
 
 <div class="bottom">

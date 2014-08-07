@@ -52,25 +52,13 @@ p{
 }
 img{
 	position: fixed;
-	left: 10%;
+	left: 8%;
 	top: 10%;
 	width: 15%;
-	/*width: 15%;*/
-	/*transform: scale(.5);*/
-
-/*	-webkit-animation: rotating 15s linear infinite;
-}
-@-webkit-keyframes rotating {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }*/
+	z-index: -1;
 }
 .home{
 	width: 60%;
-	
 	margin: 0 auto;
 	margin-top: 2em;
 	margin-bottom: 10%;
@@ -102,6 +90,7 @@ img{
     padding: 0;
     line-height: 26px;
     color: black;
+    z-index: 1;
 }
 .tabs .tab {
 	font-family: 'Quicksand', sans-serif;
@@ -248,6 +237,13 @@ img{
 	border-right-color: whitesmoke;
 	border-left-color: white;
 }
+#ellipse_wheat:hover{
+	border-width: 10px;
+	border-top-color: darkorange;
+	border-bottom-color: aquamarine;
+	border-right-color: darkorange;
+	border-left-color: aquamarine;
+}
 .tiles{
 	width: 70%;
 	margin: 0 auto;
@@ -258,7 +254,7 @@ img{
 	float:left; 
 	margin: 0% 20% 0 20%;}
 
-#p-cornsilk, #p-olive, #p-almond, #p-salmon, #p-bisque, #p-mint, #p-chocolate, #p-plum, #p-papaya, #p-peach, #p-tomato, #p-honeydew, #p-lemon, #p-lime{opacity: 0;}
+#p-cornsilk, #p-olive, #p-almond, #p-salmon, #p-bisque, #p-mint, #p-chocolate, #p-plum, #p-papaya, #p-peach, #p-tomato, #p-honeydew, #p-lemon, #p-lime, #p-wheat{opacity: 0;}
 
 .interaction{
 	width: 20%;
@@ -272,17 +268,16 @@ img{
 	height: 200px;
 	float: left;
 }
-.interaction_j{
+/*.interaction_j{
 	width: 20%;
 	padding-top: 10%;
 	height: 200px;
 	float: left;
-}
+}*/
 .colors {
 	list-style-type: none;
 	text-align: left;
 	float: left;
-	}
 }
 
 </style>
@@ -294,21 +289,22 @@ img{
 	<p id="byline"> site by C.Bradford </p>
 	<div class= "tabbed menu">
 		<ul class= "tabs">
-			<li class="tab selected">home</li>
+			<li class="tab selected"><em>home</em></li>
 			<li class="tab">veggies</li>
 			<li class = "tab">fruits</li>
 			<li class="tab">meats and nuts</li>
 			<li class="tab">dairy</li>
+			<li class="tab">grains</li>
 			<li class="tab">junkfood</li>
 		</ul>
 	</div>
 		<div class="content">
 			<section class="page selected">
-				<img src="instant-01.png">
+				<img src="instantthick.png">
 				<div class="home">
 					<p class="description">
 						CSS Colors for the starving artist is a reference of the color names that can be used in CSS without a #hex code or rgb(value). It is a guide for designers who are just starting out in HTML or CSS, like me (what have we been doing all this time?!). Inspired by the age old stereotype of the starving artist, the collection deals directy with the CSS colors named after foods, but I'd like to think that those artists could afford a nice juicy steak dinner if they picked up some HTML/CSS skills to boast.</p> 
-						<p class="description">Our collection of color options is divided into the five major food groups. Hovering over the colored circles reveals color palettes made using only CSS Colors.</p>
+						<p class="description">Our collection of color options is divided into the six major food groups. Hovering over the colored circles reveals color palettes made using only CSS Colors.</p>
 						<p class="description">See a list of all of the CSS Colors at the w3schools site <a href=url"http://www.w3schools.com/cssref/css_colornames.asp">here</a>.</p>
 					</p>
 					
@@ -412,12 +408,24 @@ img{
 			</div>
 		</div>
 			</section>
+			<!-- GRAIN -->
+				<section class="page">
+				<img src="bagel-01.png">
+				<div class ="tiles">
+				<div class="interaction">
+				<div id = "ellipse_wheat" class="circle" style="background-color: wheat">
+					<p id="ghover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
+				</div>
+				<div id ="p-wheat" class="palette"> <ul class= "colors"><li><span style="font-size: 1.75em">wheat</span></li><li>w/</br>darkOrange</li><li>aquamarine</li></ul></div>
+			</div>
+		</div>
 
+		</section>
 			<!-- JUNK -->
 			<section class="page">
 				<img src="softserve-01.png">
 				<div class ="tiles">
-				<div class="interaction_j">
+				<div class="interaction">
 				<div id = "ellipse_chocolate" class="circle" style="background-color: chocolate">
 					<p id="jhover" class="hover"><span style="font-family: Lobster, cursive; font-size: 7em; color: white">hover</span></p>
 				</div>
@@ -425,7 +433,7 @@ img{
 			</div>
 		</div>
 
-		</div>
+		</section>
 	</div>
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -531,6 +539,16 @@ img{
 	});
 	$( "#ellipse_chocolate" ).mouseout(function() {
   	$( "#p-chocolate" ).css("opacity", "0");
+  	$("body").css("background-color", "white");
+	});
+
+	$( "#ellipse_wheat" ).mouseenter(function() {
+  	$( "#p-wheat" ).css("opacity", "1");
+  	$("body").css("background-color", "wheat");
+  	$( "#ghover" ).css("display", "none");
+	});
+	$( "#ellipse_wheat" ).mouseout(function() {
+  	$( "#p-wheat" ).css("opacity", "0");
   	$("body").css("background-color", "white");
 	});
 
