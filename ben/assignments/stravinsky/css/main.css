@@ -110,13 +110,14 @@ textarea {
     }
 
     #home {
-        height: 40em;
+        height: 85.7421875vw;
         width: 100%;
+        max-height: 51.4453125em;
         background: url(../img/bw6.jpg) no-repeat; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
     }
 
     header {
@@ -147,8 +148,8 @@ textarea {
         text-transform: uppercase;
         width: 8em;
         position: absolute;
-        top: 80px;
-        height: calc(100% - 80px);
+        top: 3.3333em;
+        height: calc(85.7421875vw - 80px);
         overflow: hidden;
         background-color: rgba(0, 0, 0, 0.5);
     }
