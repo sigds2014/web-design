@@ -103,6 +103,7 @@ textarea {
     }
 
     #page {
+        height: 100%;
         width: 100%;
         max-width: 60em;
         margin: 0 auto;
@@ -112,7 +113,6 @@ textarea {
     #home {
         height: 85.7421875vw;
         width: 100%;
-        min-height: 20em
         max-height: 51.4453125em;
         background: url(../img/bw6.jpg) no-repeat; 
         -webkit-background-size: 100%;
@@ -163,7 +163,7 @@ textarea {
     }
 
     nav ul li {
-        font-size: 150%;
+        font-size: 1.5em;
     }
 
     nav ul li a {
@@ -175,10 +175,46 @@ textarea {
     #tour-nav:hover     { color: #B73E2B; transition: all 0.15s ease; }
     #video-nav:hover    { color: #FA5503; transition: all 0.15s ease; }
     #photo-nav:hover    { color: #FF7602; transition: all 0.15s ease; }
-    #press-nav:hover    { color: #F1B000; transition: all 0.15s ease; }
+    #news-nav:hover    { color: #F1B000; transition: all 0.15s ease; }
+
+    section {
+        margin: 0;
+        padding: 0;
+    }
 
     h2 {
-        font-size: 
+        font-size: 2em;
+        font-family: "Crimson Text";
+        font-weight: 100;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    #about {
+        background-color: #781405;
+    }
+
+    #tour {
+        background-color: #B73E2B;
+    }
+
+    #video {
+        background-color: #FA5503;
+    }
+
+    #photo {
+        background-color: #FF7602;
+    }
+
+    #news {
+        background-color: #F1B000;
     }
 
 
