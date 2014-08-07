@@ -12,12 +12,19 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Lato:100,400|Crimson+Text|Oswald:400,300' rel='stylesheet' type='text/css'>
+        <!-- Font Awesome -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <!-- Amazing Slider -->
+        <script src="js/sliderengine/jquery.js"></script>
+        <script src="js/sliderengine/amazingslider.js"></script>
+        <script src="js/sliderengine/initslider-1.js"></script>
         
     </head>
 
@@ -61,6 +68,33 @@
 
             <section id="video">
                 <h2>Video</h2>
+                <div id="amazingslider-1" style="display:block;position:relative;margin:16px auto 84px;">
+                    <ul class="amazingslider-slides" style="display:none;">
+                        <li><img src="img/slider_images/RZkIAVGlfWk.jpg" alt="The Firebird" />
+                            <video preload="none" src="http://www.youtube.com/embed/RZkIAVGlfWk" ></video>
+                        </li>
+                        <li><img src="img/slider_images/jF1OQkHybEQ.jpg" alt="The Rite of Spring" />
+                            <video preload="none" src="http://www.youtube.com/embed/jF1OQkHybEQ" ></video>
+                        </li>
+                        <li><img src="img/slider_images/UaRZfSKPw5A.jpg" alt="Petrushka" />
+                            <video preload="none" src="http://www.youtube.com/embed/UaRZfSKPw5A" ></video>
+                        </li>
+                        <li><img src="img/slider_images/8ADibypYvS0.jpg" alt="Scherzo Fantastique, Op. 3" />
+                            <video preload="none" src="http://www.youtube.com/embed/8ADibypYvS0" ></video>
+                        </li>
+                        <li><img src="img/slider_images/daR92RtTnWw.jpg" alt="The Song of the Nightingale" />
+                            <video preload="none" src="http://www.youtube.com/embed/daR92RtTnWw" ></video>
+                        </li>
+                    </ul>
+                    <ul class="amazingslider-thumbnails" style="display:none;">
+                        <li><img src="img/slider_images/RZkIAVGlfWk-tn.jpg" /></li>
+                        <li><img src="img/slider_images/jF1OQkHybEQ-tn.jpg" /></li>
+                        <li><img src="img/slider_images/UaRZfSKPw5A-tn.jpg" /></li>
+                        <li><img src="img/slider_images/8ADibypYvS0-tn.jpg" /></li>
+                        <li><img src="img/slider_images/daR92RtTnWw-tn.jpg" /></li>
+                    </ul>
+                    <div class="amazingslider-engine" style="display:none;"><a href="http://amazingslider.com" title="JavaScript Slider">JavaScript Slider</a></div>
+                </div>
             </section>
 
             <section id="photo">
