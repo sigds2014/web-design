@@ -107,41 +107,45 @@ textarea {
     header {
         text-align: center;
         margin-bottom: 80px;
-        margin-top: -10px;
+        margin-top: -50px;
     }
     
     header .logo {
         width: 500px;
-        height: 150px;
+        height: 200px;
         margin: 0 auto;
+        background: url('../img/watercolor-circle.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid rgba(255,255,255,0.0);
 
     }
 
     h1 {
         font-family: 'Sacramento', cursive;
-        font-size: 60px;
-        background: url('../img/watercolor-logo.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
+        font-size: 70px;
         width: 500px;
-        height: 170px;
+        height: 110px;
         margin: 0 auto;
+        margin-top: .85em;
+        border: 1px solid rgba(255,255,255,0.0);
     }
 
 
     h2 {
         font-family: 'Nothing You Could Do', sans-serif;
-        font-size: 16px;
-        margin-bottom: 20px;
+        font-size: 15px;
+        margin-bottom: 22px;
+        margin-top: -7px;
     }
 
     .navbar {
-        font-family: 'Amatic';
-        font-size: 21px;
+        font-family: 'Amatic', 'Arial Narrow', sans-serif;
+        font-size: 25px;
         width: 700px;
         margin: 0 auto;
         margin-top: -10px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .navbox {
@@ -151,12 +155,34 @@ textarea {
         float:left;
     }
 
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* visited link */
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: #4C4C5B;
+        text-decoration: none;
+    }
+
+    /* selected link */
+    a:active {
+        color: black;
+        text-decoration: none;
+    }
+
     .circle {
         border-radius: 170px;
         width:170px;
         height:170px;
         margin: 10px 10px;
-        background-color: pink; 
         float:left;
     }
 
@@ -164,10 +190,33 @@ textarea {
         opacity: .8;
     }
 
+    .number {
+        opacity: 0;
+        color: white;
+        margin-left: 33px;
+        margin-top: 45px;
+        font-family: 'Amatic', 'Arial Narrow', sans-serif;
+        font-style: bold;
+        font-size: 50px;
+    }
+
+    .number:hover {
+        opacity:1;
+    }
+
+    .circlesmall {
+        border-radius: 110px;
+        width:110px;
+        height:110px;
+        position: relative;
+        top: 0;
+        left: 0;
+     }
+
     .pallette {
         width:950px;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     #color1 {
@@ -217,6 +266,39 @@ textarea {
     #color10 {
         background-color: #A8C1A3;
         
+    }
+
+    .board {
+        width: 960px;
+        margin: 0 auto;
+        margin-top: -20px;
+        margin-bottom: 40px;
+    }
+
+    .board img {
+        width: 300px;
+        float: left;
+        margin: 0 auto;
+        margin: 5px 5px;
+    }
+
+    .colormood {
+        position: relative;
+        top: -45px;
+        left: 140px;
+        font-family: georgia, serif;
+        font-size: 16px;
+
+    }
+
+    .colormood strong {
+        font-family: 'Sacramento', cursive, serif;
+        font-size: 30px;
+    }
+
+   .colorpsych {
+        /*width: 960px;*/
+        clear:both;
     }
 
 
