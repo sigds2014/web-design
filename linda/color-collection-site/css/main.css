@@ -139,6 +139,16 @@ textarea {
         margin-top: -7px;
     }
 
+    .about h2 {
+        font-family: 'Sacramento', 'Nothing You Could Do', sans-serif;
+        font-size: 35px;
+    }
+
+    p {
+        font-family: georgia;
+        line-height: 25px;
+    }
+
     .navbar {
         font-family: 'Amatic', 'Arial Narrow', sans-serif;
         font-size: 25px;
@@ -216,7 +226,7 @@ textarea {
     .pallette {
         width:950px;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 100px;
     }
 
     #color1 {
@@ -266,6 +276,11 @@ textarea {
     #color10 {
         background-color: #A8C1A3;
         
+    }
+
+    .about {
+        width: 700px;
+        margin-top: 120px;
     }
 
     .board {
