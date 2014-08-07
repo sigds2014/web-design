@@ -143,22 +143,26 @@ textarea {
 
     nav {
         font-family: "Oswald";
-        font-size: 150%; /*divide by 24*/
         font-weight: 100;
         text-transform: uppercase;
         width: 8em;
         position: absolute;
-        top: 3.3333em;
-        height: calc(85.7421875vw - 80px);
+        top: 5em;
+        height: calc(85.7421875vw - 5em);
         overflow: hidden;
         background-color: rgba(0, 0, 0, 0.5);
     }
 
     nav ul {
+
         list-style: none;
         text-align: left;
         margin: 1em 0 0 2em;
         padding: 0;
+    }
+
+    nav ul li {
+        font-size: 150%;
     }
 
     nav ul li a {
@@ -166,12 +170,15 @@ textarea {
         text-decoration: none;
     }
 
-    #about-nav:hover    { color: #781405; transition: all 0.2s ease; }
-    #tour-nav:hover     { color: #B73E2B; transition: all 0.2s ease; }
-    #video-nav:hover    { color: #FA5503; transition: all 0.2s ease; }
-    #photo-nav:hover    { color: #EE5E15; transition: all 0.2s ease; }
-    #press-nav:hover    { color: #FF7602; transition: all 0.2s ease; }
-    #contact-nav:hover  { color: #F1B000; transition: all 0.2s ease; }
+    #about-nav:hover    { color: #781405; transition: all 0.15s ease; }
+    #tour-nav:hover     { color: #B73E2B; transition: all 0.15s ease; }
+    #video-nav:hover    { color: #FA5503; transition: all 0.15s ease; }
+    #photo-nav:hover    { color: #FF7602; transition: all 0.15s ease; }
+    #press-nav:hover    { color: #F1B000; transition: all 0.15s ease; }
+
+    h2 {
+        font-size: 
+    }
 
 
 
@@ -297,17 +304,8 @@ textarea {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 
-    body {
-        font-size: 100%;
-    }
-
-    #page {
-        width: 100%;
-    }
-
-    #home {
-        height: 
-    }
+    body { font-size: 100%; }
+    #page { width: 100%; }
 
     header {
         position: fixed;
@@ -322,20 +320,15 @@ textarea {
     nav {
         background-color: transparent;
         height: auto;
-        width: 25em;
+        width: 37.5em;
         position: relative;
-        left: 7.5em;
-        /*float: left;*/
-
-
-/*        overflow: hidden;
-*/    }
+        left: 11.25em;
+    }
 
     nav ul {
         margin: 0;
         position: fixed;
-        top: 0.9166em;
-
+        top: 1.375em;
     }
 
     nav ul li {
@@ -347,7 +340,7 @@ textarea {
 
 @media only screen and (max-width: 45em) and (min-width: 35em) {
     body {
-        font-size: 75%;
+        font-size: 80%;
     }
 }
 
