@@ -20,7 +20,7 @@ p{
 	margin-bottom:30px;
 	font-size: 1em;
 	text-align: left;
-	background-color:white;
+	
 	text-indent: 3em;
 }
 .description a{
@@ -35,11 +35,24 @@ p{
 	font-family: 'Lobster', cursive;
 	position: fixed;
 	top: 0;
-	left: 20%;
+	left: 25%;
 	font-size: 3em;
 	line-height: .5em;
 	margin-top:0;
 	padding-top: 3%;
+}
+.help a{
+	text-decoration: none;
+}
+
+.help a:visited{
+text-decoration: none;
+color: black;
+}
+.help a:hover{
+	color: white;
+	-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 #byline{
 	font-size: .1em;
@@ -86,7 +99,7 @@ img{
     text-align: center;
     list-style: none;
     position: relative;
-    margin: 10% 0 0 0;
+    margin: 8% 0 0 0;
     padding: 0;
     line-height: 26px;
     color: black;
@@ -280,16 +293,37 @@ img{
 	float: left;
 }
 
+@media only screen and (max-width: 40em) {
+    /* Style adjustments for viewports that meet the condition */
+   .tabs{
+   	margin-top: 20%;
+   	font-size: .75em;
+   	margin-right: 20%;
+   	margin-left: 20%;
+   	margin-top: 10%
+   }
+   .home{
+   width: 80%;
+   }
+   .description{
+   	width: 80%;
+   	font-size: .9em;
+   }
+   .help{
+   	font-size: 2em;
+   	;}
+}
+
 </style>
 <body>
 	<!-- <img src="cssmilk-01.png"> -->
 	<!-- <img src="ramenbw2.png"> -->
-	<p class="help" style="color: black">CSS Colors </br>
-	<span style="color:lightgray; font-size: .5em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for the starving artist</span></p>
+	<p class="help" style="color: black"><a href="index.html">CSS Colors
+	<span style="color:lightgray; font-size: .5em; line-height: 1.2em">for the starving artist</span></a></p>
 	<p id="byline"> site by C.Bradford </p>
 	<div class= "tabbed menu">
 		<ul class= "tabs">
-			<li class="tab selected"><em>home</em></li>
+			<li class="tab selected">home</li>
 			<li class="tab">veggies</li>
 			<li class = "tab">fruits</li>
 			<li class="tab">meats and nuts</li>
