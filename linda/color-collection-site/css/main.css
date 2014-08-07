@@ -110,11 +110,55 @@ textarea {
         margin-top: -50px;
     }
     
-    header .logo {
+    header .logo1 {
         width: 500px;
         height: 200px;
         margin: 0 auto;
         background: url('../img/watercolor-circle.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid rgba(255,255,255,0.0);
+
+    }
+
+    header .logo2 {
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        background: url('../img/watercolor-aqua.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid rgba(255,255,255,0.0);
+
+    }
+
+   header .logo3 {
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        background: url('../img/watercolor-pink.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid rgba(255,255,255,0.0);
+
+    }
+
+    header .logo4 {
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        background: url('../img/watercolor-circle2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid rgba(255,255,255,0.0);
+
+    }
+
+    header .logo5 {
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        background: url('../img/watercolor-orange.jpg');
         background-repeat: no-repeat;
         background-position: center;
         border: 1px solid rgba(255,255,255,0.0);
@@ -141,13 +185,28 @@ textarea {
 
     .about h2 {
         font-family: 'Sacramento', 'Nothing You Could Do', sans-serif;
-        font-size: 35px;
+        font-size: 40px;
         margin-top: 30px;
     }
 
     p {
         font-family: georgia;
         line-height: 25px;
+    }
+
+    .quote {
+        width:320px;
+        font-family: 'Nothing You Could Do', georgia;
+        font-size: 22px;
+        line-height: 40px;
+        color: black;
+        margin-top: 120px;
+        margin-left: 90px;
+        border: 1px solid rgba(255,255,255,0.0);
+    }
+
+    .quote strong {
+        font-size: 27px;
     }
 
     .navbar {
@@ -287,8 +346,21 @@ textarea {
 
     .about img {
         margin: 0 auto;
-        width: 800px;
     }
+
+    .vintageimg {
+        width: 400px;
+        height: 300px;
+        background: url('../img/vintage-palette.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid rgba(255,255,255,0.0);
+        opacity: .9;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
 
     .board {
         width: 960px;
@@ -298,7 +370,7 @@ textarea {
     }
 
     .board img {
-        width: 300px;
+        width: 310px;
         float: left;
         margin: 0 auto;
         margin: 5px 5px;
@@ -444,9 +516,144 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 25em) {
     /* Style adjustments for viewports that meet the condition */
-}
+    
+    .container {
+        width:300px;
+        height:100%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    header .logo1, header .logo2, header .logo3, header .logo4, header .logo5 {
+        width: 200px;
+    }
+
+    .circle {
+        float:none;
+        border-radius: 250px;
+        width:250px;
+        height:250px;
+        margin-left: 30px;
+    }
+
+   .number {
+        margin-left: 55px;
+        font-size: 70px;
+    }
+
+    h1 {
+        font-family: 'Sacramento', cursive;
+        font-size: 50px;
+        width: 200px;
+        height: 110px;
+    }
+
+
+    h2 {
+        font-family: 'Nothing You Could Do', sans-serif;
+        font-size: 14px;
+    }
+
+    .navbar {
+        font-family: 'Amatic', 'Arial Narrow', sans-serif;
+        font-size: 22px;
+        width: 300px;
+    }
+
+    .navbox {
+        width: 100px;
+        height: 50px;
+    }
+
+    .about {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .about img {
+        display: none;
+    }
+
+    .vintageimg {
+        width: 300px;
+        height: 200px;
+        background: url('../img/vintage-palette.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid rgba(255,255,255,0.0);
+        opacity: .8;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+
+    .about h2 {
+        font-family: 'Sacramento', 'Nothing You Could Do', sans-serif;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .about h2:hover {
+        color: #D6495A
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .quote {
+        width:250px;
+        font-family: 'Nothing You Could Do', georgia;
+        font-size: 16px;
+        line-height: 30px;
+        color: black;
+        margin-top: 70px;
+        margin-left: 60px;
+    }
+
+    .quote strong {
+        font-size: 20px;
+    }
+
+    .board {
+        width: 310px;
+        margin-top: -20px;
+        margin-bottom: 40px;
+    }
+
+    .board img {
+        width: 310px;
+        float: none;
+        margin: none;
+    }
+
+    .circlesmall {
+        border-radius: 90px;
+        width:90px;
+        height:90px;
+     }
+
+    .colorpsych {
+        width: 300px;
+    }
+
+    .colormood {
+        top: -60px;
+        left: 110px;
+        font-size: 15px;
+        width: 210px;
+
+    }
+
+    .colormood strong {
+        font-family: 'Sacramento', cursive, serif;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
