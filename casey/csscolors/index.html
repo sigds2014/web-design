@@ -15,8 +15,13 @@ p{
 	font-size: .2em;
 }
 .description{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom:30px;
 	font-size: 1em;
 	text-align: left;
+	background-color:white;
+	text-indent: 3em;
 }
 .description a{
 	color: black;
@@ -47,10 +52,13 @@ p{
 }
 img{
 	position: fixed;
-	left: 6%;
-	top: 1%;
+	left: 10%;
+	top: 10%;
 	width: 15%;
-	-webkit-animation: rotating 15s linear infinite;
+	/*width: 15%;*/
+	/*transform: scale(.5);*/
+
+/*	-webkit-animation: rotating 15s linear infinite;
 }
 @-webkit-keyframes rotating {
     from{
@@ -58,23 +66,19 @@ img{
     }
     to{
         -webkit-transform: rotate(360deg);
-    }
+    }*/
 }
 .home{
 	width: 60%;
-	height: 100%;
+	
 	margin: 0 auto;
-	margin-top: 5%;
-	margin-bottom: 20%;
-/*	background: -webkit-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); 
-  	background: -o-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk; 
-  	background: -moz-linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); 
-  	background: linear-gradient(left, plum, salmon, honeydew, mintcream, olive, cornsilk); */
+	margin-top: 2em;
+	margin-bottom: 10%;
 }
 .hover{
 	color: gray;
-	margin-top: 0%;
-	padding-top: 30%;
+	margin-top: 0;
+	padding-top: 3em;
 	margin: left: 0%;
 	margin-right: 0;
 	text-align: right;
@@ -85,27 +89,6 @@ img{
    -webkit-text-stroke-color: black;
 }
 
-/*.plate{
-	position: fixed;
-	left: 5%;
-	top:5%;
-	z-index: 1;
-	height: 80px;
-	width: 80px;
-	border-radius: 100%;
-	border-width: 10px;
-	border-style: solid;
-	border-left-color: black;
-	border-top-color: black;
-	border-bottom-color: white;
-	border-right-color: white;
-	margin: 0% 0% 0% 0%;
-}
-#tit{
-	position: fixed;
-	left: 10%;
-	top: 0;
-}*/
 .tabbed-menu {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
@@ -138,13 +121,13 @@ img{
     text-align: center;
     display: none;
     width: 100%;
-    height: 100%;
+ 
     }
 
 .page.selected {
     display: block;
     width: 100%;
-    height: 200px;
+
      }
 
 .circle{
@@ -153,7 +136,7 @@ img{
 	float: left;
 	border-radius: 100%;
 	border: 1px solid black;
-	margin: 0% 0% 0% 50%;
+	margin: 0% 20% 0% 20%;
 	-webkit-transition: transform 10s ease-out;
 	-moz-transition: transform 10s ease-out;
 	-ms-transition: transform 10s ease-out;
@@ -266,14 +249,14 @@ img{
 	border-left-color: white;
 }
 .tiles{
-	width: 100%;
-	height: 50%;
+	width: 70%;
+	margin: 0 auto;
 }
 .palette{
-	width: 100px;
-	height: 100%;
+	width: 20%;
+	
 	float:left; 
-	margin: 0% 40%;}
+	margin: 0% 20% 0 20%;}
 
 #p-cornsilk, #p-olive, #p-almond, #p-salmon, #p-bisque, #p-mint, #p-chocolate, #p-plum, #p-papaya, #p-peach, #p-tomato, #p-honeydew, #p-lemon, #p-lime{opacity: 0;}
 
@@ -305,11 +288,7 @@ img{
 </style>
 <body>
 	<!-- <img src="cssmilk-01.png"> -->
-	<img src="ramenbw-01.png">
-	
-	<!-- <div class= "plate" style="background-color: lightgray"></div> -->
-	<!-- <img src="ramen-spoon-01.png"> -->
-
+	<!-- <img src="ramenbw2.png"> -->
 	<p class="help" style="color: black">CSS Colors </br>
 	<span style="color:lightgray; font-size: .5em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for the starving artist</span></p>
 	<p id="byline"> site by C.Bradford </p>
@@ -321,27 +300,23 @@ img{
 			<li class="tab">meats and nuts</li>
 			<li class="tab">dairy</li>
 			<li class="tab">junkfood</li>
-		
 		</ul>
 	</div>
 		<div class="content">
-
 			<section class="page selected">
+				<img src="instant-01.png">
 				<div class="home">
 					<p class="description">
-						&nbsp;&nbsp;&nbsp;&nbsp;CSS Colors for the starving artist is a reference of the color names that can be used in CSS without a #hex code or rgb(value). It is a guide for designers who are just starting out in HTML or CSS, like me (what have we been doing all this time?!). Inspired by the age old stereotype of the starving artist, the collection deals directy with the CSS colors named after foods, but I'd like to think that those artists could afford a nice juicy steak dinner if they picked up some HTML/CSS skills to boast. 
-					</br>
-					</br>
-						&nbsp;&nbsp;&nbsp;&nbsp;Our collection of color options is divided into the five major food groups. Hovering over the colored circles reveals color palettes made using only CSS Colors.
-					</br>
-				</br>
-						&nbsp;&nbsp;&nbsp;&nbsp;See a list of all of the CSS Colors at the w3schools site <a href=url"http://www.w3schools.com/cssref/css_colornames.asp">here</a>.
+						CSS Colors for the starving artist is a reference of the color names that can be used in CSS without a #hex code or rgb(value). It is a guide for designers who are just starting out in HTML or CSS, like me (what have we been doing all this time?!). Inspired by the age old stereotype of the starving artist, the collection deals directy with the CSS colors named after foods, but I'd like to think that those artists could afford a nice juicy steak dinner if they picked up some HTML/CSS skills to boast.</p> 
+						<p class="description">Our collection of color options is divided into the five major food groups. Hovering over the colored circles reveals color palettes made using only CSS Colors.</p>
+						<p class="description">See a list of all of the CSS Colors at the w3schools site <a href=url"http://www.w3schools.com/cssref/css_colornames.asp">here</a>.</p>
 					</p>
 					
 				</div>
 			</section>
 			<!-- VEG -->
 			<section class="page">
+				<img src="cauliflower.png">
 			<div class ="tiles">
 			<div class="interaction">
 					<div id = "ellipse_cornsilk" class="circle" style="background-color: cornsilk">
@@ -358,7 +333,9 @@ img{
 					
 
 			<!-- FRUIT -->
+			
 			<section class="page">
+				<img src="banana.png">
 				<div class ="tiles">
 
 				<div class="interaction_f">
@@ -402,6 +379,7 @@ img{
 
 			<!-- MEAT -->
 			<section class="page">
+				<img src="steak.png">
 			<div class ="tiles">
 			<div class="interaction">
 					<div id = "ellipse_salmon" class="circle" style="background-color: salmon">
@@ -419,6 +397,7 @@ img{
 
 			<!-- DAIRY -->
 			<section class="page">
+			<img src="cssmilk-01.png">
 			<div class ="tiles">
 			<div class="interaction">
 					<div id = "ellipse_mint" class="circle" style="background-color: mintcream">
@@ -436,6 +415,7 @@ img{
 
 			<!-- JUNK -->
 			<section class="page">
+				<img src="softserve-01.png">
 				<div class ="tiles">
 				<div class="interaction_j">
 				<div id = "ellipse_chocolate" class="circle" style="background-color: chocolate">
