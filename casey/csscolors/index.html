@@ -34,12 +34,13 @@ p{
 .help{
 	font-family: 'Lobster', cursive;
 	position: fixed;
+	width: 50%;
 	top: 0;
 	left: 25%;
 	font-size: 3em;
 	line-height: .5em;
-	margin-top:0;
-	padding-top: 3%;
+	margin:0 auto;
+	padding-top: 2%;
 }
 .help a{
 	text-decoration: none;
@@ -74,10 +75,10 @@ img{
 	width: 60%;
 	margin: 0 auto;
 	margin-top: 2em;
-	margin-bottom: 10%;
+	margin-bottom: 3%;
 }
 .hover{
-	color: gray;
+	color: white;
 	margin-top: 0;
 	padding-top: 3em;
 	margin: left: 0%;
@@ -99,7 +100,7 @@ img{
     text-align: center;
     list-style: none;
     position: relative;
-    margin: 8% 0 0 0;
+    margin: 10% 0 0 0;
     padding: 0;
     line-height: 26px;
     color: black;
@@ -133,8 +134,8 @@ img{
      }
 
 .circle{
-	height: 80px;
-	width: 80px;
+	height: 5em;
+	width: 5em;
 	float: left;
 	border-radius: 100%;
 	border: 1px solid black;
@@ -293,7 +294,7 @@ img{
 	float: left;
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 45em) {
     /* Style adjustments for viewports that meet the condition */
    .tabs{
    	margin-top: 20%;
@@ -310,16 +311,29 @@ img{
    	font-size: .9em;
    }
    .help{
-   	font-size: 2em;
+   	font-size: 2.3em;
    	;}
+   	.circle{
+   		width: 3em;
+   		height: 3em;
+   	}
+   	.hover{
+   		color: black;
+   		padding-top: 1.5em;
+   		font-size: .15em;
+   		-webkit-text-stroke-width: 1px;
+   	}
+   	.palette{
+   		font-size: .6em;
+   	}
 }
 
 </style>
 <body>
 	<!-- <img src="cssmilk-01.png"> -->
 	<!-- <img src="ramenbw2.png"> -->
-	<p class="help" style="color: black"><a href="index.html">CSS Colors
-	<span style="color:lightgray; font-size: .5em; line-height: 1.2em">for the starving artist</span></a></p>
+	<p class="help" style="color: black"><a href="index.html">CSS Colors</br>
+	<span style=" color:lightgray; font-size: .5em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for the starving artist</span></a></p>
 	<p id="byline"> site by C.Bradford </p>
 	<div class= "tabbed menu">
 		<ul class= "tabs">
