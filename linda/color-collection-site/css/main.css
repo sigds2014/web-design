@@ -209,11 +209,10 @@ textarea {
 
     .quote strong {
         font-size: 27px;
-        display: none;
     }
 
     .navbar {
-        font-family: 'Amatic', 'Arial Narrow', sans-serif;
+        font-family: 'Amatic SC', 'Arial Narrow', sans-serif;
         font-size: 25px;
         width: 700px;
         margin: 0 auto;
@@ -268,7 +267,7 @@ textarea {
         color: white;
         margin-left: 33px;
         margin-top: 45px;
-        font-family: 'Amatic', 'Arial Narrow', sans-serif;
+        font-family: 'Amatic SC', 'Arial Narrow', sans-serif;
         font-style: bold;
         font-size: 50px;
     }
@@ -361,7 +360,7 @@ textarea {
         opacity: .9;
         margin: 0 auto;
         margin-top: 50px;
-        margin-bottom: 100px;
+        margin-bottom: 7px;
     }
 
 
@@ -369,7 +368,6 @@ textarea {
         width: 960px;
         margin: 0 auto;
         margin-top: -20px;
-        margin-bottom: 40px;
     }
 
     .board img {
@@ -398,6 +396,27 @@ textarea {
         clear:both;
     }
 
+    .footer {
+        clear:both;
+        width: 960px;
+        padding-top: 55px;
+    }
+
+    .footerimg {
+        width:230px;
+        margin: 0 auto;
+        margin-top: 27px;
+        margin-bottom: 30px;
+    }
+
+    .white {
+        height: 200px;
+        background-color: white;
+    }
+
+    .archive img {
+        width: 960px;
+    }
 
 
 
@@ -542,8 +561,9 @@ textarea {
     }
 
    .number {
-        margin-left: 55px;
+        margin-left: 53px;
         font-size: 70px;
+        padding-top: 65px;
     }
 
     h1 {
@@ -560,7 +580,7 @@ textarea {
     }
 
     .navbar {
-        font-family: 'Amatic', 'Arial Narrow', sans-serif;
+        font-family: 'Amatic SC', 'Arial Narrow', sans-serif;
         font-size: 22px;
         width: 300px;
     }
@@ -655,6 +675,31 @@ textarea {
         font-family: 'Sacramento', cursive, serif;
         font-size: 25px;
         line-height: 25px;
+    }
+
+    .footer {
+        width: 310px;
+        padding-top: 10px;
+    }
+
+    .footerimg {
+        width:160px;
+        margin-bottom: 20px;
+    }
+
+    .footerimg img {
+        width: 160px;
+    }
+
+    .white {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .archive img {
+        width: 405px;
+        margin: 0 auto;
+        margin-left: -65px;
     }
 
 
