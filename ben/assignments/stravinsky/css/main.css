@@ -253,6 +253,11 @@ textarea {
         width: 8em;
     }
 
+    .tix-box:hover {
+        opacity: .7;
+        transition: all 0.15s ease;
+    }
+
     td a {
         color: #B73E2B;
         text-decoration: none;
@@ -389,7 +394,7 @@ textarea {
 
     h3 a:hover {
         opacity: 0.7;
-        transition: all 0.15s ease
+        transition: all 0.15s ease;
     }
 
     h4 {
