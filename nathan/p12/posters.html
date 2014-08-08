@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Poster Farm | Posters</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/jPushMenu.css">
+         <!-- Load Google Fonts "Lato"  -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <!--FACEBOOK SHARING INFO-->    
+        <meta property="og:title" content="Poster Farm" /> 
+        <meta property="og:description" content="What a mystery! Click to find out if this site is blue!" />
+        <meta property="og:image" content="http://static.tumblr.com/dgwh4n8/ACyn9i4hk/facebook_share.png" />  
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <nav>
+                <a href="index.html"><div id="logo">Poster Farm</div></a>
+                <button class="nav-menu toggle-menu menu-left push-body"><div id="lines"></div></button>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="posters.html" class="active">Posters</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                </ul>
+            </nav>
+
+            <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+                <h3>Menu</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="posters.html" class="activeMobile">Posters</a>
+                <a href="artists.html">Artists</a>
+            </nav>
+        </header>
+
+	<body>
+		<div class="container">
+            <div class="pageTitle"><h1>Posters</h1></div>
+            <div class="scrollToTopMobile"><p>Scroll to Top</p></div>
+            <div class="scrollToTop"><img src="img/scrolltotop.svg"></div>
+			<ul class="grid effect" id="grid">
+                <li><a href="posters/poster15.html"><img src="img/posters/large/15.jpg"></a></li>
+                <li><a href="posters/poster14.html"><img src="img/posters/large/14.jpg"></a></li>
+                <li><a href="posters/poster13.html"><img src="img/posters/large/13.jpg"></a></li>
+                <li><a href="posters/poster12.html"><img src="img/posters/large/12.jpg"></a></li>
+                <li><a href="posters/poster11.html"><img src="img/posters/large/11.jpg"></a></li>
+                <li><a href="posters/poster10.html"><img src="img/posters/large/10.jpg"></a></li>
+                <li><a href="posters/poster9.html"><img src="img/posters/large/9.jpg"></a></li>
+                <li><a href="posters/poster8.html"><img src="img/posters/large/8.jpg"></a></li>
+                <li><a href="posters/poster7.html"><img src="img/posters/large/7.jpg"></a></li>
+                <li><a href="posters/poster6.html"><img src="img/posters/large/6.jpg"></a></li>
+                <li><a href="posters/poster5.html"><img src="img/posters/large/5.jpg"></a></li>
+                <li><a href="posters/poster4.html"><img src="img/posters/large/4.jpg"></a></li>
+                <li><a href="posters/poster3.html"><img src="img/posters/large/3.jpg"></a></li>
+                <li><a href="posters/poster2.html"><img src="img/posters/large/2.jpg"></a></li>
+                <li><a href="posters/poster1.html"><img src="img/posters/large/1.jpg"></a></li>
+
+			</ul>
+		</div>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/imagesloaded.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/AnimOnScroll.js"></script>
+		<script>
+			new AnimOnScroll( document.getElementById( 'grid' ), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			} );
+		</script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!--load jPushMenu -->
+        <script src="js/jPushMenu.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('.scrollToTop').hide();
+            $('.scrollToTopMobile').hide();
+            $('.toggle-menu').jPushMenu();
+
+            $(window).scroll(function(){
+                if (($(this).scrollTop() > 350) && ($(window).width() > 879)) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+
+            $(window).scroll(function(){
+                if (($(this).scrollTop() > 350) && ($(window).width() < 880)) {
+                    $('.scrollToTopMobile').fadeIn();
+                } else {
+                    $('.scrollToTopMobile').fadeOut();
+                }
+            });
+    
+            //Click event to scroll to top
+            $('.scrollToTop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+
+            $('.scrollToTopMobile').click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+                return false;
+            });
+        });
+        </script>
+	</body>
+</html>

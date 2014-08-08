@@ -109,7 +109,7 @@ body{
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.4em;
     font-weight: 700;
     margin: 0.5em 0;
 }
@@ -155,7 +155,7 @@ p{
 }
 
 a{
-    font-weight: 700;
+    font-weight: 300;
     color: #8AB839;
     text-decoration: none;
 }
@@ -212,7 +212,7 @@ nav{
     content:"";
     position: relative;
     top: 3px;
-    height: 3px; 
+    height: 15px; 
     width:20px;
 }
 
@@ -232,8 +232,17 @@ nav li a{
     color: #F2F2F2;
 }
 
-nav li a:hover{
-    opacity: 0.6;
+.active{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #F2F2F2;
+}
+
+.activeMobile{
+    border-right: 10px solid #212A3F;
+}
+
+.scrollToTop{
+    display: none;
 }
 
 .container{
@@ -261,6 +270,10 @@ nav li a:hover{
     margin: 20px 2.5%;
 }
 
+#photo:hover{
+    opacity: 1;
+}
+
 /*Latest Text Posts*/
 .latestTextPosts{
     width: 95%;
@@ -277,8 +290,12 @@ nav li a:hover{
     overflow: hidden;
 }
 
-.textPost a{
+.textPost h5{
     color: #212A3F;
+}
+
+.textPost h5:hover{
+    opacity: 0.6;
 }
 
 .textPreview{
@@ -311,7 +328,170 @@ nav li a:hover{
     height: 200px;
 }
 
-/*Footer*/
+/******************POSTER GRID******************/
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.grid {
+    max-width: 70em;
+    list-style: none;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.grid li {
+    display: block;
+    float: left;
+    padding: 10px;
+    width: 33%;
+    opacity: 0;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+    opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+    outline: none;
+    border: none;
+    display: block;
+    max-width: 100%;
+}
+
+.grid li {
+    width: 100%;
+}
+
+/* Effect: Move Up */
+.grid.effect li.animate, .gridBlog.effect li.animate {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    -webkit-animation: moveUp 0.65s ease forwards;
+    animation: moveUp 0.65s ease forwards;
+}
+
+
+
+@-webkit-keyframes moveUp {
+    0% { }
+    100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+    0% { }
+    100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}
+
+/******************BLOG GRID******************/
+.gridBlog {
+    max-width: 70em;
+    list-style: none;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.gridBlog li {
+    display: block;
+    float: left;
+    padding: 10px;
+    width: 33%;
+    opacity: 0;
+}
+
+.gridBlog li.shown,
+.no-js .gridBlog li,
+.no-cssanimations .gridBlog li {
+    opacity: 1;
+}
+
+.gridBlog li a,
+.gridBlog li img {
+    outline: none;
+    border: none;
+    display: block;
+    max-width: 100%;
+}
+
+.gridBlog li {
+    width: 98%;
+    margin: 0 1%;
+}
+
+
+.scrollToTop{
+    display: none;
+}
+
+.scrollToTopMobile{
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: #F2F2F2;
+    background-color: rgba(33,42,63,0.8);
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.blogTags a{
+        float: left;
+        margin-right: 10px;
+    }
+
+.blogPost h2{
+    color: #8AB839;
+}
+
+.blogPostWrapper{
+    width: 90%;
+    margin: 0 5%;
+    max-width: 70em;
+}
+
+/********POSTER PAGES***********/
+.specs{
+    width: 95%;
+    height: 225px;
+    margin: 20px 2.5%;
+    float: left;
+}
+
+.specClass{
+    margin-top: 15px;
+    width: 95%;
+}
+
+.prevPoster, .nextPoster{
+    width: 30px;
+    height: 50px;
+    color: #F2F2F2;
+    font-size: 2em;
+    text-align: center;
+    background-color: #212A3F;
+    position: absolute;
+}
+
+.prevPoster p, .nextPoster p{
+    position: relative;
+    top: -25px;
+    font-weight: 700;
+}
+
+.prevPoster{
+    top: 350px;
+    left: 0;
+}
+
+.nextPoster{
+    top: 350px;
+    right: 0;
+}
+
+/* ================== Footer =================== */
     .bg{
     display: none;
     }
@@ -319,6 +499,112 @@ nav li a:hover{
     .bg-gradient{
         display: none;
     }
+
+
+/*About Page*/
+.aboutWrapper{
+    width: 98%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.aboutWrapper p{
+    margin-bottom: 10px;
+}
+
+/*Contact Page*/
+.contactWrapper{
+    width: 98%;
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+}
+
+form{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.8em;
+    color: #212A3F;
+}
+
+.data-field{
+    width: 100%;
+    height: 35px;
+    margin: 5px -5px;
+    padding: 5px;
+    background-color: #FFF;
+    border-radius: 3px;
+    border: none;
+}
+
+.data-field-large{
+    width: 100%;
+    height: 300px;
+    margin: 5px -5px;
+    padding: 10px 5px;
+    background-color: #FFF;
+    border-radius: 3px;
+    border: none;
+}
+
+input:focus, textarea:focus {
+  background   : rgba(0,0,0,.05);
+  border-radius: 5px;
+  outline      : none;
+}
+
+.button{
+    width: 30%;
+    height: 25px;
+    float: right;
+    padding: 5px;
+    margin: 10px 1%;
+    background-color: #8AB839;
+    border-radius: 3px;
+    text-align: center;
+    border: none;
+    color: white;
+}
+
+/**************Page Titles***************/
+.pageTitle{
+    margin: 0 auto;
+    text-align: left;
+    width: 92%;
+    height: 1em;
+    max-width: 65em;
+}
+
+/**************ABOUT CONTACT FORM************/
+.thankYou{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    top: 50%;
+    background-color: #FFF;
+    border-radius: 4px;
+    border: solid 3px #F2F2F2;
+    -webkit-box-shadow: -5px 5px 29px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: -5px 5px 29px 5px rgba(0,0,0,0.1);
+    box-shadow: -5px 5px 29px 5px rgba(0,0,0,0.1);
+}
+
+.thankYou h4{
+    background-color: #8AB839;
+    border-radius: 4px 4px 0 0;
+    color: #FFF;
+    font-weight: 700;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 5px;
+    text-align: center;
+}
+
+.thankYou p{
+    padding: 10px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -452,7 +738,7 @@ nav li a:hover{
 
     .latestTextPosts{
         width: 30%;
-        margin: 100px 0 0 2%;
+        margin: 30px 0 0 2%;
     }
 
     .textPost{
@@ -477,6 +763,72 @@ nav li a:hover{
         max-height: 250px;
         margin: 10px 15px 10px 0;
     }
+
+    .grid li {
+        width: 50%;
+    }
+
+    /*Blog Posts*/
+
+    .gridBlog li {
+        width: 90%;
+        max-width: 70em;
+        margin: 0 5%;
+    }
+
+    .blogPost{
+        width: 80%;
+        max-width: 450px;
+        float: right;
+    }
+
+    .blogTags{
+        width: 20%;
+        margin-top: 51px;
+        padding: 15px 20px;
+        font-size: 0.9em;
+        text-align: left;
+        font-weight: 300;
+        float: right;
+    }
+
+
+    .blogTags h4{
+        font-weight: 700;
+    }
+
+    .blogTags a{
+        display: block;
+        float: none;
+        margin-right: 0px;
+    }
+
+    .scrollToTopMobile{
+        display: none;
+    }
+
+
+    /********POSTER PAGES***********/
+    .specs{
+        width: 29%;
+        height: 225px;
+        margin: 20px 2%;
+    }
+
+    .prevPoster{
+        top: 300px;
+        left: 0;
+    }
+
+    .nextPoster{
+        top: 300px;
+        right: 0;
+    }
+
+    /********ABOUT CONTACT FORM********/
+
+
+
 }  /* END @media only screen and (min-width: 35em)*/
 
 @media only screen and (min-width: 55em) {
@@ -567,7 +919,6 @@ nav li a:hover{
 
     }
 
-
     .container{
         padding-top: 100px;
     }
@@ -622,6 +973,48 @@ nav li a:hover{
     #artistDescription{
         display: none;
     }
+
+    .grid li {
+        width: 33%;
+    }
+
+    /*Blog Posts*/
+
+    .gridBlog li {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .blogPost{
+        width: 60%;
+        max-width: 900px;
+    }   
+
+    .blogPost h2{ 
+        margin-bottom: 0.5em;
+    }
+
+    .blogPost h6{
+        color: #212A3F;
+        margin-bottom: -0.4em;
+    }
+
+    .scrollToTop{
+        display: block;
+        position: fixed;
+        left: 1%;
+        top: 1%;
+        width: 50px;
+        height: 50px;
+        z-index: 5;
+    }
+
+    /********POSTER PAGES***********/
+    .specs{
+        width: 50%;
+        height: 225px;
+        margin: 20px 1.5%;
+    }
 }
 
 @media only screen and (min-width: 65em){
@@ -660,6 +1053,7 @@ nav li a:hover{
 
     .readMore{
         display: block;
+        color: #F2F2F2;
         padding: 5px 5px 5px 10px;
         width: 90%;
         background-color: #434F5B;
@@ -667,15 +1061,8 @@ nav li a:hover{
         border-radius: 4px;
     }
 
-    .readMore a{
-        color: #F2F2F2;
-    }
-
-    .readMore a:hover{
-        opacity: 1;
-    }
-
     .readMore:hover{
+        opacity: 1;
         background-color: #212A3F;
         transition: all 0.5s;
         -moz-transition: all 0.5s; /* Firefox 4 */
@@ -709,6 +1096,17 @@ nav li a:hover{
 
     .bgTile img{
         bottom: -10px;
+    }
+
+    /*Poster Navigation*/
+    .prevPoster{
+        top: 400px;
+        left: 0;
+    }
+
+    .nextPoster{
+        top: 400px;
+        right: 0;
     }
 
 
