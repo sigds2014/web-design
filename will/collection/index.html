@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>time-lapse satellite</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+    
+        <style type="text/css">
+
+        	
+            body {
+                background-color:#B3B3AC;
+                margin: 0;
+                padding: 0;
+            }
+
+            #container {
+        		width: 1027px;
+        		margin: 0 auto;
+
+        	}
+
+        	#title {
+        		width: 250px;
+        		height: 41px;
+        		border: 3px black solid;
+        		text-align: center;
+        		font-size: 23px;
+        		padding-top: 10px;
+        		font-family: 'helvetica neue', helvetica, arial, sans-serif;
+        		font-weight: bold;
+                position: absolute;
+                top: 15px;
+                color: #000;
+                }
+
+            #about {
+                width: 100px;
+                height: 41px;
+                border: 3px black solid;
+                text-align: center;
+                font-size: 23px;
+                padding-top: 10px;
+                margin-left: 285px;
+                font-family: 'helvetica neue', helvetica, arial, sans-serif;
+                font-weight: bold;
+                position: absolute;
+                top: 15px;
+                color: #000;
+                -webkit-transition: background-color .1s ease-in;
+                -moz-transition: background-color .1s ease-in;
+                -ms-transition: background-color .1s ease-in;
+                -o-transition: background-color .1s ease-in;
+                transition: background-color .1s ease-in;
+            }
+
+            #about:hover {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+
+        	.imgdivlargetop {
+        		border: 3px black solid;
+        		width: 500px;
+        		margin-top: 100px;
+        		margin-bottom: 15px;
+                float: left;
+                margin-right: 15px;
+                overflow: hidden;
+            }
+
+            .imgdivlargetopoutside {
+                border: 3px black solid;
+                width: 500px;
+                margin-top: 100px;
+                /*height: 347px;*/
+                margin-bottom: 15px;
+                float: left;
+                overflow: hidden;
+            }
+
+        	/*.imgdivsmallleft {
+        		margin-left: 147px;
+        		margin-right: 10px;
+        		border: 3px black solid;
+        		width: 242px;
+        		height: 170.3px;
+        		margin-bottom: 10px;
+        		float: left;
+        	}*/
+
+        	/*.imgdivsmallright {
+        		border: 3px black solid;
+        		width: 242px;
+        		height: 170.3px;
+        		margin-bottom: 10px;
+        		float: left;
+        		overflow: hidden;
+        	}*/
+
+        	.imgdivlarge {
+        		margin: 0 auto;
+        		border: 3px black solid;
+        		width: 500px;
+/*        		height: 360px;*/
+        		margin-bottom: 15px;
+                float: left;
+                margin-right: 15px;
+                overflow: hidden;
+        	}
+
+            .imgdivlargeoutside {
+                margin: 0 auto;
+                border: 3px black solid;
+                width: 500px;
+/*                height: 360px;*/
+                margin-bottom: 15px;
+                float: left;
+                overflow: hidden;
+            }
+
+
+        	img {
+        		max-width: 100%;
+                vertical-align: bottom;
+        	}
+        
+        .thumbnail:hover {
+              /*-webkit-filter: blur(12px) grayscale(90%);
+              filter: blur(12px) grayscale(90%);*/
+
+                -webkit-filter: hue-rotate(100deg);
+                -moz-filter: hue-rotate(100deg);
+                -ms-filter: hue-rotate(100deg);
+                -o-filter: hue-rotate(100deg);
+                filter: hue-rotate(100deg);
+            
+        }
+
+        @media only screen and (max-width: 1050px) {
+                
+                
+
+
+                #container {
+                width: 506px;
+                margin: 0 auto;
+                margin-top: 30px;
+
+            }
+
+                .imgdivlargetop {
+                clear: both;
+                margin-bottom: 15px;
+                margin-top: 70px;
+            }
+
+                .imgdivlargetopoutside {
+                clear: both;
+                margin-top: 0;
+            }
+
+                .imgdivlarge {
+                clear: both;
+            }
+
+                .imgdivlargeoutside {
+                clear: both;
+            }
+
+
+
+            }
+
+        @media only screen and (max-width: 535px) {
+            
+            #title {
+                margin: 0;
+            }
+
+            #about {
+                margin: 0;
+                top: 95px;
+            }
+
+            #container {
+                width: 92%;
+                margin-left: 4%;
+
+            }
+
+            .imgdivlargetop {
+                clear: both;
+                margin-bottom: 15px;
+                margin-top: 150px;
+                width: 100%;
+            }
+
+                .imgdivlargetopoutside {
+                clear: both;
+                width: 100%;
+            }
+
+                .imgdivlarge {
+                clear: both;
+                width: 100%;
+            }
+
+                .imgdivlargeoutside {
+                clear: both;
+                width: 100%;
+            }
+
+        }
+
+        </style>
+
+    </head>
+    
+    <body>
+    	
+            <!-- <div id="imgdiv">
+                <img src="../icon_7567.png">
+            </div> -->
+
+        <div id="container">
+    		
+    		<div id="title">time-lapse satellite</div>
+
+            <a href="about/index.html"><div id="about">about</div></a>
+
+
+    		
+    		<!-- head^ -->
+
+
+            <div class="imgdivlargetop">
+                <a href="wadirum/index.html"><img class="thumbnail" src="wadirum/images/11-2009--wadirumcover.png"></a>
+            </div>
+
+    		<div class="imgdivlargetopoutside">
+    			<a href="potash/index.html"><img class="thumbnail" src="potash/images/10-2011--potashcover.png"></a>
+    		</div>
+
+    		<div class="imgdivlarge">
+    			<a href="boneyard/index.html"><img class="thumbnail" src="boneyard/images/10-2012--boneyardcover.png"></a>
+    		</div>
+
+            <div class="imgdivlargeoutside">
+                <a href="abudhabi/index.html"><img class="thumbnail" src="abudhabi/images/12-2010--abudhabicover.png"></a>
+            </div>
+
+            <div class="imgdivlarge">
+                <a href="beijing/index.html"><img class="thumbnail" src="beijing/images/8-2005--beijingcover.png"></a>
+            </div>
+
+
+            <div class="imgdivlargeoutside">
+                <a href="desert-pattern/index.html"><img class="thumbnail" src="desert-pattern/images/9-2006--desertcover.png"></a>
+            </div>
+
+            <div class="imgdivlarge">
+                <a href="dubai/index.html"><img class="thumbnail" src="dubai/images/82009--dubaicover.png"></a>
+            </div>
+
+            <div class="imgdivlargeoutside">
+                <a href="greensburg/index.html"><img class="thumbnail" src="greensburg/images/5-2007--greensburgcover.png"></a>
+            </div>
+
+            <div class="imgdivlarge">
+                <a href="hollywood/index.html"><img class="thumbnail" src="hollywood/images/3-2006--hollywoodcover.png"></a>
+            </div>
+
+            <div class="imgdivlargeoutside">
+                <a href="landfill/index.html"><img class="thumbnail" src="landfill/images/7-2009--landfillcover.png"></a>
+            </div>
+
+            <div class="imgdivlarge">
+                <a href="miraclegarden/index.html"><img class="thumbnail" src="miraclegarden/images/4-2010--miraclecover.png" ></a>
+            </div>
+
+            <div class="imgdivlargeoutside">
+                <a href="oman/index.html"><img class="thumbnail" src="oman/images/8-2013--omancover.png"></a>
+            </div>
+
+            <div class="imgdivlarge">
+                <a href="pattern/index.html"><img class="thumbnail" src="pattern/images/8-2012--patterncover.png" ></a>
+            </div>
+
+            <div class="imgdivlargeoutside">
+                <a href="sahara/index.html"><img class="thumbnail" src="sahara/images/12-1990--saharacover.png"></a>
+            </div>
+
+            <div class="imgdivlarge">
+                <a href="traffic/index.html"><img class="thumbnail" src="traffic/images/10-2010--traffic01cover.png" ></a>
+            </div>
+
+            <div class="imgdivlargeoutside">
+                <a href="crater/index.html"><img class="thumbnail" src="crater/images/6-2012--crater01cover.png" ></a>
+            </div>
+
+
+            <div class="imgdivlarge">
+                <a href="whitesands/index.html"><img class="thumbnail" src="whitesands/images/11-2006--whitesandscover.png" ></a>
+            </div>
+
+            <div class="imgdivlargeoutside">
+                <a href="blue/index.html"><img class="thumbnail" src="blue/images/6-2010-bluecover.png" ></a>
+            </div>
+
+
+
+		</div>
+
+
+    </body>
+    
+</html>
