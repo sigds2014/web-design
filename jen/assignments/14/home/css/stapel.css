@@ -1,0 +1,166 @@
+.tp-grid {
+	list-style-type: none;
+	position: relative;
+	display: block;
+}
+
+.tp-grid li {
+	position: absolute;
+	cursor: pointer;
+	border: 10px solid #fff;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+	display: none;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	width: 18em;
+}
+
+.no-js .tp-grid li {
+	position: relative;
+	display: inline-block;
+}
+
+.tp-grid li a {
+	display: block;
+	outline: none;
+}
+
+.tp-grid li img {
+	display: block;
+	border: none;
+	width: 100%;
+}
+
+/*.tp-info,*/
+.tp-title {
+	position: absolute;
+	background: #fff;
+	line-height: 20px;
+	color: #333;
+	top: 85%;
+	width: 100%;
+	padding: 10px;
+	font-weight: 700;
+	text-align: center;
+	left: -100%;
+	box-shadow: 
+		1px 1px 1px rgba(0,0,0,0.1),
+		5px 0 5px -3px rgba(0,0,0,0.4),
+		inset 0 0 5px rgba(0,0,0,0.04);
+}
+
+.touch .tp-info {
+	left: 0px;
+}
+
+.no-touch .tp-info {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.no-touch .tp-grid li:hover .tp-info {
+	-webkit-transition-delay: 150ms;
+	-moz-transition-delay: 150ms;
+	-o-transition-delay: 150ms;
+	-ms-transition-delay: 150ms;
+	transition-delay: 150ms;
+}
+
+.no-touch .tp-open li:hover .tp-info {
+	left: 0px;
+}
+
+.tp-title {
+	padding: 10px 35px 10px 10px;
+	left: 0px;
+}
+
+.tp-title span:nth-child(2){
+	color: #666;
+	padding: 0 8px;
+	background: #eee;
+	right: 0px;
+	height: 100%;
+	line-height: 40px;
+	top: 0px;
+	position: absolute;
+	display: block;
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.main {
+	margin-top: 50px;
+}
+
+nav {
+	background-color: #fff;
+	height: 45px;
+	width: 100%;
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 5px;
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid #eee;
+	z-index: 1000;
+}
+
+#logo {
+	width: 50%;
+	float: left;
+}
+
+.utilitynav i {
+	display: block;
+	float: right;
+	color: #eee;
+	padding: 12px 5px 10px 5px;
+	font-size: 20px;
+}
+
+.utilitynav a:hover i {
+	color: #8ccd46;
+}
+
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 1.3em;
+	color: #8ccd46;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	display: block;
+	cursor: pointer;
+}
+
+h6 {
+	display: inline-block;
+}
+
+.subnav i {
+	display: inline-block;
+	color: #ccc;
+}
+
+.subnav a:hover i {
+	display: inline-block;
+	color: #8ccd46;
+}
+
+#sorting {
+	width: 100%;
+	display: inline-block;
+	float: left;
+}
