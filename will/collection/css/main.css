@@ -1,0 +1,19 @@
+	#paragraph {
+            	width: 380px;
+            	float: right;
+            	border: 3px solid white;
+            	margin-right: 35px;
+            	margin-top: 485px;
+            	padding: 8px;
+                  background-color: #000;
+            }
+
+            p {
+            	font-family: arial, 'helvetica neue', helvetica, sans-serif;
+            	color: #fff;
+                  letter-spacing: 0.018em;
+            	font-size: 17px;
+            	width: 380px;
+            	font-weight: bold;
+
+            }
