@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<!--
+		Supersized - Fullscreen Slideshow jQuery Plugin
+		Version : 3.2.7
+		Site	: www.buildinternet.com/project/supersized
+		
+		Author	: Sam Dunn
+		Company : One Mighty Roar (www.onemightyroar.com)
+		License : MIT License / GPL License
+	-->
+
+	<head>
+
+		<title>Sahara Desert</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="../css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../theme/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="../js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="../theme/supersized.shutter.min.js"></script>
+		
+	<style type="text/css">
+
+	img {
+		height: 50px;
+		width: 50px;
+	}
+
+	#imgdiv {
+		height:50px;
+		width: 50px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+
+	#paragraph {
+            	width: 390px;
+            	float: right;
+            	border: 3px solid black;
+            	margin-right: 35px;
+            	margin-top: 485px;
+            	padding: 8px;
+            	background-color: rgba(255, 255, 255, 0.3);
+            }
+
+            p {
+            	font-family: arial, 'helvetica neue', helvetica, sans-serif;
+            	color: black;
+            	font-size: 17px;
+            	width: 390px;
+            	font-weight: bold;
+
+            }
+
+	</style>
+
+	<script type="text/javascript">
+		
+		jQuery(function($){
+			
+	$.supersized({
+	
+		// Functionality
+		slide_interval          :   0,		// Length between transitions
+		transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+		transition_speed		:	3000,		// Speed of transition
+												   
+		// Components							
+		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+		slides 					:  	[			// Slideshow Images
+											{image : 'images/12-1972--sahara.png'},
+											{image : 'images/12-1987--sahara.png'},  
+											{image : 'images/12-1990--sahara.png'},
+											{image : 'images/12-2000--sahara.png'},
+											{image : 'images/12-2004--sahara.png'},
+											{image : 'images/2-2007--sahara.png'},
+											{image : 'images/6-2013--sahara.png'}
+									]
+		
+			});
+	    });
+	    
+	</script>
+		
+	</head>
+	
+	<style type="text/css">
+		ul#demo-block{ margin:0 15px 15px 15px; }
+			ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+			ul#demo-block li a{ color:#eee; font-weight:bold; }
+	</style>
+
+<body>
+
+
+	<div id="imgdiv">
+		<a href="../index.html"><img src="../icon_7567.png"></a>
+	</div>
+
+	<div id="paragraph">
+		<p><em>1972–2013</em>: The lakes of ounianga consist of eighteen lakes in North-Eastern Chad in the Sahara Desert.</p>
+	</div>
+
+</body>
+</html>
