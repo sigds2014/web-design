@@ -11,15 +11,19 @@
         }
 
         .topmargin {
-            margin-top: 50px;
+            margin-top: 100px;
         }
 
         .topmargin2 {
-            margin-top: 30px;
+            margin-top: 40px;
+        }
+
+        .topmargin4 {
+            margin-top: 80px;
         }
 
         .topmargin3 {
-            margin-top: 125px;
+            margin-top: 90px;
         }
 
         .vertical1 {
@@ -113,17 +117,18 @@
 
         .headline {
             float:left;
-            margin-top: 238px;
+            margin-top: 300px;
             z-index: 1;
             position: absolute;
         }
 
 
         p {
-            font-size: 11px;
+            font-size: 13.5px;
             font-family: 'PT Serif', serif;
             color: black;
             margin: 5px;
+            margin-top: -10px;
             text-align: justify;
         }
 
@@ -138,7 +143,7 @@
         }
 
         .bigtext {
-            font-size: 14px;
+            font-size: 16px;
         }
 
         .thankstext {
@@ -152,8 +157,12 @@
             width: 270px;
         }
 
+        .small {
+            font-size: 11px;
+            width: 270px;
+        }
+
         .thankssize {
-            height: 20px;
             width: 270px;
             text-align: left;
         }
