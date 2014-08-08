@@ -178,8 +178,8 @@ textarea {
     #about-nav:hover    { color: #8D3122; transition: all 0.15s ease; }
     #tour-nav:hover     { color: #B73E2B; transition: all 0.15s ease; }
     #video-nav:hover    { color: #EF6D2C; transition: all 0.15s ease; }
-/*    #photo-nav:hover    { color: #FF7602; transition: all 0.15s ease; }
-*/    #news-nav:hover    { color: #EEBA2D; transition: all 0.15s ease; }
+    #photo-nav:hover    { color: #EF942D; transition: all 0.15s ease; }
+    #news-nav:hover    { color: #EEBA2D; transition: all 0.15s ease; }
 
     section {
         margin: 0;
@@ -287,7 +287,7 @@ textarea {
     }
 
     #photo {
-        background-color: #FF7602;
+        background-color: #EF942D;
         height: 100%;
     }
 
@@ -307,6 +307,9 @@ textarea {
         width: 30vw;
         max-height: 16em;
         max-width: 16em;
+        float: left;
+        margin-left: 5%;
+        margin-bottom: 5%;
     }
 
     #photo1 {
@@ -315,9 +318,6 @@ textarea {
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
         background-size: auto 100%;
-        float: left;
-        margin-left: 5%;
-        margin-bottom: 5%;
     }
 
     #photo2 {
@@ -326,9 +326,6 @@ textarea {
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
         background-size: auto 100%;
-        float: left;
-        margin-left: 5%;
-        margin-bottom: 5%;
     }
 
     #photo3 {
@@ -337,9 +334,6 @@ textarea {
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
         background-size: auto 100%;
-        float: left;
-        margin-left: 5%;
-        margin-bottom: 5%;
     }
 
     #photo4 {
@@ -348,9 +342,6 @@ textarea {
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
         background-size: auto 100%;
-        float: left;
-        margin-left: 5%;
-        margin-bottom: 5%;
     }
 
     #photo5 {
@@ -359,9 +350,6 @@ textarea {
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
         background-size: auto 100%;
-        float: left;
-        margin-left: 5%;
-        margin-bottom: 5%;
     }
 
     #photo6 {
@@ -370,9 +358,6 @@ textarea {
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
         background-size: auto 100%;
-        float: left;
-        margin-left: 5%;
-        margin-bottom: 5%;
     }
 
     #news {
