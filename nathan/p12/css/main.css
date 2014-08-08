@@ -505,7 +505,7 @@ nav li a{
 .aboutWrapper{
     width: 98%;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .aboutWrapper p{
@@ -571,7 +571,7 @@ input:focus, textarea:focus {
     text-align: left;
     width: 92%;
     height: 1em;
-    max-width: 65em;
+    max-width: 69em;
 }
 
 /**************ABOUT CONTACT FORM************/
