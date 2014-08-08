@@ -313,7 +313,7 @@ textarea {
     }
 
     #photo1 {
-        background: url(../img/bw5.jpg) 50% 50% no-repeat;
+        background: url(../img/bw7.jpg) 50% 50% no-repeat;
         -webkit-background-size: auto 100%;
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
@@ -329,7 +329,7 @@ textarea {
     }
 
     #photo3 {
-        background: url(../img/bw5.jpg) 50% 50% no-repeat;
+        background: url(../img/bw8.jpg) 50% 50% no-repeat;
         -webkit-background-size: auto 100%;
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
@@ -337,7 +337,7 @@ textarea {
     }
 
     #photo4 {
-        background: url(../img/bw5.jpg) 50% 50% no-repeat;
+        background: url(../img/bw1.jpg) 50% 50% no-repeat;
         -webkit-background-size: auto 100%;
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
@@ -345,7 +345,7 @@ textarea {
     }
 
     #photo5 {
-        background: url(../img/bw5.jpg) 50% 50% no-repeat;
+        background: url(../img/color1.jpg) 50% 50% no-repeat;
         -webkit-background-size: auto 100%;
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
@@ -353,7 +353,7 @@ textarea {
     }
 
     #photo6 {
-        background: url(../img/bw5.jpg) 50% 50% no-repeat;
+        background: url(../img/bw4.jpg) 50% 50% no-repeat;
         -webkit-background-size: auto 100%;
         -moz-background-size: auto 100%;
         -o-background-size: auto 100%;
@@ -411,6 +411,13 @@ textarea {
         width: 100%;
         background-color: rgb(88,88,88);
         background-color: white;
+    }
+
+    #sig {
+        height: 90%;
+        float: left;
+        margin-left: 1em;
+        margin-top: .5em;
     }
 
     .fa-stack {
