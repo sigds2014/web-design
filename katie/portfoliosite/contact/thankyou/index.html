@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <style type="text/css">
+
+        	body {
+        		background-color: #333;
+        	}
+        	form {
+        		position:absolute;
+        		top:20%;
+        		left:38%;
+        		height: 60px;
+        		width:390px;
+        		color: #eee;
+
+        	}
+
+        	h1 {
+        		position:absolute;
+        		top:15%;
+        		left:40%;
+        		height: 60px;
+        		width:390px;
+		font-family: sans-serif;
+		font-weight: normal;
+		color:#5986af;
+        	}
+
+        	input#q {
+        		width: 300px;
+        		font-family: sans-serif;
+				font-weight: normal;
+				background-color: rgba(0, 0, 0, 0);
+				border-bottom-color: rgba(200, 200, 200, 0.14902);
+				border-bottom-style: solid;
+				border-bottom-width: 1px;
+				border-left-color: rgba(200, 200, 200, 0.14902);
+				border-left-style: solid;
+				border-left-width: 1px;
+				border-right-color: rgba(200, 200, 200, 0.14902);
+				border-right-style: solid;
+				border-right-width: 1px;
+				border-top-color: rgba(200, 200, 200, 0.14902);
+				border-top-style: solid;
+				border-top-width: 1px;
+				color: #eee;
+				cursor: auto;
+				direction: ltr;
+				display: inline-block;
+				letter-spacing: normal;
+				line-height: normal;
+				margin-bottom: 0px;
+				margin-left: 0px;
+				margin-right: 0px;
+				margin-top: 0px;
+				padding-bottom: 1px;
+				padding-left: 1px;
+				padding-right: 1px;
+				padding-top: 1px;
+				position: relative;
+				text-align: start;
+				text-indent: 0px;
+				text-shadow: none;
+				text-transform: none;
+				vertical-align: top;
+        	}
+
+
+
+			button, input, select, textarea {
+			  font-family : inherit;
+			  font-size   : 100%;
+			}
+
+			input[type=submit], #submit, button  {
+				font-family: sans-serif;
+				font-weight: normal;
+
+        	}
+
+
+
+
+        </style>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>
+		  $(document).ready(function() {
+		    if (!("autofocus" in document.createElement("input"))) {
+		      $("#q").focus();
+		    }
+		  });
+		</script>
+    </head>
+    
+    <body>
+
+    	<h1>Thank you!</h1>
+
+    </body>
+    
+</html>

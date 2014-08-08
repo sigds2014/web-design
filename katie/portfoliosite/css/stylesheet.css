@@ -1,0 +1,982 @@
+            a:link,
+            a:visited,
+            a:hover,
+            a:active
+            {
+                text-decoration: none;
+                color:grey;
+            }
+                a:hover, 
+                a:active
+            {
+                color: pink ;
+            }
+
+            /*music=2
+            */
+
+             h1.thin
+                {
+                color:grey;
+                font-family:"helveticaneue-ultralight";
+                font-weight:normal;
+                font-style:lighter;
+                font-size: 32px;
+                margin-left: 75px;
+                margin-top: 50px;
+                }
+
+            h1.thin2
+                {
+                color:silver;
+                font-family:"helveticaneue-ultralight";
+                font-weight:normal;
+                font-style:lighter;
+                font-size: 32px;
+                margin-left: 55px;
+                margin-top: 40px;
+                }
+                /*"avenirltstd-light"*/
+                /*"avenirnextltpro-ultltcn"*/
+
+            h1.thin3
+                {
+                /*color:cornflowerblue;*/
+                font-family:"helveticaneue-ultralight";
+                font-style: lighter;
+                font-weight:normal;
+                font-size: 50px;
+                background: -webkit-linear-gradient(#eee, cornflowerblue);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-left: 680px;
+                margin-top: 75px;}
+                /*position: relative; top: 327px; left: 50px;*/
+
+            h2.thin
+                {
+                /*color:cornflowerblue;*/
+                font-family:"helveticaneue-ultralight";
+                font-style: lighter;
+                font-weight:normal;
+                font-size: 32px;
+                background: -webkit-linear-gradient(#eee, cornflowerblue);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-left: 55px;
+                margin-top: 50px;
+                /*margin-left: 650px;
+                margin-top: 50px;*/
+                }
+
+            nav 
+                {
+                margin-top: 250px;
+                font-family:"helveticaneue-ultralight";
+                }
+            nav.opacity
+                {
+                margin-top: 250px;
+                font-family:"helveticaneue-ultralight";
+                opacity:20%;
+                }
+
+
+
+            ul.navi 
+                {
+                list-style-type: none;
+                margin-top:19%;
+                font-family:"helveticaneue-ultralight";
+                display:block;
+                }
+            /*"design/homebar1.jpg" 
+            "design/homebar2.jpg" 
+            "design/homebar3.jpg" 
+            "design/homebar4.jpg"*/
+            ul.navi a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-align: center;
+                text-decoration: none;
+                
+                /*display:block;
+                top:50px;
+                left:625px;*/
+                }
+
+            ul.navi a:hover 
+                {
+                color: white ;
+                /*background-color: #def ;*/
+                }
+
+            ul.navi li
+                {width:100%;
+                margin-bottom: 5px;
+                margin-left:2em;
+                margin-right:1em;
+                }
+
+            ul.navi a:link, 
+            ul.navi a:hover, 
+            ul.navi a:active, 
+            ul.navi a:visited 
+            {
+                margin-left:75px;
+            }
+
+            ul.navi li:nth-child(1) 
+                {
+                background:url('../design/homebar1.jpg'); 
+                height:80px; 
+                }
+            ul.navi li:nth-child(2) 
+                {
+                background:url('../design/homebar2.jpg'); 
+                height:40px;
+                }
+            ul.navi li:nth-child(3) 
+                {
+                background:url('../design/homebar3.jpg'); 
+                height:60px;
+                }
+            ul.navi li:nth-child(4) 
+                {
+                background:url('../design/homebar4.jpg'); 
+                height:30px;
+                }
+
+            ul.navi nav 
+                {
+                margin-top: 250px;
+                }
+
+
+
+            ul.navi2 
+                {
+                list-style-type: none;
+                margin-top:15%;
+                font-family:"helveticaneue-ultralight";
+                display:block;
+                text-decoration: none;
+                float:left;
+                margin-left: 0px;
+                }
+            ul.navi2 a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-decoration: none;
+                }
+
+            ul.navi2 a:hover 
+                {
+                color: white ;
+                }
+
+            ul.navi2 li
+                {width:100%;
+                margin-bottom: 5px;
+                margin-left:2em;
+                margin-right:1em;
+                }
+
+            ul.navi2 li:nth-child(1) 
+                {background:url('../design/homebar1.jpg'); 
+                height:40px;width:157px; 
+                }
+            ul.navi2 li:nth-child(2) 
+                {background:url('../design/homebar2.jpg'); 
+                height:40px;width:157px;
+                }
+            ul.navi2 li:nth-child(3) 
+                {background:url('../design/homebar3.jpg'); 
+                height:40px;width:157px;
+                }
+            ul.navi2 nav 
+                {
+                margin-top: 250px;
+                }
+
+            ul.navi2 a:link, 
+            ul.navi2 a:hover, 
+            ul.navi2 a:active, 
+            ul.navi2 a:visited 
+            {
+                margin-left:32px;
+            }
+
+
+            /*design homepage*/
+            ul.topnav 
+                {
+                list-style-type: none;
+                font-family:"helveticaneue-ultralight";
+                /*font-style: light semiextended;*/
+                margin: 0;
+                padding: 0;
+                color:grey;
+                position: fixed;
+                top:50px;
+                left:625px;
+                }
+            ul.topnav li 
+                {
+                display: inline;
+                margin-left:.5em;
+                margin-right:1em;
+                }
+            ul.topnav a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-decoration: none;
+                }
+            ul.topnav a:hover 
+                {
+                color: pink ;
+                background-color: transparent;
+                text-decoration: none;
+                }
+
+
+            /*music homepage*/
+            ul.topnav2 
+                {
+                list-style-type: none;
+                font-family:"helveticaneue-ultralight";
+                font-size: 32px;
+                margin: 0;
+                padding: 0;
+                color:cornflowerblue;
+                position: fixed;
+                top:50px;
+                left:625px;
+                }
+
+            ul.topnav2 a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-decoration: none;
+                }
+            ul.topnav2 a:hover 
+                {
+                color: cornflowerblue ;
+                background-color: transparent;
+                }
+
+            ul.topnav2 li 
+                {
+                display: inline;
+                margin-left:1em;
+                margin-right:1em;
+                }
+
+            ul.topnav3 
+                {
+                list-style-type: none;
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+                color:pink;
+                position: fixed;
+                top:60px;
+                left:600px;
+                }
+
+            /*design webpage*/
+            ul.topnav3 a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-decoration: none;
+                }
+            ul.topnav3 a:hover 
+                {
+                color: pink ;
+                background-color: transparent;
+                }
+
+            ul.topnav3 li 
+                {
+                display: inline;
+                margin-left:.5em;
+                }
+
+            /*music webpage*/
+            ul.topnav4 
+                {
+                list-style-type: none;
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+                color:cornflowerblue;
+                position: fixed;
+                top:50px;
+                left:625px;
+                }
+
+            ul.topnav4 a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-decoration: none;
+                }
+            ul.topnav4 a:hover 
+                {
+                color: cornflowerblue ;
+                background-color: transparent;
+                }
+
+            ul.topnav4 li 
+                {
+                display: inline;
+                margin-left:.5em;
+                margin-right:1em;
+                }
+ul.topnav3 
+                {
+                list-style-type: none;
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+                color:pink;
+                position: fixed;
+                top:60px;
+                left:600px;
+                }
+
+            /*design webpage*/
+            ul.topnav3 a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-decoration: none;
+                }
+            ul.topnav3 a:hover 
+                {
+                color: pink ;
+                background-color: transparent;
+                }
+
+            ul.topnav3 li 
+                {
+                display: inline;
+                margin-left:.5em;
+                }
+
+            /*music webpage*/
+            ul.topnav4 
+                {
+                list-style-type: none;
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+                color:cornflowerblue;
+                position: fixed;
+                top:50px;
+                left:625px;
+                }
+
+            ul.topnav4 a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-decoration: none;
+                }
+            ul.topnav4 a:hover 
+                {
+                color: cornflowerblue ;
+                background-color: transparent;
+                }
+
+            ul.topnav4 li 
+                {
+                display: inline;
+                margin-left:.5em;
+                margin-right:1em;
+                }
+
+            ul.topnav5 
+                {
+                list-style-type: none;
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+                color:cornflowerblue;
+                position: fixed;
+                top:50px;
+                left:625px;
+                }
+
+            ul.topnav5 a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-decoration: none;
+                }
+            ul.topnav5 a:hover 
+                {
+                color: cornflowerblue ;
+                background-color: transparent;
+                }
+
+            ul.topnav5 li 
+                {
+                display: inline;
+                margin-left:.5em;
+                margin-right:1em;
+                }
+/*
+
+            #musicnav-music, 
+            #musicnav-video, 
+            #musicnav-photos, 
+            #musicnav-about, 
+            #musicnav-contact, 
+            #musicnav-gigs
+             {opacity:0.3;}
+            #musicnav-music:hover, 
+            #musicnav-video:hover, 
+            #musicnav-photos:hover, 
+            #musicnav-about:hover, 
+            #musicnav-contact:hover, 
+            #musicnav-gigs:hover
+             {opacity:1;
+
+            -webkit-transition: all 500ms ease-out 65ms;
+            -moz-transition: all 500ms ease-out 65ms;
+            -o-transition: all 500ms ease-out 65ms;
+            transition: all 500ms ease-out 65ms;
+            ;
+             }*/
+
+            .inline-photos img 
+            {
+            width:400px;
+            /*position:inherit;*/
+            margin-top:175px;
+            }
+
+            .inline-photos2 img 
+            {
+            margin-top:15%;
+            width:260px;
+            position: absolute;
+                left:400px;
+                top: 70px;
+                /*z-index: -1;*/
+            }
+
+            .inline-photos3 img 
+            {
+            margin-top:15%;
+            width:260px;
+            position: absolute;
+                left:800px;
+                top: 70px;
+            /*border: solid black .5px;*/
+            }
+
+            .inline-photos4 img 
+            {
+            margin-top:15%;
+            width:260px;
+            position: absolute;
+                left:1200px;
+                top: 70px;
+            }
+
+            .inline-photos5 img 
+            {
+            margin-top:7%;
+            width:500px;
+            float:left;
+            /*position: absolute;
+                left:220px;
+                top: 85px;*/
+                /*z-index: -1;*/
+            }
+
+            .inline-photos6 img 
+            {
+            /*margin-top:15%;
+            margin-left:2px;*/
+            width: 250;
+            position: absolute;
+                left:25px;
+                top: 58px;
+            /*height:250;*/
+            /*float:left;*/
+            margin-left:25px;
+            margin-top:65px;
+            }
+            .sqs-block-image 
+            .intrinsic 
+            .image-block-wrapper
+            { 
+                font-family:"helveticaneue-ultralight";
+                font-size: 32px;
+                color:grey;
+                position:absolute;
+            top:20px;
+            left:250px;
+            } 
+            img:hover 
+                { 
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                color:grey;
+                opacity: 0.5;
+                } 
+                #tychoposter 
+                {
+                position: absolute;
+                left:65px;
+                top: 250px;
+                }
+
+            .inline-photos7 img 
+            {
+            /*margin-top:15%;
+            margin-left:2px;*/
+            width: 250;
+            /*height:500;*/
+            position: absolute;
+                left:325px;
+                top: 58px;
+            /*height:250;*/
+            /*float:left;*/
+            margin-left:100px;
+            margin-top:63px;
+            }
+            .sqs-block-image 
+            .intrinsic 
+            .image-block-wrapper
+            { 
+                font-family:"helveticaneue-ultralight";
+                font-size: 32px;
+                color:grey;
+                position:absolute;
+            top:200px;
+            left:250px;
+            } 
+            img:hover 
+                { 
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                color:grey;
+                opacity: 0.5;
+                } 
+        #books
+            {
+            position: absolute;
+            left:365px;
+            top: 250px;
+            }
+
+
+            .inline-photos8 img 
+            {
+            /*margin-top:15%;
+            margin-left:2px;*/
+            width: 250;
+            height:500;
+            position: absolute;
+                left:625px;
+                top: 58px;
+            /*height:250;*/
+            /*float:left;*/
+            margin-left:.5em;
+                margin-right:1em;
+            /*margin-left:100px;
+            margin-top:63px;*/
+            }
+            .sqs-block-image 
+            .intrinsic 
+            .image-block-wrapper
+            { 
+                font-family:"helveticaneue-ultralight";
+                font-size: 32px;
+                color:grey;
+                position:absolute;
+            top:200px;
+            left:250px;
+            } 
+            img:hover 
+                { 
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                color:grey;
+                opacity: 0.5;
+                } 
+        #other
+            {
+            position: absolute;
+            left:665px;
+            top: 250px;
+            }
+       /* #pic 
+            {
+            background: url("lightbox/img/work/tychoposterfinalcopycopy.jpg") no-repeat;
+            width: 400px;
+            opacity: 0.4;
+            filter:alpha(opacity=40);
+            }
+*/
+
+        /*.thumb img
+            {
+            position:fixed;
+            top:200px;
+            left:150px;
+            width:300px;
+            height:400px;
+            }
+        .thumb .overlay 
+            {
+            transition:opacity 1s;
+            -webkit-transition:opacity 1s;
+            }
+        .thumb:hover .overlay 
+            {
+            opacity:0.8;
+            }
+        .overlay
+            {
+            position:fixed;
+            top:200px;
+            left:250px;
+            width:300px;
+            height:400px;
+            background:#fff;
+            opacity:0;
+            font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                color:grey;
+            text-align: center;
+            border: solid black 1px;
+            }*/
+    
+
+        div.container img
+            {
+            margin-top:15%;
+            margin-left:2px;
+            width:250px;
+            height:700;
+            float:left
+            }
+
+
+
+        /*.lb-caption 
+            {
+              font-family:"helveticaneue-ultralight";  
+            }*/
+
+            div.workphoto img
+                {
+                width:250px;
+                float:left;
+                margin-left:75px;
+                margin-top:65px;
+                }
+            #musicnav-music, 
+            #musicnav-video, 
+            #musicnav-photos, 
+            #musicnav-about, 
+            #musicnav-contact, 
+            #musicnav-gigs
+             {opacity:0.3;}
+            #musicnav-music:hover, 
+            #musicnav-video:hover, 
+            #musicnav-photos:hover, 
+            #musicnav-about:hover, 
+            #musicnav-contact:hover, 
+            #musicnav-gigs:hover
+             {opacity:1;
+
+            -webkit-transition: all 500ms ease-out 65ms;
+            -moz-transition: all 500ms ease-out 65ms;
+            -o-transition: all 500ms ease-out 65ms;
+            transition: all 500ms ease-out 65ms;
+            ;
+             }
+
+            div.aboutphoto img
+                {
+                width:250px;
+                float:left;
+                margin-left:75px;
+                margin-top:65px;
+                }
+
+            div.aboutcontainer p
+                {
+
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                color:grey;
+                width:200px;
+                float:left;
+                margin-left:35px;
+                margin-top:328px;
+
+                }
+            ul.aboutcontainer2 
+                {
+
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                color:grey;
+                width:200px;
+                float:left;
+                margin-left:55px;
+                margin-top:65px;
+                display:block;
+
+                }
+            ul.aboutcontainer2 a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-decoration: none;
+                }
+
+            ul.aboutcontainer2 li 
+                {
+                display: block;
+                margin-left:.5em;
+                margin-right:1em;
+                }
+
+            div.other 
+                {
+                width:1600px;
+                height:800px;
+                position:absolute; 
+                top:0;
+                left:0;
+                z-index:-1;
+                }
+
+            div.other2 
+                {
+                background-color:black;
+                width:1600px;
+                height:800px;
+                background-size: auto 100%;
+                position: fixed; 
+                top:0;
+                left:0;
+                z-index:-1;
+                }
+
+            div.contactbox
+                {
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                width:400px;
+                height:400px;
+                position:absolute; 
+                top:200px;
+                left:250px;
+                z-index:-1;
+                -webkit-writing-mode: horizontal-tb;
+                }
+
+            input.enterinfo
+                {
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                width:250px;
+                height:40px;
+                }
+            input.entermessage
+                {
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                width:250px;
+                height:200px;
+                text-align: top
+                }
+            input.button
+                {
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                width:100px;
+                height:40px;
+                position:absolute; 
+                top:200px;
+                left:-102px;
+                z-index:-1;
+                color:grey;
+                background-color:pink;
+                }
+            input.placeholder
+                {
+                text-align: top
+                }
+            input:required
+                {
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                /*box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);*/
+                }
+            input:invalid {
+                background: mintcream;
+}
+
+            input:required:hover
+                {
+                font-family:"helveticaneue-ultralight";
+                font-size: 16px;
+                opacity: 1;
+                /*box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);*/
+                }
+
+            p   
+                {
+                color:white;
+                /*font-family:myriad pro;
+                font-weight: light semiextended;*/
+                font-size: 16px;
+                margin-left: 80px;
+                margin-top: 100px;
+
+                /*position: relative; top: 327px; left: 50px;*/
+                }
+
+
+            #musicnav-contact
+                {
+                position: absolute;
+                left:-540px;
+                top: 78px;
+                z-index: -1;
+                }
+            #musicnav-about
+                {
+                position: absolute;
+                left:23px;
+                top: 143px;
+                z-index: -1;
+                }
+            #musicnav-music
+                {
+                position: absolute;
+                left:-300px;
+                top: 270px;
+                z-index: -1;
+                }
+            #musicnav-video
+                {
+                position: absolute;
+                left:-65px;
+                top: 412px;
+                z-index: -1;
+                }
+            #musicnav-photos
+                {
+                position: absolute;
+                left:199px;
+                top: 360px;
+                z-index: -1;
+                }
+            #musicnav-gigs
+                {
+                position: absolute;
+                left:-437px;
+                top: 535px;
+                z-index: -1;
+                }
+            #musicnav-design
+                {
+                position: absolute;
+                left:130px;
+                top: 587px;
+                z-index: -1;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+            #background 
+                {
+                background-color:black;
+                background:url('../music/webhomepagemusic.jpg') no-repeat,
+                url('../music/webpagemusic.jpg');
+                }
+
+
+
+
+
+
+
+            /*a:link 
+                {
+                color: grey;
+                background-color: transparent;
+                text-decoration: none;
+                }*/
+
+
+            #background2 
+                {
+                width: 100%; 
+                height: 100%; 
+                position: absolute; 
+                left: 0px; 
+                top: 0px; 
+                z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+                }
+            /*nav 
+                {
+                margin-top: 250px;
+                }*/
+            /*#background 
+                {*/
+                /*width: 100%; 
+                height: 100%; 
+                position: absolute; 
+                left: 0px; 
+                top: 0px; 
+                z-index: -1;
+                background-size: 100%;*/
+
+
+    
+
+            
+
+
+    
+
+
+
+            
+       
