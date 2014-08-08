@@ -1,0 +1,19 @@
+	
+	body {
+		font-family: 'Lora', serif;
+		margin: 0 auto;
+		margin-left: 70px;
+		margin-top: 50px;
+	}
+	h1 {
+		font-family: 'Nothing You Could Do', cursive;
+		color: rgb(18,117,71);
+		font-size: 35px;
+	}
+
+	p {
+		color: rgb(53,40,30);
+		font-size: 17px;
+		margin-left: 25px;
+		z-index: 2;
+	}

@@ -1,0 +1,122 @@
+	* { 
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box; 
+	}
+
+	body {
+		font-family: 'Lora', serif;
+		color: rgb(53,40,30);
+		margin-left: 70px;
+		margin-top: 50px;
+	}
+
+	h1 {
+		font-family: 'Nothing You Could Do', cursive;
+		color: rgb(18,117,71);
+		font-size: 30px;
+	}
+
+	p {
+		color: rgb(53,40,30);
+		width: 275px;
+		text-align: left;
+		font-size: 15px;
+		margin: 5px;
+		margin-top: -5px;
+	}
+
+	#container1 {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	#container2 {
+		width: 275px;
+		height: 500px;
+		float: left;
+		margin-left: 10px;
+		margin-right: 40px;
+	}
+
+	#container3 {
+		width: 220px;
+		height: 467px;
+		float: left;
+		margin-top: -50px;
+		margin-left: 50px;
+	}
+
+	.frame1 {
+		width: 220px;
+		height: 320px;
+		background-color: rgb(53,40,30);
+		float: left;
+	}
+
+	.frame2 {
+		width: 220px;
+		height: 147px;
+		background-color: rgb(53,40,30);
+		margin-top: 30px;
+		float: left;
+	}
+
+	#container4 {
+		width: 220px;
+		height: 481px;
+		margin-top: -73px;
+		margin-left: 20px;
+		float: left;
+	}
+
+	.frame3 {
+		width: 220px;
+		height: 199px;
+		background-color: rgb(53,40,30);
+		float: left;
+	}
+
+	.frame4 {
+		width: 220px;
+		height: 147px;
+		background-color: rgb(53,40,30);
+		margin-top: 10px;
+		float: left;
+	}
+
+	.frame5 {
+		width: 220px;
+		height: 175px;
+		background-color: rgb(53,40,30);
+		margin-top: 10px;
+		float: left;
+	}
+
+	#container5 {
+		width: 245px;
+		height: 454px;
+		margin-top: -50px;
+		margin-left: 20px;
+		float: left;
+	}
+
+	.frame6 {
+		width: 245px;
+		height: 168px;
+		background-color: rgb(53,40,30);
+		float: left;
+	}
+
+	.frame7 {
+		width: 245px;
+		height: 306px;
+		background-color: rgb(53,40,30);
+		margin-top: 30px;
+		float: left;
+	}
+
+
+	img {
+		border: 10px solid rgb(53,40,30);
+		max-width: 100%;	
+	}

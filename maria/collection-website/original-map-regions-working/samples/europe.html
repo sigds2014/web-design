@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>JQVMap - Europe Map</title>
+    
+    <link href="../jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="../jqvmap/jquery.vmap.js" type="text/javascript"></script>
+    <script src="../jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="vmap" style="width: 680px; height: 520px;"></div>
+
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery('#vmap').vectorMap({
+            map: 'europe_en',
+            backgroundColor: 'white',
+        borderColor: 'rgb(110,93,78',
+        borderOpacity: 0.25,
+        borderWidth: 1,
+        color: 'rgb(247,244,241)',
+        enableZoom: true,
+        hoverColor: 'rgb(191,165,142)',
+        hoverOpacity: null,
+        normalizeFunction: 'linear',
+        scaleColors: ['#b6d6ff', '#005ace'],
+        selectedColor: '#c9dfaf',
+        selectedRegion: null,
+        showTooltip: true,
+        onRegionClick: function(element, code, region)
+        {
+                if ( code.toUpperCase() == "RU" ) {
+                    console.log("Going to Russia");
+                     window.location = "russia/index.html"
+                } else if  ( code.toUpperCase() == "FR" ) {
+                    console.log("Going to France");
+                    window.location = "france/index.html"
+                } else if  ( code.toUpperCase() == "NL" ) {
+                    console.log("Going to the Netherlands");
+                    window.location = "netherlands/index.html"
+                } else {
+                   // handle the other cases with a polite decline... 
+                    var message = 'You clicked "'
+                        + region 
+                        + '" which has no tour yet. Please try again. '
+                    alert(message);
+                }
+        } // end of onRegionClick function
+        });
+    });
+    </script>
+  </body>
+</html>

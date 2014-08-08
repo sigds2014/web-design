@@ -1,0 +1,28 @@
+	body {
+		font-family: 'Lora', serif;
+		color: rgb(53,40,30);
+		margin-left: 70px;
+		margin-top: 50px;
+	}
+
+	h1 {
+		font-family: 'Nothing You Could Do', cursive;
+		color: rgb(18,117,71);
+		font-size: 35px;
+	}
+
+	ul {
+		font-size: 17px;
+		margin: 1px;
+		list-style-type: none;
+	}
+
+	a:link, a:visited {
+		color: rgb(53,40,30);
+        text-decoration: none;
+    }
+
+    a:hover, a:active {
+        color: rgb(18,117,71);
+    }
+

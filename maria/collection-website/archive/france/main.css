@@ -1,0 +1,132 @@
+	* { 
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box; 
+	}
+
+	body {
+		font-family: 'Lora', serif;
+		color: rgb(53,40,30);
+		margin-left: 70px;
+		margin-top: 50px;
+	}
+
+	h1 {
+		font-family: 'Nothing You Could Do', cursive;
+		color: rgb(18,117,71);
+		font-size: 35px;
+	}
+
+	p {
+		color: rgb(53,40,30);
+		width: 275px;
+		text-align: left;
+		font-size: 15px;
+		margin-top: 1px;
+		margin: 5px;
+	}
+
+	#container1 {
+		margin: 0 auto;
+	}
+
+	#container2 {
+		width: 275px;
+		height: 500px;
+		float: left;
+		margin-left: 5px;
+		margin-right: 60px;
+	}
+
+	#container3 {
+		width: 538px;
+		height: 178px;
+		margin-top: -60px;
+		margin-left: -30px;
+		float: left;
+	}
+
+	.frame1 {
+		width: 340px;
+		height: 168px;
+		float: left;
+	}
+
+	.frame5 {
+		width: 168px;
+		height: 168px;
+		margin-left: 10px;
+		float: left;
+	}
+
+	#container4 {
+		width: 207px;
+		height: 168px;
+		float: left;
+	}
+
+	.frame2 {
+		width: 207px;
+		height: 155px;
+		margin-left: -15px;
+		margin-top: 20px;
+		float: left;
+	}
+
+	.frame3 {
+		width: 207px;
+		height: 168px;
+		margin-left: -15px;
+		margin-top: 10px;
+		float: left;
+	}
+
+	#container5 {
+		width: 280px;
+		height: 381px;
+		float: left;
+	}
+
+	.frame4 {
+		width: 280px;
+		height: 381px;
+		float: left;
+	}
+
+	#container6 {
+		width: 487px;
+		height: 400px;
+		float: left;
+	}
+
+	#container7 {
+		width: 487px;
+		height: 500px;
+		float: left;
+	}
+
+	#container8 {
+		width: 280px;
+		height: 537px;
+		margin-top: -60px;
+		margin-left: 15px; 
+		float: left;
+	}
+
+	.frame6 {
+		width: 280px;
+		height: 342px;
+		float: left;
+	}
+
+	.frame7 {
+		width: 280px;
+		height: 195px;
+		margin-top: 10px;
+		float: left;
+	}
+
+	img {
+		border: 10px solid rgb(53,40,30);
+		max-width: 100%;
+	}
+

@@ -1,0 +1,107 @@
+	
+	body {
+		font-family: 'Nothing You Could Do', cursive;
+		color: rgb(53,40,30);
+	}
+	h1 {
+		font-size: 47px;
+	}
+	h2 {
+		font-family: 'Lora', serif;
+		font-size: 15px;
+		margin-top: -20px;
+		margin-left: 5px;
+	}
+
+	ul {
+		font-size: 20px;
+	    list-style-type: none;
+	    text-align: left;
+	    margin-left: -35px;
+	    margin-top: 400px;
+	}
+
+	a:link, a:visited {
+		color: rgb(53,40,30);
+        text-decoration:none;
+    }
+
+    a:hover, a:active {
+        color: rgb(18,117,71);
+    }
+
+	#container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#container1 {
+		width: 400px;
+		height: 120px;
+		position: absolute;
+		top: 10px;
+
+	}
+
+	#container2 {
+		width: 180px;
+		height: 170px;
+		position: fixed;
+	}
+
+	.map {
+		margin:0;
+		padding: 0;
+		width: 100%;
+		position: absolute;
+		top: -274px;
+		right: 0px;
+		z-index: -1;
+	}
+	#vmap {
+		max-width: 100%;
+		position: relative;
+		right: -105px;
+	}
+
+	.container3 {
+		width: 300px;
+		height: 140px;
+		left: 600px;
+		top: 150px;
+		position: absolute;
+		display: none;
+	}
+
+	.notour {
+		width: 250px;
+		height: 150px;
+		background-color: rgb(129,119,109);;
+
+	}
+
+	.button {
+		font-size: 24px;
+	}
+
+	.text {
+		position: relative;
+		top: 20px;
+	}
+
+	h3 {
+		font-family: 'Lora', serif;
+		color: white;
+		font-size: 15px;
+		margin-left: 15px;
+		margin-right: 5px;
+	}
+
+	p {
+		font-family: 'Nothing You Could Do', cursive;
+		color: white;
+		margin-top: 30px;
+		margin-bottom: 10px;
+		margin-left: 200px;
+		margin-right: 20px;
+	}
