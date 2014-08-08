@@ -397,8 +397,13 @@ textarea {
         font-size: 2em;
         font-family: "Oswald";
         font-weight: 100;
-        color: black;
+        color: #8D3122;
         text-decoration: none;
+    }
+
+    h3 a:hover {
+        opacity: 0.7;
+        transition: all 0.15s ease
     }
 
     h4 {
