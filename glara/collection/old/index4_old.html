@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Sorts+Mill+Goudy:400,400italic|Gentium+Book+Basic|Open+Sans:400,600|Vollkorn:400italic,400|Abril+Fatface' rel='stylesheet' type='text/css'>
+
+        <meta charset="utf-8">
+        <title>Color Theory</title>
+        <meta name="viewport" content="width=device-width">
+        
+        <style type="text/css">
+
+            body {
+                margin: 0;
+                padding:0;
+            }
+
+            #wrapper {
+                margin: 0;
+                padding:0;
+            }
+
+            #intro {
+                background-color:#fff;
+                width:100%;
+                height:60%;
+/*                position: absolute;
+                top:0%;
+                left:0%;*/
+            }
+
+            #navigation {
+                background-color:#fff;
+                width:100%;
+                height:100%;
+/*                position: absolute;
+                top:50%;
+                left:0%;*/
+            }
+
+
+            h1 {
+                color:#333;
+                font-family: 'Open Sans', serif; 
+                letter-spacing:.02em;
+                padding: 0;
+                margin-left: -0.06em;        
+/*                position:absolute;
+                top:7%;
+                left:20%;
+                right:20%;*/
+                font-size:4.9em;
+                font-weight:600;
+
+            }
+
+            h2{
+                color:#bbb;
+                font-family: 'Open Sans', serif;
+                font-weight: 400;  
+                letter-spacing:.1em;
+    /*            position:absolute;
+                top:52%;
+                left:21%;
+                right:20%;*/
+                line-height:1.3em;
+                font-size:1.05em;
+            }
+
+            h3 {
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-size:2em;
+                font-weight: 600;
+/*                position:absolute;
+                top:20%;
+                left:21%;
+                z-index:1;*/
+                color:#bbb;
+            }
+
+
+            h4 {
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-size:1.9em;
+                font-weight: 600;
+       /*         z-index:1;
+                position:absolute;
+                top:27%;
+                left:21%;
+                z-index:1;*/
+                color:#eee;
+            }
+
+            h5 {
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-size:1.95em;
+                font-weight: 600;
+/*                z-index:1;
+                position:absolute;
+                top:30%;
+                left:21%;
+                z-index:1;*/
+                color:#eee;
+            }
+
+/*Past palettes:
+#972d15
+#04445f
+#ffd105
+red d71920
+magenta ac146d
+yellow ffd105
+green 54b948
+blue 0067b4
+skyblue 50a5dc
+gray cfd8e5
+teal 54c2ba
+
+*/
+            .square1 {
+                background-color:#d71920;
+                height:25%;
+                width:100%;
+ /*               position:absolute;
+                top:0%;*/
+                -webkit-transition: background-color .4s ease-out;
+                -moz-transition: background-color .4s ease-out;
+                -o-transition: background-color .4s ease-out;
+                transition: background-color .4s ease-out;
+            }
+
+            .square1:hover {
+                background-color:#ffd105;
+                cursor: pointer;
+            }
+
+            .square2 {
+                background-color:#ffd105;
+                height:25%;
+                width:100%;
+      /*          position:absolute;
+                top:25%;
+                right:0%;*/
+                -webkit-transition: background-color .4s ease-out;
+                -moz-transition: background-color .4s ease-out;
+                -o-transition: background-color .4s ease-out;
+                transition: background-color .4s ease-out;
+            }
+
+            .square2:hover {
+                background-color:#0067b4;
+                cursor: pointer;
+            }
+
+            .square3 {
+                background-color:#ddd;
+                height:25%;
+                width:100%;
+      /*          position:absolute;
+                top:50%;
+                left:0%;*/
+                -webkit-transition: background-color .4s ease-out;
+                -moz-transition: background-color .4s ease-out;
+                -o-transition: background-color .4s ease-out;
+                transition: background-color .4s ease-out;
+            }
+
+            .square3:hover {
+                background-color:#50a5dc;
+                cursor: pointer;
+            }
+
+            .square4 {
+                background-color:#ddd;
+                height:25%;
+                width:100%;
+/*                position:absolute;
+                top:75%;
+                right:0%;*/
+                -webkit-transition: background-color .4s ease-out;
+                -moz-transition: background-color .4s ease-out;
+                -o-transition: background-color .4s ease-out;
+                transition: background-color .4s ease-out;
+            }
+
+            .square4:hover {
+                background-color:#54c2ba;
+                cursor: pointer;
+            }
+            a:link, a:visited, a:hover, a:active {
+                text-decoration: none;
+                margin:0;
+            }
+
+            div {margin:0;}
+
+            h3 {margin:0;}
+
+            h1, h2, h3, h4 {
+                margin: 0 0 0 200px;
+            }
+
+
+        </style>
+
+	</head>
+    
+    <body>
+        <div id="wrapper">
+
+            <div id="intro">
+                <h1>Color Theory</h1>
+                <h2>Notes from Kandinsky's class at the Bauhaus</h2> 
+            </div>
+
+            <div id="navigation">
+                    <a href ="page2.html">
+                        <div class="square1">
+                            <h3>Polarity of pairs</h3>
+                        </div>
+                    </a>
+                    <div class="square2"><h3>spatial phenomena</h3></div>
+                    <div class="square3"><h3>Simultaneous contrast</h3></div>
+                    <div class="square4"><h3>spiritual vibrations</h3></div>
+            </div>
+
+        </div><!-- end of wrapper -->
+    </body>
+
+</html>

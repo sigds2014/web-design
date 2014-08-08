@@ -1,0 +1,252 @@
+#intro {
+    background-color:#ccc;
+    width:100%;
+    height:60%;
+    position: absolute;
+    top:0%;
+    left:0%;
+}
+
+#content {
+    background-color:#fff;
+    width:100%;
+    height:200%;
+    position: absolute;
+    top:60%;
+    left:0%;
+}
+
+/*back up yellow  #fcf7e3;*/
+#conclusion {
+    background-color:#4C0220;
+    width:100%;
+    height:170%;
+    position: absolute;
+    top:225%;
+    left:0%;
+}
+
+h1 {
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    position:absolute;
+    top:17%;
+    left:20%;
+    right:20%;
+    font-size:2em;
+
+}
+
+h2{
+    color:white;
+    font-family: 'Gentium Book Basic', serif;
+    position:absolute;
+    top:36%;
+    left:20%;
+    right:20%;
+    line-height:1.3em;
+    font-size:1.5em;
+}
+
+#indent1 {
+    position:absolute;
+    left:-2em;
+}
+
+#title1 {
+    color:#444;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    position:absolute;
+    top:42%;
+    left:20%;
+    right:20%;
+    font-size:2em;
+    font-weight:600;
+}
+
+
+#text1 {
+    color:#444;
+    font-family: 'Gentium Book Basic', serif;
+    font-size:1.5em;
+    line-height:1.5em;
+    position:absolute;
+    top:47%;
+    left:20%;
+    right:20%;
+    font-weight:600;
+}
+
+#quote1 {
+    font-style:italic;
+    color:#444;
+    font-family: 'Gentium Book Basic', serif;
+    font-size:1.5em;
+    line-height:1.5em;
+    position:absolute;
+    top:57%;
+    left:20%;
+    right:20%;
+    font-weight:600;
+    text-indent:-.35em;
+}
+
+#person1 {
+    color:#c90707;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height:3em;
+    font-size:.8em;
+    position:absolute;
+    left:-.45em;
+    font-style: normal;
+}
+
+.strip1 {
+    background-color:#f7f6ed;
+    height:22%;
+    width:15%;
+    position:absolute;
+    top:10%;
+    left:20%;
+    }
+
+.strip2 {
+    background-color:#f8e03e;
+    height:22%;
+    width:15.2%;
+    position:absolute;
+    top:10%;
+    left:35%;
+    }
+
+.strip3 {
+    background-color:#0247e8;
+    height:22%;
+    width:15%;
+    position:absolute;
+    top:10%;
+    left:50%;
+    }
+
+.strip4 {
+    background-color:#0a1429;
+    height:22%;
+    width:15%;
+    position:absolute;
+    top:10%;
+    left:65%;
+    }
+
+#indent2 {
+    position:absolute;
+    left:-2.1em;
+}
+
+#title2 {
+    color:#b8b8b8;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    position:absolute;
+    top:54.12%;
+    left:20%;
+    right:20%;
+    font-size:2em;
+    font-weight:600;
+}
+
+#text2 {
+    color:#b8b8b8;
+    font-family: 'Gentium Book Basic', serif;
+    font-size:1.5em;
+    line-height:1.5em;
+    position:absolute;
+    top:60%;
+    left:20%;
+    right:20%;
+    font-weight:600;
+}
+
+#quote2 {
+    font-style:italic;
+    color:#b8b8b8;
+    font-family: 'Gentium Book Basic', serif;
+    font-size:1.5em;
+    line-height:1.5em;
+    position:absolute;
+    top:79.2%;
+    left:20%;
+    right:20%;
+    font-weight:600;
+    text-indent:-.35em;
+}
+
+#person2 {
+    color:#999;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height:3em;
+    font-size:.8em;
+    position:absolute;
+    left:-.45em;
+}
+
+.square1 {
+    background-color:#ee2a42;
+    width:8%;
+    height:28.2%;
+    position:absolute;
+    top:14.12%;
+    left:20%;
+    }
+
+.square2 {
+    background-color:#b90039;
+    width:8%;
+    height:28.2%;
+    position:absolute;
+    top:14.12%;
+    left:28%;
+    }
+
+.square3 {
+    background-color:#a20031;
+    width:8%;
+    height:28.2%;
+    position:absolute;
+    top:14.12%;
+    left:36%;
+    }
+
+.square4 {
+    background-color:#f03900;
+    width:8%;
+    height:28.2%;
+    position:absolute;
+    top:14.12%;
+    left:51%;
+    }
+
+.square5 {
+    background-color:#e6000c;
+    width:8%;
+    height:28.2%;
+    position:absolute;
+    top:14.12%;
+    left:59%;
+    }
+
+.square6 {
+    background-color:#cc3325;
+    width:8%;
+    height:28.2%;
+    position:absolute;
+    top:14.12%;
+    left:67%;
+    }

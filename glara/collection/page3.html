@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic|Open+Sans:400,600|Vollkorn:400italic,400' rel='stylesheet' type='text/css'>
+
+        <meta charset="utf-8">
+        <title>Simultaneous Contrast</title>
+        <meta name="viewport" content="width=device-width">
+        
+        <style type="text/css">
+
+            #intro {
+                background-color:#ccc;
+                width:100%;
+                height:60%;
+                position: absolute;
+                top:0%;
+                left:0%;
+            }
+
+            #content {
+                background-color:#fdfdfd;
+                width:100%;
+                height:200%;
+                position: absolute;
+                top:60%;
+                left:0%;
+            }
+
+            #conclusion {
+                background-color:#333;
+                width:100%;
+                height:160%;
+                position: absolute;
+                top:225%;
+                left:0%;
+            }
+
+            h1 {
+                color:white;
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: .1em;
+                position:absolute;
+                top:17%;
+                left:20%;
+                right:20%;
+                font-size:2em;
+
+            }
+
+            h2{
+                color:white;
+                font-family: 'Gentium Book Basic', serif;
+                position:absolute;
+                top:36%;
+                left:20%;
+                right:20%;
+                line-height:1.3em;
+                font-size:1.5em;
+            }
+
+            #indent1 {
+                position:absolute;
+                left:-2em;
+            }
+
+            #title1 {
+                color:#444;
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: .07em;
+                position:absolute;
+                top:42%;
+                left:20%;
+                right:20%;
+                font-size:2em;
+                font-weight:600;
+            }
+
+
+            #text1 {
+                color:#444;
+                font-family: 'Gentium Book Basic', serif;
+                font-size:1.5em;
+                line-height:1.5em;
+                position:absolute;
+                top:47%;
+                left:20%;
+                right:20%;
+                font-weight:600;
+            }
+
+            #quote1 {
+                font-style:italic;
+                color:#444;
+                font-family: 'Gentium Book Basic', serif;
+                font-size:1.5em;
+                line-height:1.5em;
+                position:absolute;
+                top:57%;
+                left:20%;
+                right:20%;
+                font-weight:600;
+                text-indent:-.35em;
+            }
+
+            #person1 {
+                color:#c90707;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                line-height:3em;
+                font-size:.8em;
+                position:absolute;
+                left:-.45em;
+                font-style: normal;
+            }
+
+            .circle1 {
+                background-color:#d71920;
+                border-radius: 50%;
+                height:.2em;
+                width:22%;
+                padding-top:22%;
+                position:absolute;
+                top:10%;
+                left:20%;
+                }
+
+            .circle2 {
+                background-color:#8C0486;
+                border-radius: 50%;
+                height:.2em;
+                width:22%;
+                padding-top:22%;
+                position:absolute;
+                top:10%;
+                left:50%;
+                }
+
+            .circle3 {
+                background-color:#ffd105;
+                border-radius: 50%;
+                height:.2em;
+                width:6%;
+                padding-top:6%;
+                position:absolute;
+                top:18%;
+                left:28%;
+                }
+
+            .circle4 {
+                background-color:#ffd105;
+                border-radius: 50%;
+                height:.2em;
+                width:6%;
+                padding-top:6%;
+                position:absolute;
+                top:18%;
+                left:58%;
+                }
+
+            #indent2 {
+                position:absolute;
+                left:-2.1em;
+            }
+
+            #title2 {
+                color:#ddd;
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: .1em;
+                position:absolute;
+                top:57.44%;
+                left:20%;
+                right:20%;
+                font-size:2em;
+                font-weight:600;
+            }
+
+            #text2 {
+                color:#ccc;
+                font-family: 'Gentium Book Basic', serif;
+                font-size:1.5em;
+                line-height:1.5em;
+                position:absolute;
+                top:63.68%;
+                left:20%;
+                right:20%;
+                font-weight:600;
+            }
+
+            #quote2 {
+                font-style:italic;
+                color:#ddd;
+                font-family: 'Gentium Book Basic', serif;
+                font-size:1.5em;
+                line-height:1.5em;
+                position:absolute;
+                top:76%;
+                left:20%;
+                right:20%;
+                font-weight:600;
+                text-indent:-.35em;
+            }
+
+            #person2 {
+                color:#aaa3a2;
+                text-transform: uppercase;
+                font-style: normal;
+                letter-spacing: 1px;
+                line-height:3em;
+                font-size:.8em;
+                position:absolute;
+                left:-.45em;
+            }
+
+            .square1 {
+                background-color:#d71920;
+                width:24%;
+                height:30%;
+                position:absolute;
+                top:15%;
+                left:20%;
+                }
+
+            .square2 {
+                background-color:#0067b4;
+                width:24%;
+                height:30%;
+                position:absolute;
+                top:15%;
+                left:51%;
+                }
+
+            .square3 {
+                background-color:#0067b4;
+                width:8%;
+                height:10%;
+                position:absolute;
+                top:25%;
+                left:28%;
+                }
+
+            .square4 {
+                background-color:#d71920;
+                width:8%;
+                height:10%;
+                position:absolute;
+                top:25%;
+                left:59%;
+                }
+
+        </style>
+
+	</head>
+    
+    <body>
+
+        <div id="wrapper">
+
+            <div id="intro">
+                <h1>simultaneous contrast</h1>
+                <h2>Kandinsky used small squares or circles on contrasting backgrounds to demonstrate that they appear as dissimilar as possible.</h2>
+            </div>
+
+            <div id="content">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+
+                <div id="title1"><span id="indent1">01. Hue and lightness</span></div>
+                <div id="text1">Two contiguous colors will appear as dissimilar as possible in both their hue and lightness.</div>
+
+                <div id="quote1">&#8220;When yellow and red are juxtaposed, the yellow will look greenish, and the red will look purplish. If the two colors are complementaries, they are intensified by being placed next to each other.&#8221; <br><span id="person1">&#8212;Clark V. Poling </span></div>
+
+                </div>
+            </div>
+
+            <div id="conclusion">
+
+                <div class="square1"></div>
+                <div class="square2"></div>
+                <div class="square3"></div>
+                <div class="square4"></div>
+
+                <div id="title2"><span id="indent2">02. Boundary effects</span></div>
+                <div id="text2">Along the edges of the color the complementary of the neighboring hue seems to disappear.</div>
+                
+                <div id="quote2">&#8220;As Kandinsky saw it, red appeared on both sides of the boundary of yellow and blue, that is, the two colors were tinged respectively orange and purple.&#8221; <br><span id="person2">&#8212;Clark V. Poling</span></div>
+
+            </div>
+
+
+
+        </div><!-- end of wrapper -->
+    </body>
+
+</html>

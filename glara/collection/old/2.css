@@ -1,0 +1,79 @@
+/*When Screen size is 0-530px*/
+
+body {
+    background-color:#77898d;
+}
+
+#wrapper {
+    width:90%;
+    margin:0 auto;
+}
+
+.white {
+    width:25%;
+    height:22%;
+    background-color:#d1cebb;
+    position: absolute;
+    top:33%;
+    left:20%;
+}
+
+.yellow {
+    width: 25%;
+    height: 18%;
+    background-color:#d9b93e;
+    position: absolute;
+    top:54%;
+    left:20%;
+}
+
+.blue {
+    width:25%;
+    height:18%;
+    background-color:#2e5aa1;
+    position:absolute;
+    top:54%;
+    left:45%;
+}
+
+.black {
+    width: 25%;
+    height: 22%;
+    background-color:#18181a;
+    position:absolute;
+    top:72%;
+    left:45%;
+    bottom:20%;
+}
+
+h1 {
+    display: block;
+    font-size: 1.2em; 
+    line-height: 1.3em;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: .25em;
+    font-family: 'Sorts Mill Goudy', "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    position:absolute;
+    top:4%;
+    left:4%;
+    margin-right:0%;
+}
+
+h2 {
+    display: block;
+    font-size: 1em; /*22px/16*/
+    line-height: 1.5em;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: .25em;
+    font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    font-style: normal;
+    position:absolute;
+    top:11%;
+    left:4%;
+    margin-right:10%;
+}

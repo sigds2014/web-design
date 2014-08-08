@@ -1,0 +1,134 @@
+body {
+                margin: 0;
+                padding:0;
+            }
+
+            #wrapper {
+                margin: 0;
+                padding:0;
+            }
+
+            #title {
+                background-color:#fff;
+                height:17em;
+            }
+
+            .shape {
+                height:8.5em;
+                width:100em;
+            }
+
+            a:link, a:visited, a:hover, a:active {
+                text-decoration: none;
+                margin:0;
+            }
+
+            div {margin:0;}
+
+            h1, h2, h3 {
+                margin: 0 0 0 200px;
+            }
+
+
+            h1 {
+                color:#333;
+                font-family: 'Open Sans', serif; 
+                letter-spacing:.01em;
+                font-size:5em;
+                font-weight:600;
+                padding-top:.7em;
+                margin-left:190px;
+            }
+
+            h2 {
+                color:#bbb;
+                font-family: 'Open Sans', serif;
+                letter-spacing:.1em;
+                font-size:1em;
+                font-weight: 400;  
+                
+            }
+
+            h3 {
+                color:#eee;
+                font-family: 'Open Sans', sans-serif;
+                letter-spacing: 0.1em;
+                font-size:1.7em;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding-top:1.75em;
+            }
+
+
+/*Past palettes:
+#972d15
+#04445f
+#ffd105
+red d71920
+magenta ac146d
+yellow ffd105
+green 54b948
+blue 0067b4
+skyblue 50a5dc
+gray cfd8e5
+teal 54c2ba
+orange
+
+*/
+
+
+            #square1 {
+                background-color:#d71920;
+                -webkit-transition: background-color .4s ease-out;
+                -moz-transition: background-color .4s ease-out;
+                -o-transition: background-color .4s ease-out;
+                transition: background-color .4s ease-out;
+            }
+
+            #square1:hover {
+                background-color:#ac146d;
+                cursor: pointer;
+            }
+
+            #square2 {
+                background-color:#ffd105;
+                -webkit-transition: background-color .4s ease-out;
+                -moz-transition: background-color .4s ease-out;
+                -o-transition: background-color .4s ease-out;
+                transition: background-color .4s ease-out;
+            }
+
+            #square2:hover {
+                background-color:#1CB014;
+                cursor: pointer;
+            }
+
+            #square3 {
+                background-color:#0067b4;
+                -webkit-transition: background-color .4s ease-out;
+                -moz-transition: background-color .4s ease-out;
+                -o-transition: background-color .4s ease-out;
+                transition: background-color .4s ease-out;
+            }
+
+            #square3:hover {
+                background-color:#641891;
+                cursor: pointer;
+            }
+
+            #square4 {
+                background-color:#115D30;
+                -webkit-transition: background-color .4s ease-out;
+                -moz-transition: background-color .4s ease-out;
+                -o-transition: background-color .4s ease-out;
+                transition: background-color .4s ease-out;
+            }
+
+            #square4:hover {
+                background-color:#ef4723;
+                cursor: pointer;
+            }
+
+            #kern1 {
+                letter-spacing:-.03em;
+            }

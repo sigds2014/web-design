@@ -1,0 +1,78 @@
+/*When Screen size is over 900px*/
+
+body {
+    background-color:#77898d;
+}
+
+#wrapper {
+    width:1000px;
+    margin:0 auto;
+}
+
+.white {
+    width:180px;
+    height: 200px;
+    background-color:#d1cebb;
+}
+
+.yellow {
+    width:180px;
+    height:170px;
+    background-color:#d9b93e;
+}
+
+#leftcol1 {
+    float:left;
+    margin-left:100px;
+    margin-top:5px;
+}
+
+.blue {
+    width:180px;
+    height:170px;
+    background-color:#2e5aa1;
+}
+
+.black {
+    width:180px;
+    height: 200px;
+    background-color:#18181a;
+}
+
+#leftcol2 {
+    float:left;
+    margin-top:205px;
+}
+
+h1 {
+    display: block;
+    font-size: 1.44em; 
+    line-height: 1.3em;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: .25em;
+    font-family: 'Sorts Mill Goudy', "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    display: block;
+    font-size: 1.2em; /*22px/16*/
+    line-height: 1.5em;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: .25em;
+    font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#rightcol {
+    position:relative;
+    top:-378px;
+    left:600px;
+    max-width: 250px;
+}
+
+
