@@ -1,0 +1,158 @@
+body {
+	background-color: #ffffff;
+	font-family: colaborate-thin;
+	margin-left:40px;
+	margin-right:5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	background: 
+   url('../images2/honeycomb.jpg') 0 200px no-repeat, 
+   url('../images2/beetriptychweb.jpg') 0 2050px no-repeat;
+
+   background-size: contain;      
+}
+
+header {
+	height: 200px;
+}
+header img {
+
+	float:left;
+	margin-left: 0px;
+	margin-top: 5px;
+}
+
+header h1 {
+	color: #333333;
+	float:left;
+	margin-top: 90px;
+	font-size: 35px;
+	margin-left: 10px;
+	margin-right: 25px;
+}
+
+.banner {
+
+	position: relative; 
+  	width: 125%; 
+}
+/*		  margin-left:-100px;
+		  margin-right: -20px;
+		  margin-top: 5px;
+		  margin-bottom: 10px;*/
+
+
+
+
+#whatis, #prevalence, #consequences, #moreinfo {
+	clear:both;
+	margin-left: 150px;
+	margin-right: 90px;
+}
+
+#whatis {
+	margin-top:400px;
+
+}
+
+#consequences {
+	margin-top: 300px;
+}
+
+
+
+div img {
+	height:200px;
+	width:200px;
+	margin-left:50px;
+}
+
+div h4 {font-size:24px;
+		margin-top:40px;
+		margin-left:20px;
+		margin-right: 20px;
+	}
+
+div p {font-size:20px;
+		margin-left: 20px;
+		margin-right:20px;
+}
+
+
+
+ .imgOverlay {width:800px;
+			 height:463px;
+			 background: url('../images2/greymapfinalweb.png') no-repeat;
+			 margin-top:15px;
+			}
+.imgOverlay:hover {
+			width:800px;
+			height: 463px;
+			margin-top: 15px;
+			background:url('../images2/ccdmapweb2.png') no-repeat;
+}
+
+
+
+div iframe {
+			margin-left: 250px;
+			margin-right:400px;
+			margin-top: 30px;
+			margin-bottom:10px;
+}
+
+
+#moreinfo{
+	margin-top:30px;
+	margin-bottom:15px;
+	margin-left: 150px;
+	margin-right:90px;
+
+}
+
+
+
+a:link, a:visited {text-decoration: none;
+   color: #333333;
+}
+
+a:hover, a:active {
+	   color: orange;
+} 
+
+
+#linkbar {
+
+	margin-top: 5px;
+	margin-left: 100px;
+	margin-right:20px;
+	list-style-type: none;
+
+}
+
+#linkbar li {
+	float:left;
+	margin-right:1.5em;
+}
+
+
+footer img {float:right;
+			height:115px;
+			width:115px;
+			margin-left: 0px;
+			margin-right:100px;
+			margin-bottom: 15px;
+			margin-top: 45px;
+}
+
+footer h2 {float:right;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-right: -5px;
+			margin-left: 650px;
+			font-size: 15px;
+}
+
+
+
